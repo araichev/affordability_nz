@@ -1,46 +1,46 @@
-orig_name,dest_name,fare
+orig_name,dest_name,card_fare
 Brooklyn,Carterton/South Wairarapa,
-Brooklyn,Eastern Bays,14.5
-Brooklyn,Epuni/Avalon,12.5
-Brooklyn,Hataitai,10.5
-Brooklyn,Heretaunga/Silverstream,16.5
-Brooklyn,Hutt Central/Waterloo,9.0
-Brooklyn,Island Bay/Melrose,5.5
-Brooklyn,Johnsonville/Newlands,8.5
-Brooklyn,Karori,5.0
-Brooklyn,Karori South/Makara,7.0
-Brooklyn,Kelburn/Aro Valley,3.5
-Brooklyn,Khandallah,7.0
-Brooklyn,Kilbirnie/Lyall Bay,2.0
-Brooklyn,Kingston/Happy Valley,2.0
-Brooklyn,Lambton,3.5
+Brooklyn,Eastern Bays,11.34
+Brooklyn,Epuni/Avalon,9.78
+Brooklyn,Hataitai,8.22
+Brooklyn,Heretaunga/Silverstream,12.91
+Brooklyn,Hutt Central/Waterloo,7.04
+Brooklyn,Island Bay/Melrose,4.3
+Brooklyn,Johnsonville/Newlands,6.65
+Brooklyn,Karori,3.91
+Brooklyn,Karori South/Makara,5.48
+Brooklyn,Kelburn/Aro Valley,2.74
+Brooklyn,Khandallah,5.48
+Brooklyn,Kilbirnie/Lyall Bay,1.56
+Brooklyn,Kingston/Happy Valley,1.56
+Brooklyn,Lambton,2.74
 Brooklyn,Masterton,
-Brooklyn,Miramar/Strathmore,3.5
-Brooklyn,Moera/Waiwhetu,9.0
-Brooklyn,Mt Cook,2.0
-Brooklyn,Mt Victoria/Roseneath,3.5
-Brooklyn,Ngaio/Kaiwharawhara/Wilton,8.5
-Brooklyn,Northland,7.0
-Brooklyn,Oriental Bay/Seatoun,3.5
-Brooklyn,Papakowhai/Whitby/Pauatahanui,13.5
-Brooklyn,Paramata/Mana/Pukerua Bay,11.5
-Brooklyn,Paraparaumu/Raumati,17.0
-Brooklyn,Petone West/Alicetown,9.0
-Brooklyn,Petone/Esplanade,9.0
-Brooklyn,Porirua East/Waitangirua,12.0
-Brooklyn,Stokes Valley,14.0
-Brooklyn,Taita/Naenae,12.5
-Brooklyn,Tawa/Grenada North,9.0
-Brooklyn,Te Aro,3.5
-Brooklyn,Titahi Bay/Onepoto/Elsdon,13.5
-Brooklyn,Totara Park/Maoribank/Te Marua,14.5
-Brooklyn,Trentham North/Wallaceville,14.5
-Brooklyn,Trentham West/Eldersley/Clouston Park,12.5
-Brooklyn,Vogeltown/Berhampore/Newtown,2.0
-Brooklyn,Wadestown/Thordon,5.5
+Brooklyn,Miramar/Strathmore,2.74
+Brooklyn,Moera/Waiwhetu,7.04
+Brooklyn,Mt Cook,1.56
+Brooklyn,Mt Victoria/Roseneath,2.74
+Brooklyn,Ngaio/Kaiwharawhara/Wilton,6.65
+Brooklyn,Northland,5.48
+Brooklyn,Oriental Bay/Seatoun,2.74
+Brooklyn,Papakowhai/Whitby/Pauatahanui,10.56
+Brooklyn,Paramata/Mana/Pukerua Bay,9.0
+Brooklyn,Paraparaumu/Raumati,13.3
+Brooklyn,Petone West/Alicetown,7.04
+Brooklyn,Petone/Esplanade,7.04
+Brooklyn,Porirua East/Waitangirua,9.39
+Brooklyn,Stokes Valley,10.95
+Brooklyn,Taita/Naenae,9.78
+Brooklyn,Tawa/Grenada North,7.04
+Brooklyn,Te Aro,2.74
+Brooklyn,Titahi Bay/Onepoto/Elsdon,10.56
+Brooklyn,Totara Park/Maoribank/Te Marua,11.34
+Brooklyn,Trentham North/Wallaceville,11.34
+Brooklyn,Trentham West/Eldersley/Clouston Park,9.78
+Brooklyn,Vogeltown/Berhampore/Newtown,1.56
+Brooklyn,Wadestown/Thordon,4.3
 Brooklyn,Waikanae/Otaki,
-Brooklyn,Wainuiomata,12.5
-Brooklyn,Western Hills/Haywards,9.0
+Brooklyn,Wainuiomata,9.78
+Brooklyn,Western Hills/Haywards,7.04
 Carterton/South Wairarapa,Brooklyn,
 Carterton/South Wairarapa,Eastern Bays,
 Carterton/South Wairarapa,Epuni/Avalon,
@@ -83,594 +83,594 @@ Carterton/South Wairarapa,Wadestown/Thordon,
 Carterton/South Wairarapa,Waikanae/Otaki,
 Carterton/South Wairarapa,Wainuiomata,
 Carterton/South Wairarapa,Western Hills/Haywards,
-Eastern Bays,Brooklyn,14.5
+Eastern Bays,Brooklyn,11.34
 Eastern Bays,Carterton/South Wairarapa,
-Eastern Bays,Epuni/Avalon,12.0
-Eastern Bays,Hataitai,14.5
-Eastern Bays,Heretaunga/Silverstream,10.0
-Eastern Bays,Hutt Central/Waterloo,12.0
-Eastern Bays,Island Bay/Melrose,16.0
-Eastern Bays,Johnsonville/Newlands,9.5
-Eastern Bays,Karori,16.0
-Eastern Bays,Karori South/Makara,14.5
-Eastern Bays,Kelburn/Aro Valley,11.0
-Eastern Bays,Khandallah,16.0
-Eastern Bays,Kilbirnie/Lyall Bay,18.0
-Eastern Bays,Kingston/Happy Valley,14.5
-Eastern Bays,Lambton,11.0
+Eastern Bays,Epuni/Avalon,9.39
+Eastern Bays,Hataitai,11.34
+Eastern Bays,Heretaunga/Silverstream,7.82
+Eastern Bays,Hutt Central/Waterloo,9.39
+Eastern Bays,Island Bay/Melrose,12.52
+Eastern Bays,Johnsonville/Newlands,7.43
+Eastern Bays,Karori,12.52
+Eastern Bays,Karori South/Makara,11.34
+Eastern Bays,Kelburn/Aro Valley,8.61
+Eastern Bays,Khandallah,12.52
+Eastern Bays,Kilbirnie/Lyall Bay,14.08
+Eastern Bays,Kingston/Happy Valley,11.34
+Eastern Bays,Lambton,8.61
 Eastern Bays,Masterton,
-Eastern Bays,Miramar/Strathmore,11.0
-Eastern Bays,Moera/Waiwhetu,7.0
-Eastern Bays,Mt Cook,14.5
-Eastern Bays,Mt Victoria/Roseneath,13.0
-Eastern Bays,Ngaio/Kaiwharawhara/Wilton,16.0
-Eastern Bays,Northland,14.5
-Eastern Bays,Oriental Bay/Seatoun,11.0
-Eastern Bays,Papakowhai/Whitby/Pauatahanui,14.5
-Eastern Bays,Paramata/Mana/Pukerua Bay,19.0
-Eastern Bays,Paraparaumu/Raumati,24.5
-Eastern Bays,Petone West/Alicetown,5.0
-Eastern Bays,Petone/Esplanade,5.0
-Eastern Bays,Porirua East/Waitangirua,19.5
-Eastern Bays,Stokes Valley,10.0
-Eastern Bays,Taita/Naenae,8.5
-Eastern Bays,Tawa/Grenada North,16.5
-Eastern Bays,Te Aro,13.0
-Eastern Bays,Titahi Bay/Onepoto/Elsdon,16.5
-Eastern Bays,Totara Park/Maoribank/Te Marua,10.5
-Eastern Bays,Trentham North/Wallaceville,10.5
-Eastern Bays,Trentham West/Eldersley/Clouston Park,10.5
-Eastern Bays,Vogeltown/Berhampore/Newtown,14.5
-Eastern Bays,Wadestown/Thordon,8.0
+Eastern Bays,Miramar/Strathmore,8.61
+Eastern Bays,Moera/Waiwhetu,5.48
+Eastern Bays,Mt Cook,11.34
+Eastern Bays,Mt Victoria/Roseneath,10.17
+Eastern Bays,Ngaio/Kaiwharawhara/Wilton,12.52
+Eastern Bays,Northland,11.34
+Eastern Bays,Oriental Bay/Seatoun,8.61
+Eastern Bays,Papakowhai/Whitby/Pauatahanui,11.34
+Eastern Bays,Paramata/Mana/Pukerua Bay,14.87
+Eastern Bays,Paraparaumu/Raumati,19.17
+Eastern Bays,Petone West/Alicetown,3.91
+Eastern Bays,Petone/Esplanade,3.91
+Eastern Bays,Porirua East/Waitangirua,15.26
+Eastern Bays,Stokes Valley,7.82
+Eastern Bays,Taita/Naenae,6.65
+Eastern Bays,Tawa/Grenada North,12.91
+Eastern Bays,Te Aro,10.17
+Eastern Bays,Titahi Bay/Onepoto/Elsdon,12.91
+Eastern Bays,Totara Park/Maoribank/Te Marua,8.22
+Eastern Bays,Trentham North/Wallaceville,8.22
+Eastern Bays,Trentham West/Eldersley/Clouston Park,8.22
+Eastern Bays,Vogeltown/Berhampore/Newtown,11.34
+Eastern Bays,Wadestown/Thordon,6.26
 Eastern Bays,Waikanae/Otaki,
-Eastern Bays,Wainuiomata,8.5
-Eastern Bays,Western Hills/Haywards,7.0
-Epuni/Avalon,Brooklyn,12.5
+Eastern Bays,Wainuiomata,6.65
+Eastern Bays,Western Hills/Haywards,5.48
+Epuni/Avalon,Brooklyn,9.78
 Epuni/Avalon,Carterton/South Wairarapa,
-Epuni/Avalon,Eastern Bays,8.5
-Epuni/Avalon,Hataitai,12.5
-Epuni/Avalon,Heretaunga/Silverstream,3.5
-Epuni/Avalon,Hutt Central/Waterloo,3.5
-Epuni/Avalon,Island Bay/Melrose,11.5
-Epuni/Avalon,Johnsonville/Newlands,13.0
-Epuni/Avalon,Karori,14.0
-Epuni/Avalon,Karori South/Makara,14.5
-Epuni/Avalon,Kelburn/Aro Valley,10.0
-Epuni/Avalon,Khandallah,14.0
-Epuni/Avalon,Kilbirnie/Lyall Bay,12.5
-Epuni/Avalon,Kingston/Happy Valley,10.0
-Epuni/Avalon,Lambton,11.0
+Epuni/Avalon,Eastern Bays,6.65
+Epuni/Avalon,Hataitai,9.78
+Epuni/Avalon,Heretaunga/Silverstream,2.74
+Epuni/Avalon,Hutt Central/Waterloo,2.74
+Epuni/Avalon,Island Bay/Melrose,9.0
+Epuni/Avalon,Johnsonville/Newlands,10.17
+Epuni/Avalon,Karori,10.95
+Epuni/Avalon,Karori South/Makara,11.34
+Epuni/Avalon,Kelburn/Aro Valley,7.82
+Epuni/Avalon,Khandallah,10.95
+Epuni/Avalon,Kilbirnie/Lyall Bay,9.78
+Epuni/Avalon,Kingston/Happy Valley,7.82
+Epuni/Avalon,Lambton,8.61
 Epuni/Avalon,Masterton,
-Epuni/Avalon,Miramar/Strathmore,14.5
-Epuni/Avalon,Moera/Waiwhetu,3.5
-Epuni/Avalon,Mt Cook,12.5
-Epuni/Avalon,Mt Victoria/Roseneath,11.0
-Epuni/Avalon,Ngaio/Kaiwharawhara/Wilton,14.0
-Epuni/Avalon,Northland,12.5
-Epuni/Avalon,Oriental Bay/Seatoun,14.5
-Epuni/Avalon,Papakowhai/Whitby/Pauatahanui,9.0
-Epuni/Avalon,Paramata/Mana/Pukerua Bay,17.0
-Epuni/Avalon,Paraparaumu/Raumati,22.5
-Epuni/Avalon,Petone West/Alicetown,3.5
-Epuni/Avalon,Petone/Esplanade,3.5
-Epuni/Avalon,Porirua East/Waitangirua,9.5
-Epuni/Avalon,Stokes Valley,3.5
-Epuni/Avalon,Taita/Naenae,2.0
-Epuni/Avalon,Tawa/Grenada North,14.5
-Epuni/Avalon,Te Aro,11.0
-Epuni/Avalon,Titahi Bay/Onepoto/Elsdon,11.0
-Epuni/Avalon,Totara Park/Maoribank/Te Marua,5.0
-Epuni/Avalon,Trentham North/Wallaceville,5.0
-Epuni/Avalon,Trentham West/Eldersley/Clouston Park,5.0
-Epuni/Avalon,Vogeltown/Berhampore/Newtown,12.5
-Epuni/Avalon,Wadestown/Thordon,9.0
+Epuni/Avalon,Miramar/Strathmore,11.34
+Epuni/Avalon,Moera/Waiwhetu,2.74
+Epuni/Avalon,Mt Cook,9.78
+Epuni/Avalon,Mt Victoria/Roseneath,8.61
+Epuni/Avalon,Ngaio/Kaiwharawhara/Wilton,10.95
+Epuni/Avalon,Northland,9.78
+Epuni/Avalon,Oriental Bay/Seatoun,11.34
+Epuni/Avalon,Papakowhai/Whitby/Pauatahanui,7.04
+Epuni/Avalon,Paramata/Mana/Pukerua Bay,13.3
+Epuni/Avalon,Paraparaumu/Raumati,17.6
+Epuni/Avalon,Petone West/Alicetown,2.74
+Epuni/Avalon,Petone/Esplanade,2.74
+Epuni/Avalon,Porirua East/Waitangirua,7.43
+Epuni/Avalon,Stokes Valley,2.74
+Epuni/Avalon,Taita/Naenae,1.56
+Epuni/Avalon,Tawa/Grenada North,11.34
+Epuni/Avalon,Te Aro,8.61
+Epuni/Avalon,Titahi Bay/Onepoto/Elsdon,8.61
+Epuni/Avalon,Totara Park/Maoribank/Te Marua,3.91
+Epuni/Avalon,Trentham North/Wallaceville,3.91
+Epuni/Avalon,Trentham West/Eldersley/Clouston Park,3.91
+Epuni/Avalon,Vogeltown/Berhampore/Newtown,9.78
+Epuni/Avalon,Wadestown/Thordon,7.04
 Epuni/Avalon,Waikanae/Otaki,
-Epuni/Avalon,Wainuiomata,7.0
-Epuni/Avalon,Western Hills/Haywards,5.5
-Hataitai,Brooklyn,10.5
+Epuni/Avalon,Wainuiomata,5.48
+Epuni/Avalon,Western Hills/Haywards,4.3
+Hataitai,Brooklyn,8.22
 Hataitai,Carterton/South Wairarapa,
-Hataitai,Eastern Bays,14.5
-Hataitai,Epuni/Avalon,12.0
-Hataitai,Heretaunga/Silverstream,11.5
-Hataitai,Hutt Central/Waterloo,9.0
-Hataitai,Island Bay/Melrose,5.5
-Hataitai,Johnsonville/Newlands,8.5
-Hataitai,Karori,8.5
-Hataitai,Karori South/Makara,15.5
-Hataitai,Kelburn/Aro Valley,3.5
-Hataitai,Khandallah,12.0
-Hataitai,Kilbirnie/Lyall Bay,6.0
-Hataitai,Kingston/Happy Valley,7.0
-Hataitai,Lambton,3.5
+Hataitai,Eastern Bays,11.34
+Hataitai,Epuni/Avalon,9.39
+Hataitai,Heretaunga/Silverstream,9.0
+Hataitai,Hutt Central/Waterloo,7.04
+Hataitai,Island Bay/Melrose,4.3
+Hataitai,Johnsonville/Newlands,6.65
+Hataitai,Karori,6.65
+Hataitai,Karori South/Makara,12.13
+Hataitai,Kelburn/Aro Valley,2.74
+Hataitai,Khandallah,9.39
+Hataitai,Kilbirnie/Lyall Bay,4.69
+Hataitai,Kingston/Happy Valley,5.48
+Hataitai,Lambton,2.74
 Hataitai,Masterton,
-Hataitai,Miramar/Strathmore,3.5
-Hataitai,Moera/Waiwhetu,9.0
-Hataitai,Mt Cook,7.0
-Hataitai,Mt Victoria/Roseneath,2.0
-Hataitai,Ngaio/Kaiwharawhara/Wilton,12.0
-Hataitai,Northland,7.0
-Hataitai,Oriental Bay/Seatoun,3.5
-Hataitai,Papakowhai/Whitby/Pauatahanui,13.5
-Hataitai,Paramata/Mana/Pukerua Bay,11.5
-Hataitai,Paraparaumu/Raumati,17.0
-Hataitai,Petone West/Alicetown,9.0
-Hataitai,Petone/Esplanade,9.0
-Hataitai,Porirua East/Waitangirua,12.0
-Hataitai,Stokes Valley,13.5
-Hataitai,Taita/Naenae,10.0
-Hataitai,Tawa/Grenada North,9.0
-Hataitai,Te Aro,7.0
-Hataitai,Titahi Bay/Onepoto/Elsdon,13.5
-Hataitai,Totara Park/Maoribank/Te Marua,14.5
-Hataitai,Trentham North/Wallaceville,12.5
-Hataitai,Trentham West/Eldersley/Clouston Park,12.5
-Hataitai,Vogeltown/Berhampore/Newtown,2.0
-Hataitai,Wadestown/Thordon,3.5
+Hataitai,Miramar/Strathmore,2.74
+Hataitai,Moera/Waiwhetu,7.04
+Hataitai,Mt Cook,5.48
+Hataitai,Mt Victoria/Roseneath,1.56
+Hataitai,Ngaio/Kaiwharawhara/Wilton,9.39
+Hataitai,Northland,5.48
+Hataitai,Oriental Bay/Seatoun,2.74
+Hataitai,Papakowhai/Whitby/Pauatahanui,10.56
+Hataitai,Paramata/Mana/Pukerua Bay,9.0
+Hataitai,Paraparaumu/Raumati,13.3
+Hataitai,Petone West/Alicetown,7.04
+Hataitai,Petone/Esplanade,7.04
+Hataitai,Porirua East/Waitangirua,9.39
+Hataitai,Stokes Valley,10.56
+Hataitai,Taita/Naenae,7.82
+Hataitai,Tawa/Grenada North,7.04
+Hataitai,Te Aro,5.48
+Hataitai,Titahi Bay/Onepoto/Elsdon,10.56
+Hataitai,Totara Park/Maoribank/Te Marua,11.34
+Hataitai,Trentham North/Wallaceville,9.78
+Hataitai,Trentham West/Eldersley/Clouston Park,9.78
+Hataitai,Vogeltown/Berhampore/Newtown,1.56
+Hataitai,Wadestown/Thordon,2.74
 Hataitai,Waikanae/Otaki,
-Hataitai,Wainuiomata,12.5
-Hataitai,Western Hills/Haywards,9.0
-Heretaunga/Silverstream,Brooklyn,11.5
+Hataitai,Wainuiomata,9.78
+Hataitai,Western Hills/Haywards,7.04
+Heretaunga/Silverstream,Brooklyn,9.0
 Heretaunga/Silverstream,Carterton/South Wairarapa,
-Heretaunga/Silverstream,Eastern Bays,10.0
-Heretaunga/Silverstream,Epuni/Avalon,3.5
-Heretaunga/Silverstream,Hataitai,11.5
-Heretaunga/Silverstream,Hutt Central/Waterloo,5.0
-Heretaunga/Silverstream,Island Bay/Melrose,13.0
-Heretaunga/Silverstream,Johnsonville/Newlands,15.0
-Heretaunga/Silverstream,Karori,13.0
-Heretaunga/Silverstream,Karori South/Makara,13.5
-Heretaunga/Silverstream,Kelburn/Aro Valley,11.5
-Heretaunga/Silverstream,Khandallah,13.0
-Heretaunga/Silverstream,Kilbirnie/Lyall Bay,11.5
-Heretaunga/Silverstream,Kingston/Happy Valley,11.5
-Heretaunga/Silverstream,Lambton,10.0
+Heretaunga/Silverstream,Eastern Bays,7.82
+Heretaunga/Silverstream,Epuni/Avalon,2.74
+Heretaunga/Silverstream,Hataitai,9.0
+Heretaunga/Silverstream,Hutt Central/Waterloo,3.91
+Heretaunga/Silverstream,Island Bay/Melrose,10.17
+Heretaunga/Silverstream,Johnsonville/Newlands,11.74
+Heretaunga/Silverstream,Karori,10.17
+Heretaunga/Silverstream,Karori South/Makara,10.56
+Heretaunga/Silverstream,Kelburn/Aro Valley,9.0
+Heretaunga/Silverstream,Khandallah,10.17
+Heretaunga/Silverstream,Kilbirnie/Lyall Bay,9.0
+Heretaunga/Silverstream,Kingston/Happy Valley,9.0
+Heretaunga/Silverstream,Lambton,7.82
 Heretaunga/Silverstream,Masterton,
-Heretaunga/Silverstream,Miramar/Strathmore,13.5
-Heretaunga/Silverstream,Moera/Waiwhetu,7.0
-Heretaunga/Silverstream,Mt Cook,11.5
-Heretaunga/Silverstream,Mt Victoria/Roseneath,10.0
-Heretaunga/Silverstream,Ngaio/Kaiwharawhara/Wilton,13.0
-Heretaunga/Silverstream,Northland,11.5
-Heretaunga/Silverstream,Oriental Bay/Seatoun,13.5
-Heretaunga/Silverstream,Papakowhai/Whitby/Pauatahanui,11.0
-Heretaunga/Silverstream,Paramata/Mana/Pukerua Bay,16.0
-Heretaunga/Silverstream,Paraparaumu/Raumati,21.5
-Heretaunga/Silverstream,Petone West/Alicetown,7.0
-Heretaunga/Silverstream,Petone/Esplanade,5.0
-Heretaunga/Silverstream,Porirua East/Waitangirua,16.5
-Heretaunga/Silverstream,Stokes Valley,4.0
-Heretaunga/Silverstream,Taita/Naenae,5.5
-Heretaunga/Silverstream,Tawa/Grenada North,13.5
-Heretaunga/Silverstream,Te Aro,10.0
-Heretaunga/Silverstream,Titahi Bay/Onepoto/Elsdon,12.5
-Heretaunga/Silverstream,Totara Park/Maoribank/Te Marua,3.5
-Heretaunga/Silverstream,Trentham North/Wallaceville,3.5
-Heretaunga/Silverstream,Trentham West/Eldersley/Clouston Park,3.5
-Heretaunga/Silverstream,Vogeltown/Berhampore/Newtown,11.5
-Heretaunga/Silverstream,Wadestown/Thordon,8.0
+Heretaunga/Silverstream,Miramar/Strathmore,10.56
+Heretaunga/Silverstream,Moera/Waiwhetu,5.48
+Heretaunga/Silverstream,Mt Cook,9.0
+Heretaunga/Silverstream,Mt Victoria/Roseneath,7.82
+Heretaunga/Silverstream,Ngaio/Kaiwharawhara/Wilton,10.17
+Heretaunga/Silverstream,Northland,9.0
+Heretaunga/Silverstream,Oriental Bay/Seatoun,10.56
+Heretaunga/Silverstream,Papakowhai/Whitby/Pauatahanui,8.61
+Heretaunga/Silverstream,Paramata/Mana/Pukerua Bay,12.52
+Heretaunga/Silverstream,Paraparaumu/Raumati,16.82
+Heretaunga/Silverstream,Petone West/Alicetown,5.48
+Heretaunga/Silverstream,Petone/Esplanade,3.91
+Heretaunga/Silverstream,Porirua East/Waitangirua,12.91
+Heretaunga/Silverstream,Stokes Valley,3.13
+Heretaunga/Silverstream,Taita/Naenae,4.3
+Heretaunga/Silverstream,Tawa/Grenada North,10.56
+Heretaunga/Silverstream,Te Aro,7.82
+Heretaunga/Silverstream,Titahi Bay/Onepoto/Elsdon,9.78
+Heretaunga/Silverstream,Totara Park/Maoribank/Te Marua,2.74
+Heretaunga/Silverstream,Trentham North/Wallaceville,2.74
+Heretaunga/Silverstream,Trentham West/Eldersley/Clouston Park,2.74
+Heretaunga/Silverstream,Vogeltown/Berhampore/Newtown,9.0
+Heretaunga/Silverstream,Wadestown/Thordon,6.26
 Heretaunga/Silverstream,Waikanae/Otaki,
-Heretaunga/Silverstream,Wainuiomata,8.5
-Heretaunga/Silverstream,Western Hills/Haywards,9.0
-Hutt Central/Waterloo,Brooklyn,9.0
+Heretaunga/Silverstream,Wainuiomata,6.65
+Heretaunga/Silverstream,Western Hills/Haywards,7.04
+Hutt Central/Waterloo,Brooklyn,7.04
 Hutt Central/Waterloo,Carterton/South Wairarapa,
-Hutt Central/Waterloo,Eastern Bays,5.0
-Hutt Central/Waterloo,Epuni/Avalon,3.5
-Hutt Central/Waterloo,Hataitai,9.0
-Hutt Central/Waterloo,Heretaunga/Silverstream,5.0
-Hutt Central/Waterloo,Island Bay/Melrose,10.5
-Hutt Central/Waterloo,Johnsonville/Newlands,10.5
-Hutt Central/Waterloo,Karori,10.5
-Hutt Central/Waterloo,Karori South/Makara,14.0
-Hutt Central/Waterloo,Kelburn/Aro Valley,9.0
-Hutt Central/Waterloo,Khandallah,10.5
-Hutt Central/Waterloo,Kilbirnie/Lyall Bay,10.5
-Hutt Central/Waterloo,Kingston/Happy Valley,9.0
-Hutt Central/Waterloo,Lambton,5.5
+Hutt Central/Waterloo,Eastern Bays,3.91
+Hutt Central/Waterloo,Epuni/Avalon,2.74
+Hutt Central/Waterloo,Hataitai,7.04
+Hutt Central/Waterloo,Heretaunga/Silverstream,3.91
+Hutt Central/Waterloo,Island Bay/Melrose,8.22
+Hutt Central/Waterloo,Johnsonville/Newlands,8.22
+Hutt Central/Waterloo,Karori,8.22
+Hutt Central/Waterloo,Karori South/Makara,10.95
+Hutt Central/Waterloo,Kelburn/Aro Valley,7.04
+Hutt Central/Waterloo,Khandallah,8.22
+Hutt Central/Waterloo,Kilbirnie/Lyall Bay,8.22
+Hutt Central/Waterloo,Kingston/Happy Valley,7.04
+Hutt Central/Waterloo,Lambton,4.3
 Hutt Central/Waterloo,Masterton,
-Hutt Central/Waterloo,Miramar/Strathmore,10.5
-Hutt Central/Waterloo,Moera/Waiwhetu,2.0
-Hutt Central/Waterloo,Mt Cook,9.0
-Hutt Central/Waterloo,Mt Victoria/Roseneath,13.5
-Hutt Central/Waterloo,Ngaio/Kaiwharawhara/Wilton,10.5
-Hutt Central/Waterloo,Northland,9.0
-Hutt Central/Waterloo,Oriental Bay/Seatoun,10.5
-Hutt Central/Waterloo,Papakowhai/Whitby/Pauatahanui,15.5
-Hutt Central/Waterloo,Paramata/Mana/Pukerua Bay,13.5
-Hutt Central/Waterloo,Paraparaumu/Raumati,19.0
+Hutt Central/Waterloo,Miramar/Strathmore,8.22
+Hutt Central/Waterloo,Moera/Waiwhetu,1.56
+Hutt Central/Waterloo,Mt Cook,7.04
+Hutt Central/Waterloo,Mt Victoria/Roseneath,10.56
+Hutt Central/Waterloo,Ngaio/Kaiwharawhara/Wilton,8.22
+Hutt Central/Waterloo,Northland,7.04
+Hutt Central/Waterloo,Oriental Bay/Seatoun,8.22
+Hutt Central/Waterloo,Papakowhai/Whitby/Pauatahanui,12.13
+Hutt Central/Waterloo,Paramata/Mana/Pukerua Bay,10.56
+Hutt Central/Waterloo,Paraparaumu/Raumati,14.87
 Hutt Central/Waterloo,Petone West/Alicetown,
-Hutt Central/Waterloo,Petone/Esplanade,4.0
-Hutt Central/Waterloo,Porirua East/Waitangirua,14.0
-Hutt Central/Waterloo,Stokes Valley,5.0
-Hutt Central/Waterloo,Taita/Naenae,3.5
-Hutt Central/Waterloo,Tawa/Grenada North,15.5
-Hutt Central/Waterloo,Te Aro,13.5
-Hutt Central/Waterloo,Titahi Bay/Onepoto/Elsdon,15.5
-Hutt Central/Waterloo,Totara Park/Maoribank/Te Marua,7.5
-Hutt Central/Waterloo,Trentham North/Wallaceville,7.5
-Hutt Central/Waterloo,Trentham West/Eldersley/Clouston Park,7.5
-Hutt Central/Waterloo,Vogeltown/Berhampore/Newtown,9.0
-Hutt Central/Waterloo,Wadestown/Thordon,5.5
+Hutt Central/Waterloo,Petone/Esplanade,3.13
+Hutt Central/Waterloo,Porirua East/Waitangirua,10.95
+Hutt Central/Waterloo,Stokes Valley,3.91
+Hutt Central/Waterloo,Taita/Naenae,2.74
+Hutt Central/Waterloo,Tawa/Grenada North,12.13
+Hutt Central/Waterloo,Te Aro,10.56
+Hutt Central/Waterloo,Titahi Bay/Onepoto/Elsdon,12.13
+Hutt Central/Waterloo,Totara Park/Maoribank/Te Marua,5.87
+Hutt Central/Waterloo,Trentham North/Wallaceville,5.87
+Hutt Central/Waterloo,Trentham West/Eldersley/Clouston Park,5.87
+Hutt Central/Waterloo,Vogeltown/Berhampore/Newtown,7.04
+Hutt Central/Waterloo,Wadestown/Thordon,4.3
 Hutt Central/Waterloo,Waikanae/Otaki,
-Hutt Central/Waterloo,Wainuiomata,3.5
-Hutt Central/Waterloo,Western Hills/Haywards,4.0
-Island Bay/Melrose,Brooklyn,3.5
+Hutt Central/Waterloo,Wainuiomata,2.74
+Hutt Central/Waterloo,Western Hills/Haywards,3.13
+Island Bay/Melrose,Brooklyn,2.74
 Island Bay/Melrose,Carterton/South Wairarapa,
-Island Bay/Melrose,Eastern Bays,13.0
-Island Bay/Melrose,Epuni/Avalon,13.5
-Island Bay/Melrose,Hataitai,12.0
-Island Bay/Melrose,Heretaunga/Silverstream,13.0
-Island Bay/Melrose,Hutt Central/Waterloo,10.5
-Island Bay/Melrose,Johnsonville/Newlands,12.0
-Island Bay/Melrose,Karori,10.0
-Island Bay/Melrose,Karori South/Makara,8.5
-Island Bay/Melrose,Kelburn/Aro Valley,5.0
-Island Bay/Melrose,Khandallah,10.0
-Island Bay/Melrose,Kilbirnie/Lyall Bay,2.0
-Island Bay/Melrose,Kingston/Happy Valley,3.5
-Island Bay/Melrose,Lambton,5.0
+Island Bay/Melrose,Eastern Bays,10.17
+Island Bay/Melrose,Epuni/Avalon,10.56
+Island Bay/Melrose,Hataitai,9.39
+Island Bay/Melrose,Heretaunga/Silverstream,10.17
+Island Bay/Melrose,Hutt Central/Waterloo,8.22
+Island Bay/Melrose,Johnsonville/Newlands,9.39
+Island Bay/Melrose,Karori,7.82
+Island Bay/Melrose,Karori South/Makara,6.65
+Island Bay/Melrose,Kelburn/Aro Valley,3.91
+Island Bay/Melrose,Khandallah,7.82
+Island Bay/Melrose,Kilbirnie/Lyall Bay,1.56
+Island Bay/Melrose,Kingston/Happy Valley,2.74
+Island Bay/Melrose,Lambton,3.91
 Island Bay/Melrose,Masterton,
-Island Bay/Melrose,Miramar/Strathmore,7.0
-Island Bay/Melrose,Moera/Waiwhetu,10.5
-Island Bay/Melrose,Mt Cook,3.5
-Island Bay/Melrose,Mt Victoria/Roseneath,5.0
-Island Bay/Melrose,Ngaio/Kaiwharawhara/Wilton,10.0
-Island Bay/Melrose,Northland,8.5
-Island Bay/Melrose,Oriental Bay/Seatoun,7.0
-Island Bay/Melrose,Papakowhai/Whitby/Pauatahanui,15.0
-Island Bay/Melrose,Paramata/Mana/Pukerua Bay,13.0
-Island Bay/Melrose,Paraparaumu/Raumati,18.5
-Island Bay/Melrose,Petone West/Alicetown,10.5
-Island Bay/Melrose,Petone/Esplanade,10.5
-Island Bay/Melrose,Porirua East/Waitangirua,13.5
-Island Bay/Melrose,Stokes Valley,15.5
-Island Bay/Melrose,Taita/Naenae,11.5
-Island Bay/Melrose,Tawa/Grenada North,10.5
-Island Bay/Melrose,Te Aro,5.0
-Island Bay/Melrose,Titahi Bay/Onepoto/Elsdon,15.0
-Island Bay/Melrose,Totara Park/Maoribank/Te Marua,16.0
-Island Bay/Melrose,Trentham North/Wallaceville,14.0
-Island Bay/Melrose,Trentham West/Eldersley/Clouston Park,14.0
-Island Bay/Melrose,Vogeltown/Berhampore/Newtown,3.5
-Island Bay/Melrose,Wadestown/Thordon,5.0
+Island Bay/Melrose,Miramar/Strathmore,5.48
+Island Bay/Melrose,Moera/Waiwhetu,8.22
+Island Bay/Melrose,Mt Cook,2.74
+Island Bay/Melrose,Mt Victoria/Roseneath,3.91
+Island Bay/Melrose,Ngaio/Kaiwharawhara/Wilton,7.82
+Island Bay/Melrose,Northland,6.65
+Island Bay/Melrose,Oriental Bay/Seatoun,5.48
+Island Bay/Melrose,Papakowhai/Whitby/Pauatahanui,11.74
+Island Bay/Melrose,Paramata/Mana/Pukerua Bay,10.17
+Island Bay/Melrose,Paraparaumu/Raumati,14.47
+Island Bay/Melrose,Petone West/Alicetown,8.22
+Island Bay/Melrose,Petone/Esplanade,8.22
+Island Bay/Melrose,Porirua East/Waitangirua,10.56
+Island Bay/Melrose,Stokes Valley,12.13
+Island Bay/Melrose,Taita/Naenae,9.0
+Island Bay/Melrose,Tawa/Grenada North,8.22
+Island Bay/Melrose,Te Aro,3.91
+Island Bay/Melrose,Titahi Bay/Onepoto/Elsdon,11.74
+Island Bay/Melrose,Totara Park/Maoribank/Te Marua,12.52
+Island Bay/Melrose,Trentham North/Wallaceville,10.95
+Island Bay/Melrose,Trentham West/Eldersley/Clouston Park,10.95
+Island Bay/Melrose,Vogeltown/Berhampore/Newtown,2.74
+Island Bay/Melrose,Wadestown/Thordon,3.91
 Island Bay/Melrose,Waikanae/Otaki,
-Island Bay/Melrose,Wainuiomata,14.0
-Island Bay/Melrose,Western Hills/Haywards,10.5
-Johnsonville/Newlands,Brooklyn,8.5
+Island Bay/Melrose,Wainuiomata,10.95
+Island Bay/Melrose,Western Hills/Haywards,8.22
+Johnsonville/Newlands,Brooklyn,6.65
 Johnsonville/Newlands,Carterton/South Wairarapa,
-Johnsonville/Newlands,Eastern Bays,7.5
-Johnsonville/Newlands,Epuni/Avalon,10.5
-Johnsonville/Newlands,Hataitai,10.5
-Johnsonville/Newlands,Heretaunga/Silverstream,10.0
-Johnsonville/Newlands,Hutt Central/Waterloo,7.5
-Johnsonville/Newlands,Island Bay/Melrose,10.0
-Johnsonville/Newlands,Karori,10.0
-Johnsonville/Newlands,Karori South/Makara,3.5
-Johnsonville/Newlands,Kelburn/Aro Valley,8.5
-Johnsonville/Newlands,Khandallah,2.0
-Johnsonville/Newlands,Kilbirnie/Lyall Bay,12.0
-Johnsonville/Newlands,Kingston/Happy Valley,10.5
-Johnsonville/Newlands,Lambton,7.0
+Johnsonville/Newlands,Eastern Bays,5.87
+Johnsonville/Newlands,Epuni/Avalon,8.22
+Johnsonville/Newlands,Hataitai,8.22
+Johnsonville/Newlands,Heretaunga/Silverstream,7.82
+Johnsonville/Newlands,Hutt Central/Waterloo,5.87
+Johnsonville/Newlands,Island Bay/Melrose,7.82
+Johnsonville/Newlands,Karori,7.82
+Johnsonville/Newlands,Karori South/Makara,2.74
+Johnsonville/Newlands,Kelburn/Aro Valley,6.65
+Johnsonville/Newlands,Khandallah,1.56
+Johnsonville/Newlands,Kilbirnie/Lyall Bay,9.39
+Johnsonville/Newlands,Kingston/Happy Valley,8.22
+Johnsonville/Newlands,Lambton,5.48
 Johnsonville/Newlands,Masterton,
-Johnsonville/Newlands,Miramar/Strathmore,12.0
-Johnsonville/Newlands,Moera/Waiwhetu,7.5
-Johnsonville/Newlands,Mt Cook,8.5
-Johnsonville/Newlands,Mt Victoria/Roseneath,7.0
-Johnsonville/Newlands,Ngaio/Kaiwharawhara/Wilton,2.0
-Johnsonville/Newlands,Northland,8.5
-Johnsonville/Newlands,Oriental Bay/Seatoun,12.0
-Johnsonville/Newlands,Papakowhai/Whitby/Pauatahanui,8.5
-Johnsonville/Newlands,Paramata/Mana/Pukerua Bay,8.5
-Johnsonville/Newlands,Paraparaumu/Raumati,13.5
-Johnsonville/Newlands,Petone West/Alicetown,7.5
-Johnsonville/Newlands,Petone/Esplanade,5.5
-Johnsonville/Newlands,Porirua East/Waitangirua,7.0
-Johnsonville/Newlands,Stokes Valley,12.0
-Johnsonville/Newlands,Taita/Naenae,8.5
-Johnsonville/Newlands,Tawa/Grenada North,3.5
-Johnsonville/Newlands,Te Aro,7.0
-Johnsonville/Newlands,Titahi Bay/Onepoto/Elsdon,5.5
-Johnsonville/Newlands,Totara Park/Maoribank/Te Marua,13.0
-Johnsonville/Newlands,Trentham North/Wallaceville,11.0
-Johnsonville/Newlands,Trentham West/Eldersley/Clouston Park,11.0
-Johnsonville/Newlands,Vogeltown/Berhampore/Newtown,8.5
-Johnsonville/Newlands,Wadestown/Thordon,5.0
+Johnsonville/Newlands,Miramar/Strathmore,9.39
+Johnsonville/Newlands,Moera/Waiwhetu,5.87
+Johnsonville/Newlands,Mt Cook,6.65
+Johnsonville/Newlands,Mt Victoria/Roseneath,5.48
+Johnsonville/Newlands,Ngaio/Kaiwharawhara/Wilton,1.56
+Johnsonville/Newlands,Northland,6.65
+Johnsonville/Newlands,Oriental Bay/Seatoun,9.39
+Johnsonville/Newlands,Papakowhai/Whitby/Pauatahanui,6.65
+Johnsonville/Newlands,Paramata/Mana/Pukerua Bay,6.65
+Johnsonville/Newlands,Paraparaumu/Raumati,10.56
+Johnsonville/Newlands,Petone West/Alicetown,5.87
+Johnsonville/Newlands,Petone/Esplanade,4.3
+Johnsonville/Newlands,Porirua East/Waitangirua,5.48
+Johnsonville/Newlands,Stokes Valley,9.39
+Johnsonville/Newlands,Taita/Naenae,6.65
+Johnsonville/Newlands,Tawa/Grenada North,2.74
+Johnsonville/Newlands,Te Aro,5.48
+Johnsonville/Newlands,Titahi Bay/Onepoto/Elsdon,4.3
+Johnsonville/Newlands,Totara Park/Maoribank/Te Marua,10.17
+Johnsonville/Newlands,Trentham North/Wallaceville,8.61
+Johnsonville/Newlands,Trentham West/Eldersley/Clouston Park,8.61
+Johnsonville/Newlands,Vogeltown/Berhampore/Newtown,6.65
+Johnsonville/Newlands,Wadestown/Thordon,3.91
 Johnsonville/Newlands,Waikanae/Otaki,
-Johnsonville/Newlands,Wainuiomata,11.0
-Johnsonville/Newlands,Western Hills/Haywards,9.5
-Karori,Brooklyn,8.5
+Johnsonville/Newlands,Wainuiomata,8.61
+Johnsonville/Newlands,Western Hills/Haywards,7.43
+Karori,Brooklyn,6.65
 Karori,Carterton/South Wairarapa,
-Karori,Eastern Bays,16.0
-Karori,Epuni/Avalon,14.0
-Karori,Hataitai,8.5
-Karori,Heretaunga/Silverstream,18.0
-Karori,Hutt Central/Waterloo,10.5
-Karori,Island Bay/Melrose,10.0
-Karori,Johnsonville/Newlands,10.0
-Karori,Karori South/Makara,6.0
-Karori,Kelburn/Aro Valley,3.5
-Karori,Khandallah,10.0
-Karori,Kilbirnie/Lyall Bay,10.0
-Karori,Kingston/Happy Valley,8.5
-Karori,Lambton,5.0
+Karori,Eastern Bays,12.52
+Karori,Epuni/Avalon,10.95
+Karori,Hataitai,6.65
+Karori,Heretaunga/Silverstream,14.08
+Karori,Hutt Central/Waterloo,8.22
+Karori,Island Bay/Melrose,7.82
+Karori,Johnsonville/Newlands,7.82
+Karori,Karori South/Makara,4.69
+Karori,Kelburn/Aro Valley,2.74
+Karori,Khandallah,7.82
+Karori,Kilbirnie/Lyall Bay,7.82
+Karori,Kingston/Happy Valley,6.65
+Karori,Lambton,3.91
 Karori,Masterton,
-Karori,Miramar/Strathmore,10.0
-Karori,Moera/Waiwhetu,10.5
-Karori,Mt Cook,8.5
-Karori,Mt Victoria/Roseneath,5.0
-Karori,Ngaio/Kaiwharawhara/Wilton,10.0
-Karori,Northland,2.0
-Karori,Oriental Bay/Seatoun,10.0
-Karori,Papakowhai/Whitby/Pauatahanui,15.0
-Karori,Paramata/Mana/Pukerua Bay,13.0
-Karori,Paraparaumu/Raumati,18.5
-Karori,Petone West/Alicetown,10.5
-Karori,Petone/Esplanade,10.5
-Karori,Porirua East/Waitangirua,13.5
-Karori,Stokes Valley,15.5
-Karori,Taita/Naenae,14.0
-Karori,Tawa/Grenada North,10.5
-Karori,Te Aro,5.0
-Karori,Titahi Bay/Onepoto/Elsdon,15.0
-Karori,Totara Park/Maoribank/Te Marua,16.0
-Karori,Trentham North/Wallaceville,16.0
-Karori,Trentham West/Eldersley/Clouston Park,14.0
-Karori,Vogeltown/Berhampore/Newtown,8.5
-Karori,Wadestown/Thordon,5.0
+Karori,Miramar/Strathmore,7.82
+Karori,Moera/Waiwhetu,8.22
+Karori,Mt Cook,6.65
+Karori,Mt Victoria/Roseneath,3.91
+Karori,Ngaio/Kaiwharawhara/Wilton,7.82
+Karori,Northland,1.56
+Karori,Oriental Bay/Seatoun,7.82
+Karori,Papakowhai/Whitby/Pauatahanui,11.74
+Karori,Paramata/Mana/Pukerua Bay,10.17
+Karori,Paraparaumu/Raumati,14.47
+Karori,Petone West/Alicetown,8.22
+Karori,Petone/Esplanade,8.22
+Karori,Porirua East/Waitangirua,10.56
+Karori,Stokes Valley,12.13
+Karori,Taita/Naenae,10.95
+Karori,Tawa/Grenada North,8.22
+Karori,Te Aro,3.91
+Karori,Titahi Bay/Onepoto/Elsdon,11.74
+Karori,Totara Park/Maoribank/Te Marua,12.52
+Karori,Trentham North/Wallaceville,12.52
+Karori,Trentham West/Eldersley/Clouston Park,10.95
+Karori,Vogeltown/Berhampore/Newtown,6.65
+Karori,Wadestown/Thordon,3.91
 Karori,Waikanae/Otaki,
-Karori,Wainuiomata,14.0
-Karori,Western Hills/Haywards,10.5
-Karori South/Makara,Brooklyn,7.0
+Karori,Wainuiomata,10.95
+Karori,Western Hills/Haywards,8.22
+Karori South/Makara,Brooklyn,5.48
 Karori South/Makara,Carterton/South Wairarapa,
-Karori South/Makara,Eastern Bays,14.5
-Karori South/Makara,Epuni/Avalon,12.0
-Karori South/Makara,Hataitai,7.0
-Karori South/Makara,Heretaunga/Silverstream,11.5
-Karori South/Makara,Hutt Central/Waterloo,9.0
-Karori South/Makara,Island Bay/Melrose,8.5
-Karori South/Makara,Johnsonville/Newlands,8.5
-Karori South/Makara,Karori,4.0
-Karori South/Makara,Kelburn/Aro Valley,2.0
-Karori South/Makara,Khandallah,7.0
-Karori South/Makara,Kilbirnie/Lyall Bay,8.5
-Karori South/Makara,Kingston/Happy Valley,7.0
-Karori South/Makara,Lambton,3.5
+Karori South/Makara,Eastern Bays,11.34
+Karori South/Makara,Epuni/Avalon,9.39
+Karori South/Makara,Hataitai,5.48
+Karori South/Makara,Heretaunga/Silverstream,9.0
+Karori South/Makara,Hutt Central/Waterloo,7.04
+Karori South/Makara,Island Bay/Melrose,6.65
+Karori South/Makara,Johnsonville/Newlands,6.65
+Karori South/Makara,Karori,3.13
+Karori South/Makara,Kelburn/Aro Valley,1.56
+Karori South/Makara,Khandallah,5.48
+Karori South/Makara,Kilbirnie/Lyall Bay,6.65
+Karori South/Makara,Kingston/Happy Valley,5.48
+Karori South/Makara,Lambton,2.74
 Karori South/Makara,Masterton,
-Karori South/Makara,Miramar/Strathmore,9.0
-Karori South/Makara,Moera/Waiwhetu,9.0
-Karori South/Makara,Mt Cook,7.0
-Karori South/Makara,Mt Victoria/Roseneath,3.5
-Karori South/Makara,Ngaio/Kaiwharawhara/Wilton,2.0
-Karori South/Makara,Northland,2.0
-Karori South/Makara,Oriental Bay/Seatoun,9.0
-Karori South/Makara,Papakowhai/Whitby/Pauatahanui,13.5
-Karori South/Makara,Paramata/Mana/Pukerua Bay,11.5
-Karori South/Makara,Paraparaumu/Raumati,17.0
-Karori South/Makara,Petone West/Alicetown,9.0
-Karori South/Makara,Petone/Esplanade,12.5
-Karori South/Makara,Porirua East/Waitangirua,12.0
-Karori South/Makara,Stokes Valley,14.0
-Karori South/Makara,Taita/Naenae,10.0
-Karori South/Makara,Tawa/Grenada North,9.0
-Karori South/Makara,Te Aro,5.5
-Karori South/Makara,Titahi Bay/Onepoto/Elsdon,13.5
-Karori South/Makara,Totara Park/Maoribank/Te Marua,14.5
-Karori South/Makara,Trentham North/Wallaceville,12.5
-Karori South/Makara,Trentham West/Eldersley/Clouston Park,12.5
-Karori South/Makara,Vogeltown/Berhampore/Newtown,5.0
-Karori South/Makara,Wadestown/Thordon,2.0
+Karori South/Makara,Miramar/Strathmore,7.04
+Karori South/Makara,Moera/Waiwhetu,7.04
+Karori South/Makara,Mt Cook,5.48
+Karori South/Makara,Mt Victoria/Roseneath,2.74
+Karori South/Makara,Ngaio/Kaiwharawhara/Wilton,1.56
+Karori South/Makara,Northland,1.56
+Karori South/Makara,Oriental Bay/Seatoun,7.04
+Karori South/Makara,Papakowhai/Whitby/Pauatahanui,10.56
+Karori South/Makara,Paramata/Mana/Pukerua Bay,9.0
+Karori South/Makara,Paraparaumu/Raumati,13.3
+Karori South/Makara,Petone West/Alicetown,7.04
+Karori South/Makara,Petone/Esplanade,9.78
+Karori South/Makara,Porirua East/Waitangirua,9.39
+Karori South/Makara,Stokes Valley,10.95
+Karori South/Makara,Taita/Naenae,7.82
+Karori South/Makara,Tawa/Grenada North,7.04
+Karori South/Makara,Te Aro,4.3
+Karori South/Makara,Titahi Bay/Onepoto/Elsdon,10.56
+Karori South/Makara,Totara Park/Maoribank/Te Marua,11.34
+Karori South/Makara,Trentham North/Wallaceville,9.78
+Karori South/Makara,Trentham West/Eldersley/Clouston Park,9.78
+Karori South/Makara,Vogeltown/Berhampore/Newtown,3.91
+Karori South/Makara,Wadestown/Thordon,1.56
 Karori South/Makara,Waikanae/Otaki,
-Karori South/Makara,Wainuiomata,12.5
-Karori South/Makara,Western Hills/Haywards,9.0
-Kelburn/Aro Valley,Brooklyn,3.5
+Karori South/Makara,Wainuiomata,9.78
+Karori South/Makara,Western Hills/Haywards,7.04
+Kelburn/Aro Valley,Brooklyn,2.74
 Kelburn/Aro Valley,Carterton/South Wairarapa,
-Kelburn/Aro Valley,Eastern Bays,14.5
-Kelburn/Aro Valley,Epuni/Avalon,12.0
-Kelburn/Aro Valley,Hataitai,3.5
-Kelburn/Aro Valley,Heretaunga/Silverstream,11.5
-Kelburn/Aro Valley,Hutt Central/Waterloo,9.0
-Kelburn/Aro Valley,Island Bay/Melrose,8.5
-Kelburn/Aro Valley,Johnsonville/Newlands,5.5
-Kelburn/Aro Valley,Karori,3.5
-Kelburn/Aro Valley,Karori South/Makara,2.0
-Kelburn/Aro Valley,Khandallah,3.5
-Kelburn/Aro Valley,Kilbirnie/Lyall Bay,5.0
-Kelburn/Aro Valley,Kingston/Happy Valley,3.5
-Kelburn/Aro Valley,Lambton,3.5
+Kelburn/Aro Valley,Eastern Bays,11.34
+Kelburn/Aro Valley,Epuni/Avalon,9.39
+Kelburn/Aro Valley,Hataitai,2.74
+Kelburn/Aro Valley,Heretaunga/Silverstream,9.0
+Kelburn/Aro Valley,Hutt Central/Waterloo,7.04
+Kelburn/Aro Valley,Island Bay/Melrose,6.65
+Kelburn/Aro Valley,Johnsonville/Newlands,4.3
+Kelburn/Aro Valley,Karori,2.74
+Kelburn/Aro Valley,Karori South/Makara,1.56
+Kelburn/Aro Valley,Khandallah,2.74
+Kelburn/Aro Valley,Kilbirnie/Lyall Bay,3.91
+Kelburn/Aro Valley,Kingston/Happy Valley,2.74
+Kelburn/Aro Valley,Lambton,2.74
 Kelburn/Aro Valley,Masterton,
-Kelburn/Aro Valley,Miramar/Strathmore,5.0
-Kelburn/Aro Valley,Moera/Waiwhetu,9.0
-Kelburn/Aro Valley,Mt Cook,5.0
-Kelburn/Aro Valley,Mt Victoria/Roseneath,8.0
-Kelburn/Aro Valley,Ngaio/Kaiwharawhara/Wilton,3.5
-Kelburn/Aro Valley,Northland,2.0
-Kelburn/Aro Valley,Oriental Bay/Seatoun,5.0
-Kelburn/Aro Valley,Papakowhai/Whitby/Pauatahanui,13.5
-Kelburn/Aro Valley,Paramata/Mana/Pukerua Bay,11.5
-Kelburn/Aro Valley,Paraparaumu/Raumati,17.0
-Kelburn/Aro Valley,Petone West/Alicetown,9.0
-Kelburn/Aro Valley,Petone/Esplanade,5.5
-Kelburn/Aro Valley,Porirua East/Waitangirua,12.0
-Kelburn/Aro Valley,Stokes Valley,13.5
-Kelburn/Aro Valley,Taita/Naenae,10.0
-Kelburn/Aro Valley,Tawa/Grenada North,13.5
-Kelburn/Aro Valley,Te Aro,3.5
-Kelburn/Aro Valley,Titahi Bay/Onepoto/Elsdon,13.5
-Kelburn/Aro Valley,Totara Park/Maoribank/Te Marua,14.5
-Kelburn/Aro Valley,Trentham North/Wallaceville,12.5
-Kelburn/Aro Valley,Trentham West/Eldersley/Clouston Park,12.5
-Kelburn/Aro Valley,Vogeltown/Berhampore/Newtown,5.0
-Kelburn/Aro Valley,Wadestown/Thordon,3.5
+Kelburn/Aro Valley,Miramar/Strathmore,3.91
+Kelburn/Aro Valley,Moera/Waiwhetu,7.04
+Kelburn/Aro Valley,Mt Cook,3.91
+Kelburn/Aro Valley,Mt Victoria/Roseneath,6.26
+Kelburn/Aro Valley,Ngaio/Kaiwharawhara/Wilton,2.74
+Kelburn/Aro Valley,Northland,1.56
+Kelburn/Aro Valley,Oriental Bay/Seatoun,3.91
+Kelburn/Aro Valley,Papakowhai/Whitby/Pauatahanui,10.56
+Kelburn/Aro Valley,Paramata/Mana/Pukerua Bay,9.0
+Kelburn/Aro Valley,Paraparaumu/Raumati,13.3
+Kelburn/Aro Valley,Petone West/Alicetown,7.04
+Kelburn/Aro Valley,Petone/Esplanade,4.3
+Kelburn/Aro Valley,Porirua East/Waitangirua,9.39
+Kelburn/Aro Valley,Stokes Valley,10.56
+Kelburn/Aro Valley,Taita/Naenae,7.82
+Kelburn/Aro Valley,Tawa/Grenada North,10.56
+Kelburn/Aro Valley,Te Aro,2.74
+Kelburn/Aro Valley,Titahi Bay/Onepoto/Elsdon,10.56
+Kelburn/Aro Valley,Totara Park/Maoribank/Te Marua,11.34
+Kelburn/Aro Valley,Trentham North/Wallaceville,9.78
+Kelburn/Aro Valley,Trentham West/Eldersley/Clouston Park,9.78
+Kelburn/Aro Valley,Vogeltown/Berhampore/Newtown,3.91
+Kelburn/Aro Valley,Wadestown/Thordon,2.74
 Kelburn/Aro Valley,Waikanae/Otaki,
-Kelburn/Aro Valley,Wainuiomata,12.5
-Kelburn/Aro Valley,Western Hills/Haywards,9.0
-Khandallah,Brooklyn,8.5
+Kelburn/Aro Valley,Wainuiomata,9.78
+Kelburn/Aro Valley,Western Hills/Haywards,7.04
+Khandallah,Brooklyn,6.65
 Khandallah,Carterton/South Wairarapa,
-Khandallah,Eastern Bays,5.5
-Khandallah,Epuni/Avalon,13.5
-Khandallah,Hataitai,8.5
-Khandallah,Heretaunga/Silverstream,13.0
-Khandallah,Hutt Central/Waterloo,10.5
-Khandallah,Island Bay/Melrose,10.0
-Khandallah,Johnsonville/Newlands,4.0
-Khandallah,Karori,10.0
-Khandallah,Karori South/Makara,3.5
-Khandallah,Kelburn/Aro Valley,5.0
-Khandallah,Kilbirnie/Lyall Bay,10.0
-Khandallah,Kingston/Happy Valley,8.5
-Khandallah,Lambton,5.0
+Khandallah,Eastern Bays,4.3
+Khandallah,Epuni/Avalon,10.56
+Khandallah,Hataitai,6.65
+Khandallah,Heretaunga/Silverstream,10.17
+Khandallah,Hutt Central/Waterloo,8.22
+Khandallah,Island Bay/Melrose,7.82
+Khandallah,Johnsonville/Newlands,3.13
+Khandallah,Karori,7.82
+Khandallah,Karori South/Makara,2.74
+Khandallah,Kelburn/Aro Valley,3.91
+Khandallah,Kilbirnie/Lyall Bay,7.82
+Khandallah,Kingston/Happy Valley,6.65
+Khandallah,Lambton,3.91
 Khandallah,Masterton,
-Khandallah,Miramar/Strathmore,5.0
-Khandallah,Moera/Waiwhetu,10.5
-Khandallah,Mt Cook,8.5
-Khandallah,Mt Victoria/Roseneath,5.0
-Khandallah,Ngaio/Kaiwharawhara/Wilton,2.0
-Khandallah,Northland,8.5
-Khandallah,Oriental Bay/Seatoun,10.0
-Khandallah,Papakowhai/Whitby/Pauatahanui,10.5
-Khandallah,Paramata/Mana/Pukerua Bay,13.0
-Khandallah,Paraparaumu/Raumati,15.5
-Khandallah,Petone West/Alicetown,10.5
-Khandallah,Petone/Esplanade,3.5
-Khandallah,Porirua East/Waitangirua,9.0
-Khandallah,Stokes Valley,15.0
-Khandallah,Taita/Naenae,11.5
-Khandallah,Tawa/Grenada North,5.5
-Khandallah,Te Aro,5.0
-Khandallah,Titahi Bay/Onepoto/Elsdon,7.5
-Khandallah,Totara Park/Maoribank/Te Marua,16.0
-Khandallah,Trentham North/Wallaceville,14.0
-Khandallah,Trentham West/Eldersley/Clouston Park,14.0
-Khandallah,Vogeltown/Berhampore/Newtown,8.5
-Khandallah,Wadestown/Thordon,5.0
+Khandallah,Miramar/Strathmore,3.91
+Khandallah,Moera/Waiwhetu,8.22
+Khandallah,Mt Cook,6.65
+Khandallah,Mt Victoria/Roseneath,3.91
+Khandallah,Ngaio/Kaiwharawhara/Wilton,1.56
+Khandallah,Northland,6.65
+Khandallah,Oriental Bay/Seatoun,7.82
+Khandallah,Papakowhai/Whitby/Pauatahanui,8.22
+Khandallah,Paramata/Mana/Pukerua Bay,10.17
+Khandallah,Paraparaumu/Raumati,12.13
+Khandallah,Petone West/Alicetown,8.22
+Khandallah,Petone/Esplanade,2.74
+Khandallah,Porirua East/Waitangirua,7.04
+Khandallah,Stokes Valley,11.74
+Khandallah,Taita/Naenae,9.0
+Khandallah,Tawa/Grenada North,4.3
+Khandallah,Te Aro,3.91
+Khandallah,Titahi Bay/Onepoto/Elsdon,5.87
+Khandallah,Totara Park/Maoribank/Te Marua,12.52
+Khandallah,Trentham North/Wallaceville,10.95
+Khandallah,Trentham West/Eldersley/Clouston Park,10.95
+Khandallah,Vogeltown/Berhampore/Newtown,6.65
+Khandallah,Wadestown/Thordon,3.91
 Khandallah,Waikanae/Otaki,
-Khandallah,Wainuiomata,14.0
-Khandallah,Western Hills/Haywards,10.5
-Kilbirnie/Lyall Bay,Brooklyn,3.5
+Khandallah,Wainuiomata,10.95
+Khandallah,Western Hills/Haywards,8.22
+Kilbirnie/Lyall Bay,Brooklyn,2.74
 Kilbirnie/Lyall Bay,Carterton/South Wairarapa,
-Kilbirnie/Lyall Bay,Eastern Bays,13.0
-Kilbirnie/Lyall Bay,Epuni/Avalon,13.5
-Kilbirnie/Lyall Bay,Hataitai,3.5
-Kilbirnie/Lyall Bay,Heretaunga/Silverstream,18.0
-Kilbirnie/Lyall Bay,Hutt Central/Waterloo,10.5
-Kilbirnie/Lyall Bay,Island Bay/Melrose,7.0
-Kilbirnie/Lyall Bay,Johnsonville/Newlands,10.0
-Kilbirnie/Lyall Bay,Karori,5.0
-Kilbirnie/Lyall Bay,Karori South/Makara,8.5
-Kilbirnie/Lyall Bay,Kelburn/Aro Valley,5.0
-Kilbirnie/Lyall Bay,Khandallah,8.5
-Kilbirnie/Lyall Bay,Kingston/Happy Valley,5.5
-Kilbirnie/Lyall Bay,Lambton,5.0
+Kilbirnie/Lyall Bay,Eastern Bays,10.17
+Kilbirnie/Lyall Bay,Epuni/Avalon,10.56
+Kilbirnie/Lyall Bay,Hataitai,2.74
+Kilbirnie/Lyall Bay,Heretaunga/Silverstream,14.08
+Kilbirnie/Lyall Bay,Hutt Central/Waterloo,8.22
+Kilbirnie/Lyall Bay,Island Bay/Melrose,5.48
+Kilbirnie/Lyall Bay,Johnsonville/Newlands,7.82
+Kilbirnie/Lyall Bay,Karori,3.91
+Kilbirnie/Lyall Bay,Karori South/Makara,6.65
+Kilbirnie/Lyall Bay,Kelburn/Aro Valley,3.91
+Kilbirnie/Lyall Bay,Khandallah,6.65
+Kilbirnie/Lyall Bay,Kingston/Happy Valley,4.3
+Kilbirnie/Lyall Bay,Lambton,3.91
 Kilbirnie/Lyall Bay,Masterton,
-Kilbirnie/Lyall Bay,Miramar/Strathmore,2.0
-Kilbirnie/Lyall Bay,Moera/Waiwhetu,10.5
-Kilbirnie/Lyall Bay,Mt Cook,3.5
-Kilbirnie/Lyall Bay,Mt Victoria/Roseneath,3.5
-Kilbirnie/Lyall Bay,Ngaio/Kaiwharawhara/Wilton,12.0
-Kilbirnie/Lyall Bay,Northland,5.0
-Kilbirnie/Lyall Bay,Oriental Bay/Seatoun,2.0
-Kilbirnie/Lyall Bay,Papakowhai/Whitby/Pauatahanui,15.0
-Kilbirnie/Lyall Bay,Paramata/Mana/Pukerua Bay,13.0
-Kilbirnie/Lyall Bay,Paraparaumu/Raumati,18.5
-Kilbirnie/Lyall Bay,Petone West/Alicetown,10.0
-Kilbirnie/Lyall Bay,Petone/Esplanade,10.0
-Kilbirnie/Lyall Bay,Porirua East/Waitangirua,13.5
-Kilbirnie/Lyall Bay,Stokes Valley,15.0
-Kilbirnie/Lyall Bay,Taita/Naenae,11.5
-Kilbirnie/Lyall Bay,Tawa/Grenada North,10.5
-Kilbirnie/Lyall Bay,Te Aro,5.0
-Kilbirnie/Lyall Bay,Titahi Bay/Onepoto/Elsdon,15.0
-Kilbirnie/Lyall Bay,Totara Park/Maoribank/Te Marua,16.0
-Kilbirnie/Lyall Bay,Trentham North/Wallaceville,16.0
-Kilbirnie/Lyall Bay,Trentham West/Eldersley/Clouston Park,14.0
-Kilbirnie/Lyall Bay,Vogeltown/Berhampore/Newtown,3.5
-Kilbirnie/Lyall Bay,Wadestown/Thordon,7.0
+Kilbirnie/Lyall Bay,Miramar/Strathmore,1.56
+Kilbirnie/Lyall Bay,Moera/Waiwhetu,8.22
+Kilbirnie/Lyall Bay,Mt Cook,2.74
+Kilbirnie/Lyall Bay,Mt Victoria/Roseneath,2.74
+Kilbirnie/Lyall Bay,Ngaio/Kaiwharawhara/Wilton,9.39
+Kilbirnie/Lyall Bay,Northland,3.91
+Kilbirnie/Lyall Bay,Oriental Bay/Seatoun,1.56
+Kilbirnie/Lyall Bay,Papakowhai/Whitby/Pauatahanui,11.74
+Kilbirnie/Lyall Bay,Paramata/Mana/Pukerua Bay,10.17
+Kilbirnie/Lyall Bay,Paraparaumu/Raumati,14.47
+Kilbirnie/Lyall Bay,Petone West/Alicetown,7.82
+Kilbirnie/Lyall Bay,Petone/Esplanade,7.82
+Kilbirnie/Lyall Bay,Porirua East/Waitangirua,10.56
+Kilbirnie/Lyall Bay,Stokes Valley,11.74
+Kilbirnie/Lyall Bay,Taita/Naenae,9.0
+Kilbirnie/Lyall Bay,Tawa/Grenada North,8.22
+Kilbirnie/Lyall Bay,Te Aro,3.91
+Kilbirnie/Lyall Bay,Titahi Bay/Onepoto/Elsdon,11.74
+Kilbirnie/Lyall Bay,Totara Park/Maoribank/Te Marua,12.52
+Kilbirnie/Lyall Bay,Trentham North/Wallaceville,12.52
+Kilbirnie/Lyall Bay,Trentham West/Eldersley/Clouston Park,10.95
+Kilbirnie/Lyall Bay,Vogeltown/Berhampore/Newtown,2.74
+Kilbirnie/Lyall Bay,Wadestown/Thordon,5.48
 Kilbirnie/Lyall Bay,Waikanae/Otaki,
-Kilbirnie/Lyall Bay,Wainuiomata,14.0
-Kilbirnie/Lyall Bay,Western Hills/Haywards,10.5
-Kingston/Happy Valley,Brooklyn,2.0
+Kilbirnie/Lyall Bay,Wainuiomata,10.95
+Kilbirnie/Lyall Bay,Western Hills/Haywards,8.22
+Kingston/Happy Valley,Brooklyn,1.56
 Kingston/Happy Valley,Carterton/South Wairarapa,
-Kingston/Happy Valley,Eastern Bays,11.5
-Kingston/Happy Valley,Epuni/Avalon,12.0
-Kingston/Happy Valley,Hataitai,10.5
-Kingston/Happy Valley,Heretaunga/Silverstream,16.5
-Kingston/Happy Valley,Hutt Central/Waterloo,9.0
-Kingston/Happy Valley,Island Bay/Melrose,2.0
-Kingston/Happy Valley,Johnsonville/Newlands,8.5
-Kingston/Happy Valley,Karori,8.5
-Kingston/Happy Valley,Karori South/Makara,7.0
-Kingston/Happy Valley,Kelburn/Aro Valley,7.0
-Kingston/Happy Valley,Khandallah,7.0
-Kingston/Happy Valley,Kilbirnie/Lyall Bay,4.0
-Kingston/Happy Valley,Lambton,3.5
+Kingston/Happy Valley,Eastern Bays,9.0
+Kingston/Happy Valley,Epuni/Avalon,9.39
+Kingston/Happy Valley,Hataitai,8.22
+Kingston/Happy Valley,Heretaunga/Silverstream,12.91
+Kingston/Happy Valley,Hutt Central/Waterloo,7.04
+Kingston/Happy Valley,Island Bay/Melrose,1.56
+Kingston/Happy Valley,Johnsonville/Newlands,6.65
+Kingston/Happy Valley,Karori,6.65
+Kingston/Happy Valley,Karori South/Makara,5.48
+Kingston/Happy Valley,Kelburn/Aro Valley,5.48
+Kingston/Happy Valley,Khandallah,5.48
+Kingston/Happy Valley,Kilbirnie/Lyall Bay,3.13
+Kingston/Happy Valley,Lambton,2.74
 Kingston/Happy Valley,Masterton,
-Kingston/Happy Valley,Miramar/Strathmore,5.5
-Kingston/Happy Valley,Moera/Waiwhetu,9.0
-Kingston/Happy Valley,Mt Cook,2.0
-Kingston/Happy Valley,Mt Victoria/Roseneath,3.5
-Kingston/Happy Valley,Ngaio/Kaiwharawhara/Wilton,8.5
-Kingston/Happy Valley,Northland,5.0
-Kingston/Happy Valley,Oriental Bay/Seatoun,5.5
-Kingston/Happy Valley,Papakowhai/Whitby/Pauatahanui,13.5
-Kingston/Happy Valley,Paramata/Mana/Pukerua Bay,11.5
-Kingston/Happy Valley,Paraparaumu/Raumati,17.0
-Kingston/Happy Valley,Petone West/Alicetown,9.0
-Kingston/Happy Valley,Petone/Esplanade,9.0
-Kingston/Happy Valley,Porirua East/Waitangirua,12.0
-Kingston/Happy Valley,Stokes Valley,14.0
-Kingston/Happy Valley,Taita/Naenae,10.0
-Kingston/Happy Valley,Tawa/Grenada North,9.0
-Kingston/Happy Valley,Te Aro,3.5
-Kingston/Happy Valley,Titahi Bay/Onepoto/Elsdon,13.5
-Kingston/Happy Valley,Totara Park/Maoribank/Te Marua,14.5
-Kingston/Happy Valley,Trentham North/Wallaceville,14.5
-Kingston/Happy Valley,Trentham West/Eldersley/Clouston Park,12.5
-Kingston/Happy Valley,Vogeltown/Berhampore/Newtown,2.0
-Kingston/Happy Valley,Wadestown/Thordon,3.5
+Kingston/Happy Valley,Miramar/Strathmore,4.3
+Kingston/Happy Valley,Moera/Waiwhetu,7.04
+Kingston/Happy Valley,Mt Cook,1.56
+Kingston/Happy Valley,Mt Victoria/Roseneath,2.74
+Kingston/Happy Valley,Ngaio/Kaiwharawhara/Wilton,6.65
+Kingston/Happy Valley,Northland,3.91
+Kingston/Happy Valley,Oriental Bay/Seatoun,4.3
+Kingston/Happy Valley,Papakowhai/Whitby/Pauatahanui,10.56
+Kingston/Happy Valley,Paramata/Mana/Pukerua Bay,9.0
+Kingston/Happy Valley,Paraparaumu/Raumati,13.3
+Kingston/Happy Valley,Petone West/Alicetown,7.04
+Kingston/Happy Valley,Petone/Esplanade,7.04
+Kingston/Happy Valley,Porirua East/Waitangirua,9.39
+Kingston/Happy Valley,Stokes Valley,10.95
+Kingston/Happy Valley,Taita/Naenae,7.82
+Kingston/Happy Valley,Tawa/Grenada North,7.04
+Kingston/Happy Valley,Te Aro,2.74
+Kingston/Happy Valley,Titahi Bay/Onepoto/Elsdon,10.56
+Kingston/Happy Valley,Totara Park/Maoribank/Te Marua,11.34
+Kingston/Happy Valley,Trentham North/Wallaceville,11.34
+Kingston/Happy Valley,Trentham West/Eldersley/Clouston Park,9.78
+Kingston/Happy Valley,Vogeltown/Berhampore/Newtown,1.56
+Kingston/Happy Valley,Wadestown/Thordon,2.74
 Kingston/Happy Valley,Waikanae/Otaki,
-Kingston/Happy Valley,Wainuiomata,12.5
-Kingston/Happy Valley,Western Hills/Haywards,9.0
-Lambton,Brooklyn,3.5
+Kingston/Happy Valley,Wainuiomata,9.78
+Kingston/Happy Valley,Western Hills/Haywards,7.04
+Lambton,Brooklyn,2.74
 Lambton,Carterton/South Wairarapa,
-Lambton,Eastern Bays,8.0
-Lambton,Epuni/Avalon,12.5
-Lambton,Hataitai,3.5
-Lambton,Heretaunga/Silverstream,8.0
-Lambton,Hutt Central/Waterloo,5.5
-Lambton,Island Bay/Melrose,5.0
-Lambton,Johnsonville/Newlands,5.0
-Lambton,Karori,5.0
-Lambton,Karori South/Makara,3.5
-Lambton,Kelburn/Aro Valley,3.5
-Lambton,Khandallah,5.0
-Lambton,Kilbirnie/Lyall Bay,5.0
-Lambton,Kingston/Happy Valley,3.5
+Lambton,Eastern Bays,6.26
+Lambton,Epuni/Avalon,9.78
+Lambton,Hataitai,2.74
+Lambton,Heretaunga/Silverstream,6.26
+Lambton,Hutt Central/Waterloo,4.3
+Lambton,Island Bay/Melrose,3.91
+Lambton,Johnsonville/Newlands,3.91
+Lambton,Karori,3.91
+Lambton,Karori South/Makara,2.74
+Lambton,Kelburn/Aro Valley,2.74
+Lambton,Khandallah,3.91
+Lambton,Kilbirnie/Lyall Bay,3.91
+Lambton,Kingston/Happy Valley,2.74
 Lambton,Masterton,
-Lambton,Miramar/Strathmore,5.0
-Lambton,Moera/Waiwhetu,5.5
-Lambton,Mt Cook,3.5
-Lambton,Mt Victoria/Roseneath,2.0
-Lambton,Ngaio/Kaiwharawhara/Wilton,5.0
-Lambton,Northland,3.5
-Lambton,Oriental Bay/Seatoun,5.0
-Lambton,Papakowhai/Whitby/Pauatahanui,10.0
-Lambton,Paramata/Mana/Pukerua Bay,8.0
-Lambton,Paraparaumu/Raumati,13.5
-Lambton,Petone West/Alicetown,9.0
-Lambton,Petone/Esplanade,11.0
-Lambton,Porirua East/Waitangirua,8.5
-Lambton,Stokes Valley,10.0
-Lambton,Taita/Naenae,6.5
-Lambton,Tawa/Grenada North,10.0
-Lambton,Te Aro,2.0
-Lambton,Titahi Bay/Onepoto/Elsdon,10.0
-Lambton,Totara Park/Maoribank/Te Marua,14.5
-Lambton,Trentham North/Wallaceville,14.5
-Lambton,Trentham West/Eldersley/Clouston Park,14.5
-Lambton,Vogeltown/Berhampore/Newtown,3.5
-Lambton,Wadestown/Thordon,2.0
+Lambton,Miramar/Strathmore,3.91
+Lambton,Moera/Waiwhetu,4.3
+Lambton,Mt Cook,2.74
+Lambton,Mt Victoria/Roseneath,1.56
+Lambton,Ngaio/Kaiwharawhara/Wilton,3.91
+Lambton,Northland,2.74
+Lambton,Oriental Bay/Seatoun,3.91
+Lambton,Papakowhai/Whitby/Pauatahanui,7.82
+Lambton,Paramata/Mana/Pukerua Bay,6.26
+Lambton,Paraparaumu/Raumati,10.56
+Lambton,Petone West/Alicetown,7.04
+Lambton,Petone/Esplanade,8.61
+Lambton,Porirua East/Waitangirua,6.65
+Lambton,Stokes Valley,7.82
+Lambton,Taita/Naenae,5.09
+Lambton,Tawa/Grenada North,7.82
+Lambton,Te Aro,1.56
+Lambton,Titahi Bay/Onepoto/Elsdon,7.82
+Lambton,Totara Park/Maoribank/Te Marua,11.34
+Lambton,Trentham North/Wallaceville,11.34
+Lambton,Trentham West/Eldersley/Clouston Park,11.34
+Lambton,Vogeltown/Berhampore/Newtown,2.74
+Lambton,Wadestown/Thordon,1.56
 Lambton,Waikanae/Otaki,
-Lambton,Wainuiomata,9.0
-Lambton,Western Hills/Haywards,5.5
+Lambton,Wainuiomata,7.04
+Lambton,Western Hills/Haywards,4.3
 Masterton,Brooklyn,
 Masterton,Carterton/South Wairarapa,
 Masterton,Eastern Bays,
@@ -713,972 +713,972 @@ Masterton,Wadestown/Thordon,
 Masterton,Waikanae/Otaki,
 Masterton,Wainuiomata,
 Masterton,Western Hills/Haywards,
-Miramar/Strathmore,Brooklyn,3.5
+Miramar/Strathmore,Brooklyn,2.74
 Miramar/Strathmore,Carterton/South Wairarapa,
-Miramar/Strathmore,Eastern Bays,13.0
-Miramar/Strathmore,Epuni/Avalon,13.5
-Miramar/Strathmore,Hataitai,5.5
-Miramar/Strathmore,Heretaunga/Silverstream,18.0
-Miramar/Strathmore,Hutt Central/Waterloo,10.5
-Miramar/Strathmore,Island Bay/Melrose,7.0
-Miramar/Strathmore,Johnsonville/Newlands,10.0
-Miramar/Strathmore,Karori,5.0
-Miramar/Strathmore,Karori South/Makara,8.5
-Miramar/Strathmore,Kelburn/Aro Valley,5.0
-Miramar/Strathmore,Khandallah,8.5
-Miramar/Strathmore,Kilbirnie/Lyall Bay,2.0
-Miramar/Strathmore,Kingston/Happy Valley,8.5
-Miramar/Strathmore,Lambton,5.0
+Miramar/Strathmore,Eastern Bays,10.17
+Miramar/Strathmore,Epuni/Avalon,10.56
+Miramar/Strathmore,Hataitai,4.3
+Miramar/Strathmore,Heretaunga/Silverstream,14.08
+Miramar/Strathmore,Hutt Central/Waterloo,8.22
+Miramar/Strathmore,Island Bay/Melrose,5.48
+Miramar/Strathmore,Johnsonville/Newlands,7.82
+Miramar/Strathmore,Karori,3.91
+Miramar/Strathmore,Karori South/Makara,6.65
+Miramar/Strathmore,Kelburn/Aro Valley,3.91
+Miramar/Strathmore,Khandallah,6.65
+Miramar/Strathmore,Kilbirnie/Lyall Bay,1.56
+Miramar/Strathmore,Kingston/Happy Valley,6.65
+Miramar/Strathmore,Lambton,3.91
 Miramar/Strathmore,Masterton,
-Miramar/Strathmore,Moera/Waiwhetu,10.5
-Miramar/Strathmore,Mt Cook,3.5
-Miramar/Strathmore,Mt Victoria/Roseneath,5.0
-Miramar/Strathmore,Ngaio/Kaiwharawhara/Wilton,10.0
-Miramar/Strathmore,Northland,5.0
-Miramar/Strathmore,Oriental Bay/Seatoun,2.0
-Miramar/Strathmore,Papakowhai/Whitby/Pauatahanui,15.0
-Miramar/Strathmore,Paramata/Mana/Pukerua Bay,13.0
-Miramar/Strathmore,Paraparaumu/Raumati,18.5
-Miramar/Strathmore,Petone West/Alicetown,10.5
-Miramar/Strathmore,Petone/Esplanade,10.5
-Miramar/Strathmore,Porirua East/Waitangirua,13.5
-Miramar/Strathmore,Stokes Valley,15.5
-Miramar/Strathmore,Taita/Naenae,11.5
-Miramar/Strathmore,Tawa/Grenada North,10.5
-Miramar/Strathmore,Te Aro,5.0
-Miramar/Strathmore,Titahi Bay/Onepoto/Elsdon,15.0
-Miramar/Strathmore,Totara Park/Maoribank/Te Marua,16.0
-Miramar/Strathmore,Trentham North/Wallaceville,16.0
-Miramar/Strathmore,Trentham West/Eldersley/Clouston Park,14.0
-Miramar/Strathmore,Vogeltown/Berhampore/Newtown,3.5
-Miramar/Strathmore,Wadestown/Thordon,7.0
+Miramar/Strathmore,Moera/Waiwhetu,8.22
+Miramar/Strathmore,Mt Cook,2.74
+Miramar/Strathmore,Mt Victoria/Roseneath,3.91
+Miramar/Strathmore,Ngaio/Kaiwharawhara/Wilton,7.82
+Miramar/Strathmore,Northland,3.91
+Miramar/Strathmore,Oriental Bay/Seatoun,1.56
+Miramar/Strathmore,Papakowhai/Whitby/Pauatahanui,11.74
+Miramar/Strathmore,Paramata/Mana/Pukerua Bay,10.17
+Miramar/Strathmore,Paraparaumu/Raumati,14.47
+Miramar/Strathmore,Petone West/Alicetown,8.22
+Miramar/Strathmore,Petone/Esplanade,8.22
+Miramar/Strathmore,Porirua East/Waitangirua,10.56
+Miramar/Strathmore,Stokes Valley,12.13
+Miramar/Strathmore,Taita/Naenae,9.0
+Miramar/Strathmore,Tawa/Grenada North,8.22
+Miramar/Strathmore,Te Aro,3.91
+Miramar/Strathmore,Titahi Bay/Onepoto/Elsdon,11.74
+Miramar/Strathmore,Totara Park/Maoribank/Te Marua,12.52
+Miramar/Strathmore,Trentham North/Wallaceville,12.52
+Miramar/Strathmore,Trentham West/Eldersley/Clouston Park,10.95
+Miramar/Strathmore,Vogeltown/Berhampore/Newtown,2.74
+Miramar/Strathmore,Wadestown/Thordon,5.48
 Miramar/Strathmore,Waikanae/Otaki,
-Miramar/Strathmore,Wainuiomata,14.0
-Miramar/Strathmore,Western Hills/Haywards,10.5
-Moera/Waiwhetu,Brooklyn,7.5
+Miramar/Strathmore,Wainuiomata,10.95
+Miramar/Strathmore,Western Hills/Haywards,8.22
+Moera/Waiwhetu,Brooklyn,5.87
 Moera/Waiwhetu,Carterton/South Wairarapa,
-Moera/Waiwhetu,Eastern Bays,7.0
-Moera/Waiwhetu,Epuni/Avalon,3.5
-Moera/Waiwhetu,Hataitai,9.0
-Moera/Waiwhetu,Heretaunga/Silverstream,5.0
-Moera/Waiwhetu,Hutt Central/Waterloo,2.0
-Moera/Waiwhetu,Island Bay/Melrose,10.5
-Moera/Waiwhetu,Johnsonville/Newlands,10.5
-Moera/Waiwhetu,Karori,10.5
-Moera/Waiwhetu,Karori South/Makara,9.0
-Moera/Waiwhetu,Kelburn/Aro Valley,9.0
-Moera/Waiwhetu,Khandallah,10.5
-Moera/Waiwhetu,Kilbirnie/Lyall Bay,10.5
-Moera/Waiwhetu,Kingston/Happy Valley,9.0
-Moera/Waiwhetu,Lambton,7.5
+Moera/Waiwhetu,Eastern Bays,5.48
+Moera/Waiwhetu,Epuni/Avalon,2.74
+Moera/Waiwhetu,Hataitai,7.04
+Moera/Waiwhetu,Heretaunga/Silverstream,3.91
+Moera/Waiwhetu,Hutt Central/Waterloo,1.56
+Moera/Waiwhetu,Island Bay/Melrose,8.22
+Moera/Waiwhetu,Johnsonville/Newlands,8.22
+Moera/Waiwhetu,Karori,8.22
+Moera/Waiwhetu,Karori South/Makara,7.04
+Moera/Waiwhetu,Kelburn/Aro Valley,7.04
+Moera/Waiwhetu,Khandallah,8.22
+Moera/Waiwhetu,Kilbirnie/Lyall Bay,8.22
+Moera/Waiwhetu,Kingston/Happy Valley,7.04
+Moera/Waiwhetu,Lambton,5.87
 Moera/Waiwhetu,Masterton,
-Moera/Waiwhetu,Miramar/Strathmore,10.5
-Moera/Waiwhetu,Mt Cook,9.0
-Moera/Waiwhetu,Mt Victoria/Roseneath,7.5
-Moera/Waiwhetu,Ngaio/Kaiwharawhara/Wilton,10.5
-Moera/Waiwhetu,Northland,9.0
-Moera/Waiwhetu,Oriental Bay/Seatoun,10.5
-Moera/Waiwhetu,Papakowhai/Whitby/Pauatahanui,11.5
-Moera/Waiwhetu,Paramata/Mana/Pukerua Bay,13.5
-Moera/Waiwhetu,Paraparaumu/Raumati,19.0
-Moera/Waiwhetu,Petone West/Alicetown,2.0
-Moera/Waiwhetu,Petone/Esplanade,2.0
-Moera/Waiwhetu,Porirua East/Waitangirua,14.0
-Moera/Waiwhetu,Stokes Valley,5.0
-Moera/Waiwhetu,Taita/Naenae,3.5
-Moera/Waiwhetu,Tawa/Grenada North,11.0
-Moera/Waiwhetu,Te Aro,7.5
-Moera/Waiwhetu,Titahi Bay/Onepoto/Elsdon,13.5
-Moera/Waiwhetu,Totara Park/Maoribank/Te Marua,8.5
-Moera/Waiwhetu,Trentham North/Wallaceville,5.5
-Moera/Waiwhetu,Trentham West/Eldersley/Clouston Park,5.5
-Moera/Waiwhetu,Vogeltown/Berhampore/Newtown,9.0
-Moera/Waiwhetu,Wadestown/Thordon,5.5
+Moera/Waiwhetu,Miramar/Strathmore,8.22
+Moera/Waiwhetu,Mt Cook,7.04
+Moera/Waiwhetu,Mt Victoria/Roseneath,5.87
+Moera/Waiwhetu,Ngaio/Kaiwharawhara/Wilton,8.22
+Moera/Waiwhetu,Northland,7.04
+Moera/Waiwhetu,Oriental Bay/Seatoun,8.22
+Moera/Waiwhetu,Papakowhai/Whitby/Pauatahanui,9.0
+Moera/Waiwhetu,Paramata/Mana/Pukerua Bay,10.56
+Moera/Waiwhetu,Paraparaumu/Raumati,14.87
+Moera/Waiwhetu,Petone West/Alicetown,1.56
+Moera/Waiwhetu,Petone/Esplanade,1.56
+Moera/Waiwhetu,Porirua East/Waitangirua,10.95
+Moera/Waiwhetu,Stokes Valley,3.91
+Moera/Waiwhetu,Taita/Naenae,2.74
+Moera/Waiwhetu,Tawa/Grenada North,8.61
+Moera/Waiwhetu,Te Aro,5.87
+Moera/Waiwhetu,Titahi Bay/Onepoto/Elsdon,10.56
+Moera/Waiwhetu,Totara Park/Maoribank/Te Marua,6.65
+Moera/Waiwhetu,Trentham North/Wallaceville,4.3
+Moera/Waiwhetu,Trentham West/Eldersley/Clouston Park,4.3
+Moera/Waiwhetu,Vogeltown/Berhampore/Newtown,7.04
+Moera/Waiwhetu,Wadestown/Thordon,4.3
 Moera/Waiwhetu,Waikanae/Otaki,
-Moera/Waiwhetu,Wainuiomata,3.5
-Moera/Waiwhetu,Western Hills/Haywards,4.0
-Mt Cook,Brooklyn,2.0
+Moera/Waiwhetu,Wainuiomata,2.74
+Moera/Waiwhetu,Western Hills/Haywards,3.13
+Mt Cook,Brooklyn,1.56
 Mt Cook,Carterton/South Wairarapa,
-Mt Cook,Eastern Bays,14.5
-Mt Cook,Epuni/Avalon,12.0
-Mt Cook,Hataitai,7.0
-Mt Cook,Heretaunga/Silverstream,11.5
-Mt Cook,Hutt Central/Waterloo,9.0
-Mt Cook,Island Bay/Melrose,3.5
-Mt Cook,Johnsonville/Newlands,8.5
-Mt Cook,Karori,5.0
-Mt Cook,Karori South/Makara,9.0
-Mt Cook,Kelburn/Aro Valley,5.0
-Mt Cook,Khandallah,8.5
-Mt Cook,Kilbirnie/Lyall Bay,3.5
-Mt Cook,Kingston/Happy Valley,2.0
-Mt Cook,Lambton,3.5
+Mt Cook,Eastern Bays,11.34
+Mt Cook,Epuni/Avalon,9.39
+Mt Cook,Hataitai,5.48
+Mt Cook,Heretaunga/Silverstream,9.0
+Mt Cook,Hutt Central/Waterloo,7.04
+Mt Cook,Island Bay/Melrose,2.74
+Mt Cook,Johnsonville/Newlands,6.65
+Mt Cook,Karori,3.91
+Mt Cook,Karori South/Makara,7.04
+Mt Cook,Kelburn/Aro Valley,3.91
+Mt Cook,Khandallah,6.65
+Mt Cook,Kilbirnie/Lyall Bay,2.74
+Mt Cook,Kingston/Happy Valley,1.56
+Mt Cook,Lambton,2.74
 Mt Cook,Masterton,
-Mt Cook,Miramar/Strathmore,3.5
-Mt Cook,Moera/Waiwhetu,9.0
-Mt Cook,Mt Victoria/Roseneath,3.5
-Mt Cook,Ngaio/Kaiwharawhara/Wilton,8.5
-Mt Cook,Northland,7.0
-Mt Cook,Oriental Bay/Seatoun,3.5
-Mt Cook,Papakowhai/Whitby/Pauatahanui,13.5
-Mt Cook,Paramata/Mana/Pukerua Bay,11.5
-Mt Cook,Paraparaumu/Raumati,17.0
-Mt Cook,Petone West/Alicetown,9.0
-Mt Cook,Petone/Esplanade,9.0
-Mt Cook,Porirua East/Waitangirua,12.0
-Mt Cook,Stokes Valley,13.5
-Mt Cook,Taita/Naenae,10.0
-Mt Cook,Tawa/Grenada North,9.0
-Mt Cook,Te Aro,3.5
-Mt Cook,Titahi Bay/Onepoto/Elsdon,13.5
-Mt Cook,Totara Park/Maoribank/Te Marua,14.5
-Mt Cook,Trentham North/Wallaceville,12.5
-Mt Cook,Trentham West/Eldersley/Clouston Park,12.5
-Mt Cook,Vogeltown/Berhampore/Newtown,2.0
-Mt Cook,Wadestown/Thordon,3.5
+Mt Cook,Miramar/Strathmore,2.74
+Mt Cook,Moera/Waiwhetu,7.04
+Mt Cook,Mt Victoria/Roseneath,2.74
+Mt Cook,Ngaio/Kaiwharawhara/Wilton,6.65
+Mt Cook,Northland,5.48
+Mt Cook,Oriental Bay/Seatoun,2.74
+Mt Cook,Papakowhai/Whitby/Pauatahanui,10.56
+Mt Cook,Paramata/Mana/Pukerua Bay,9.0
+Mt Cook,Paraparaumu/Raumati,13.3
+Mt Cook,Petone West/Alicetown,7.04
+Mt Cook,Petone/Esplanade,7.04
+Mt Cook,Porirua East/Waitangirua,9.39
+Mt Cook,Stokes Valley,10.56
+Mt Cook,Taita/Naenae,7.82
+Mt Cook,Tawa/Grenada North,7.04
+Mt Cook,Te Aro,2.74
+Mt Cook,Titahi Bay/Onepoto/Elsdon,10.56
+Mt Cook,Totara Park/Maoribank/Te Marua,11.34
+Mt Cook,Trentham North/Wallaceville,9.78
+Mt Cook,Trentham West/Eldersley/Clouston Park,9.78
+Mt Cook,Vogeltown/Berhampore/Newtown,1.56
+Mt Cook,Wadestown/Thordon,2.74
 Mt Cook,Waikanae/Otaki,
-Mt Cook,Wainuiomata,12.5
-Mt Cook,Western Hills/Haywards,9.0
-Mt Victoria/Roseneath,Brooklyn,3.5
+Mt Cook,Wainuiomata,9.78
+Mt Cook,Western Hills/Haywards,7.04
+Mt Victoria/Roseneath,Brooklyn,2.74
 Mt Victoria/Roseneath,Carterton/South Wairarapa,
-Mt Victoria/Roseneath,Eastern Bays,8.0
-Mt Victoria/Roseneath,Epuni/Avalon,10.5
-Mt Victoria/Roseneath,Hataitai,3.5
-Mt Victoria/Roseneath,Heretaunga/Silverstream,10.0
-Mt Victoria/Roseneath,Hutt Central/Waterloo,7.5
-Mt Victoria/Roseneath,Island Bay/Melrose,5.0
-Mt Victoria/Roseneath,Johnsonville/Newlands,5.0
-Mt Victoria/Roseneath,Karori,5.0
-Mt Victoria/Roseneath,Karori South/Makara,3.5
-Mt Victoria/Roseneath,Kelburn/Aro Valley,2.0
-Mt Victoria/Roseneath,Khandallah,7.0
-Mt Victoria/Roseneath,Kilbirnie/Lyall Bay,5.0
-Mt Victoria/Roseneath,Kingston/Happy Valley,3.5
-Mt Victoria/Roseneath,Lambton,2.0
+Mt Victoria/Roseneath,Eastern Bays,6.26
+Mt Victoria/Roseneath,Epuni/Avalon,8.22
+Mt Victoria/Roseneath,Hataitai,2.74
+Mt Victoria/Roseneath,Heretaunga/Silverstream,7.82
+Mt Victoria/Roseneath,Hutt Central/Waterloo,5.87
+Mt Victoria/Roseneath,Island Bay/Melrose,3.91
+Mt Victoria/Roseneath,Johnsonville/Newlands,3.91
+Mt Victoria/Roseneath,Karori,3.91
+Mt Victoria/Roseneath,Karori South/Makara,2.74
+Mt Victoria/Roseneath,Kelburn/Aro Valley,1.56
+Mt Victoria/Roseneath,Khandallah,5.48
+Mt Victoria/Roseneath,Kilbirnie/Lyall Bay,3.91
+Mt Victoria/Roseneath,Kingston/Happy Valley,2.74
+Mt Victoria/Roseneath,Lambton,1.56
 Mt Victoria/Roseneath,Masterton,
-Mt Victoria/Roseneath,Miramar/Strathmore,5.0
-Mt Victoria/Roseneath,Moera/Waiwhetu,7.5
-Mt Victoria/Roseneath,Mt Cook,3.5
-Mt Victoria/Roseneath,Ngaio/Kaiwharawhara/Wilton,7.0
-Mt Victoria/Roseneath,Northland,3.5
-Mt Victoria/Roseneath,Oriental Bay/Seatoun,5.0
-Mt Victoria/Roseneath,Papakowhai/Whitby/Pauatahanui,12.0
-Mt Victoria/Roseneath,Paramata/Mana/Pukerua Bay,10.0
-Mt Victoria/Roseneath,Paraparaumu/Raumati,15.5
-Mt Victoria/Roseneath,Petone West/Alicetown,7.5
+Mt Victoria/Roseneath,Miramar/Strathmore,3.91
+Mt Victoria/Roseneath,Moera/Waiwhetu,5.87
+Mt Victoria/Roseneath,Mt Cook,2.74
+Mt Victoria/Roseneath,Ngaio/Kaiwharawhara/Wilton,5.48
+Mt Victoria/Roseneath,Northland,2.74
+Mt Victoria/Roseneath,Oriental Bay/Seatoun,3.91
+Mt Victoria/Roseneath,Papakowhai/Whitby/Pauatahanui,9.39
+Mt Victoria/Roseneath,Paramata/Mana/Pukerua Bay,7.82
+Mt Victoria/Roseneath,Paraparaumu/Raumati,12.13
+Mt Victoria/Roseneath,Petone West/Alicetown,5.87
 Mt Victoria/Roseneath,Petone/Esplanade,
-Mt Victoria/Roseneath,Porirua East/Waitangirua,10.5
-Mt Victoria/Roseneath,Stokes Valley,12.0
+Mt Victoria/Roseneath,Porirua East/Waitangirua,8.22
+Mt Victoria/Roseneath,Stokes Valley,9.39
 Mt Victoria/Roseneath,Taita/Naenae,
-Mt Victoria/Roseneath,Tawa/Grenada North,7.5
-Mt Victoria/Roseneath,Te Aro,2.0
-Mt Victoria/Roseneath,Titahi Bay/Onepoto/Elsdon,12.0
-Mt Victoria/Roseneath,Totara Park/Maoribank/Te Marua,13.0
-Mt Victoria/Roseneath,Trentham North/Wallaceville,11.0
-Mt Victoria/Roseneath,Trentham West/Eldersley/Clouston Park,11.0
-Mt Victoria/Roseneath,Vogeltown/Berhampore/Newtown,3.5
-Mt Victoria/Roseneath,Wadestown/Thordon,2.0
+Mt Victoria/Roseneath,Tawa/Grenada North,5.87
+Mt Victoria/Roseneath,Te Aro,1.56
+Mt Victoria/Roseneath,Titahi Bay/Onepoto/Elsdon,9.39
+Mt Victoria/Roseneath,Totara Park/Maoribank/Te Marua,10.17
+Mt Victoria/Roseneath,Trentham North/Wallaceville,8.61
+Mt Victoria/Roseneath,Trentham West/Eldersley/Clouston Park,8.61
+Mt Victoria/Roseneath,Vogeltown/Berhampore/Newtown,2.74
+Mt Victoria/Roseneath,Wadestown/Thordon,1.56
 Mt Victoria/Roseneath,Waikanae/Otaki,
-Mt Victoria/Roseneath,Wainuiomata,11.0
-Mt Victoria/Roseneath,Western Hills/Haywards,7.5
-Ngaio/Kaiwharawhara/Wilton,Brooklyn,8.5
+Mt Victoria/Roseneath,Wainuiomata,8.61
+Mt Victoria/Roseneath,Western Hills/Haywards,5.87
+Ngaio/Kaiwharawhara/Wilton,Brooklyn,6.65
 Ngaio/Kaiwharawhara/Wilton,Carterton/South Wairarapa,
-Ngaio/Kaiwharawhara/Wilton,Eastern Bays,16.0
-Ngaio/Kaiwharawhara/Wilton,Epuni/Avalon,13.5
-Ngaio/Kaiwharawhara/Wilton,Hataitai,12.0
-Ngaio/Kaiwharawhara/Wilton,Heretaunga/Silverstream,13.0
-Ngaio/Kaiwharawhara/Wilton,Hutt Central/Waterloo,10.5
-Ngaio/Kaiwharawhara/Wilton,Island Bay/Melrose,10.0
-Ngaio/Kaiwharawhara/Wilton,Johnsonville/Newlands,4.0
-Ngaio/Kaiwharawhara/Wilton,Karori,10.0
-Ngaio/Kaiwharawhara/Wilton,Karori South/Makara,2.0
-Ngaio/Kaiwharawhara/Wilton,Kelburn/Aro Valley,5.0
-Ngaio/Kaiwharawhara/Wilton,Khandallah,2.0
-Ngaio/Kaiwharawhara/Wilton,Kilbirnie/Lyall Bay,12.0
-Ngaio/Kaiwharawhara/Wilton,Kingston/Happy Valley,8.5
-Ngaio/Kaiwharawhara/Wilton,Lambton,5.0
+Ngaio/Kaiwharawhara/Wilton,Eastern Bays,12.52
+Ngaio/Kaiwharawhara/Wilton,Epuni/Avalon,10.56
+Ngaio/Kaiwharawhara/Wilton,Hataitai,9.39
+Ngaio/Kaiwharawhara/Wilton,Heretaunga/Silverstream,10.17
+Ngaio/Kaiwharawhara/Wilton,Hutt Central/Waterloo,8.22
+Ngaio/Kaiwharawhara/Wilton,Island Bay/Melrose,7.82
+Ngaio/Kaiwharawhara/Wilton,Johnsonville/Newlands,3.13
+Ngaio/Kaiwharawhara/Wilton,Karori,7.82
+Ngaio/Kaiwharawhara/Wilton,Karori South/Makara,1.56
+Ngaio/Kaiwharawhara/Wilton,Kelburn/Aro Valley,3.91
+Ngaio/Kaiwharawhara/Wilton,Khandallah,1.56
+Ngaio/Kaiwharawhara/Wilton,Kilbirnie/Lyall Bay,9.39
+Ngaio/Kaiwharawhara/Wilton,Kingston/Happy Valley,6.65
+Ngaio/Kaiwharawhara/Wilton,Lambton,3.91
 Ngaio/Kaiwharawhara/Wilton,Masterton,
-Ngaio/Kaiwharawhara/Wilton,Miramar/Strathmore,10.0
-Ngaio/Kaiwharawhara/Wilton,Moera/Waiwhetu,10.5
-Ngaio/Kaiwharawhara/Wilton,Mt Cook,7.0
-Ngaio/Kaiwharawhara/Wilton,Mt Victoria/Roseneath,11.0
-Ngaio/Kaiwharawhara/Wilton,Northland,4.0
-Ngaio/Kaiwharawhara/Wilton,Oriental Bay/Seatoun,10.0
-Ngaio/Kaiwharawhara/Wilton,Papakowhai/Whitby/Pauatahanui,15.0
-Ngaio/Kaiwharawhara/Wilton,Paramata/Mana/Pukerua Bay,13.0
-Ngaio/Kaiwharawhara/Wilton,Paraparaumu/Raumati,18.5
-Ngaio/Kaiwharawhara/Wilton,Petone West/Alicetown,10.5
-Ngaio/Kaiwharawhara/Wilton,Petone/Esplanade,8.5
-Ngaio/Kaiwharawhara/Wilton,Porirua East/Waitangirua,13.5
-Ngaio/Kaiwharawhara/Wilton,Stokes Valley,15.0
-Ngaio/Kaiwharawhara/Wilton,Taita/Naenae,11.5
-Ngaio/Kaiwharawhara/Wilton,Tawa/Grenada North,15.0
-Ngaio/Kaiwharawhara/Wilton,Te Aro,7.0
-Ngaio/Kaiwharawhara/Wilton,Titahi Bay/Onepoto/Elsdon,7.5
-Ngaio/Kaiwharawhara/Wilton,Totara Park/Maoribank/Te Marua,16.0
-Ngaio/Kaiwharawhara/Wilton,Trentham North/Wallaceville,14.0
-Ngaio/Kaiwharawhara/Wilton,Trentham West/Eldersley/Clouston Park,14.0
-Ngaio/Kaiwharawhara/Wilton,Vogeltown/Berhampore/Newtown,8.5
-Ngaio/Kaiwharawhara/Wilton,Wadestown/Thordon,5.0
+Ngaio/Kaiwharawhara/Wilton,Miramar/Strathmore,7.82
+Ngaio/Kaiwharawhara/Wilton,Moera/Waiwhetu,8.22
+Ngaio/Kaiwharawhara/Wilton,Mt Cook,5.48
+Ngaio/Kaiwharawhara/Wilton,Mt Victoria/Roseneath,8.61
+Ngaio/Kaiwharawhara/Wilton,Northland,3.13
+Ngaio/Kaiwharawhara/Wilton,Oriental Bay/Seatoun,7.82
+Ngaio/Kaiwharawhara/Wilton,Papakowhai/Whitby/Pauatahanui,11.74
+Ngaio/Kaiwharawhara/Wilton,Paramata/Mana/Pukerua Bay,10.17
+Ngaio/Kaiwharawhara/Wilton,Paraparaumu/Raumati,14.47
+Ngaio/Kaiwharawhara/Wilton,Petone West/Alicetown,8.22
+Ngaio/Kaiwharawhara/Wilton,Petone/Esplanade,6.65
+Ngaio/Kaiwharawhara/Wilton,Porirua East/Waitangirua,10.56
+Ngaio/Kaiwharawhara/Wilton,Stokes Valley,11.74
+Ngaio/Kaiwharawhara/Wilton,Taita/Naenae,9.0
+Ngaio/Kaiwharawhara/Wilton,Tawa/Grenada North,11.74
+Ngaio/Kaiwharawhara/Wilton,Te Aro,5.48
+Ngaio/Kaiwharawhara/Wilton,Titahi Bay/Onepoto/Elsdon,5.87
+Ngaio/Kaiwharawhara/Wilton,Totara Park/Maoribank/Te Marua,12.52
+Ngaio/Kaiwharawhara/Wilton,Trentham North/Wallaceville,10.95
+Ngaio/Kaiwharawhara/Wilton,Trentham West/Eldersley/Clouston Park,10.95
+Ngaio/Kaiwharawhara/Wilton,Vogeltown/Berhampore/Newtown,6.65
+Ngaio/Kaiwharawhara/Wilton,Wadestown/Thordon,3.91
 Ngaio/Kaiwharawhara/Wilton,Waikanae/Otaki,
-Ngaio/Kaiwharawhara/Wilton,Wainuiomata,14.0
-Ngaio/Kaiwharawhara/Wilton,Western Hills/Haywards,10.5
-Northland,Brooklyn,7.0
+Ngaio/Kaiwharawhara/Wilton,Wainuiomata,10.95
+Ngaio/Kaiwharawhara/Wilton,Western Hills/Haywards,8.22
+Northland,Brooklyn,5.48
 Northland,Carterton/South Wairarapa,
-Northland,Eastern Bays,11.5
-Northland,Epuni/Avalon,12.0
-Northland,Hataitai,10.5
-Northland,Heretaunga/Silverstream,11.5
-Northland,Hutt Central/Waterloo,9.0
-Northland,Island Bay/Melrose,8.5
-Northland,Johnsonville/Newlands,5.5
-Northland,Karori,2.0
-Northland,Karori South/Makara,2.0
-Northland,Kelburn/Aro Valley,2.0
-Northland,Khandallah,3.5
-Northland,Kilbirnie/Lyall Bay,5.0
-Northland,Kingston/Happy Valley,5.0
-Northland,Lambton,3.5
+Northland,Eastern Bays,9.0
+Northland,Epuni/Avalon,9.39
+Northland,Hataitai,8.22
+Northland,Heretaunga/Silverstream,9.0
+Northland,Hutt Central/Waterloo,7.04
+Northland,Island Bay/Melrose,6.65
+Northland,Johnsonville/Newlands,4.3
+Northland,Karori,1.56
+Northland,Karori South/Makara,1.56
+Northland,Kelburn/Aro Valley,1.56
+Northland,Khandallah,2.74
+Northland,Kilbirnie/Lyall Bay,3.91
+Northland,Kingston/Happy Valley,3.91
+Northland,Lambton,2.74
 Northland,Masterton,
-Northland,Miramar/Strathmore,8.5
-Northland,Moera/Waiwhetu,9.0
-Northland,Mt Cook,5.0
-Northland,Mt Victoria/Roseneath,3.5
-Northland,Ngaio/Kaiwharawhara/Wilton,3.5
-Northland,Oriental Bay/Seatoun,8.5
-Northland,Papakowhai/Whitby/Pauatahanui,13.5
-Northland,Paramata/Mana/Pukerua Bay,11.5
-Northland,Paraparaumu/Raumati,17.0
-Northland,Petone West/Alicetown,9.0
-Northland,Petone/Esplanade,9.0
-Northland,Porirua East/Waitangirua,12.0
-Northland,Stokes Valley,13.5
-Northland,Taita/Naenae,10.0
-Northland,Tawa/Grenada North,13.5
-Northland,Te Aro,3.5
-Northland,Titahi Bay/Onepoto/Elsdon,13.5
-Northland,Totara Park/Maoribank/Te Marua,14.5
-Northland,Trentham North/Wallaceville,12.5
-Northland,Trentham West/Eldersley/Clouston Park,12.5
-Northland,Vogeltown/Berhampore/Newtown,5.0
-Northland,Wadestown/Thordon,5.5
+Northland,Miramar/Strathmore,6.65
+Northland,Moera/Waiwhetu,7.04
+Northland,Mt Cook,3.91
+Northland,Mt Victoria/Roseneath,2.74
+Northland,Ngaio/Kaiwharawhara/Wilton,2.74
+Northland,Oriental Bay/Seatoun,6.65
+Northland,Papakowhai/Whitby/Pauatahanui,10.56
+Northland,Paramata/Mana/Pukerua Bay,9.0
+Northland,Paraparaumu/Raumati,13.3
+Northland,Petone West/Alicetown,7.04
+Northland,Petone/Esplanade,7.04
+Northland,Porirua East/Waitangirua,9.39
+Northland,Stokes Valley,10.56
+Northland,Taita/Naenae,7.82
+Northland,Tawa/Grenada North,10.56
+Northland,Te Aro,2.74
+Northland,Titahi Bay/Onepoto/Elsdon,10.56
+Northland,Totara Park/Maoribank/Te Marua,11.34
+Northland,Trentham North/Wallaceville,9.78
+Northland,Trentham West/Eldersley/Clouston Park,9.78
+Northland,Vogeltown/Berhampore/Newtown,3.91
+Northland,Wadestown/Thordon,4.3
 Northland,Waikanae/Otaki,
-Northland,Wainuiomata,12.5
-Northland,Western Hills/Haywards,9.0
-Oriental Bay/Seatoun,Brooklyn,3.5
+Northland,Wainuiomata,9.78
+Northland,Western Hills/Haywards,7.04
+Oriental Bay/Seatoun,Brooklyn,2.74
 Oriental Bay/Seatoun,Carterton/South Wairarapa,
-Oriental Bay/Seatoun,Eastern Bays,13.0
-Oriental Bay/Seatoun,Epuni/Avalon,13.5
-Oriental Bay/Seatoun,Hataitai,3.5
-Oriental Bay/Seatoun,Heretaunga/Silverstream,13.0
-Oriental Bay/Seatoun,Hutt Central/Waterloo,10.5
-Oriental Bay/Seatoun,Island Bay/Melrose,7.0
-Oriental Bay/Seatoun,Johnsonville/Newlands,12.0
-Oriental Bay/Seatoun,Karori,10.0
-Oriental Bay/Seatoun,Karori South/Makara,8.5
-Oriental Bay/Seatoun,Kelburn/Aro Valley,5.0
-Oriental Bay/Seatoun,Khandallah,8.5
-Oriental Bay/Seatoun,Kilbirnie/Lyall Bay,2.0
-Oriental Bay/Seatoun,Kingston/Happy Valley,5.5
-Oriental Bay/Seatoun,Lambton,5.0
+Oriental Bay/Seatoun,Eastern Bays,10.17
+Oriental Bay/Seatoun,Epuni/Avalon,10.56
+Oriental Bay/Seatoun,Hataitai,2.74
+Oriental Bay/Seatoun,Heretaunga/Silverstream,10.17
+Oriental Bay/Seatoun,Hutt Central/Waterloo,8.22
+Oriental Bay/Seatoun,Island Bay/Melrose,5.48
+Oriental Bay/Seatoun,Johnsonville/Newlands,9.39
+Oriental Bay/Seatoun,Karori,7.82
+Oriental Bay/Seatoun,Karori South/Makara,6.65
+Oriental Bay/Seatoun,Kelburn/Aro Valley,3.91
+Oriental Bay/Seatoun,Khandallah,6.65
+Oriental Bay/Seatoun,Kilbirnie/Lyall Bay,1.56
+Oriental Bay/Seatoun,Kingston/Happy Valley,4.3
+Oriental Bay/Seatoun,Lambton,3.91
 Oriental Bay/Seatoun,Masterton,
 Oriental Bay/Seatoun,Miramar/Strathmore,
-Oriental Bay/Seatoun,Moera/Waiwhetu,10.5
-Oriental Bay/Seatoun,Mt Cook,3.5
-Oriental Bay/Seatoun,Mt Victoria/Roseneath,5.0
-Oriental Bay/Seatoun,Ngaio/Kaiwharawhara/Wilton,8.5
-Oriental Bay/Seatoun,Northland,8.5
-Oriental Bay/Seatoun,Papakowhai/Whitby/Pauatahanui,15.0
-Oriental Bay/Seatoun,Paramata/Mana/Pukerua Bay,13.0
-Oriental Bay/Seatoun,Paraparaumu/Raumati,18.5
-Oriental Bay/Seatoun,Petone West/Alicetown,10.5
-Oriental Bay/Seatoun,Petone/Esplanade,10.5
-Oriental Bay/Seatoun,Porirua East/Waitangirua,13.5
-Oriental Bay/Seatoun,Stokes Valley,15.5
-Oriental Bay/Seatoun,Taita/Naenae,11.5
-Oriental Bay/Seatoun,Tawa/Grenada North,10.5
-Oriental Bay/Seatoun,Te Aro,5.0
-Oriental Bay/Seatoun,Titahi Bay/Onepoto/Elsdon,15.0
-Oriental Bay/Seatoun,Totara Park/Maoribank/Te Marua,16.0
-Oriental Bay/Seatoun,Trentham North/Wallaceville,14.0
-Oriental Bay/Seatoun,Trentham West/Eldersley/Clouston Park,14.0
-Oriental Bay/Seatoun,Vogeltown/Berhampore/Newtown,3.5
-Oriental Bay/Seatoun,Wadestown/Thordon,7.0
+Oriental Bay/Seatoun,Moera/Waiwhetu,8.22
+Oriental Bay/Seatoun,Mt Cook,2.74
+Oriental Bay/Seatoun,Mt Victoria/Roseneath,3.91
+Oriental Bay/Seatoun,Ngaio/Kaiwharawhara/Wilton,6.65
+Oriental Bay/Seatoun,Northland,6.65
+Oriental Bay/Seatoun,Papakowhai/Whitby/Pauatahanui,11.74
+Oriental Bay/Seatoun,Paramata/Mana/Pukerua Bay,10.17
+Oriental Bay/Seatoun,Paraparaumu/Raumati,14.47
+Oriental Bay/Seatoun,Petone West/Alicetown,8.22
+Oriental Bay/Seatoun,Petone/Esplanade,8.22
+Oriental Bay/Seatoun,Porirua East/Waitangirua,10.56
+Oriental Bay/Seatoun,Stokes Valley,12.13
+Oriental Bay/Seatoun,Taita/Naenae,9.0
+Oriental Bay/Seatoun,Tawa/Grenada North,8.22
+Oriental Bay/Seatoun,Te Aro,3.91
+Oriental Bay/Seatoun,Titahi Bay/Onepoto/Elsdon,11.74
+Oriental Bay/Seatoun,Totara Park/Maoribank/Te Marua,12.52
+Oriental Bay/Seatoun,Trentham North/Wallaceville,10.95
+Oriental Bay/Seatoun,Trentham West/Eldersley/Clouston Park,10.95
+Oriental Bay/Seatoun,Vogeltown/Berhampore/Newtown,2.74
+Oriental Bay/Seatoun,Wadestown/Thordon,5.48
 Oriental Bay/Seatoun,Waikanae/Otaki,
-Oriental Bay/Seatoun,Wainuiomata,14.0
-Oriental Bay/Seatoun,Western Hills/Haywards,10.5
-Papakowhai/Whitby/Pauatahanui,Brooklyn,13.5
+Oriental Bay/Seatoun,Wainuiomata,10.95
+Oriental Bay/Seatoun,Western Hills/Haywards,8.22
+Papakowhai/Whitby/Pauatahanui,Brooklyn,10.56
 Papakowhai/Whitby/Pauatahanui,Carterton/South Wairarapa,
-Papakowhai/Whitby/Pauatahanui,Eastern Bays,21.0
-Papakowhai/Whitby/Pauatahanui,Epuni/Avalon,18.5
-Papakowhai/Whitby/Pauatahanui,Hataitai,13.5
-Papakowhai/Whitby/Pauatahanui,Heretaunga/Silverstream,18.0
-Papakowhai/Whitby/Pauatahanui,Hutt Central/Waterloo,15.5
-Papakowhai/Whitby/Pauatahanui,Island Bay/Melrose,15.0
-Papakowhai/Whitby/Pauatahanui,Johnsonville/Newlands,8.5
-Papakowhai/Whitby/Pauatahanui,Karori,15.0
-Papakowhai/Whitby/Pauatahanui,Karori South/Makara,12.0
-Papakowhai/Whitby/Pauatahanui,Kelburn/Aro Valley,13.5
-Papakowhai/Whitby/Pauatahanui,Khandallah,10.5
-Papakowhai/Whitby/Pauatahanui,Kilbirnie/Lyall Bay,15.0
-Papakowhai/Whitby/Pauatahanui,Kingston/Happy Valley,13.5
-Papakowhai/Whitby/Pauatahanui,Lambton,12.0
+Papakowhai/Whitby/Pauatahanui,Eastern Bays,16.43
+Papakowhai/Whitby/Pauatahanui,Epuni/Avalon,14.47
+Papakowhai/Whitby/Pauatahanui,Hataitai,10.56
+Papakowhai/Whitby/Pauatahanui,Heretaunga/Silverstream,14.08
+Papakowhai/Whitby/Pauatahanui,Hutt Central/Waterloo,12.13
+Papakowhai/Whitby/Pauatahanui,Island Bay/Melrose,11.74
+Papakowhai/Whitby/Pauatahanui,Johnsonville/Newlands,6.65
+Papakowhai/Whitby/Pauatahanui,Karori,11.74
+Papakowhai/Whitby/Pauatahanui,Karori South/Makara,9.39
+Papakowhai/Whitby/Pauatahanui,Kelburn/Aro Valley,10.56
+Papakowhai/Whitby/Pauatahanui,Khandallah,8.22
+Papakowhai/Whitby/Pauatahanui,Kilbirnie/Lyall Bay,11.74
+Papakowhai/Whitby/Pauatahanui,Kingston/Happy Valley,10.56
+Papakowhai/Whitby/Pauatahanui,Lambton,9.39
 Papakowhai/Whitby/Pauatahanui,Masterton,
-Papakowhai/Whitby/Pauatahanui,Miramar/Strathmore,15.0
-Papakowhai/Whitby/Pauatahanui,Moera/Waiwhetu,15.5
-Papakowhai/Whitby/Pauatahanui,Mt Cook,13.5
-Papakowhai/Whitby/Pauatahanui,Mt Victoria/Roseneath,12.0
-Papakowhai/Whitby/Pauatahanui,Ngaio/Kaiwharawhara/Wilton,15.0
-Papakowhai/Whitby/Pauatahanui,Northland,13.5
-Papakowhai/Whitby/Pauatahanui,Oriental Bay/Seatoun,15.0
-Papakowhai/Whitby/Pauatahanui,Paramata/Mana/Pukerua Bay,4.0
-Papakowhai/Whitby/Pauatahanui,Paraparaumu/Raumati,9.5
-Papakowhai/Whitby/Pauatahanui,Petone West/Alicetown,15.5
-Papakowhai/Whitby/Pauatahanui,Petone/Esplanade,15.5
-Papakowhai/Whitby/Pauatahanui,Porirua East/Waitangirua,4.0
-Papakowhai/Whitby/Pauatahanui,Stokes Valley,20.5
-Papakowhai/Whitby/Pauatahanui,Taita/Naenae,16.5
-Papakowhai/Whitby/Pauatahanui,Tawa/Grenada North,7.0
-Papakowhai/Whitby/Pauatahanui,Te Aro,12.0
-Papakowhai/Whitby/Pauatahanui,Titahi Bay/Onepoto/Elsdon,7.0
-Papakowhai/Whitby/Pauatahanui,Totara Park/Maoribank/Te Marua,21.0
-Papakowhai/Whitby/Pauatahanui,Trentham North/Wallaceville,19.0
-Papakowhai/Whitby/Pauatahanui,Trentham West/Eldersley/Clouston Park,19.0
-Papakowhai/Whitby/Pauatahanui,Vogeltown/Berhampore/Newtown,13.5
-Papakowhai/Whitby/Pauatahanui,Wadestown/Thordon,10.0
+Papakowhai/Whitby/Pauatahanui,Miramar/Strathmore,11.74
+Papakowhai/Whitby/Pauatahanui,Moera/Waiwhetu,12.13
+Papakowhai/Whitby/Pauatahanui,Mt Cook,10.56
+Papakowhai/Whitby/Pauatahanui,Mt Victoria/Roseneath,9.39
+Papakowhai/Whitby/Pauatahanui,Ngaio/Kaiwharawhara/Wilton,11.74
+Papakowhai/Whitby/Pauatahanui,Northland,10.56
+Papakowhai/Whitby/Pauatahanui,Oriental Bay/Seatoun,11.74
+Papakowhai/Whitby/Pauatahanui,Paramata/Mana/Pukerua Bay,3.13
+Papakowhai/Whitby/Pauatahanui,Paraparaumu/Raumati,7.43
+Papakowhai/Whitby/Pauatahanui,Petone West/Alicetown,12.13
+Papakowhai/Whitby/Pauatahanui,Petone/Esplanade,12.13
+Papakowhai/Whitby/Pauatahanui,Porirua East/Waitangirua,3.13
+Papakowhai/Whitby/Pauatahanui,Stokes Valley,16.04
+Papakowhai/Whitby/Pauatahanui,Taita/Naenae,12.91
+Papakowhai/Whitby/Pauatahanui,Tawa/Grenada North,5.48
+Papakowhai/Whitby/Pauatahanui,Te Aro,9.39
+Papakowhai/Whitby/Pauatahanui,Titahi Bay/Onepoto/Elsdon,5.48
+Papakowhai/Whitby/Pauatahanui,Totara Park/Maoribank/Te Marua,16.43
+Papakowhai/Whitby/Pauatahanui,Trentham North/Wallaceville,14.87
+Papakowhai/Whitby/Pauatahanui,Trentham West/Eldersley/Clouston Park,14.87
+Papakowhai/Whitby/Pauatahanui,Vogeltown/Berhampore/Newtown,10.56
+Papakowhai/Whitby/Pauatahanui,Wadestown/Thordon,7.82
 Papakowhai/Whitby/Pauatahanui,Waikanae/Otaki,
-Papakowhai/Whitby/Pauatahanui,Wainuiomata,19.0
-Papakowhai/Whitby/Pauatahanui,Western Hills/Haywards,15.5
-Paramata/Mana/Pukerua Bay,Brooklyn,11.5
+Papakowhai/Whitby/Pauatahanui,Wainuiomata,14.87
+Papakowhai/Whitby/Pauatahanui,Western Hills/Haywards,12.13
+Paramata/Mana/Pukerua Bay,Brooklyn,9.0
 Paramata/Mana/Pukerua Bay,Carterton/South Wairarapa,
-Paramata/Mana/Pukerua Bay,Eastern Bays,16.0
-Paramata/Mana/Pukerua Bay,Epuni/Avalon,16.5
-Paramata/Mana/Pukerua Bay,Hataitai,11.5
-Paramata/Mana/Pukerua Bay,Heretaunga/Silverstream,21.0
-Paramata/Mana/Pukerua Bay,Hutt Central/Waterloo,13.5
-Paramata/Mana/Pukerua Bay,Island Bay/Melrose,13.0
-Paramata/Mana/Pukerua Bay,Johnsonville/Newlands,8.5
-Paramata/Mana/Pukerua Bay,Karori,13.0
-Paramata/Mana/Pukerua Bay,Karori South/Makara,11.5
-Paramata/Mana/Pukerua Bay,Kelburn/Aro Valley,11.5
-Paramata/Mana/Pukerua Bay,Khandallah,13.0
-Paramata/Mana/Pukerua Bay,Kilbirnie/Lyall Bay,15.0
-Paramata/Mana/Pukerua Bay,Kingston/Happy Valley,11.5
-Paramata/Mana/Pukerua Bay,Lambton,8.0
+Paramata/Mana/Pukerua Bay,Eastern Bays,12.52
+Paramata/Mana/Pukerua Bay,Epuni/Avalon,12.91
+Paramata/Mana/Pukerua Bay,Hataitai,9.0
+Paramata/Mana/Pukerua Bay,Heretaunga/Silverstream,16.43
+Paramata/Mana/Pukerua Bay,Hutt Central/Waterloo,10.56
+Paramata/Mana/Pukerua Bay,Island Bay/Melrose,10.17
+Paramata/Mana/Pukerua Bay,Johnsonville/Newlands,6.65
+Paramata/Mana/Pukerua Bay,Karori,10.17
+Paramata/Mana/Pukerua Bay,Karori South/Makara,9.0
+Paramata/Mana/Pukerua Bay,Kelburn/Aro Valley,9.0
+Paramata/Mana/Pukerua Bay,Khandallah,10.17
+Paramata/Mana/Pukerua Bay,Kilbirnie/Lyall Bay,11.74
+Paramata/Mana/Pukerua Bay,Kingston/Happy Valley,9.0
+Paramata/Mana/Pukerua Bay,Lambton,6.26
 Paramata/Mana/Pukerua Bay,Masterton,
-Paramata/Mana/Pukerua Bay,Miramar/Strathmore,13.5
-Paramata/Mana/Pukerua Bay,Moera/Waiwhetu,13.5
-Paramata/Mana/Pukerua Bay,Mt Cook,11.5
-Paramata/Mana/Pukerua Bay,Mt Victoria/Roseneath,10.0
-Paramata/Mana/Pukerua Bay,Ngaio/Kaiwharawhara/Wilton,13.0
-Paramata/Mana/Pukerua Bay,Northland,11.5
-Paramata/Mana/Pukerua Bay,Oriental Bay/Seatoun,13.5
-Paramata/Mana/Pukerua Bay,Papakowhai/Whitby/Pauatahanui,4.0
-Paramata/Mana/Pukerua Bay,Paraparaumu/Raumati,7.5
-Paramata/Mana/Pukerua Bay,Petone West/Alicetown,13.5
-Paramata/Mana/Pukerua Bay,Petone/Esplanade,13.5
-Paramata/Mana/Pukerua Bay,Porirua East/Waitangirua,5.5
-Paramata/Mana/Pukerua Bay,Stokes Valley,18.5
-Paramata/Mana/Pukerua Bay,Taita/Naenae,14.5
-Paramata/Mana/Pukerua Bay,Tawa/Grenada North,7.0
-Paramata/Mana/Pukerua Bay,Te Aro,10.0
-Paramata/Mana/Pukerua Bay,Titahi Bay/Onepoto/Elsdon,7.0
-Paramata/Mana/Pukerua Bay,Totara Park/Maoribank/Te Marua,19.0
-Paramata/Mana/Pukerua Bay,Trentham North/Wallaceville,19.0
-Paramata/Mana/Pukerua Bay,Trentham West/Eldersley/Clouston Park,17.0
-Paramata/Mana/Pukerua Bay,Vogeltown/Berhampore/Newtown,11.5
-Paramata/Mana/Pukerua Bay,Wadestown/Thordon,10.0
+Paramata/Mana/Pukerua Bay,Miramar/Strathmore,10.56
+Paramata/Mana/Pukerua Bay,Moera/Waiwhetu,10.56
+Paramata/Mana/Pukerua Bay,Mt Cook,9.0
+Paramata/Mana/Pukerua Bay,Mt Victoria/Roseneath,7.82
+Paramata/Mana/Pukerua Bay,Ngaio/Kaiwharawhara/Wilton,10.17
+Paramata/Mana/Pukerua Bay,Northland,9.0
+Paramata/Mana/Pukerua Bay,Oriental Bay/Seatoun,10.56
+Paramata/Mana/Pukerua Bay,Papakowhai/Whitby/Pauatahanui,3.13
+Paramata/Mana/Pukerua Bay,Paraparaumu/Raumati,5.87
+Paramata/Mana/Pukerua Bay,Petone West/Alicetown,10.56
+Paramata/Mana/Pukerua Bay,Petone/Esplanade,10.56
+Paramata/Mana/Pukerua Bay,Porirua East/Waitangirua,4.3
+Paramata/Mana/Pukerua Bay,Stokes Valley,14.47
+Paramata/Mana/Pukerua Bay,Taita/Naenae,11.34
+Paramata/Mana/Pukerua Bay,Tawa/Grenada North,5.48
+Paramata/Mana/Pukerua Bay,Te Aro,7.82
+Paramata/Mana/Pukerua Bay,Titahi Bay/Onepoto/Elsdon,5.48
+Paramata/Mana/Pukerua Bay,Totara Park/Maoribank/Te Marua,14.87
+Paramata/Mana/Pukerua Bay,Trentham North/Wallaceville,14.87
+Paramata/Mana/Pukerua Bay,Trentham West/Eldersley/Clouston Park,13.3
+Paramata/Mana/Pukerua Bay,Vogeltown/Berhampore/Newtown,9.0
+Paramata/Mana/Pukerua Bay,Wadestown/Thordon,7.82
 Paramata/Mana/Pukerua Bay,Waikanae/Otaki,
-Paramata/Mana/Pukerua Bay,Wainuiomata,17.0
-Paramata/Mana/Pukerua Bay,Western Hills/Haywards,13.5
-Paraparaumu/Raumati,Brooklyn,17.0
+Paramata/Mana/Pukerua Bay,Wainuiomata,13.3
+Paramata/Mana/Pukerua Bay,Western Hills/Haywards,10.56
+Paraparaumu/Raumati,Brooklyn,13.3
 Paraparaumu/Raumati,Carterton/South Wairarapa,
-Paraparaumu/Raumati,Eastern Bays,21.5
-Paraparaumu/Raumati,Epuni/Avalon,22.0
-Paraparaumu/Raumati,Hataitai,17.0
-Paraparaumu/Raumati,Heretaunga/Silverstream,21.5
-Paraparaumu/Raumati,Hutt Central/Waterloo,19.0
-Paraparaumu/Raumati,Island Bay/Melrose,18.5
-Paraparaumu/Raumati,Johnsonville/Newlands,18.5
-Paraparaumu/Raumati,Karori,18.5
-Paraparaumu/Raumati,Karori South/Makara,17.0
-Paraparaumu/Raumati,Kelburn/Aro Valley,17.0
-Paraparaumu/Raumati,Khandallah,17.0
-Paraparaumu/Raumati,Kilbirnie/Lyall Bay,18.5
-Paraparaumu/Raumati,Kingston/Happy Valley,17.0
-Paraparaumu/Raumati,Lambton,13.5
+Paraparaumu/Raumati,Eastern Bays,16.82
+Paraparaumu/Raumati,Epuni/Avalon,17.21
+Paraparaumu/Raumati,Hataitai,13.3
+Paraparaumu/Raumati,Heretaunga/Silverstream,16.82
+Paraparaumu/Raumati,Hutt Central/Waterloo,14.87
+Paraparaumu/Raumati,Island Bay/Melrose,14.47
+Paraparaumu/Raumati,Johnsonville/Newlands,14.47
+Paraparaumu/Raumati,Karori,14.47
+Paraparaumu/Raumati,Karori South/Makara,13.3
+Paraparaumu/Raumati,Kelburn/Aro Valley,13.3
+Paraparaumu/Raumati,Khandallah,13.3
+Paraparaumu/Raumati,Kilbirnie/Lyall Bay,14.47
+Paraparaumu/Raumati,Kingston/Happy Valley,13.3
+Paraparaumu/Raumati,Lambton,10.56
 Paraparaumu/Raumati,Masterton,
-Paraparaumu/Raumati,Miramar/Strathmore,18.5
-Paraparaumu/Raumati,Moera/Waiwhetu,21.0
-Paraparaumu/Raumati,Mt Cook,17.0
-Paraparaumu/Raumati,Mt Victoria/Roseneath,15.5
-Paraparaumu/Raumati,Ngaio/Kaiwharawhara/Wilton,18.5
-Paraparaumu/Raumati,Northland,17.0
-Paraparaumu/Raumati,Oriental Bay/Seatoun,18.5
-Paraparaumu/Raumati,Papakowhai/Whitby/Pauatahanui,12.0
-Paraparaumu/Raumati,Paramata/Mana/Pukerua Bay,7.5
-Paraparaumu/Raumati,Petone West/Alicetown,19.0
-Paraparaumu/Raumati,Petone/Esplanade,19.0
-Paraparaumu/Raumati,Porirua East/Waitangirua,10.5
-Paraparaumu/Raumati,Stokes Valley,23.5
-Paraparaumu/Raumati,Taita/Naenae,20.0
-Paraparaumu/Raumati,Tawa/Grenada North,12.0
-Paraparaumu/Raumati,Te Aro,15.5
-Paraparaumu/Raumati,Titahi Bay/Onepoto/Elsdon,12.0
-Paraparaumu/Raumati,Totara Park/Maoribank/Te Marua,24.5
-Paraparaumu/Raumati,Trentham North/Wallaceville,22.5
-Paraparaumu/Raumati,Trentham West/Eldersley/Clouston Park,22.5
-Paraparaumu/Raumati,Vogeltown/Berhampore/Newtown,17.0
-Paraparaumu/Raumati,Wadestown/Thordon,13.5
+Paraparaumu/Raumati,Miramar/Strathmore,14.47
+Paraparaumu/Raumati,Moera/Waiwhetu,16.43
+Paraparaumu/Raumati,Mt Cook,13.3
+Paraparaumu/Raumati,Mt Victoria/Roseneath,12.13
+Paraparaumu/Raumati,Ngaio/Kaiwharawhara/Wilton,14.47
+Paraparaumu/Raumati,Northland,13.3
+Paraparaumu/Raumati,Oriental Bay/Seatoun,14.47
+Paraparaumu/Raumati,Papakowhai/Whitby/Pauatahanui,9.39
+Paraparaumu/Raumati,Paramata/Mana/Pukerua Bay,5.87
+Paraparaumu/Raumati,Petone West/Alicetown,14.87
+Paraparaumu/Raumati,Petone/Esplanade,14.87
+Paraparaumu/Raumati,Porirua East/Waitangirua,8.22
+Paraparaumu/Raumati,Stokes Valley,18.39
+Paraparaumu/Raumati,Taita/Naenae,15.65
+Paraparaumu/Raumati,Tawa/Grenada North,9.39
+Paraparaumu/Raumati,Te Aro,12.13
+Paraparaumu/Raumati,Titahi Bay/Onepoto/Elsdon,9.39
+Paraparaumu/Raumati,Totara Park/Maoribank/Te Marua,19.17
+Paraparaumu/Raumati,Trentham North/Wallaceville,17.6
+Paraparaumu/Raumati,Trentham West/Eldersley/Clouston Park,17.6
+Paraparaumu/Raumati,Vogeltown/Berhampore/Newtown,13.3
+Paraparaumu/Raumati,Wadestown/Thordon,10.56
 Paraparaumu/Raumati,Waikanae/Otaki,
-Paraparaumu/Raumati,Wainuiomata,22.5
-Paraparaumu/Raumati,Western Hills/Haywards,19.0
-Petone West/Alicetown,Brooklyn,7.5
+Paraparaumu/Raumati,Wainuiomata,17.6
+Paraparaumu/Raumati,Western Hills/Haywards,14.87
+Petone West/Alicetown,Brooklyn,5.87
 Petone West/Alicetown,Carterton/South Wairarapa,
-Petone West/Alicetown,Eastern Bays,5.0
-Petone West/Alicetown,Epuni/Avalon,3.5
-Petone West/Alicetown,Hataitai,9.0
-Petone West/Alicetown,Heretaunga/Silverstream,5.0
-Petone West/Alicetown,Hutt Central/Waterloo,4.0
-Petone West/Alicetown,Island Bay/Melrose,10.5
-Petone West/Alicetown,Johnsonville/Newlands,10.5
-Petone West/Alicetown,Karori,10.5
-Petone West/Alicetown,Karori South/Makara,12.5
-Petone West/Alicetown,Kelburn/Aro Valley,9.0
-Petone West/Alicetown,Khandallah,10.5
-Petone West/Alicetown,Kilbirnie/Lyall Bay,10.5
-Petone West/Alicetown,Kingston/Happy Valley,9.0
-Petone West/Alicetown,Lambton,7.5
+Petone West/Alicetown,Eastern Bays,3.91
+Petone West/Alicetown,Epuni/Avalon,2.74
+Petone West/Alicetown,Hataitai,7.04
+Petone West/Alicetown,Heretaunga/Silverstream,3.91
+Petone West/Alicetown,Hutt Central/Waterloo,3.13
+Petone West/Alicetown,Island Bay/Melrose,8.22
+Petone West/Alicetown,Johnsonville/Newlands,8.22
+Petone West/Alicetown,Karori,8.22
+Petone West/Alicetown,Karori South/Makara,9.78
+Petone West/Alicetown,Kelburn/Aro Valley,7.04
+Petone West/Alicetown,Khandallah,8.22
+Petone West/Alicetown,Kilbirnie/Lyall Bay,8.22
+Petone West/Alicetown,Kingston/Happy Valley,7.04
+Petone West/Alicetown,Lambton,5.87
 Petone West/Alicetown,Masterton,
-Petone West/Alicetown,Miramar/Strathmore,10.5
-Petone West/Alicetown,Moera/Waiwhetu,2.0
-Petone West/Alicetown,Mt Cook,9.0
-Petone West/Alicetown,Mt Victoria/Roseneath,7.5
-Petone West/Alicetown,Ngaio/Kaiwharawhara/Wilton,10.5
-Petone West/Alicetown,Northland,9.0
-Petone West/Alicetown,Oriental Bay/Seatoun,10.5
-Petone West/Alicetown,Papakowhai/Whitby/Pauatahanui,9.5
-Petone West/Alicetown,Paramata/Mana/Pukerua Bay,13.5
-Petone West/Alicetown,Paraparaumu/Raumati,19.0
-Petone West/Alicetown,Petone/Esplanade,4.0
-Petone West/Alicetown,Porirua East/Waitangirua,14.0
-Petone West/Alicetown,Stokes Valley,7.0
-Petone West/Alicetown,Taita/Naenae,5.5
-Petone West/Alicetown,Tawa/Grenada North,11.0
-Petone West/Alicetown,Te Aro,7.5
-Petone West/Alicetown,Titahi Bay/Onepoto/Elsdon,11.5
-Petone West/Alicetown,Totara Park/Maoribank/Te Marua,5.5
-Petone West/Alicetown,Trentham North/Wallaceville,5.5
-Petone West/Alicetown,Trentham West/Eldersley/Clouston Park,5.5
-Petone West/Alicetown,Vogeltown/Berhampore/Newtown,9.0
-Petone West/Alicetown,Wadestown/Thordon,5.5
+Petone West/Alicetown,Miramar/Strathmore,8.22
+Petone West/Alicetown,Moera/Waiwhetu,1.56
+Petone West/Alicetown,Mt Cook,7.04
+Petone West/Alicetown,Mt Victoria/Roseneath,5.87
+Petone West/Alicetown,Ngaio/Kaiwharawhara/Wilton,8.22
+Petone West/Alicetown,Northland,7.04
+Petone West/Alicetown,Oriental Bay/Seatoun,8.22
+Petone West/Alicetown,Papakowhai/Whitby/Pauatahanui,7.43
+Petone West/Alicetown,Paramata/Mana/Pukerua Bay,10.56
+Petone West/Alicetown,Paraparaumu/Raumati,14.87
+Petone West/Alicetown,Petone/Esplanade,3.13
+Petone West/Alicetown,Porirua East/Waitangirua,10.95
+Petone West/Alicetown,Stokes Valley,5.48
+Petone West/Alicetown,Taita/Naenae,4.3
+Petone West/Alicetown,Tawa/Grenada North,8.61
+Petone West/Alicetown,Te Aro,5.87
+Petone West/Alicetown,Titahi Bay/Onepoto/Elsdon,9.0
+Petone West/Alicetown,Totara Park/Maoribank/Te Marua,4.3
+Petone West/Alicetown,Trentham North/Wallaceville,4.3
+Petone West/Alicetown,Trentham West/Eldersley/Clouston Park,4.3
+Petone West/Alicetown,Vogeltown/Berhampore/Newtown,7.04
+Petone West/Alicetown,Wadestown/Thordon,4.3
 Petone West/Alicetown,Waikanae/Otaki,
-Petone West/Alicetown,Wainuiomata,5.5
-Petone West/Alicetown,Western Hills/Haywards,2.0
-Petone/Esplanade,Brooklyn,11.5
+Petone West/Alicetown,Wainuiomata,4.3
+Petone West/Alicetown,Western Hills/Haywards,1.56
+Petone/Esplanade,Brooklyn,9.0
 Petone/Esplanade,Carterton/South Wairarapa,
-Petone/Esplanade,Eastern Bays,5.0
-Petone/Esplanade,Epuni/Avalon,3.5
-Petone/Esplanade,Hataitai,11.5
-Petone/Esplanade,Heretaunga/Silverstream,7.0
-Petone/Esplanade,Hutt Central/Waterloo,4.0
-Petone/Esplanade,Island Bay/Melrose,13.0
-Petone/Esplanade,Johnsonville/Newlands,9.5
-Petone/Esplanade,Karori,13.0
-Petone/Esplanade,Karori South/Makara,12.5
-Petone/Esplanade,Kelburn/Aro Valley,11.0
-Petone/Esplanade,Khandallah,3.5
-Petone/Esplanade,Kilbirnie/Lyall Bay,13.0
-Petone/Esplanade,Kingston/Happy Valley,11.5
-Petone/Esplanade,Lambton,8.0
+Petone/Esplanade,Eastern Bays,3.91
+Petone/Esplanade,Epuni/Avalon,2.74
+Petone/Esplanade,Hataitai,9.0
+Petone/Esplanade,Heretaunga/Silverstream,5.48
+Petone/Esplanade,Hutt Central/Waterloo,3.13
+Petone/Esplanade,Island Bay/Melrose,10.17
+Petone/Esplanade,Johnsonville/Newlands,7.43
+Petone/Esplanade,Karori,10.17
+Petone/Esplanade,Karori South/Makara,9.78
+Petone/Esplanade,Kelburn/Aro Valley,8.61
+Petone/Esplanade,Khandallah,2.74
+Petone/Esplanade,Kilbirnie/Lyall Bay,10.17
+Petone/Esplanade,Kingston/Happy Valley,9.0
+Petone/Esplanade,Lambton,6.26
 Petone/Esplanade,Masterton,
-Petone/Esplanade,Miramar/Strathmore,13.0
-Petone/Esplanade,Moera/Waiwhetu,4.0
-Petone/Esplanade,Mt Cook,11.0
-Petone/Esplanade,Mt Victoria/Roseneath,8.0
-Petone/Esplanade,Ngaio/Kaiwharawhara/Wilton,12.5
-Petone/Esplanade,Northland,11.5
-Petone/Esplanade,Oriental Bay/Seatoun,13.0
-Petone/Esplanade,Papakowhai/Whitby/Pauatahanui,9.5
-Petone/Esplanade,Paramata/Mana/Pukerua Bay,15.5
-Petone/Esplanade,Paraparaumu/Raumati,21.5
-Petone/Esplanade,Petone West/Alicetown,2.0
-Petone/Esplanade,Porirua East/Waitangirua,16.5
-Petone/Esplanade,Stokes Valley,7.0
-Petone/Esplanade,Taita/Naenae,5.5
-Petone/Esplanade,Tawa/Grenada North,13.5
-Petone/Esplanade,Te Aro,8.0
-Petone/Esplanade,Titahi Bay/Onepoto/Elsdon,11.5
-Petone/Esplanade,Totara Park/Maoribank/Te Marua,5.5
-Petone/Esplanade,Trentham North/Wallaceville,5.5
-Petone/Esplanade,Trentham West/Eldersley/Clouston Park,5.5
-Petone/Esplanade,Vogeltown/Berhampore/Newtown,11.5
-Petone/Esplanade,Wadestown/Thordon,5.5
+Petone/Esplanade,Miramar/Strathmore,10.17
+Petone/Esplanade,Moera/Waiwhetu,3.13
+Petone/Esplanade,Mt Cook,8.61
+Petone/Esplanade,Mt Victoria/Roseneath,6.26
+Petone/Esplanade,Ngaio/Kaiwharawhara/Wilton,9.78
+Petone/Esplanade,Northland,9.0
+Petone/Esplanade,Oriental Bay/Seatoun,10.17
+Petone/Esplanade,Papakowhai/Whitby/Pauatahanui,7.43
+Petone/Esplanade,Paramata/Mana/Pukerua Bay,12.13
+Petone/Esplanade,Paraparaumu/Raumati,16.82
+Petone/Esplanade,Petone West/Alicetown,1.56
+Petone/Esplanade,Porirua East/Waitangirua,12.91
+Petone/Esplanade,Stokes Valley,5.48
+Petone/Esplanade,Taita/Naenae,4.3
+Petone/Esplanade,Tawa/Grenada North,10.56
+Petone/Esplanade,Te Aro,6.26
+Petone/Esplanade,Titahi Bay/Onepoto/Elsdon,9.0
+Petone/Esplanade,Totara Park/Maoribank/Te Marua,4.3
+Petone/Esplanade,Trentham North/Wallaceville,4.3
+Petone/Esplanade,Trentham West/Eldersley/Clouston Park,4.3
+Petone/Esplanade,Vogeltown/Berhampore/Newtown,9.0
+Petone/Esplanade,Wadestown/Thordon,4.3
 Petone/Esplanade,Waikanae/Otaki,
-Petone/Esplanade,Wainuiomata,5.5
-Petone/Esplanade,Western Hills/Haywards,4.0
-Porirua East/Waitangirua,Brooklyn,12.0
+Petone/Esplanade,Wainuiomata,4.3
+Petone/Esplanade,Western Hills/Haywards,3.13
+Porirua East/Waitangirua,Brooklyn,9.39
 Porirua East/Waitangirua,Carterton/South Wairarapa,
-Porirua East/Waitangirua,Eastern Bays,16.5
-Porirua East/Waitangirua,Epuni/Avalon,17.0
-Porirua East/Waitangirua,Hataitai,12.0
-Porirua East/Waitangirua,Heretaunga/Silverstream,21.5
-Porirua East/Waitangirua,Hutt Central/Waterloo,14.0
-Porirua East/Waitangirua,Island Bay/Melrose,13.5
-Porirua East/Waitangirua,Johnsonville/Newlands,7.0
-Porirua East/Waitangirua,Karori,13.5
-Porirua East/Waitangirua,Karori South/Makara,12.0
-Porirua East/Waitangirua,Kelburn/Aro Valley,12.0
-Porirua East/Waitangirua,Khandallah,9.0
-Porirua East/Waitangirua,Kilbirnie/Lyall Bay,15.5
-Porirua East/Waitangirua,Kingston/Happy Valley,12.0
-Porirua East/Waitangirua,Lambton,8.5
+Porirua East/Waitangirua,Eastern Bays,12.91
+Porirua East/Waitangirua,Epuni/Avalon,13.3
+Porirua East/Waitangirua,Hataitai,9.39
+Porirua East/Waitangirua,Heretaunga/Silverstream,16.82
+Porirua East/Waitangirua,Hutt Central/Waterloo,10.95
+Porirua East/Waitangirua,Island Bay/Melrose,10.56
+Porirua East/Waitangirua,Johnsonville/Newlands,5.48
+Porirua East/Waitangirua,Karori,10.56
+Porirua East/Waitangirua,Karori South/Makara,9.39
+Porirua East/Waitangirua,Kelburn/Aro Valley,9.39
+Porirua East/Waitangirua,Khandallah,7.04
+Porirua East/Waitangirua,Kilbirnie/Lyall Bay,12.13
+Porirua East/Waitangirua,Kingston/Happy Valley,9.39
+Porirua East/Waitangirua,Lambton,6.65
 Porirua East/Waitangirua,Masterton,
-Porirua East/Waitangirua,Miramar/Strathmore,14.0
-Porirua East/Waitangirua,Moera/Waiwhetu,14.0
-Porirua East/Waitangirua,Mt Cook,12.0
-Porirua East/Waitangirua,Mt Victoria/Roseneath,10.5
-Porirua East/Waitangirua,Ngaio/Kaiwharawhara/Wilton,13.5
-Porirua East/Waitangirua,Northland,12.0
-Porirua East/Waitangirua,Oriental Bay/Seatoun,14.0
-Porirua East/Waitangirua,Papakowhai/Whitby/Pauatahanui,4.0
-Porirua East/Waitangirua,Paramata/Mana/Pukerua Bay,5.5
-Porirua East/Waitangirua,Paraparaumu/Raumati,10.5
-Porirua East/Waitangirua,Petone West/Alicetown,14.0
-Porirua East/Waitangirua,Petone/Esplanade,14.0
-Porirua East/Waitangirua,Stokes Valley,19.0
-Porirua East/Waitangirua,Taita/Naenae,15.0
-Porirua East/Waitangirua,Tawa/Grenada North,5.5
-Porirua East/Waitangirua,Te Aro,10.5
-Porirua East/Waitangirua,Titahi Bay/Onepoto/Elsdon,3.5
-Porirua East/Waitangirua,Totara Park/Maoribank/Te Marua,19.5
-Porirua East/Waitangirua,Trentham North/Wallaceville,19.5
-Porirua East/Waitangirua,Trentham West/Eldersley/Clouston Park,17.5
-Porirua East/Waitangirua,Vogeltown/Berhampore/Newtown,12.0
-Porirua East/Waitangirua,Wadestown/Thordon,10.5
+Porirua East/Waitangirua,Miramar/Strathmore,10.95
+Porirua East/Waitangirua,Moera/Waiwhetu,10.95
+Porirua East/Waitangirua,Mt Cook,9.39
+Porirua East/Waitangirua,Mt Victoria/Roseneath,8.22
+Porirua East/Waitangirua,Ngaio/Kaiwharawhara/Wilton,10.56
+Porirua East/Waitangirua,Northland,9.39
+Porirua East/Waitangirua,Oriental Bay/Seatoun,10.95
+Porirua East/Waitangirua,Papakowhai/Whitby/Pauatahanui,3.13
+Porirua East/Waitangirua,Paramata/Mana/Pukerua Bay,4.3
+Porirua East/Waitangirua,Paraparaumu/Raumati,8.22
+Porirua East/Waitangirua,Petone West/Alicetown,10.95
+Porirua East/Waitangirua,Petone/Esplanade,10.95
+Porirua East/Waitangirua,Stokes Valley,14.87
+Porirua East/Waitangirua,Taita/Naenae,11.74
+Porirua East/Waitangirua,Tawa/Grenada North,4.3
+Porirua East/Waitangirua,Te Aro,8.22
+Porirua East/Waitangirua,Titahi Bay/Onepoto/Elsdon,2.74
+Porirua East/Waitangirua,Totara Park/Maoribank/Te Marua,15.26
+Porirua East/Waitangirua,Trentham North/Wallaceville,15.26
+Porirua East/Waitangirua,Trentham West/Eldersley/Clouston Park,13.69
+Porirua East/Waitangirua,Vogeltown/Berhampore/Newtown,9.39
+Porirua East/Waitangirua,Wadestown/Thordon,8.22
 Porirua East/Waitangirua,Waikanae/Otaki,
-Porirua East/Waitangirua,Wainuiomata,17.5
-Porirua East/Waitangirua,Western Hills/Haywards,14.0
-Stokes Valley,Brooklyn,13.5
+Porirua East/Waitangirua,Wainuiomata,13.69
+Porirua East/Waitangirua,Western Hills/Haywards,10.95
+Stokes Valley,Brooklyn,10.56
 Stokes Valley,Carterton/South Wairarapa,
-Stokes Valley,Eastern Bays,10.0
-Stokes Valley,Epuni/Avalon,3.5
-Stokes Valley,Hataitai,13.5
-Stokes Valley,Heretaunga/Silverstream,4.0
-Stokes Valley,Hutt Central/Waterloo,7.0
-Stokes Valley,Island Bay/Melrose,15.0
-Stokes Valley,Johnsonville/Newlands,17.0
-Stokes Valley,Karori,15.0
-Stokes Valley,Karori South/Makara,15.5
-Stokes Valley,Kelburn/Aro Valley,13.5
-Stokes Valley,Khandallah,15.0
-Stokes Valley,Kilbirnie/Lyall Bay,13.5
-Stokes Valley,Kingston/Happy Valley,13.5
-Stokes Valley,Lambton,12.0
+Stokes Valley,Eastern Bays,7.82
+Stokes Valley,Epuni/Avalon,2.74
+Stokes Valley,Hataitai,10.56
+Stokes Valley,Heretaunga/Silverstream,3.13
+Stokes Valley,Hutt Central/Waterloo,5.48
+Stokes Valley,Island Bay/Melrose,11.74
+Stokes Valley,Johnsonville/Newlands,13.3
+Stokes Valley,Karori,11.74
+Stokes Valley,Karori South/Makara,12.13
+Stokes Valley,Kelburn/Aro Valley,10.56
+Stokes Valley,Khandallah,11.74
+Stokes Valley,Kilbirnie/Lyall Bay,10.56
+Stokes Valley,Kingston/Happy Valley,10.56
+Stokes Valley,Lambton,9.39
 Stokes Valley,Masterton,
-Stokes Valley,Miramar/Strathmore,15.5
-Stokes Valley,Moera/Waiwhetu,7.0
-Stokes Valley,Mt Cook,13.5
-Stokes Valley,Mt Victoria/Roseneath,12.0
-Stokes Valley,Ngaio/Kaiwharawhara/Wilton,15.0
-Stokes Valley,Northland,13.5
-Stokes Valley,Oriental Bay/Seatoun,15.5
-Stokes Valley,Papakowhai/Whitby/Pauatahanui,12.5
-Stokes Valley,Paramata/Mana/Pukerua Bay,18.0
-Stokes Valley,Paraparaumu/Raumati,23.5
-Stokes Valley,Petone West/Alicetown,7.0
-Stokes Valley,Petone/Esplanade,7.0
-Stokes Valley,Porirua East/Waitangirua,18.5
-Stokes Valley,Taita/Naenae,3.5
-Stokes Valley,Tawa/Grenada North,15.5
-Stokes Valley,Te Aro,12.0
-Stokes Valley,Titahi Bay/Onepoto/Elsdon,14.5
-Stokes Valley,Totara Park/Maoribank/Te Marua,5.5
-Stokes Valley,Trentham North/Wallaceville,5.5
-Stokes Valley,Trentham West/Eldersley/Clouston Park,5.5
-Stokes Valley,Vogeltown/Berhampore/Newtown,13.5
-Stokes Valley,Wadestown/Thordon,10.0
+Stokes Valley,Miramar/Strathmore,12.13
+Stokes Valley,Moera/Waiwhetu,5.48
+Stokes Valley,Mt Cook,10.56
+Stokes Valley,Mt Victoria/Roseneath,9.39
+Stokes Valley,Ngaio/Kaiwharawhara/Wilton,11.74
+Stokes Valley,Northland,10.56
+Stokes Valley,Oriental Bay/Seatoun,12.13
+Stokes Valley,Papakowhai/Whitby/Pauatahanui,9.78
+Stokes Valley,Paramata/Mana/Pukerua Bay,14.08
+Stokes Valley,Paraparaumu/Raumati,18.39
+Stokes Valley,Petone West/Alicetown,5.48
+Stokes Valley,Petone/Esplanade,5.48
+Stokes Valley,Porirua East/Waitangirua,14.47
+Stokes Valley,Taita/Naenae,2.74
+Stokes Valley,Tawa/Grenada North,12.13
+Stokes Valley,Te Aro,9.39
+Stokes Valley,Titahi Bay/Onepoto/Elsdon,11.34
+Stokes Valley,Totara Park/Maoribank/Te Marua,4.3
+Stokes Valley,Trentham North/Wallaceville,4.3
+Stokes Valley,Trentham West/Eldersley/Clouston Park,4.3
+Stokes Valley,Vogeltown/Berhampore/Newtown,10.56
+Stokes Valley,Wadestown/Thordon,7.82
 Stokes Valley,Waikanae/Otaki,
-Stokes Valley,Wainuiomata,10.5
-Stokes Valley,Western Hills/Haywards,9.0
-Taita/Naenae,Brooklyn,12.5
+Stokes Valley,Wainuiomata,8.22
+Stokes Valley,Western Hills/Haywards,7.04
+Taita/Naenae,Brooklyn,9.78
 Taita/Naenae,Carterton/South Wairarapa,
-Taita/Naenae,Eastern Bays,8.5
-Taita/Naenae,Epuni/Avalon,2.0
-Taita/Naenae,Hataitai,12.5
-Taita/Naenae,Heretaunga/Silverstream,3.5
-Taita/Naenae,Hutt Central/Waterloo,3.5
-Taita/Naenae,Island Bay/Melrose,11.5
-Taita/Naenae,Johnsonville/Newlands,13.0
-Taita/Naenae,Karori,14.0
-Taita/Naenae,Karori South/Makara,14.5
-Taita/Naenae,Kelburn/Aro Valley,10.0
-Taita/Naenae,Khandallah,14.0
-Taita/Naenae,Kilbirnie/Lyall Bay,12.5
-Taita/Naenae,Kingston/Happy Valley,10.0
-Taita/Naenae,Lambton,11.0
+Taita/Naenae,Eastern Bays,6.65
+Taita/Naenae,Epuni/Avalon,1.56
+Taita/Naenae,Hataitai,9.78
+Taita/Naenae,Heretaunga/Silverstream,2.74
+Taita/Naenae,Hutt Central/Waterloo,2.74
+Taita/Naenae,Island Bay/Melrose,9.0
+Taita/Naenae,Johnsonville/Newlands,10.17
+Taita/Naenae,Karori,10.95
+Taita/Naenae,Karori South/Makara,11.34
+Taita/Naenae,Kelburn/Aro Valley,7.82
+Taita/Naenae,Khandallah,10.95
+Taita/Naenae,Kilbirnie/Lyall Bay,9.78
+Taita/Naenae,Kingston/Happy Valley,7.82
+Taita/Naenae,Lambton,8.61
 Taita/Naenae,Masterton,
-Taita/Naenae,Miramar/Strathmore,14.5
-Taita/Naenae,Moera/Waiwhetu,3.5
-Taita/Naenae,Mt Cook,12.5
-Taita/Naenae,Mt Victoria/Roseneath,11.0
-Taita/Naenae,Ngaio/Kaiwharawhara/Wilton,14.0
-Taita/Naenae,Northland,12.5
-Taita/Naenae,Oriental Bay/Seatoun,14.5
-Taita/Naenae,Papakowhai/Whitby/Pauatahanui,12.5
-Taita/Naenae,Paramata/Mana/Pukerua Bay,16.5
-Taita/Naenae,Paraparaumu/Raumati,22.0
-Taita/Naenae,Petone West/Alicetown,5.5
-Taita/Naenae,Petone/Esplanade,5.5
-Taita/Naenae,Porirua East/Waitangirua,17.0
-Taita/Naenae,Stokes Valley,3.5
-Taita/Naenae,Tawa/Grenada North,14.0
-Taita/Naenae,Te Aro,11.0
-Taita/Naenae,Titahi Bay/Onepoto/Elsdon,14.0
-Taita/Naenae,Totara Park/Maoribank/Te Marua,5.0
-Taita/Naenae,Trentham North/Wallaceville,5.0
-Taita/Naenae,Trentham West/Eldersley/Clouston Park,5.0
-Taita/Naenae,Vogeltown/Berhampore/Newtown,12.5
-Taita/Naenae,Wadestown/Thordon,9.0
+Taita/Naenae,Miramar/Strathmore,11.34
+Taita/Naenae,Moera/Waiwhetu,2.74
+Taita/Naenae,Mt Cook,9.78
+Taita/Naenae,Mt Victoria/Roseneath,8.61
+Taita/Naenae,Ngaio/Kaiwharawhara/Wilton,10.95
+Taita/Naenae,Northland,9.78
+Taita/Naenae,Oriental Bay/Seatoun,11.34
+Taita/Naenae,Papakowhai/Whitby/Pauatahanui,9.78
+Taita/Naenae,Paramata/Mana/Pukerua Bay,12.91
+Taita/Naenae,Paraparaumu/Raumati,17.21
+Taita/Naenae,Petone West/Alicetown,4.3
+Taita/Naenae,Petone/Esplanade,4.3
+Taita/Naenae,Porirua East/Waitangirua,13.3
+Taita/Naenae,Stokes Valley,2.74
+Taita/Naenae,Tawa/Grenada North,10.95
+Taita/Naenae,Te Aro,8.61
+Taita/Naenae,Titahi Bay/Onepoto/Elsdon,10.95
+Taita/Naenae,Totara Park/Maoribank/Te Marua,3.91
+Taita/Naenae,Trentham North/Wallaceville,3.91
+Taita/Naenae,Trentham West/Eldersley/Clouston Park,3.91
+Taita/Naenae,Vogeltown/Berhampore/Newtown,9.78
+Taita/Naenae,Wadestown/Thordon,7.04
 Taita/Naenae,Waikanae/Otaki,
-Taita/Naenae,Wainuiomata,7.0
-Taita/Naenae,Western Hills/Haywards,5.5
-Tawa/Grenada North,Brooklyn,9.0
+Taita/Naenae,Wainuiomata,5.48
+Taita/Naenae,Western Hills/Haywards,4.3
+Tawa/Grenada North,Brooklyn,7.04
 Tawa/Grenada North,Carterton/South Wairarapa,
-Tawa/Grenada North,Eastern Bays,16.5
-Tawa/Grenada North,Epuni/Avalon,14.0
-Tawa/Grenada North,Hataitai,9.0
-Tawa/Grenada North,Heretaunga/Silverstream,13.5
-Tawa/Grenada North,Hutt Central/Waterloo,11.0
-Tawa/Grenada North,Island Bay/Melrose,10.5
-Tawa/Grenada North,Johnsonville/Newlands,3.5
-Tawa/Grenada North,Karori,10.5
-Tawa/Grenada North,Karori South/Makara,7.0
-Tawa/Grenada North,Kelburn/Aro Valley,7.5
-Tawa/Grenada North,Khandallah,5.5
-Tawa/Grenada North,Kilbirnie/Lyall Bay,10.5
-Tawa/Grenada North,Kingston/Happy Valley,9.0
-Tawa/Grenada North,Lambton,5.5
+Tawa/Grenada North,Eastern Bays,12.91
+Tawa/Grenada North,Epuni/Avalon,10.95
+Tawa/Grenada North,Hataitai,7.04
+Tawa/Grenada North,Heretaunga/Silverstream,10.56
+Tawa/Grenada North,Hutt Central/Waterloo,8.61
+Tawa/Grenada North,Island Bay/Melrose,8.22
+Tawa/Grenada North,Johnsonville/Newlands,2.74
+Tawa/Grenada North,Karori,8.22
+Tawa/Grenada North,Karori South/Makara,5.48
+Tawa/Grenada North,Kelburn/Aro Valley,5.87
+Tawa/Grenada North,Khandallah,4.3
+Tawa/Grenada North,Kilbirnie/Lyall Bay,8.22
+Tawa/Grenada North,Kingston/Happy Valley,7.04
+Tawa/Grenada North,Lambton,4.3
 Tawa/Grenada North,Masterton,
-Tawa/Grenada North,Miramar/Strathmore,10.5
-Tawa/Grenada North,Moera/Waiwhetu,11.0
-Tawa/Grenada North,Mt Cook,9.0
-Tawa/Grenada North,Mt Victoria/Roseneath,13.5
-Tawa/Grenada North,Ngaio/Kaiwharawhara/Wilton,10.5
-Tawa/Grenada North,Northland,9.0
-Tawa/Grenada North,Oriental Bay/Seatoun,10.5
-Tawa/Grenada North,Papakowhai/Whitby/Pauatahanui,7.0
-Tawa/Grenada North,Paramata/Mana/Pukerua Bay,5.0
-Tawa/Grenada North,Paraparaumu/Raumati,10.0
-Tawa/Grenada North,Petone West/Alicetown,11.0
-Tawa/Grenada North,Petone/Esplanade,11.0
-Tawa/Grenada North,Porirua East/Waitangirua,5.5
-Tawa/Grenada North,Stokes Valley,15.5
-Tawa/Grenada North,Taita/Naenae,12.0
-Tawa/Grenada North,Te Aro,13.5
-Tawa/Grenada North,Titahi Bay/Onepoto/Elsdon,7.0
-Tawa/Grenada North,Totara Park/Maoribank/Te Marua,16.5
-Tawa/Grenada North,Trentham North/Wallaceville,14.5
-Tawa/Grenada North,Trentham West/Eldersley/Clouston Park,14.5
-Tawa/Grenada North,Vogeltown/Berhampore/Newtown,9.0
-Tawa/Grenada North,Wadestown/Thordon,5.5
+Tawa/Grenada North,Miramar/Strathmore,8.22
+Tawa/Grenada North,Moera/Waiwhetu,8.61
+Tawa/Grenada North,Mt Cook,7.04
+Tawa/Grenada North,Mt Victoria/Roseneath,10.56
+Tawa/Grenada North,Ngaio/Kaiwharawhara/Wilton,8.22
+Tawa/Grenada North,Northland,7.04
+Tawa/Grenada North,Oriental Bay/Seatoun,8.22
+Tawa/Grenada North,Papakowhai/Whitby/Pauatahanui,5.48
+Tawa/Grenada North,Paramata/Mana/Pukerua Bay,3.91
+Tawa/Grenada North,Paraparaumu/Raumati,7.82
+Tawa/Grenada North,Petone West/Alicetown,8.61
+Tawa/Grenada North,Petone/Esplanade,8.61
+Tawa/Grenada North,Porirua East/Waitangirua,4.3
+Tawa/Grenada North,Stokes Valley,12.13
+Tawa/Grenada North,Taita/Naenae,9.39
+Tawa/Grenada North,Te Aro,10.56
+Tawa/Grenada North,Titahi Bay/Onepoto/Elsdon,5.48
+Tawa/Grenada North,Totara Park/Maoribank/Te Marua,12.91
+Tawa/Grenada North,Trentham North/Wallaceville,11.34
+Tawa/Grenada North,Trentham West/Eldersley/Clouston Park,11.34
+Tawa/Grenada North,Vogeltown/Berhampore/Newtown,7.04
+Tawa/Grenada North,Wadestown/Thordon,4.3
 Tawa/Grenada North,Waikanae/Otaki,
-Tawa/Grenada North,Wainuiomata,14.5
-Tawa/Grenada North,Western Hills/Haywards,11.0
-Te Aro,Brooklyn,3.5
+Tawa/Grenada North,Wainuiomata,11.34
+Tawa/Grenada North,Western Hills/Haywards,8.61
+Te Aro,Brooklyn,2.74
 Te Aro,Carterton/South Wairarapa,
-Te Aro,Eastern Bays,8.0
-Te Aro,Epuni/Avalon,12.5
-Te Aro,Hataitai,3.5
-Te Aro,Heretaunga/Silverstream,10.5
-Te Aro,Hutt Central/Waterloo,7.5
-Te Aro,Island Bay/Melrose,5.0
-Te Aro,Johnsonville/Newlands,7.0
-Te Aro,Karori,5.0
-Te Aro,Karori South/Makara,3.5
-Te Aro,Kelburn/Aro Valley,3.5
-Te Aro,Khandallah,5.0
-Te Aro,Kilbirnie/Lyall Bay,5.0
-Te Aro,Kingston/Happy Valley,3.5
-Te Aro,Lambton,2.0
+Te Aro,Eastern Bays,6.26
+Te Aro,Epuni/Avalon,9.78
+Te Aro,Hataitai,2.74
+Te Aro,Heretaunga/Silverstream,8.22
+Te Aro,Hutt Central/Waterloo,5.87
+Te Aro,Island Bay/Melrose,3.91
+Te Aro,Johnsonville/Newlands,5.48
+Te Aro,Karori,3.91
+Te Aro,Karori South/Makara,2.74
+Te Aro,Kelburn/Aro Valley,2.74
+Te Aro,Khandallah,3.91
+Te Aro,Kilbirnie/Lyall Bay,3.91
+Te Aro,Kingston/Happy Valley,2.74
+Te Aro,Lambton,1.56
 Te Aro,Masterton,
-Te Aro,Miramar/Strathmore,5.0
-Te Aro,Moera/Waiwhetu,7.5
-Te Aro,Mt Cook,3.5
-Te Aro,Mt Victoria/Roseneath,2.0
-Te Aro,Ngaio/Kaiwharawhara/Wilton,5.0
-Te Aro,Northland,3.5
-Te Aro,Oriental Bay/Seatoun,5.0
-Te Aro,Papakowhai/Whitby/Pauatahanui,12.0
-Te Aro,Paramata/Mana/Pukerua Bay,10.0
-Te Aro,Paraparaumu/Raumati,15.5
-Te Aro,Petone West/Alicetown,9.0
-Te Aro,Petone/Esplanade,11.0
-Te Aro,Porirua East/Waitangirua,10.5
-Te Aro,Stokes Valley,12.5
-Te Aro,Taita/Naenae,9.0
-Te Aro,Tawa/Grenada North,12.0
-Te Aro,Titahi Bay/Onepoto/Elsdon,12.0
-Te Aro,Totara Park/Maoribank/Te Marua,14.5
-Te Aro,Trentham North/Wallaceville,14.5
-Te Aro,Trentham West/Eldersley/Clouston Park,14.5
-Te Aro,Vogeltown/Berhampore/Newtown,3.5
-Te Aro,Wadestown/Thordon,6.0
+Te Aro,Miramar/Strathmore,3.91
+Te Aro,Moera/Waiwhetu,5.87
+Te Aro,Mt Cook,2.74
+Te Aro,Mt Victoria/Roseneath,1.56
+Te Aro,Ngaio/Kaiwharawhara/Wilton,3.91
+Te Aro,Northland,2.74
+Te Aro,Oriental Bay/Seatoun,3.91
+Te Aro,Papakowhai/Whitby/Pauatahanui,9.39
+Te Aro,Paramata/Mana/Pukerua Bay,7.82
+Te Aro,Paraparaumu/Raumati,12.13
+Te Aro,Petone West/Alicetown,7.04
+Te Aro,Petone/Esplanade,8.61
+Te Aro,Porirua East/Waitangirua,8.22
+Te Aro,Stokes Valley,9.78
+Te Aro,Taita/Naenae,7.04
+Te Aro,Tawa/Grenada North,9.39
+Te Aro,Titahi Bay/Onepoto/Elsdon,9.39
+Te Aro,Totara Park/Maoribank/Te Marua,11.34
+Te Aro,Trentham North/Wallaceville,11.34
+Te Aro,Trentham West/Eldersley/Clouston Park,11.34
+Te Aro,Vogeltown/Berhampore/Newtown,2.74
+Te Aro,Wadestown/Thordon,4.69
 Te Aro,Waikanae/Otaki,
-Te Aro,Wainuiomata,11.0
-Te Aro,Western Hills/Haywards,7.5
-Titahi Bay/Onepoto/Elsdon,Brooklyn,13.5
+Te Aro,Wainuiomata,8.61
+Te Aro,Western Hills/Haywards,5.87
+Titahi Bay/Onepoto/Elsdon,Brooklyn,10.56
 Titahi Bay/Onepoto/Elsdon,Carterton/South Wairarapa,
-Titahi Bay/Onepoto/Elsdon,Eastern Bays,21.0
-Titahi Bay/Onepoto/Elsdon,Epuni/Avalon,18.5
-Titahi Bay/Onepoto/Elsdon,Hataitai,13.5
-Titahi Bay/Onepoto/Elsdon,Heretaunga/Silverstream,18.0
-Titahi Bay/Onepoto/Elsdon,Hutt Central/Waterloo,15.5
-Titahi Bay/Onepoto/Elsdon,Island Bay/Melrose,15.0
-Titahi Bay/Onepoto/Elsdon,Johnsonville/Newlands,5.5
-Titahi Bay/Onepoto/Elsdon,Karori,15.0
-Titahi Bay/Onepoto/Elsdon,Karori South/Makara,9.0
-Titahi Bay/Onepoto/Elsdon,Kelburn/Aro Valley,13.5
-Titahi Bay/Onepoto/Elsdon,Khandallah,7.5
-Titahi Bay/Onepoto/Elsdon,Kilbirnie/Lyall Bay,15.0
-Titahi Bay/Onepoto/Elsdon,Kingston/Happy Valley,13.5
-Titahi Bay/Onepoto/Elsdon,Lambton,10.0
+Titahi Bay/Onepoto/Elsdon,Eastern Bays,16.43
+Titahi Bay/Onepoto/Elsdon,Epuni/Avalon,14.47
+Titahi Bay/Onepoto/Elsdon,Hataitai,10.56
+Titahi Bay/Onepoto/Elsdon,Heretaunga/Silverstream,14.08
+Titahi Bay/Onepoto/Elsdon,Hutt Central/Waterloo,12.13
+Titahi Bay/Onepoto/Elsdon,Island Bay/Melrose,11.74
+Titahi Bay/Onepoto/Elsdon,Johnsonville/Newlands,4.3
+Titahi Bay/Onepoto/Elsdon,Karori,11.74
+Titahi Bay/Onepoto/Elsdon,Karori South/Makara,7.04
+Titahi Bay/Onepoto/Elsdon,Kelburn/Aro Valley,10.56
+Titahi Bay/Onepoto/Elsdon,Khandallah,5.87
+Titahi Bay/Onepoto/Elsdon,Kilbirnie/Lyall Bay,11.74
+Titahi Bay/Onepoto/Elsdon,Kingston/Happy Valley,10.56
+Titahi Bay/Onepoto/Elsdon,Lambton,7.82
 Titahi Bay/Onepoto/Elsdon,Masterton,
-Titahi Bay/Onepoto/Elsdon,Miramar/Strathmore,15.0
-Titahi Bay/Onepoto/Elsdon,Moera/Waiwhetu,15.5
-Titahi Bay/Onepoto/Elsdon,Mt Cook,13.5
-Titahi Bay/Onepoto/Elsdon,Mt Victoria/Roseneath,12.0
-Titahi Bay/Onepoto/Elsdon,Ngaio/Kaiwharawhara/Wilton,15.0
-Titahi Bay/Onepoto/Elsdon,Northland,13.5
-Titahi Bay/Onepoto/Elsdon,Oriental Bay/Seatoun,15.0
-Titahi Bay/Onepoto/Elsdon,Papakowhai/Whitby/Pauatahanui,7.0
-Titahi Bay/Onepoto/Elsdon,Paramata/Mana/Pukerua Bay,7.0
-Titahi Bay/Onepoto/Elsdon,Paraparaumu/Raumati,12.0
-Titahi Bay/Onepoto/Elsdon,Petone West/Alicetown,15.5
-Titahi Bay/Onepoto/Elsdon,Petone/Esplanade,15.5
-Titahi Bay/Onepoto/Elsdon,Porirua East/Waitangirua,5.5
-Titahi Bay/Onepoto/Elsdon,Stokes Valley,20.5
-Titahi Bay/Onepoto/Elsdon,Taita/Naenae,16.5
-Titahi Bay/Onepoto/Elsdon,Tawa/Grenada North,7.0
-Titahi Bay/Onepoto/Elsdon,Te Aro,12.0
-Titahi Bay/Onepoto/Elsdon,Totara Park/Maoribank/Te Marua,21.0
-Titahi Bay/Onepoto/Elsdon,Trentham North/Wallaceville,19.0
-Titahi Bay/Onepoto/Elsdon,Trentham West/Eldersley/Clouston Park,19.0
-Titahi Bay/Onepoto/Elsdon,Vogeltown/Berhampore/Newtown,13.5
-Titahi Bay/Onepoto/Elsdon,Wadestown/Thordon,10.0
+Titahi Bay/Onepoto/Elsdon,Miramar/Strathmore,11.74
+Titahi Bay/Onepoto/Elsdon,Moera/Waiwhetu,12.13
+Titahi Bay/Onepoto/Elsdon,Mt Cook,10.56
+Titahi Bay/Onepoto/Elsdon,Mt Victoria/Roseneath,9.39
+Titahi Bay/Onepoto/Elsdon,Ngaio/Kaiwharawhara/Wilton,11.74
+Titahi Bay/Onepoto/Elsdon,Northland,10.56
+Titahi Bay/Onepoto/Elsdon,Oriental Bay/Seatoun,11.74
+Titahi Bay/Onepoto/Elsdon,Papakowhai/Whitby/Pauatahanui,5.48
+Titahi Bay/Onepoto/Elsdon,Paramata/Mana/Pukerua Bay,5.48
+Titahi Bay/Onepoto/Elsdon,Paraparaumu/Raumati,9.39
+Titahi Bay/Onepoto/Elsdon,Petone West/Alicetown,12.13
+Titahi Bay/Onepoto/Elsdon,Petone/Esplanade,12.13
+Titahi Bay/Onepoto/Elsdon,Porirua East/Waitangirua,4.3
+Titahi Bay/Onepoto/Elsdon,Stokes Valley,16.04
+Titahi Bay/Onepoto/Elsdon,Taita/Naenae,12.91
+Titahi Bay/Onepoto/Elsdon,Tawa/Grenada North,5.48
+Titahi Bay/Onepoto/Elsdon,Te Aro,9.39
+Titahi Bay/Onepoto/Elsdon,Totara Park/Maoribank/Te Marua,16.43
+Titahi Bay/Onepoto/Elsdon,Trentham North/Wallaceville,14.87
+Titahi Bay/Onepoto/Elsdon,Trentham West/Eldersley/Clouston Park,14.87
+Titahi Bay/Onepoto/Elsdon,Vogeltown/Berhampore/Newtown,10.56
+Titahi Bay/Onepoto/Elsdon,Wadestown/Thordon,7.82
 Titahi Bay/Onepoto/Elsdon,Waikanae/Otaki,
-Titahi Bay/Onepoto/Elsdon,Wainuiomata,19.0
-Titahi Bay/Onepoto/Elsdon,Western Hills/Haywards,15.5
-Totara Park/Maoribank/Te Marua,Brooklyn,14.5
+Titahi Bay/Onepoto/Elsdon,Wainuiomata,14.87
+Titahi Bay/Onepoto/Elsdon,Western Hills/Haywards,12.13
+Totara Park/Maoribank/Te Marua,Brooklyn,11.34
 Totara Park/Maoribank/Te Marua,Carterton/South Wairarapa,
-Totara Park/Maoribank/Te Marua,Eastern Bays,10.5
-Totara Park/Maoribank/Te Marua,Epuni/Avalon,5.0
-Totara Park/Maoribank/Te Marua,Hataitai,15.5
-Totara Park/Maoribank/Te Marua,Heretaunga/Silverstream,3.5
-Totara Park/Maoribank/Te Marua,Hutt Central/Waterloo,7.5
-Totara Park/Maoribank/Te Marua,Island Bay/Melrose,16.0
-Totara Park/Maoribank/Te Marua,Johnsonville/Newlands,13.0
-Totara Park/Maoribank/Te Marua,Karori,16.0
-Totara Park/Maoribank/Te Marua,Karori South/Makara,14.5
-Totara Park/Maoribank/Te Marua,Kelburn/Aro Valley,14.5
-Totara Park/Maoribank/Te Marua,Khandallah,9.0
-Totara Park/Maoribank/Te Marua,Kilbirnie/Lyall Bay,15.5
-Totara Park/Maoribank/Te Marua,Kingston/Happy Valley,14.5
-Totara Park/Maoribank/Te Marua,Lambton,13.0
+Totara Park/Maoribank/Te Marua,Eastern Bays,8.22
+Totara Park/Maoribank/Te Marua,Epuni/Avalon,3.91
+Totara Park/Maoribank/Te Marua,Hataitai,12.13
+Totara Park/Maoribank/Te Marua,Heretaunga/Silverstream,2.74
+Totara Park/Maoribank/Te Marua,Hutt Central/Waterloo,5.87
+Totara Park/Maoribank/Te Marua,Island Bay/Melrose,12.52
+Totara Park/Maoribank/Te Marua,Johnsonville/Newlands,10.17
+Totara Park/Maoribank/Te Marua,Karori,12.52
+Totara Park/Maoribank/Te Marua,Karori South/Makara,11.34
+Totara Park/Maoribank/Te Marua,Kelburn/Aro Valley,11.34
+Totara Park/Maoribank/Te Marua,Khandallah,7.04
+Totara Park/Maoribank/Te Marua,Kilbirnie/Lyall Bay,12.13
+Totara Park/Maoribank/Te Marua,Kingston/Happy Valley,11.34
+Totara Park/Maoribank/Te Marua,Lambton,10.17
 Totara Park/Maoribank/Te Marua,Masterton,
-Totara Park/Maoribank/Te Marua,Miramar/Strathmore,16.0
-Totara Park/Maoribank/Te Marua,Moera/Waiwhetu,7.5
-Totara Park/Maoribank/Te Marua,Mt Cook,14.5
-Totara Park/Maoribank/Te Marua,Mt Victoria/Roseneath,13.0
-Totara Park/Maoribank/Te Marua,Ngaio/Kaiwharawhara/Wilton,16.0
-Totara Park/Maoribank/Te Marua,Northland,14.5
-Totara Park/Maoribank/Te Marua,Oriental Bay/Seatoun,16.0
-Totara Park/Maoribank/Te Marua,Papakowhai/Whitby/Pauatahanui,21.0
-Totara Park/Maoribank/Te Marua,Paramata/Mana/Pukerua Bay,19.0
-Totara Park/Maoribank/Te Marua,Paraparaumu/Raumati,24.5
-Totara Park/Maoribank/Te Marua,Petone West/Alicetown,5.5
-Totara Park/Maoribank/Te Marua,Petone/Esplanade,5.5
-Totara Park/Maoribank/Te Marua,Porirua East/Waitangirua,19.5
-Totara Park/Maoribank/Te Marua,Stokes Valley,5.5
-Totara Park/Maoribank/Te Marua,Taita/Naenae,5.0
-Totara Park/Maoribank/Te Marua,Tawa/Grenada North,16.5
-Totara Park/Maoribank/Te Marua,Te Aro,13.0
-Totara Park/Maoribank/Te Marua,Titahi Bay/Onepoto/Elsdon,21.0
-Totara Park/Maoribank/Te Marua,Trentham North/Wallaceville,2.0
-Totara Park/Maoribank/Te Marua,Trentham West/Eldersley/Clouston Park,2.0
-Totara Park/Maoribank/Te Marua,Vogeltown/Berhampore/Newtown,14.5
-Totara Park/Maoribank/Te Marua,Wadestown/Thordon,14.5
+Totara Park/Maoribank/Te Marua,Miramar/Strathmore,12.52
+Totara Park/Maoribank/Te Marua,Moera/Waiwhetu,5.87
+Totara Park/Maoribank/Te Marua,Mt Cook,11.34
+Totara Park/Maoribank/Te Marua,Mt Victoria/Roseneath,10.17
+Totara Park/Maoribank/Te Marua,Ngaio/Kaiwharawhara/Wilton,12.52
+Totara Park/Maoribank/Te Marua,Northland,11.34
+Totara Park/Maoribank/Te Marua,Oriental Bay/Seatoun,12.52
+Totara Park/Maoribank/Te Marua,Papakowhai/Whitby/Pauatahanui,16.43
+Totara Park/Maoribank/Te Marua,Paramata/Mana/Pukerua Bay,14.87
+Totara Park/Maoribank/Te Marua,Paraparaumu/Raumati,19.17
+Totara Park/Maoribank/Te Marua,Petone West/Alicetown,4.3
+Totara Park/Maoribank/Te Marua,Petone/Esplanade,4.3
+Totara Park/Maoribank/Te Marua,Porirua East/Waitangirua,15.26
+Totara Park/Maoribank/Te Marua,Stokes Valley,4.3
+Totara Park/Maoribank/Te Marua,Taita/Naenae,3.91
+Totara Park/Maoribank/Te Marua,Tawa/Grenada North,12.91
+Totara Park/Maoribank/Te Marua,Te Aro,10.17
+Totara Park/Maoribank/Te Marua,Titahi Bay/Onepoto/Elsdon,16.43
+Totara Park/Maoribank/Te Marua,Trentham North/Wallaceville,1.56
+Totara Park/Maoribank/Te Marua,Trentham West/Eldersley/Clouston Park,1.56
+Totara Park/Maoribank/Te Marua,Vogeltown/Berhampore/Newtown,11.34
+Totara Park/Maoribank/Te Marua,Wadestown/Thordon,11.34
 Totara Park/Maoribank/Te Marua,Waikanae/Otaki,
-Totara Park/Maoribank/Te Marua,Wainuiomata,11.0
-Totara Park/Maoribank/Te Marua,Western Hills/Haywards,9.5
-Trentham North/Wallaceville,Brooklyn,12.5
+Totara Park/Maoribank/Te Marua,Wainuiomata,8.61
+Totara Park/Maoribank/Te Marua,Western Hills/Haywards,7.43
+Trentham North/Wallaceville,Brooklyn,9.78
 Trentham North/Wallaceville,Carterton/South Wairarapa,
-Trentham North/Wallaceville,Eastern Bays,10.5
-Trentham North/Wallaceville,Epuni/Avalon,5.0
-Trentham North/Wallaceville,Hataitai,12.5
-Trentham North/Wallaceville,Heretaunga/Silverstream,3.5
-Trentham North/Wallaceville,Hutt Central/Waterloo,5.5
-Trentham North/Wallaceville,Island Bay/Melrose,14.0
-Trentham North/Wallaceville,Johnsonville/Newlands,16.0
-Trentham North/Wallaceville,Karori,14.0
-Trentham North/Wallaceville,Karori South/Makara,14.5
-Trentham North/Wallaceville,Kelburn/Aro Valley,12.5
-Trentham North/Wallaceville,Khandallah,14.0
-Trentham North/Wallaceville,Kilbirnie/Lyall Bay,12.5
-Trentham North/Wallaceville,Kingston/Happy Valley,12.5
-Trentham North/Wallaceville,Lambton,11.0
+Trentham North/Wallaceville,Eastern Bays,8.22
+Trentham North/Wallaceville,Epuni/Avalon,3.91
+Trentham North/Wallaceville,Hataitai,9.78
+Trentham North/Wallaceville,Heretaunga/Silverstream,2.74
+Trentham North/Wallaceville,Hutt Central/Waterloo,4.3
+Trentham North/Wallaceville,Island Bay/Melrose,10.95
+Trentham North/Wallaceville,Johnsonville/Newlands,12.52
+Trentham North/Wallaceville,Karori,10.95
+Trentham North/Wallaceville,Karori South/Makara,11.34
+Trentham North/Wallaceville,Kelburn/Aro Valley,9.78
+Trentham North/Wallaceville,Khandallah,10.95
+Trentham North/Wallaceville,Kilbirnie/Lyall Bay,9.78
+Trentham North/Wallaceville,Kingston/Happy Valley,9.78
+Trentham North/Wallaceville,Lambton,8.61
 Trentham North/Wallaceville,Masterton,
-Trentham North/Wallaceville,Miramar/Strathmore,14.5
-Trentham North/Wallaceville,Moera/Waiwhetu,7.5
-Trentham North/Wallaceville,Mt Cook,12.5
-Trentham North/Wallaceville,Mt Victoria/Roseneath,11.0
-Trentham North/Wallaceville,Ngaio/Kaiwharawhara/Wilton,14.0
-Trentham North/Wallaceville,Northland,12.5
-Trentham North/Wallaceville,Oriental Bay/Seatoun,14.5
-Trentham North/Wallaceville,Papakowhai/Whitby/Pauatahanui,12.5
-Trentham North/Wallaceville,Paramata/Mana/Pukerua Bay,17.0
-Trentham North/Wallaceville,Paraparaumu/Raumati,22.5
-Trentham North/Wallaceville,Petone West/Alicetown,7.5
-Trentham North/Wallaceville,Petone/Esplanade,5.5
-Trentham North/Wallaceville,Porirua East/Waitangirua,17.5
-Trentham North/Wallaceville,Stokes Valley,5.5
-Trentham North/Wallaceville,Taita/Naenae,7.0
-Trentham North/Wallaceville,Tawa/Grenada North,14.5
-Trentham North/Wallaceville,Te Aro,11.0
-Trentham North/Wallaceville,Titahi Bay/Onepoto/Elsdon,14.0
-Trentham North/Wallaceville,Totara Park/Maoribank/Te Marua,2.0
-Trentham North/Wallaceville,Trentham West/Eldersley/Clouston Park,2.0
-Trentham North/Wallaceville,Vogeltown/Berhampore/Newtown,12.5
-Trentham North/Wallaceville,Wadestown/Thordon,9.0
+Trentham North/Wallaceville,Miramar/Strathmore,11.34
+Trentham North/Wallaceville,Moera/Waiwhetu,5.87
+Trentham North/Wallaceville,Mt Cook,9.78
+Trentham North/Wallaceville,Mt Victoria/Roseneath,8.61
+Trentham North/Wallaceville,Ngaio/Kaiwharawhara/Wilton,10.95
+Trentham North/Wallaceville,Northland,9.78
+Trentham North/Wallaceville,Oriental Bay/Seatoun,11.34
+Trentham North/Wallaceville,Papakowhai/Whitby/Pauatahanui,9.78
+Trentham North/Wallaceville,Paramata/Mana/Pukerua Bay,13.3
+Trentham North/Wallaceville,Paraparaumu/Raumati,17.6
+Trentham North/Wallaceville,Petone West/Alicetown,5.87
+Trentham North/Wallaceville,Petone/Esplanade,4.3
+Trentham North/Wallaceville,Porirua East/Waitangirua,13.69
+Trentham North/Wallaceville,Stokes Valley,4.3
+Trentham North/Wallaceville,Taita/Naenae,5.48
+Trentham North/Wallaceville,Tawa/Grenada North,11.34
+Trentham North/Wallaceville,Te Aro,8.61
+Trentham North/Wallaceville,Titahi Bay/Onepoto/Elsdon,10.95
+Trentham North/Wallaceville,Totara Park/Maoribank/Te Marua,1.56
+Trentham North/Wallaceville,Trentham West/Eldersley/Clouston Park,1.56
+Trentham North/Wallaceville,Vogeltown/Berhampore/Newtown,9.78
+Trentham North/Wallaceville,Wadestown/Thordon,7.04
 Trentham North/Wallaceville,Waikanae/Otaki,
-Trentham North/Wallaceville,Wainuiomata,9.0
-Trentham North/Wallaceville,Western Hills/Haywards,9.5
-Trentham West/Eldersley/Clouston Park,Brooklyn,12.5
+Trentham North/Wallaceville,Wainuiomata,7.04
+Trentham North/Wallaceville,Western Hills/Haywards,7.43
+Trentham West/Eldersley/Clouston Park,Brooklyn,9.78
 Trentham West/Eldersley/Clouston Park,Carterton/South Wairarapa,
-Trentham West/Eldersley/Clouston Park,Eastern Bays,12.5
-Trentham West/Eldersley/Clouston Park,Epuni/Avalon,5.0
-Trentham West/Eldersley/Clouston Park,Hataitai,12.5
-Trentham West/Eldersley/Clouston Park,Heretaunga/Silverstream,3.5
-Trentham West/Eldersley/Clouston Park,Hutt Central/Waterloo,5.5
-Trentham West/Eldersley/Clouston Park,Island Bay/Melrose,14.0
-Trentham West/Eldersley/Clouston Park,Johnsonville/Newlands,14.0
-Trentham West/Eldersley/Clouston Park,Karori,14.0
-Trentham West/Eldersley/Clouston Park,Karori South/Makara,12.5
-Trentham West/Eldersley/Clouston Park,Kelburn/Aro Valley,12.5
-Trentham West/Eldersley/Clouston Park,Khandallah,14.0
-Trentham West/Eldersley/Clouston Park,Kilbirnie/Lyall Bay,14.0
-Trentham West/Eldersley/Clouston Park,Kingston/Happy Valley,12.5
-Trentham West/Eldersley/Clouston Park,Lambton,9.0
+Trentham West/Eldersley/Clouston Park,Eastern Bays,9.78
+Trentham West/Eldersley/Clouston Park,Epuni/Avalon,3.91
+Trentham West/Eldersley/Clouston Park,Hataitai,9.78
+Trentham West/Eldersley/Clouston Park,Heretaunga/Silverstream,2.74
+Trentham West/Eldersley/Clouston Park,Hutt Central/Waterloo,4.3
+Trentham West/Eldersley/Clouston Park,Island Bay/Melrose,10.95
+Trentham West/Eldersley/Clouston Park,Johnsonville/Newlands,10.95
+Trentham West/Eldersley/Clouston Park,Karori,10.95
+Trentham West/Eldersley/Clouston Park,Karori South/Makara,9.78
+Trentham West/Eldersley/Clouston Park,Kelburn/Aro Valley,9.78
+Trentham West/Eldersley/Clouston Park,Khandallah,10.95
+Trentham West/Eldersley/Clouston Park,Kilbirnie/Lyall Bay,10.95
+Trentham West/Eldersley/Clouston Park,Kingston/Happy Valley,9.78
+Trentham West/Eldersley/Clouston Park,Lambton,7.04
 Trentham West/Eldersley/Clouston Park,Masterton,
-Trentham West/Eldersley/Clouston Park,Miramar/Strathmore,14.0
-Trentham West/Eldersley/Clouston Park,Moera/Waiwhetu,5.5
-Trentham West/Eldersley/Clouston Park,Mt Cook,12.5
-Trentham West/Eldersley/Clouston Park,Mt Victoria/Roseneath,11.0
-Trentham West/Eldersley/Clouston Park,Ngaio/Kaiwharawhara/Wilton,14.0
-Trentham West/Eldersley/Clouston Park,Northland,12.5
-Trentham West/Eldersley/Clouston Park,Oriental Bay/Seatoun,14.0
-Trentham West/Eldersley/Clouston Park,Papakowhai/Whitby/Pauatahanui,12.5
-Trentham West/Eldersley/Clouston Park,Paramata/Mana/Pukerua Bay,17.0
-Trentham West/Eldersley/Clouston Park,Paraparaumu/Raumati,22.5
-Trentham West/Eldersley/Clouston Park,Petone West/Alicetown,5.5
-Trentham West/Eldersley/Clouston Park,Petone/Esplanade,5.5
-Trentham West/Eldersley/Clouston Park,Porirua East/Waitangirua,17.5
-Trentham West/Eldersley/Clouston Park,Stokes Valley,5.5
-Trentham West/Eldersley/Clouston Park,Taita/Naenae,7.0
-Trentham West/Eldersley/Clouston Park,Tawa/Grenada North,14.5
-Trentham West/Eldersley/Clouston Park,Te Aro,11.0
-Trentham West/Eldersley/Clouston Park,Titahi Bay/Onepoto/Elsdon,14.0
-Trentham West/Eldersley/Clouston Park,Totara Park/Maoribank/Te Marua,2.0
-Trentham West/Eldersley/Clouston Park,Trentham North/Wallaceville,2.0
-Trentham West/Eldersley/Clouston Park,Vogeltown/Berhampore/Newtown,12.5
-Trentham West/Eldersley/Clouston Park,Wadestown/Thordon,9.0
+Trentham West/Eldersley/Clouston Park,Miramar/Strathmore,10.95
+Trentham West/Eldersley/Clouston Park,Moera/Waiwhetu,4.3
+Trentham West/Eldersley/Clouston Park,Mt Cook,9.78
+Trentham West/Eldersley/Clouston Park,Mt Victoria/Roseneath,8.61
+Trentham West/Eldersley/Clouston Park,Ngaio/Kaiwharawhara/Wilton,10.95
+Trentham West/Eldersley/Clouston Park,Northland,9.78
+Trentham West/Eldersley/Clouston Park,Oriental Bay/Seatoun,10.95
+Trentham West/Eldersley/Clouston Park,Papakowhai/Whitby/Pauatahanui,9.78
+Trentham West/Eldersley/Clouston Park,Paramata/Mana/Pukerua Bay,13.3
+Trentham West/Eldersley/Clouston Park,Paraparaumu/Raumati,17.6
+Trentham West/Eldersley/Clouston Park,Petone West/Alicetown,4.3
+Trentham West/Eldersley/Clouston Park,Petone/Esplanade,4.3
+Trentham West/Eldersley/Clouston Park,Porirua East/Waitangirua,13.69
+Trentham West/Eldersley/Clouston Park,Stokes Valley,4.3
+Trentham West/Eldersley/Clouston Park,Taita/Naenae,5.48
+Trentham West/Eldersley/Clouston Park,Tawa/Grenada North,11.34
+Trentham West/Eldersley/Clouston Park,Te Aro,8.61
+Trentham West/Eldersley/Clouston Park,Titahi Bay/Onepoto/Elsdon,10.95
+Trentham West/Eldersley/Clouston Park,Totara Park/Maoribank/Te Marua,1.56
+Trentham West/Eldersley/Clouston Park,Trentham North/Wallaceville,1.56
+Trentham West/Eldersley/Clouston Park,Vogeltown/Berhampore/Newtown,9.78
+Trentham West/Eldersley/Clouston Park,Wadestown/Thordon,7.04
 Trentham West/Eldersley/Clouston Park,Waikanae/Otaki,
-Trentham West/Eldersley/Clouston Park,Wainuiomata,9.0
-Trentham West/Eldersley/Clouston Park,Western Hills/Haywards,7.5
-Vogeltown/Berhampore/Newtown,Brooklyn,4.0
+Trentham West/Eldersley/Clouston Park,Wainuiomata,7.04
+Trentham West/Eldersley/Clouston Park,Western Hills/Haywards,5.87
+Vogeltown/Berhampore/Newtown,Brooklyn,3.13
 Vogeltown/Berhampore/Newtown,Carterton/South Wairarapa,
-Vogeltown/Berhampore/Newtown,Eastern Bays,14.5
-Vogeltown/Berhampore/Newtown,Epuni/Avalon,12.0
-Vogeltown/Berhampore/Newtown,Hataitai,10.5
-Vogeltown/Berhampore/Newtown,Heretaunga/Silverstream,11.5
-Vogeltown/Berhampore/Newtown,Hutt Central/Waterloo,9.0
-Vogeltown/Berhampore/Newtown,Island Bay/Melrose,3.5
-Vogeltown/Berhampore/Newtown,Johnsonville/Newlands,8.5
-Vogeltown/Berhampore/Newtown,Karori,5.0
-Vogeltown/Berhampore/Newtown,Karori South/Makara,12.0
-Vogeltown/Berhampore/Newtown,Kelburn/Aro Valley,3.5
-Vogeltown/Berhampore/Newtown,Khandallah,8.5
-Vogeltown/Berhampore/Newtown,Kilbirnie/Lyall Bay,3.5
-Vogeltown/Berhampore/Newtown,Kingston/Happy Valley,2.0
-Vogeltown/Berhampore/Newtown,Lambton,3.5
+Vogeltown/Berhampore/Newtown,Eastern Bays,11.34
+Vogeltown/Berhampore/Newtown,Epuni/Avalon,9.39
+Vogeltown/Berhampore/Newtown,Hataitai,8.22
+Vogeltown/Berhampore/Newtown,Heretaunga/Silverstream,9.0
+Vogeltown/Berhampore/Newtown,Hutt Central/Waterloo,7.04
+Vogeltown/Berhampore/Newtown,Island Bay/Melrose,2.74
+Vogeltown/Berhampore/Newtown,Johnsonville/Newlands,6.65
+Vogeltown/Berhampore/Newtown,Karori,3.91
+Vogeltown/Berhampore/Newtown,Karori South/Makara,9.39
+Vogeltown/Berhampore/Newtown,Kelburn/Aro Valley,2.74
+Vogeltown/Berhampore/Newtown,Khandallah,6.65
+Vogeltown/Berhampore/Newtown,Kilbirnie/Lyall Bay,2.74
+Vogeltown/Berhampore/Newtown,Kingston/Happy Valley,1.56
+Vogeltown/Berhampore/Newtown,Lambton,2.74
 Vogeltown/Berhampore/Newtown,Masterton,
-Vogeltown/Berhampore/Newtown,Miramar/Strathmore,3.5
-Vogeltown/Berhampore/Newtown,Moera/Waiwhetu,9.0
-Vogeltown/Berhampore/Newtown,Mt Cook,2.0
-Vogeltown/Berhampore/Newtown,Mt Victoria/Roseneath,3.5
-Vogeltown/Berhampore/Newtown,Ngaio/Kaiwharawhara/Wilton,8.5
-Vogeltown/Berhampore/Newtown,Northland,5.0
-Vogeltown/Berhampore/Newtown,Oriental Bay/Seatoun,3.5
-Vogeltown/Berhampore/Newtown,Papakowhai/Whitby/Pauatahanui,13.5
-Vogeltown/Berhampore/Newtown,Paramata/Mana/Pukerua Bay,11.5
-Vogeltown/Berhampore/Newtown,Paraparaumu/Raumati,17.0
-Vogeltown/Berhampore/Newtown,Petone West/Alicetown,9.0
-Vogeltown/Berhampore/Newtown,Petone/Esplanade,9.0
-Vogeltown/Berhampore/Newtown,Porirua East/Waitangirua,12.0
-Vogeltown/Berhampore/Newtown,Stokes Valley,13.5
-Vogeltown/Berhampore/Newtown,Taita/Naenae,10.0
-Vogeltown/Berhampore/Newtown,Tawa/Grenada North,9.0
-Vogeltown/Berhampore/Newtown,Te Aro,3.5
-Vogeltown/Berhampore/Newtown,Titahi Bay/Onepoto/Elsdon,13.5
-Vogeltown/Berhampore/Newtown,Totara Park/Maoribank/Te Marua,14.5
-Vogeltown/Berhampore/Newtown,Trentham North/Wallaceville,12.5
-Vogeltown/Berhampore/Newtown,Trentham West/Eldersley/Clouston Park,12.5
-Vogeltown/Berhampore/Newtown,Wadestown/Thordon,3.5
+Vogeltown/Berhampore/Newtown,Miramar/Strathmore,2.74
+Vogeltown/Berhampore/Newtown,Moera/Waiwhetu,7.04
+Vogeltown/Berhampore/Newtown,Mt Cook,1.56
+Vogeltown/Berhampore/Newtown,Mt Victoria/Roseneath,2.74
+Vogeltown/Berhampore/Newtown,Ngaio/Kaiwharawhara/Wilton,6.65
+Vogeltown/Berhampore/Newtown,Northland,3.91
+Vogeltown/Berhampore/Newtown,Oriental Bay/Seatoun,2.74
+Vogeltown/Berhampore/Newtown,Papakowhai/Whitby/Pauatahanui,10.56
+Vogeltown/Berhampore/Newtown,Paramata/Mana/Pukerua Bay,9.0
+Vogeltown/Berhampore/Newtown,Paraparaumu/Raumati,13.3
+Vogeltown/Berhampore/Newtown,Petone West/Alicetown,7.04
+Vogeltown/Berhampore/Newtown,Petone/Esplanade,7.04
+Vogeltown/Berhampore/Newtown,Porirua East/Waitangirua,9.39
+Vogeltown/Berhampore/Newtown,Stokes Valley,10.56
+Vogeltown/Berhampore/Newtown,Taita/Naenae,7.82
+Vogeltown/Berhampore/Newtown,Tawa/Grenada North,7.04
+Vogeltown/Berhampore/Newtown,Te Aro,2.74
+Vogeltown/Berhampore/Newtown,Titahi Bay/Onepoto/Elsdon,10.56
+Vogeltown/Berhampore/Newtown,Totara Park/Maoribank/Te Marua,11.34
+Vogeltown/Berhampore/Newtown,Trentham North/Wallaceville,9.78
+Vogeltown/Berhampore/Newtown,Trentham West/Eldersley/Clouston Park,9.78
+Vogeltown/Berhampore/Newtown,Wadestown/Thordon,2.74
 Vogeltown/Berhampore/Newtown,Waikanae/Otaki,
-Vogeltown/Berhampore/Newtown,Wainuiomata,12.5
-Vogeltown/Berhampore/Newtown,Western Hills/Haywards,9.0
-Wadestown/Thordon,Brooklyn,5.5
+Vogeltown/Berhampore/Newtown,Wainuiomata,9.78
+Vogeltown/Berhampore/Newtown,Western Hills/Haywards,7.04
+Wadestown/Thordon,Brooklyn,4.3
 Wadestown/Thordon,Carterton/South Wairarapa,
-Wadestown/Thordon,Eastern Bays,8.0
-Wadestown/Thordon,Epuni/Avalon,12.5
-Wadestown/Thordon,Hataitai,9.0
-Wadestown/Thordon,Heretaunga/Silverstream,10.0
-Wadestown/Thordon,Hutt Central/Waterloo,7.5
-Wadestown/Thordon,Island Bay/Melrose,7.0
-Wadestown/Thordon,Johnsonville/Newlands,5.0
-Wadestown/Thordon,Karori,7.0
-Wadestown/Thordon,Karori South/Makara,2.0
-Wadestown/Thordon,Kelburn/Aro Valley,5.5
-Wadestown/Thordon,Khandallah,5.0
-Wadestown/Thordon,Kilbirnie/Lyall Bay,9.0
-Wadestown/Thordon,Kingston/Happy Valley,5.5
-Wadestown/Thordon,Lambton,2.0
+Wadestown/Thordon,Eastern Bays,6.26
+Wadestown/Thordon,Epuni/Avalon,9.78
+Wadestown/Thordon,Hataitai,7.04
+Wadestown/Thordon,Heretaunga/Silverstream,7.82
+Wadestown/Thordon,Hutt Central/Waterloo,5.87
+Wadestown/Thordon,Island Bay/Melrose,5.48
+Wadestown/Thordon,Johnsonville/Newlands,3.91
+Wadestown/Thordon,Karori,5.48
+Wadestown/Thordon,Karori South/Makara,1.56
+Wadestown/Thordon,Kelburn/Aro Valley,4.3
+Wadestown/Thordon,Khandallah,3.91
+Wadestown/Thordon,Kilbirnie/Lyall Bay,7.04
+Wadestown/Thordon,Kingston/Happy Valley,4.3
+Wadestown/Thordon,Lambton,1.56
 Wadestown/Thordon,Masterton,
-Wadestown/Thordon,Miramar/Strathmore,13.0
-Wadestown/Thordon,Moera/Waiwhetu,7.5
-Wadestown/Thordon,Mt Cook,3.5
-Wadestown/Thordon,Mt Victoria/Roseneath,10.0
-Wadestown/Thordon,Ngaio/Kaiwharawhara/Wilton,5.0
-Wadestown/Thordon,Northland,5.5
-Wadestown/Thordon,Oriental Bay/Seatoun,13.0
-Wadestown/Thordon,Papakowhai/Whitby/Pauatahanui,12.0
-Wadestown/Thordon,Paramata/Mana/Pukerua Bay,10.0
+Wadestown/Thordon,Miramar/Strathmore,10.17
+Wadestown/Thordon,Moera/Waiwhetu,5.87
+Wadestown/Thordon,Mt Cook,2.74
+Wadestown/Thordon,Mt Victoria/Roseneath,7.82
+Wadestown/Thordon,Ngaio/Kaiwharawhara/Wilton,3.91
+Wadestown/Thordon,Northland,4.3
+Wadestown/Thordon,Oriental Bay/Seatoun,10.17
+Wadestown/Thordon,Papakowhai/Whitby/Pauatahanui,9.39
+Wadestown/Thordon,Paramata/Mana/Pukerua Bay,7.82
 Wadestown/Thordon,Paraparaumu/Raumati,
-Wadestown/Thordon,Petone West/Alicetown,9.0
-Wadestown/Thordon,Petone/Esplanade,11.0
-Wadestown/Thordon,Porirua East/Waitangirua,10.5
-Wadestown/Thordon,Stokes Valley,12.0
-Wadestown/Thordon,Taita/Naenae,8.5
-Wadestown/Thordon,Tawa/Grenada North,12.0
-Wadestown/Thordon,Te Aro,10.0
-Wadestown/Thordon,Titahi Bay/Onepoto/Elsdon,12.0
-Wadestown/Thordon,Totara Park/Maoribank/Te Marua,14.5
-Wadestown/Thordon,Trentham North/Wallaceville,14.5
-Wadestown/Thordon,Trentham West/Eldersley/Clouston Park,14.5
-Wadestown/Thordon,Vogeltown/Berhampore/Newtown,5.5
+Wadestown/Thordon,Petone West/Alicetown,7.04
+Wadestown/Thordon,Petone/Esplanade,8.61
+Wadestown/Thordon,Porirua East/Waitangirua,8.22
+Wadestown/Thordon,Stokes Valley,9.39
+Wadestown/Thordon,Taita/Naenae,6.65
+Wadestown/Thordon,Tawa/Grenada North,9.39
+Wadestown/Thordon,Te Aro,7.82
+Wadestown/Thordon,Titahi Bay/Onepoto/Elsdon,9.39
+Wadestown/Thordon,Totara Park/Maoribank/Te Marua,11.34
+Wadestown/Thordon,Trentham North/Wallaceville,11.34
+Wadestown/Thordon,Trentham West/Eldersley/Clouston Park,11.34
+Wadestown/Thordon,Vogeltown/Berhampore/Newtown,4.3
 Wadestown/Thordon,Waikanae/Otaki,
-Wadestown/Thordon,Wainuiomata,11.0
-Wadestown/Thordon,Western Hills/Haywards,5.5
+Wadestown/Thordon,Wainuiomata,8.61
+Wadestown/Thordon,Western Hills/Haywards,4.3
 Waikanae/Otaki,Brooklyn,
 Waikanae/Otaki,Carterton/South Wairarapa,
 Waikanae/Otaki,Eastern Bays,
@@ -1721,87 +1721,87 @@ Waikanae/Otaki,Vogeltown/Berhampore/Newtown,
 Waikanae/Otaki,Wadestown/Thordon,
 Waikanae/Otaki,Wainuiomata,
 Waikanae/Otaki,Western Hills/Haywards,
-Wainuiomata,Brooklyn,12.5
+Wainuiomata,Brooklyn,9.78
 Wainuiomata,Carterton/South Wairarapa,
-Wainuiomata,Eastern Bays,8.5
-Wainuiomata,Epuni/Avalon,10.5
-Wainuiomata,Hataitai,12.5
-Wainuiomata,Heretaunga/Silverstream,8.5
-Wainuiomata,Hutt Central/Waterloo,3.5
-Wainuiomata,Island Bay/Melrose,14.0
-Wainuiomata,Johnsonville/Newlands,16.0
-Wainuiomata,Karori,14.0
-Wainuiomata,Karori South/Makara,14.5
-Wainuiomata,Kelburn/Aro Valley,12.5
-Wainuiomata,Khandallah,14.0
-Wainuiomata,Kilbirnie/Lyall Bay,12.5
-Wainuiomata,Kingston/Happy Valley,12.5
-Wainuiomata,Lambton,11.0
+Wainuiomata,Eastern Bays,6.65
+Wainuiomata,Epuni/Avalon,8.22
+Wainuiomata,Hataitai,9.78
+Wainuiomata,Heretaunga/Silverstream,6.65
+Wainuiomata,Hutt Central/Waterloo,2.74
+Wainuiomata,Island Bay/Melrose,10.95
+Wainuiomata,Johnsonville/Newlands,12.52
+Wainuiomata,Karori,10.95
+Wainuiomata,Karori South/Makara,11.34
+Wainuiomata,Kelburn/Aro Valley,9.78
+Wainuiomata,Khandallah,10.95
+Wainuiomata,Kilbirnie/Lyall Bay,9.78
+Wainuiomata,Kingston/Happy Valley,9.78
+Wainuiomata,Lambton,8.61
 Wainuiomata,Masterton,
-Wainuiomata,Miramar/Strathmore,14.5
-Wainuiomata,Moera/Waiwhetu,3.5
-Wainuiomata,Mt Cook,12.5
-Wainuiomata,Mt Victoria/Roseneath,11.0
-Wainuiomata,Ngaio/Kaiwharawhara/Wilton,14.0
-Wainuiomata,Northland,12.5
-Wainuiomata,Oriental Bay/Seatoun,14.5
-Wainuiomata,Papakowhai/Whitby/Pauatahanui,13.0
-Wainuiomata,Paramata/Mana/Pukerua Bay,17.0
-Wainuiomata,Paraparaumu/Raumati,22.5
-Wainuiomata,Petone West/Alicetown,5.5
-Wainuiomata,Petone/Esplanade,5.5
-Wainuiomata,Porirua East/Waitangirua,17.5
-Wainuiomata,Stokes Valley,8.5
-Wainuiomata,Taita/Naenae,7.0
-Wainuiomata,Tawa/Grenada North,14.5
-Wainuiomata,Te Aro,11.0
-Wainuiomata,Titahi Bay/Onepoto/Elsdon,15.0
-Wainuiomata,Totara Park/Maoribank/Te Marua,9.0
-Wainuiomata,Trentham North/Wallaceville,9.0
-Wainuiomata,Trentham West/Eldersley/Clouston Park,9.0
-Wainuiomata,Vogeltown/Berhampore/Newtown,12.5
-Wainuiomata,Wadestown/Thordon,9.0
+Wainuiomata,Miramar/Strathmore,11.34
+Wainuiomata,Moera/Waiwhetu,2.74
+Wainuiomata,Mt Cook,9.78
+Wainuiomata,Mt Victoria/Roseneath,8.61
+Wainuiomata,Ngaio/Kaiwharawhara/Wilton,10.95
+Wainuiomata,Northland,9.78
+Wainuiomata,Oriental Bay/Seatoun,11.34
+Wainuiomata,Papakowhai/Whitby/Pauatahanui,10.17
+Wainuiomata,Paramata/Mana/Pukerua Bay,13.3
+Wainuiomata,Paraparaumu/Raumati,17.6
+Wainuiomata,Petone West/Alicetown,4.3
+Wainuiomata,Petone/Esplanade,4.3
+Wainuiomata,Porirua East/Waitangirua,13.69
+Wainuiomata,Stokes Valley,6.65
+Wainuiomata,Taita/Naenae,5.48
+Wainuiomata,Tawa/Grenada North,11.34
+Wainuiomata,Te Aro,8.61
+Wainuiomata,Titahi Bay/Onepoto/Elsdon,11.74
+Wainuiomata,Totara Park/Maoribank/Te Marua,7.04
+Wainuiomata,Trentham North/Wallaceville,7.04
+Wainuiomata,Trentham West/Eldersley/Clouston Park,7.04
+Wainuiomata,Vogeltown/Berhampore/Newtown,9.78
+Wainuiomata,Wadestown/Thordon,7.04
 Wainuiomata,Waikanae/Otaki,
-Wainuiomata,Western Hills/Haywards,7.5
-Western Hills/Haywards,Brooklyn,9.0
+Wainuiomata,Western Hills/Haywards,5.87
+Western Hills/Haywards,Brooklyn,7.04
 Western Hills/Haywards,Carterton/South Wairarapa,
-Western Hills/Haywards,Eastern Bays,7.0
-Western Hills/Haywards,Epuni/Avalon,5.5
-Western Hills/Haywards,Hataitai,9.0
-Western Hills/Haywards,Heretaunga/Silverstream,13.5
-Western Hills/Haywards,Hutt Central/Waterloo,11.0
-Western Hills/Haywards,Island Bay/Melrose,10.5
-Western Hills/Haywards,Johnsonville/Newlands,7.5
-Western Hills/Haywards,Karori,10.5
-Western Hills/Haywards,Karori South/Makara,9.0
-Western Hills/Haywards,Kelburn/Aro Valley,9.0
-Western Hills/Haywards,Khandallah,7.5
-Western Hills/Haywards,Kilbirnie/Lyall Bay,10.5
-Western Hills/Haywards,Kingston/Happy Valley,9.0
-Western Hills/Haywards,Lambton,5.5
+Western Hills/Haywards,Eastern Bays,5.48
+Western Hills/Haywards,Epuni/Avalon,4.3
+Western Hills/Haywards,Hataitai,7.04
+Western Hills/Haywards,Heretaunga/Silverstream,10.56
+Western Hills/Haywards,Hutt Central/Waterloo,8.61
+Western Hills/Haywards,Island Bay/Melrose,8.22
+Western Hills/Haywards,Johnsonville/Newlands,5.87
+Western Hills/Haywards,Karori,8.22
+Western Hills/Haywards,Karori South/Makara,7.04
+Western Hills/Haywards,Kelburn/Aro Valley,7.04
+Western Hills/Haywards,Khandallah,5.87
+Western Hills/Haywards,Kilbirnie/Lyall Bay,8.22
+Western Hills/Haywards,Kingston/Happy Valley,7.04
+Western Hills/Haywards,Lambton,4.3
 Western Hills/Haywards,Masterton,
-Western Hills/Haywards,Miramar/Strathmore,12.5
-Western Hills/Haywards,Moera/Waiwhetu,11.0
-Western Hills/Haywards,Mt Cook,9.0
-Western Hills/Haywards,Mt Victoria/Roseneath,7.5
-Western Hills/Haywards,Ngaio/Kaiwharawhara/Wilton,10.5
-Western Hills/Haywards,Northland,9.0
-Western Hills/Haywards,Oriental Bay/Seatoun,10.5
-Western Hills/Haywards,Papakowhai/Whitby/Pauatahanui,15.5
-Western Hills/Haywards,Paramata/Mana/Pukerua Bay,13.5
-Western Hills/Haywards,Paraparaumu/Raumati,19.0
-Western Hills/Haywards,Petone West/Alicetown,2.0
-Western Hills/Haywards,Petone/Esplanade,4.0
-Western Hills/Haywards,Porirua East/Waitangirua,14.0
-Western Hills/Haywards,Stokes Valley,15.5
-Western Hills/Haywards,Taita/Naenae,12.0
-Western Hills/Haywards,Tawa/Grenada North,11.0
-Western Hills/Haywards,Te Aro,7.5
-Western Hills/Haywards,Titahi Bay/Onepoto/Elsdon,15.5
-Western Hills/Haywards,Totara Park/Maoribank/Te Marua,7.5
-Western Hills/Haywards,Trentham North/Wallaceville,7.5
-Western Hills/Haywards,Trentham West/Eldersley/Clouston Park,7.5
-Western Hills/Haywards,Vogeltown/Berhampore/Newtown,9.0
-Western Hills/Haywards,Wadestown/Thordon,5.5
+Western Hills/Haywards,Miramar/Strathmore,9.78
+Western Hills/Haywards,Moera/Waiwhetu,8.61
+Western Hills/Haywards,Mt Cook,7.04
+Western Hills/Haywards,Mt Victoria/Roseneath,5.87
+Western Hills/Haywards,Ngaio/Kaiwharawhara/Wilton,8.22
+Western Hills/Haywards,Northland,7.04
+Western Hills/Haywards,Oriental Bay/Seatoun,8.22
+Western Hills/Haywards,Papakowhai/Whitby/Pauatahanui,12.13
+Western Hills/Haywards,Paramata/Mana/Pukerua Bay,10.56
+Western Hills/Haywards,Paraparaumu/Raumati,14.87
+Western Hills/Haywards,Petone West/Alicetown,1.56
+Western Hills/Haywards,Petone/Esplanade,3.13
+Western Hills/Haywards,Porirua East/Waitangirua,10.95
+Western Hills/Haywards,Stokes Valley,12.13
+Western Hills/Haywards,Taita/Naenae,9.39
+Western Hills/Haywards,Tawa/Grenada North,8.61
+Western Hills/Haywards,Te Aro,5.87
+Western Hills/Haywards,Titahi Bay/Onepoto/Elsdon,12.13
+Western Hills/Haywards,Totara Park/Maoribank/Te Marua,5.87
+Western Hills/Haywards,Trentham North/Wallaceville,5.87
+Western Hills/Haywards,Trentham West/Eldersley/Clouston Park,5.87
+Western Hills/Haywards,Vogeltown/Berhampore/Newtown,7.04
+Western Hills/Haywards,Wadestown/Thordon,4.3
 Western Hills/Haywards,Waikanae/Otaki,
-Western Hills/Haywards,Wainuiomata,14.5
+Western Hills/Haywards,Wainuiomata,11.34

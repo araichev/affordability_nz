@@ -1,0 +1,136 @@
+<!-- This page has been auto-generated using RapydML (http://www.pyjeon.com) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Affordability in New Zealand
+        </title>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        <link rel='stylesheet' href='lib/jquery-ui-1.10.3/jquery-ui.css' />
+        <link rel='stylesheet' href='lib/leaflet-0.7.2/leaflet.css' />
+        <link rel='stylesheet' href='fonts/Open-Sans/stylesheet.css' />
+        <link rel='stylesheet' href='css/commute-icons/style.css' />
+        <link rel='stylesheet' href='lib/bootstrap-3.3.4/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='css/style.css' />
+    </head>
+</html>
+<body id='about'>
+    <h1>
+        Affordability in New Zealand
+    </h1>
+    <div id='nav'>
+        <ul>
+            <li>
+                <a href='index.html' id='nav-index'>
+                    Auckland
+                </a>
+            </li>
+            <li>
+                /
+            </li>
+            <li>
+                <a href='canterbury.html' id='nav-canterbury'>
+                    Canterbury
+                </a>
+            </li>
+            <li>
+                /
+            </li>
+            <li>
+                <a href='wellington.html' id='nav-wellington'>
+                    Wellington
+                </a>
+            </li>
+            <li>
+                //
+            </li>
+            <li>
+                <a href='about.html' id='nav-about'>
+                    About
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>
+        This website is created by Saeid Adli and Alex Raichev and inspired in part by the article "Housing and transport expenditure: Socio-spatial indicators of affordability in Auckland" by K. Mattingly and J. Morrissey
+        <a href='docs/MaMo2014.pdf'>
+            [MaMo2014]
+        </a>
+        .
+    </p>
+    <p>
+        This website is open-source. Its data and code can be found on Github
+        <a href='https://github.com/araichev/affordability_in_nz'>
+            here,
+        </a>
+        and contributors are welcome.
+        Thanks heaps to 
+        <a href='http://www.mrcagney.co.nz'>
+            MRCagney
+        </a>
+        for donating to this project!
+    </p>
+    <h2>
+        Data, Methodology, and Limitations
+    </h2>
+    <ul>
+        <li>
+            The area units displayed are low resolution versions of the 2013 census area units available from Statistics New Zealand from
+            <a href='http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/digital-boundary-files.aspx'>
+                here.
+            </a>
+        </li>
+        <li>
+            The median gross annual incomes of employed Aucklanders, Wellingtonians, etc. comes from Statistics New Zealand from the June 2013 income survey (grouped by regional council)
+            <a href='http://www.stats.govt.nz/browse_for_stats/income-and-work/Income/nz-income-survey-info-releases.aspx'>
+                here.
+            </a>
+        </li>
+        <li>
+            Rents come from the 2013 census via a custom data request from Statistics New Zealand.  They are median rents per area unit per dwelling size.
+        </li>
+        <li>
+            The commute distances and times used are those of the quickest paths through the street network between area unit centroids. For walking, bicycling, and driving modes, these were calculated with ArcGIS in traffic-free conditions. For public transport, they were calculated with the Google Maps API in traffic-free conditions.  Also, distance estimates for an area unit to itself are currently zero for all travel modes. Because the data does not incorporate a traffic model, the driving mode times are probably underestimated.
+        </li>
+        <li>
+            Commute costs per kilometer come from [MaMo2014, Table 2] and are (walk, bicycle, public transport, car) = (0, 0, $0.218, $0.274). These numbers were derived for Auckland, so the public transport mode number probably does not apply to other regions of New Zealand, and maybe not even to Auckland!
+        </li>
+        <li>
+            For Auckland, commute cost by public transport is calculated as
+            <a href="docs/auckland_monthly_pass_fare_zones.pdf">
+                the cost of an appropriate AT Hop monthly pass
+            </a>
+            divided by the average number of weekdays in a month. For example, a daily roundtrip commute between area units in zones A and B costs $190/(52*5/12) ~ $8.77. For ferry rides, the cost defaults back to the public transport per kilometer cost above.
+        </li>
+        <li>
+            Car ownership cost per car per year comes from [MaMo2014, Table 3] and is $2228.
+        </li>
+    </ul>
+    <h2>
+        Todo
+    </h2>
+    <ul>
+        <li>
+            Add Waikato
+        </li>
+        <li>
+            Improve public transport cost estimates by using regional fare data where available
+        </li>
+        <li>
+            Make the app mobile-friendly
+        </li>
+        <li>
+            Improve driving time estimates by incorporating a traffic model
+        </li>
+    </ul>
+    <h2>
+        Feedback?
+    </h2>
+    <p>
+        This project is a work in progress and your feedback can help make it better.
+        <a href='mailto:araichev@affordability.org.nz'>
+            Email Alex.
+        </a>
+    </p>
+</body>

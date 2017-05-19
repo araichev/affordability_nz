@@ -1,0 +1,40 @@
+json = verbatim('<script type="application/json" id="data">', '</script>')
+
+def page($page_name):
+    !DOCTYPE(html)
+    html:
+        head:
+            title:
+                'Affordability in New Zealand'
+            meta(charset='utf-8')
+            meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+            link(rel='stylesheet', href='lib/jquery-ui-1.10.3/jquery-ui.css')
+            link(rel='stylesheet', href='lib/leaflet-0.7.2/leaflet.css')
+            link(rel='stylesheet', href='fonts/Open-Sans/stylesheet.css')  
+            link(rel='stylesheet', href='css/commute-icons/style.css') 
+            link(rel='stylesheet', href='lib/bootstrap-3.3.4/css/bootstrap.min.css')
+            link(rel='stylesheet', href='css/style.css')
+    body(id=$page_name):
+        h1:
+            'Affordability in New Zealand'  
+        div(id='nav'):
+            ul:
+                li:
+                    a(href='index.html', id='nav-index'):
+                        'Auckland'
+                li:
+                    '/'
+                li:
+                    a(href='canterbury.html', id='nav-canterbury'):
+                        'Canterbury'
+                li:
+                    '/'
+                li: 
+                    a(href='wellington.html', id='nav-wellington'):
+                        'Wellington'
+                li:
+                    '//'
+                li: 
+                    a(href='about.html', id='nav-about'):
+                        'About'
+        main()

@@ -1,0 +1,218 @@
+<!-- This page has been auto-generated using RapydML (http://www.pyjeon.com) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Affordability in New Zealand
+        </title>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        <link rel='stylesheet' href='lib/jquery-ui-1.10.3/jquery-ui.css' />
+        <link rel='stylesheet' href='lib/leaflet-0.7.2/leaflet.css' />
+        <link rel='stylesheet' href='fonts/Open-Sans/stylesheet.css' />
+        <link rel='stylesheet' href='css/commute-icons/style.css' />
+        <link rel='stylesheet' href='lib/bootstrap-3.3.4/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='css/style.css' />
+    </head>
+</html>
+<body id='index'>
+    <h1>
+        Affordability in New Zealand
+    </h1>
+    <div id='nav'>
+        <ul>
+            <li>
+                <a href='index.html' id='nav-index'>
+                    Auckland
+                </a>
+            </li>
+            <li>
+                /
+            </li>
+            <li>
+                <a href='canterbury.html' id='nav-canterbury'>
+                    Canterbury
+                </a>
+            </li>
+            <li>
+                /
+            </li>
+            <li>
+                <a href='wellington.html' id='nav-wellington'>
+                    Wellington
+                </a>
+            </li>
+            <li>
+                //
+            </li>
+            <li>
+                <a href='about.html' id='nav-about'>
+                    About
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>
+        You and your partner, if you have one, just got a job in Auckland. Now where to live?
+        <br />
+        This application color codes Auckland's area units by their affordability to you. Here affordability is based on rent, commute, parking, and car ownership cost estimates determined by your answers to the questions below.
+    </p>
+    <div class="row">
+        <div class="col col-md-9">
+            <div id='map'>
+            </div>
+        </div>
+        <div class="col col-md-3">
+            <div id='sidebar'>
+                <ol>
+                    <li>
+                        What will your combined annual incomes be?
+                        <br />
+                        <input type='text' id='income' readonly />
+                        <div id='income-slider'>
+                        </div>
+                        <div id='income-note'>
+                            Median gross annual income of
+                            <br )br( />
+                            employed Aucklanders ($45,864)
+                        </div>
+                    </li>
+                    <li>
+                        How many bedrooms will your dwelling have?
+                        <ul id='num-bedrooms'>
+                            <li class='ui-state-default' value='1'>
+                                1
+                            </li>
+                            <li class='ui-state-default' value='2'>
+                                2
+                            </li>
+                            <li class='ui-state-default' value='3'>
+                                3
+                            </li>
+                            <li class='ui-state-default' value='4'>
+                                4
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        For how many of these bedrooms will you pay rent?
+                        <ul id='num-bedrooms-rent'>
+                            <li class='ui-state-default' value='1'>
+                                1
+                            </li>
+                            <li class='ui-state-default' value='2'>
+                                2
+                            </li>
+                            <li class='ui-state-default' value='3'>
+                                3
+                            </li>
+                            <li class='ui-state-default' value='4'>
+                                4
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Where will you work? Move the map markers.
+                    </li>
+                    <li>
+                        How will you commute?
+                        <ul id='mode-y'>
+                            <li class='ui-state-default icon-walk' id='walk' title='walk' />
+                            <li class='ui-state-default icon-bicycle' id='bicycle' title='bicycle' />
+                            <li class='ui-state-default icon-bus' id='transit' title='public transport' />
+                            <li class='ui-state-default icon-car' id='car' title='car' />
+                            <li>
+                                You
+                            </li>
+                        </ul>
+                        <ul id='mode-p'>
+                            <li class='ui-state-default icon-walk' id='walk' title='walk' />
+                            <li class='ui-state-default icon-bicycle' id='bicycle' title='bicycle' />
+                            <li class='ui-state-default icon-bus' id='transit' title='public transport' />
+                            <li class='ui-state-default icon-car' id='car' title='car' />
+                            <li>
+                                Partner
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        How many days a week will you commute?
+                        <br />
+                        <input type='text' id='num-workdays-y' readonly />
+                        <div id='num-workdays-y-slider'>
+                        </div>
+                        You
+                        <br />
+                        <input type='text' id='num-workdays-p' readonly />
+                        <div id='num-workdays-p-slider'>
+                        </div>
+                        Partner
+                    </li>
+                    <li>
+                        How much will daily work parking cost?
+                        <br />
+                        <input type='text' id='parking-y' readonly />
+                        <div id='parking-y-slider'>
+                        </div>
+                        You
+                        <br />
+                        <input type='text' id='parking-p' readonly />
+                        <div id='parking-p-slider'>
+                        </div>
+                        Partner
+                    </li>
+                    <li>
+                        How many cars will you own?
+                        <ul id='num-cars'>
+                            <li class='ui-state-default' value='0'>
+                                0
+                            </li>
+                            <li class='ui-state-default' value='1'>
+                                1
+                            </li>
+                            <li class='ui-state-default' value='2'>
+                                2
+                            </li>
+                            <li class='ui-state-default' value='3'>
+                                3
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <p>
+        Hint: To ignore your partner, cast his/her map marker out to sea or zero his/her commute days.
+    </p>
+    <script type="application/json" id="data">
+      {
+        "AUsFile": "data/auckland/rental_areas.geojson",
+        "centroidsFile": "data/auckland/rental_points.geojson",
+        "rentsFile": "data/auckland/rents.json",
+        "commuteCostsFile": "data/auckland/commute_costs.json",
+        "lon": 174.8,
+        "lat": -36.9,
+        "maxBounds": [[-37.7, 174.0], [-36.1, 175.9]],
+        "markerLatLons": [[-36.74, 175.07], [-36.74, 175.11]],
+        "zoom": 10,
+        "medianAnnualIncome": 45864
+      }
+    </script>
+    <script src='lib/jquery-1.11.0/jquery.min.js'>
+    </script>
+    <script src='lib/jquery-ui-1.10.3/jquery-ui.min.js'>
+    </script>
+    <script src='lib/jquery-ui-touch-punch-0.2.3/jquery.ui.touch-punch.min.js'>
+    </script>
+    <script src='lib/mapbox-1.6.2/mapbox.min.js'>
+    </script>
+    <script src='lib/leaflet-pip.min.js'>
+    </script>
+    <script src='lib/spinner.min.js'>
+    </script>
+    <script src='lib/d3.v3.min.js'>
+    </script>
+    <script src='js/map.js'>
+    </script>
+</body>

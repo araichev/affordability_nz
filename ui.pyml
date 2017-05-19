@@ -1,0 +1,102 @@
+def ui($income_note): 
+    div(class="row"):
+        div(class="col col-md-9"):
+            div(id='map')
+        div(class="col col-md-3"):
+            div(id='sidebar'):
+                sidebar($income_note)
+    p:
+        'Hint: To ignore your partner, cast his/her map marker out to sea or zero his/her commute days.'
+
+    data()
+    script(src='lib/jquery-1.11.0/jquery.min.js')
+    script(src='lib/jquery-ui-1.10.3/jquery-ui.min.js')
+    script(src='lib/jquery-ui-touch-punch-0.2.3/jquery.ui.touch-punch.min.js')
+    script(src='lib/mapbox-1.6.2/mapbox.min.js')   
+    script(src='lib/leaflet-pip.min.js')
+    script(src='lib/spinner.min.js')
+    script(src='lib/d3.v3.min.js')
+    script(src='js/map.js')
+
+def sidebar($income_note):
+    ol:
+        li:
+            'What will your combined annual incomes be?'
+            br()
+            input(type='text' id='income' readonly)
+            div(id='income-slider')
+            div(id='income-note'):
+                'Median gross annual income of' 
+                br()br()
+                $income_note
+        li:
+            'How many bedrooms will your dwelling have?'
+            ul(id='num-bedrooms'):
+                li(class='ui-state-default' value='1'):
+                    '1'
+                li(class='ui-state-default' value='2'):
+                    '2'
+                li(class='ui-state-default' value='3'):
+                    '3'
+                li(class='ui-state-default' value='4'):
+                    '4'
+        li:
+            'For how many of these bedrooms will you pay rent?'
+            ul(id='num-bedrooms-rent'):
+                li(class='ui-state-default' value='1'):
+                    '1'
+                li(class='ui-state-default' value='2'):
+                    '2'
+                li(class='ui-state-default' value='3'):
+                    '3'
+                li(class='ui-state-default' value='4'):
+                    '4'
+        li:
+            'Where will you work? Move the map markers.'
+        li:
+            'How will you commute?'
+            ul(id='mode-y')
+                li(class='ui-state-default icon-walk' id='walk' title='walk')
+                li(class='ui-state-default icon-bicycle' id='bicycle' title='bicycle')
+                li(class='ui-state-default icon-bus' id='transit' title='public transport')
+                li(class='ui-state-default icon-car' id='car' title='car')
+                li:
+                    'You' 
+            ul(id='mode-p')
+                li(class='ui-state-default icon-walk' id='walk' title='walk')
+                li(class='ui-state-default icon-bicycle' id='bicycle' title='bicycle')
+                li(class='ui-state-default icon-bus' id='transit' title='public transport')
+                li(class='ui-state-default icon-car' id='car' title='car')
+                li:
+                    'Partner'
+        li:
+            'How many days a week will you commute?'
+            br()
+            input(type='text' id='num-workdays-y' readonly)
+            div(id='num-workdays-y-slider')
+            'You'
+            br()
+            input(type='text' id='num-workdays-p' readonly)
+            div(id='num-workdays-p-slider')
+            'Partner'
+        li:
+            'How much will daily work parking cost?'
+            br()
+            input(type='text' id='parking-y' readonly)
+            div(id='parking-y-slider')     
+            'You'   
+            br()
+            input(type='text' id='parking-p' readonly)
+            div(id='parking-p-slider')    
+            'Partner'    
+        li:
+            'How many cars will you own?'
+            ul(id='num-cars'):
+                li(class='ui-state-default' value='0'):
+                    '0'
+                li(class='ui-state-default' value='1'):
+                    '1'
+                li(class='ui-state-default' value='2')
+                    '2'
+                li(class='ui-state-default' value='3'):
+                    '3'

@@ -1,0 +1,26 @@
+import base
+import ui
+
+def main():
+    p:
+        'You and your partner, if you have one, just got a job in Canterbury. Now where to live?' 
+        br()
+        "This application color codes Canterbury's area units by their affordability to you. Here affordability is based on rent, commute, parking, and car ownership cost estimates determined by your answers to the questions below."
+    ui('employed Canterburians ($43,316)')
+
+def data():
+    json:
+        {
+          "AUsFile": "data/canterbury/rental_areas.geojson",
+          "centroidsFile": "data/canterbury/rental_points.geojson",
+          "rentsFile": "data/canterbury/rents.json",
+          "commuteCostsFile": "data/canterbury/commute_costs.json",
+          "lon": 172.5,
+          "lat": -43.55,
+          "maxBounds": [[-46 , 169], [-41.8, 175]],
+          "markerLatLons": [[-43.5, 172.8], [-43.5, 172.84]],
+          "zoom": 10,
+          "medianAnnualIncome": 43316
+        }
+
+page('canterbury')

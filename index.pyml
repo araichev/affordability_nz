@@ -1,0 +1,26 @@
+import base
+import ui
+
+def main():
+    p:
+        'You and your partner, if you have one, just got a job in Auckland. Now where to live?' 
+        br()
+        "This application color codes Auckland's area units by their affordability to you. Here affordability is based on rent, commute, parking, and car ownership cost estimates determined by your answers to the questions below."
+    ui('employed Aucklanders ($45,864)')
+
+def data():
+    json:
+        {
+          "AUsFile": "data/auckland/rental_areas.geojson",
+          "centroidsFile": "data/auckland/rental_points.geojson",
+          "rentsFile": "data/auckland/rents.json",
+          "commuteCostsFile": "data/auckland/commute_costs.json",
+          "lon": 174.8,
+          "lat": -36.9,
+          "maxBounds": [[-37.7, 174.0], [-36.1, 175.9]],
+          "markerLatLons": [[-36.74, 175.07], [-36.74, 175.11]],
+          "zoom": 10,
+          "medianAnnualIncome": 45864
+        }
+
+page('index')

@@ -1,0 +1,772 @@
+from stdlib import append
+
+#----------
+# Constants
+#----------
+WEEKLY_CAR_OWN_COST = 2228/52
+# Define data bins and labels.
+# Assume no-data entries map to nonpositive numbers.
+# Define color scheme using http://colorbrewer2.org/js/. 
+# Order colors least-to-most intense, but begin with gray, 
+# the no-data color.
+OPACITY = 1
+GREY = 'rgb(200, 200, 200)'
+COLORS = reversed(['rgb(158,1,66)','rgb(213,62,79)','rgb(244,109,67)','rgb(253,174,97)','rgb(254,224,139)','rgb(230,245,152)','rgb(171,221,164)','rgb(102,194,165)','rgb(50,136,189)','rgb(94,79,162)'])
+n = len(COLORS)
+COLOR_SCALE =\
+  d3.scale.linear()\
+  .domain([i/(n-1) for i in range(n)])\
+  .clamp(True)\
+  .range(COLORS)\
+  .interpolate(d3.interpolateHcl)
+BINS = [None].concat([i/n for i in range(n)])
+LABELS = ['n/a'].concat([(b*100).toFixed(0) + '%' for b in BINS[1:]])
+
+#---------
+# Classes
+#---------
+class State:
+    """
+    An object that holds the values of the user interface widgets.
+    """
+    def __init__(self, income, numBedrooms, numBedroomsRent, modes,
+      numWorkdays, parkings, numCars, workAUNames):
+        self.income = income
+        self.numBedrooms = numBedrooms
+        self.numBedroomsRent = numBedroomsRent
+        self.modes = modes
+        self.numWorkdays = numWorkdays
+        self.parkings = parkings
+        self.numCars = numCars
+        self.workAUNames = workAUNames 
+
+    def getWeeklyIncome(self):
+        return self.income/52
+
+    def getWeeklyCarOwnCost(self):
+        return self.numCars*WEEKLY_CAR_OWN_COST
+
+    def getWeeklyParkingCost(self):
+        totalCost = 0
+        for k in range(2):
+            parking = self.parkings[k]
+            numWorkdays = self.numWorkdays[k]
+            totalCost += parking*numWorkdays 
+        return totalCost
+
+    def getWeeklyTotalCostFraction(self, weeklyTotalCost):
+        """
+        Given a weekly total cost, divide it by the current weekly income.
+        """
+        total = weeklyTotalCost
+        if total is not None:
+            fraction = total/self.getWeeklyIncome()
+        else:
+            fraction = None
+        return fraction 
+
+class AreaUnitsData:
+    """
+    An object that holds data about rent and commute costs for each area unit.
+    Only one instance is needed.
+    """
+    def __init__(self, rentByNbedroomsByAU, MIndexByAU, M):
+        self.rentByNbedroomsByAU = rentByNbedroomsByAU
+        # Row/column index in M[mode] by AU name
+        self.MIndexByAU = MIndexByAU
+        # Daily commute cost matrix by mode:
+        self.M = M
+
+    def getWeeklyRent(self, state, AUName):
+        """
+        Return the weekly rent for the area unit with the given name
+        and according to the given UI state.
+        If the rent is undefined, return None.
+        """
+        numBedrooms = state.numBedrooms
+        numBedroomsRent = state.numBedroomsRent
+        rent = self.rentByNbedroomsByAU[AUName][numBedrooms] 
+        if rent is not None:
+            rent = float(rent)
+            rent *= int(numBedroomsRent)/int(numBedrooms)
+        else:
+            rent = None
+        return rent
+
+    def getWeeklyCommuteCostAndTime(self, state, AUName):
+        """
+        Return the total weekly commute distance and time 
+        from the given area unit to Y's workplace and P's workplace.
+        """
+        totalCost = 0
+        totalTime = 0
+        if state.workAUNames is None:
+            return totalCost, totalTime
+
+        i = self.MIndexByAU[AUName]            
+        for k in range(2):
+            numWorkdays = state.numWorkdays[k]
+            if not numWorkdays:
+                # Doesn't contribute to total cost and time
+                continue
+            mode = state.modes[k]
+            workAUName = state.workAUNames[k]
+            if workAUName is None:
+                # Doesn't contribute to total cost and time
+                continue
+            j = self.MIndexByAU[workAUName]
+            # Remember that M[mode] is a lower-triangular half-matrix
+            if j > i:
+                i, j = j, i
+            cost, time = self.M[mode][i][j]
+            if cost is None:
+                # Can't get to work from this feature via this mode
+                return None, None
+            totalCost += numWorkdays*cost
+            totalTime += numWorkdays*time            
+        return totalCost, totalTime
+
+    def getWeeklyTotalCost(self, state, AUName):
+        """
+        Return the total cost for living in the given area unit
+        according to the given UI state
+        """
+        rent = self.getWeeklyRent(state, AUName)
+        cc = self.getWeeklyCommuteCostAndTime(state, AUName)[0] 
+        if rent is not None and cc is not None:
+            total = rent + cc +\
+              state.getWeeklyCarOwnCost() +\
+              state.getWeeklyParkingCost()
+        else:
+            total = None
+        return total
+
+    def getAUStats(self, state, AUName):
+        """
+        Given a State instance and an area unit name, return a dictionary of
+        stats for that area unit with the following keys and values.
+
+        - AUName
+        - weeklyIncome
+        - weeklyRent
+        - weeklyCommuteCost
+        - weeklyCommuteTime
+        - weeklyParkingCost 
+        - weeklyCarOwnCost 
+        - totalCost 
+        - totalCostFraction 
+        """
+        wcct = self.getWeeklyCommuteCostAndTime(state, AUName)
+        wtc = self.getWeeklyTotalCost(state, AUName)
+        return {
+          'AUName': AUName,
+          'weeklyIncome': state.getWeeklyIncome(),
+          'weeklyRent': self.getWeeklyRent(state, AUName),
+          'numBedrooms': state.numBedrooms,
+          'numBedroomsRent': state.numBedroomsRent,
+          'weeklyCommuteCost': wcct[0],
+          'weeklyCommuteTime': wcct[1],
+          'weeklyParkingCost': state.getWeeklyParkingCost(), 
+          'weeklyCarOwnCost': state.getWeeklyCarOwnCost(), 
+          'weeklyTotalCost': wtc, 
+          'weeklyTotalCostFraction': state.getWeeklyTotalCostFraction(wtc), 
+        }
+
+#-------------------
+# Functions
+#-------------------
+def getState(workAUNames=None):
+    """
+    Return a State instance containing the current values of the UI widgets.
+    All numerical fields are stored as integers.
+    """
+    income = $("#income-slider").slider("value")
+    numBedrooms = int($('#num-bedrooms').val())
+    numBedroomsRent = int($('#num-bedrooms-rent').val())
+    modes = [$('#mode-y').val(), $('#mode-p').val()]
+    numWorkdays = [$("#num-workdays-y-slider").slider("value"),
+      $("#num-workdays-p-slider").slider("value")]
+    parkings = [$("#parking-y-slider").slider("value"),
+      $("#parking-p-slider").slider("value")]
+    numCars = int($('#num-cars').val())
+    return State(income, numBedrooms, numBedroomsRent, modes, numWorkdays,
+      parkings, numCars, workAUNames)
+
+def numToDollarStr(x, inverse=False):
+    # Given a float `x`, round it to the nearest integer,
+    # convert it into a string with commas as
+    # thousands separators and prepend a dollar sign.
+    # If `inverse` is True, then assume `x` has the output format
+    # mentioned above, and convert it back to an integer.
+    if not inverse:
+        if x is None:
+            return 'n/a'
+        dollars = x.toFixed(0)
+        # Insert separating commas
+        dollars = dollars.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        return '$' + dollars 
+    else:
+        if x == 'n/a':
+            return None
+        return int(x.replace('$', '').replace(',',''))
+
+def getTable(feature):
+    """
+    Given an area unit feature with embedded stats of the form returned by
+    ``getAUStats()``, format the stats in an HTML table, and
+    return the result.
+    """
+    AUName = feature.properties.AU2013_NAM
+    stats = feature.properties.stats
+    # Format quantities
+    if stats.weeklyCommuteTime is not None:
+        commuteTime = stats.weeklyCommuteTime.toFixed(1) + '&nbsp;h'
+    else:
+        commuteTime = 'n/a'
+    if stats.weeklyRent is not None and\
+      stats.weeklyCommuteCost is not None:
+        total = stats.weeklyTotalCost
+        fraction = stats.weeklyTotalCostFraction
+        percent = (fraction*100).toFixed(1) + '%'
+    else:
+        total = None
+        fraction = None
+        percent = 'n/a'
+    table = '<h4>' + stats.AUName + '</h4>' +\
+        '<table>' +\
+        '<tr><td>Income per week</td><td>' +\
+        numToDollarStr(stats.weeklyIncome) + '</td>' +\
+        '<tr><td>Rent per week (' + stats.numBedroomsRent +\
+        ' of ' + stats.numBedrooms + ' bd)</td><td>' +\
+        numToDollarStr(stats.weeklyRent) + '</td></tr>' +\
+        '<tr><td>Commute cost per week</td><td>' +\
+        numToDollarStr(stats.weeklyCommuteCost) + '</td></tr>' +\
+        '<tr><td>Commute time per week</td><td>' +\
+        commuteTime + '</td></tr>' +\
+        '<tr><td>Parking cost per week</td><td>' +\
+        numToDollarStr(stats.weeklyParkingCost) +\
+        '</td></tr>' +\
+        '<tr><td>Car cost per week</td><td>' +\
+        numToDollarStr(stats.weeklyCarOwnCost) + '</td></tr>' +\
+        '<tr><td>Total cost per week</td><td>' +\
+        numToDollarStr(total) +\
+        '</td></tr>' +\
+        '<tr><td>% of weekly income</td><td>' +\
+        percent +\
+        '</td></tr>' +\
+        '</table>'
+    return table
+
+def rgbaToHex(s):
+    s, a = s[:-1], s[-1]
+    result = '#'
+    for x in s:
+        h = Math.round(a*x + 255*(1 - a)).toString(16)
+        if len(h) < 2:
+            h = '0' + h
+        result += h
+    return result
+
+def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
+  AUs, AUsData):  
+    # ------------------------------------------------------------------------
+    # Make form 
+
+    # Add an income slider widget
+    $(def():
+        $( "#income-slider" ).slider({
+            'orientation': 'horizontal',
+            'range': 'min',
+            'min': 100,
+            'max': 200000,
+            'value': medianAnnualIncome,
+            'step': 100,
+            'slide': def(event, ui): 
+                # Update income display
+                $('#income').val(numToDollarStr(ui.value))
+            ,
+            'stop': def(event, ui):
+                # Update area unit
+                state = getState(getWorkAUNames(workMarkers)) 
+                updateAUs(state)
+        })
+        # Initialize slider 
+        sv = $('#income-slider')
+        $('#income').val(numToDollarStr(sv.slider('value')))
+        # Label the median annual income point on slider
+        min = sv.slider( "option", "min" )
+        range = sv.slider( "option", "max" ) - min
+        el = $('<label>&#9650;</label><br>').css('left', 
+            (medianAnnualIncome/range*100) +'%')
+        $("#income-slider").append(el)
+    )
+
+    def adjustNumBedroomsRent():
+        nb = $('#num-bedrooms').val()
+        # Block and possibly reset the appropriate 
+        # number of bedrooms to rent
+        group = $('#num-bedrooms-rent')
+        nbr = group.val()
+        if nbr > nb:
+            nbr = nb
+            group.val(nb)
+        for x in range(1, 6):
+            item = $('#num-bedrooms-rent li[value=' + x + ']')
+            if x == nbr:
+                item.addClass('ui-selected')
+            if x <= nb:
+                item.removeClass('blocked')
+            else:
+                item.removeClass('ui-selected')
+                item.addClass('blocked')
+            group.selectable({
+                cancel: '.blocked'
+            })
+
+    # Add a number-of-bedrooms selector widget
+    $(def():
+        $("#num-bedrooms").selectable({
+            'selected': def(event, ui):
+                # Update number of bedrooms
+                $('#num-bedrooms').val(ui.selected.value)
+                # Adjust number of bedrooms to rent accordingly
+                adjustNumBedroomsRent()
+                # Update area units
+                state = getState(getWorkAUNames(workMarkers)) 
+                updateAUs(state)
+        })
+    )
+    # Initialize selector
+    item = $('#num-bedrooms li:eq(1)')
+    item.addClass('ui-selected')
+    $('#num-bedrooms').val(item[0].value)
+    adjustNumBedroomsRent()
+
+    # Add a number-of-bedrooms-to-rent selector widget
+    $(def():
+        $("#num-bedrooms-rent").selectable({
+            'selected': def(event, ui):
+                # Update nuber of bedrooms
+                $('#num-bedrooms-rent').val(ui.selected.value)
+                # Update area units
+                state = getState(getWorkAUNames(workMarkers)) 
+                updateAUs(state)
+        })
+    )
+    # Initialize selector
+    item = $('#num-bedrooms-rent li:eq(0)')
+    item.addClass('ui-selected')
+    $('#num-bedrooms-rent').val(item[0].value)
+
+
+    # Add a mode selector widgets
+    $(def():
+        $("#mode-y").selectable({
+            'selected': def(event, ui):
+                # Update nuber of bedrooms
+                $('#mode-y').val(ui.selected.id)
+                mode = $('#mode-y').val()
+                if mode != 'car':
+                    # Zero parking cost
+                    $('#parking-y').val('$0')
+                    $('#parking-y-slider').slider('value', 0)
+                else:
+                    # Set car ownership to 1 car if it's 0
+                    item = $('#num-cars li.ui-selected')
+                    if item.val() == 0:
+                        item.removeClass('ui-selected')
+                        $('#num-cars li:eq(1)').addClass('ui-selected')
+                        $('#num-cars').val(1)
+                numWorkdays = int($('#num-workdays-y').val())
+                if numWorkdays:
+                    # Update area units
+                    state = getState(getWorkAUNames(workMarkers))
+                    updateAUs(state)
+        })
+    )
+    # Initialize selector
+    item = $('#mode-y li:eq(1)')
+    item.addClass('ui-selected')
+    $('#mode-y').val(item[0].id)
+
+    $(def():
+        $("#mode-p").selectable({
+            'selected': def(event, ui):
+                # Update nuber of bedrooms
+                $('#mode-p').val(ui.selected.id)
+                mode = $('#mode-p').val()
+                if mode != 'car':
+                    # Zero parking cost
+                    $('#parking-p').val('$0')
+                    $('#parking-p-slider').slider('value', 0)
+                else:
+                    # Set car ownership to 1 car if it's 0
+                    item = $('#num-cars li.ui-selected')
+                    if item.val() == 0:
+                        item.removeClass('ui-selected')
+                        $('#num-cars li:eq(1)').addClass('ui-selected')
+                        $('#num-cars').val(1)
+                numWorkdays = int($('#num-workdays-p').val())
+                if numWorkdays:
+                    # Update area units
+                    state = getState(getWorkAUNames(workMarkers))
+                    updateAUs(state)
+        })
+    )
+    # Initialize selector
+    item = $('#mode-p li:eq(1)')
+    item.addClass('ui-selected')
+    $('#mode-p').val(item[0].id)
+
+    # Add a number-of-workdays sliders
+    $(def():
+        $( "#num-workdays-y-slider" ).slider({
+            'orientation': 'horizontal',
+            'range': 'min',
+            'min': 0,
+            'max': 7,
+            'value': 5,
+            'step': 1,
+            'slide': def(event, ui): 
+                # Update income display
+                $('#num-workdays-y').val(ui.value)
+            ,
+            'stop': def(event, ui):
+                # Update area units
+                state = getState(getWorkAUNames(workMarkers)) 
+                updateAUs(state)
+        })
+        # Initialize slider 
+        s = $('#num-workdays-y-slider')
+        $('#num-workdays-y').val(s.slider('value'))
+    )
+
+    $(def():
+        $( "#num-workdays-p-slider" ).slider({
+            'orientation': 'horizontal',
+            'range': 'min',
+            'min': 0,
+            'max': 7,
+            'value': 0,
+            'step': 1,
+            'slide': def(event, ui): 
+                # Update income display
+                $('#num-workdays-p').val(ui.value)
+            ,
+            'stop': def(event, ui):
+                # Update area units
+                state = getState(getWorkAUNames(workMarkers))
+                updateAUs(state)
+        })
+        # Initialize slider 
+        s = $('#num-workdays-p-slider')
+        $('#num-workdays-p').val(s.slider('value'))
+    )
+
+    # Add parking cost slider widgets
+    $(def():
+        $( "#parking-y-slider" ).slider({
+            'orientation': 'horizontal',
+            'range': 'min',
+            'min': 0,
+            'max': 30,
+            'value': 0,
+            'step': 1,
+            'slide': def(event, ui): 
+                # Update income display
+                $('#parking-y').val(numToDollarStr(ui.value))
+            ,
+            'stop': def(event, ui):
+                numWorkdays = int($('#num-workdays-y').val())
+                if numWorkdays:
+                    # Update area units
+                    state = getState(getWorkAUNames(workMarkers))
+                    updateAUs(state)
+        })
+        # Initialize slider 
+        s = $('#parking-y-slider')
+        $('#parking-y').val(numToDollarStr(s.slider('value')))
+    )
+
+    $(def():
+        $( "#parking-p-slider" ).slider({
+            'orientation': 'horizontal',
+            'range': 'min',
+            'min': 0,
+            'max': 30,
+            'value': 0,
+            'step': 1,
+            'slide': def(event, ui): 
+                # Update income display
+                $('#parking-p').val(numToDollarStr(ui.value))
+            ,
+            'stop': def(event, ui):
+                numWorkdays = int($('#num-workdays-p').val())
+                if numWorkdays:
+                    # Update area units
+                    state = getState(getWorkAUNames(workMarkers)) 
+                    updateAUs(state)
+        })
+        # Initialize slider 
+        s = $('#parking-p-slider')
+        $('#parking-p').val(numToDollarStr(s.slider('value')))
+    )
+
+    # Add a number-of-cars select widget
+    $(def():
+        $("#num-cars").selectable({
+            'selected': def(event, ui):
+                # Update nuber of bedrooms
+                $('#num-cars').val(ui.selected.value)
+                # Update area units
+                state = getState(getWorkAUNames(workMarkers)) 
+                updateAUs(state)
+        })
+    )
+    # Initialize selector
+    item = $('#num-cars li:eq(0)')
+    item.addClass('ui-selected')
+    $('#num-cars').val(item[0].value)
+
+    # ------------------------------------------------------------------------
+    # Make map 
+
+    map = L.map('map', {
+        'center': [lat, lon],
+        'zoom': zoom,
+        'minZoom': 8,
+        'maxZoom': 13,
+        'maxBounds': maxBounds,
+    })
+    #tiles = 'http://{s}.tiles.mapbox.com/v3/key/{z}/{x}/{y}.png'
+    # Define map base layers, one of which can be selected at a time
+    #L.tileLayer(tiles).addTo(map)
+
+    # Disable zoom-by-scroll
+    map.scrollWheelZoom.disable()
+    
+    # Remove 'Leaflet' link from corner of map  
+    map.attributionControl.setPrefix('')
+
+    # Add a legend to the map
+    legend = L.control({'position': 'bottomleft'})
+    legend.onAdd = def(map):
+        div = L.DomUtil.create('div', 'legend')
+        content = '<h4>Cost as % of income</h4>'
+        n = len(BINS)
+        # Render
+        for i in range(n):
+            content += '<span class="color" style="background:' +\
+              getColor(BINS[n - i - 1]) +\
+              '"></span><span>' + LABELS[n - i - 1] + '</span><br/>'
+        div.innerHTML = content
+        return div
+    
+    legend.addTo(map)
+
+    # Add a scale display to the map
+    L.control.scale({'imperial': False, 'position': 'topleft'}).addTo(map);
+
+
+    # Add a info box to the map
+    info = L.control({position: 'bottomright'})
+    info.onAdd = def():
+        div = L.DomUtil.create('div', 'info')
+        return div
+    info.addTo(map)
+
+    def updateInfo(feature=None):
+        if feature is not None:
+            # AUName = feature.properties.AU2013_NAM
+            # AUStats = AUsData.getAUStats(state, AUName)
+            table = getTable(feature)
+        else:
+            table = '<h4>Info box</h4>Hover over an area unit'
+        # Update the control based on feature properties passed
+        div = $('.info.leaflet-control').get(0)
+        div.innerHTML = table
+    
+    updateInfo()
+
+    # Create workplace markers
+    workMarkers = []
+    for k in range(2):
+        if k == 0:
+            title = 'Your work'
+            symbol = 'y'
+            url = '../images/work_marker_y.png'
+        else:
+            title = "Your partner's work"
+            symbol = 'p'
+            url = '../images/work_marker_p.png'
+        customIcon = L.icon({
+          "iconUrl": url,
+          "iconSize": [30, 70],
+          "iconAnchor": [15, 35],
+          "popupAnchor": [0, -35],
+          })
+        marker = L.marker(markerLatLons[k], {
+          'draggable': True,
+          'title': title,
+          'icon': customIcon,
+          })
+        # # If you have Mapbox and a web connection, 
+        # # use this code for defining the markers:
+        # if k == 0:
+        #     title = 'Your work'
+        #     symbol = 'y'
+        # else:
+        #     title = "Your partner's work"
+        #     symbol = 'p'
+        # marker = L.marker(markerLatLons[k], {
+        #   'draggable': True,
+        #   'title': title,
+        #   'icon': L.mapbox.marker.icon({
+        #     'marker-color': '#D53E4F',
+        #     'marker-symbol': symbol,
+        #     })
+        #   })
+        workMarkers.append(marker)
+    for m in workMarkers:
+        m.addTo(map)
+
+    # Set marker drag behavior
+    for marker in workMarkers:
+        marker.bindPopup('<h4>' + marker.options.title + '</h4>Undefined')
+        marker.on('drag', def(e):
+            # In marker popup display the name of the area unit 
+            # being hovered over
+            setWorkPopup(this)
+        )
+        marker.on('dragend', def(e):
+            # Recolor AUs
+            state = getState(getWorkAUNames(workMarkers))
+            updateAUs(state)
+        )
+
+    def getAUName(marker):
+        """
+        Return the name of the area unit that the given
+        marker lies in.
+        """
+        latLon = marker.getLatLng()
+        try:
+            layer = leafletPip.pointInLayer(latLon, AUs, True)[0]
+        except:
+            return None
+        if layer:
+            AUName = layer.feature.properties.AU2013_NAM
+        else:
+            AUName = None
+        return AUName
+
+    def getWorkAUNames(workMarkers=None):
+        if workMarkers is not None:
+            result = [getAUName(m) for m in workMarkers]
+        else:
+            result = None
+        return result
+
+    def setWorkPopup(marker):
+        """
+        Set the content of the given marker's popup, 
+        and open the popup.
+        """
+        AUName = getAUName(marker)
+        text = '<h4>' + marker.options.title + '</h4>'
+        if AUName:
+            text += AUName
+        else:
+            text += 'Undefined'
+        marker.setPopupContent(text)
+        marker.openPopup()
+
+    # Feature style functions
+    def getColor(x):
+        if x is None:
+            return GREY
+        else:
+            return COLOR_SCALE(x)
+        # for (i, grade) in enumerate(BINS):
+        #     if x <= grade:
+        #         return COLORS[i]
+        # return COLORS[0]
+    
+    def AUStyle(feature):
+        c = getColor(feature.properties.stats.weeklyTotalCostFraction)
+        return {
+          'fillColor': c,
+          'fillOpacity': 1,
+          'color': 'black',
+          'weight': 0.5,
+          'opacity': 1,
+        }
+
+    def highlightFeature(e):
+        layer = e.target
+        layer.setStyle({
+          'weight': 2,
+        })
+        if not L.Browser.ie and not L.Browser.opera:
+            layer.bringToFront()
+        updateInfo(layer.feature)
+
+    def resetHighlight(e):
+        layer = e.target
+        layer.setStyle({'weight': 0.5})
+        layer._map.closePopup()
+        updateInfo()
+
+    def zoomToFeature(e):
+        map.fitBounds(e.target.getBounds())
+    
+    def onEachFeature(feature, layer):
+        layer.on({
+            'mouseout': resetHighlight,
+            'click': zoomToFeature,
+            'mouseover': highlightFeature,
+        })
+
+    # Add area units to map
+    AUs = L.geoJson(AUs, {
+      'onEachFeature': onEachFeature
+    }).addTo(map)
+
+    def updateAUs(state):
+        AUs.eachLayer(def(layer):
+            AUName = layer.feature.properties.AU2013_NAM
+            stats = AUsData.getAUStats(state, AUName)
+            layer.feature.properties.stats = stats
+            layer.setStyle(AUStyle(layer.feature))
+        )
+
+    state = getState(getWorkAUNames(workMarkers))
+    updateAUs(state)
+
+def main():
+    # Get data embedded in webpage
+    data = $.parseJSON($('#data').html())
+    lon = data['lon']
+    lat = data['lat']
+    maxBounds = data['maxBounds']
+    markerLatLons = data['markerLatLons']
+    medianAnnualIncome = data['medianAnnualIncome']
+    zoom = data['zoom']
+
+    # Get data from server and then make the UI
+    spinner = new Spinner().spin($("#map").get(0))
+    $.when(
+        $.getJSON(data['AUsFile']),
+        $.getJSON(data['rentsFile']),
+        $.getJSON(data['commuteCostsFile'])
+    ).done(def(a, b, c): 
+        # Area units geodata
+        AUs = a[0]  
+        print(b[0])
+        AUsData = AreaUnitsData(b[0], c[0]['index_by_name'], c[0]['matrix'])
+        spinner.stop()
+        makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
+          AUs, AUsData)
+    )
+
+main()

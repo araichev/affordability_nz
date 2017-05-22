@@ -55,7 +55,7 @@
     <p>
         You and your partner, if you have one, just got a job in Wellington. Now where to live?
         <br />
-        This application color codes Wellington's area units by their affordability to you. Here affordability is based on rent, commute, parking, and car ownership cost estimates determined by your answers to the questions below.
+        This application color codes Wellington's rental areas by their affordability to you. Here affordability is based on rent, commute, parking, and car ownership cost estimates determined by your answers to the questions below.
     </p>
     <div class="row">
         <div class="col col-md-9">
@@ -66,7 +66,7 @@
             <div id='sidebar'>
                 <ol>
                     <li>
-                        What will your combined annual incomes be?
+                        What will your combined net annual incomes be?
                         <br />
                         <input type='text' id='income' readonly />
                         <div id='income-slider'>
@@ -74,7 +74,7 @@
                         <div id='income-note'>
                             Median gross annual income of
                             <br )br( />
-                            employed Wellingtonians ($47,900)
+                            employed Wellingtonians ($49,192)
                         </div>
                     </li>
                     <li>
@@ -91,9 +91,6 @@
                             </li>
                             <li class='ui-state-default' value='4'>
                                 4
-                            </li>
-                            <li class='ui-state-default' value='5'>
-                                5
                             </li>
                         </ul>
                     </li>
@@ -112,9 +109,6 @@
                             <li class='ui-state-default' value='4'>
                                 4
                             </li>
-                            <li class='ui-state-default' value='5'>
-                                5
-                            </li>
                         </ul>
                     </li>
                     <li>
@@ -123,19 +117,19 @@
                     <li>
                         How will you commute?
                         <ul id='mode-y'>
-                            <li class='ui-state-default icon-walk' id='walk' title='walk' />
-                            <li class='ui-state-default icon-bicycle' id='bicycle' title='bicycle' />
+                            <li class='ui-state-default icon-walk' id='walking' title='walk' />
+                            <li class='ui-state-default icon-bicycle' id='bicycling' title='bicycle' />
                             <li class='ui-state-default icon-bus' id='transit' title='public transport' />
-                            <li class='ui-state-default icon-car' id='car' title='car' />
+                            <li class='ui-state-default icon-car' id='driving' title='car' />
                             <li>
                                 You
                             </li>
                         </ul>
                         <ul id='mode-p'>
-                            <li class='ui-state-default icon-walk' id='walk' title='walk' />
-                            <li class='ui-state-default icon-bicycle' id='bicycle' title='bicycle' />
+                            <li class='ui-state-default icon-walk' id='walking' title='walk' />
+                            <li class='ui-state-default icon-bicycle' id='bicycling' title='bicycle' />
                             <li class='ui-state-default icon-bus' id='transit' title='public transport' />
-                            <li class='ui-state-default icon-car' id='car' title='car' />
+                            <li class='ui-state-default icon-car' id='driving' title='car' />
                             <li>
                                 Partner
                             </li>
@@ -189,12 +183,12 @@
         </div>
     </div>
     <p>
-        Hint: To ignore your partner, cast his/her map marker out to sea or zero his/her commute days.
+        Hint: To ignore your partner, cast their map marker out to sea or zero their commute days.
     </p>
     <script type="application/json" id="data">
       {
-        "AUsFile": "data/wellington/rental_areas.geojson",
-        "centroidsFile": "data/wellington/rental_points.geojson",
+        "areasFile": "data/wellington/rental_areas.geojson",
+        "pointsFile": "data/wellington/rental_points.geojson",
         "rentsFile": "data/wellington/rents.json",
         "commuteCostsFile": "data/wellington/commute_costs.json",
         "lon": 174.8,
@@ -202,7 +196,7 @@
         "maxBounds": [[-42.0 , 174.17], [-39.65, 176.97]],
         "markerLatLons": [[-41.21, 174.63], [-41.21, 174.65]],
         "zoom": 11,
-        "medianAnnualIncome": 47892
+        "medianAnnualIncome": 49192
       }
     </script>
     <script src='lib/jquery-1.11.0/jquery.min.js'>

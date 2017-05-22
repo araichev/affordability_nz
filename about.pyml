@@ -2,62 +2,55 @@ import base
 
 def main():
     p:
-        'This website is created by Saeid Adli and Alex Raichev and inspired in part by the article "Housing and transport expenditure: Socio-spatial indicators of affordability in Auckland" by K. Mattingly and J. Morrissey' 
+        'This website is produced by Alex Raichev and inspired in part by the article "Housing and transport expenditure: Socio-spatial indicators of affordability in Auckland" by K. Mattingly and J. Morrissey' 
         a(href='docs/MaMo2014.pdf'):
-            '[MaMo2014]'
-        '.'
+            '[MaMo2014].'
         # a(href='http://www.sciencedirect.com/science/article/pii/S0264275114000134'):
         #     '[MaMo2014]'
         # '(pay-walled).'
     p:
-        'This website is open-source. Its data and code can be found on Github' 
+        'This website is open source. Its data and code can be found' 
         a(href='https://github.com/araichev/affordability_in_nz'):
-            'here,'
+            'on Github,'
         'and contributors are welcome.'
         'Thanks heaps to ' 
         a(href='http://www.mrcagney.co.nz'):
             'MRCagney'
-        'for donating to this project!'
+        'for funding this project!'
     h2:
-        'Data, Methodology, and Limitations'
+        'Data and Methodology'
     ul:
         li: 
-            "The area units displayed are low resolution versions of the 2013 census area units available from Statistics New Zealand from" 
-            a(href='http://www.stats.govt.nz/browse_for_stats/people_and_communities/Geographic-areas/digital-boundary-files.aspx'):
-                'here.'
+            "The rental areas displayed are groups of 2001 census area units, the same groups used by Tenancy Services'" 
+            a(href='https://www.tenancy.govt.nz/rent-bond-and-bills/market-rent/'):
+                'market rent calculator.'
         li:
-            'The median gross annual incomes of employed Aucklanders, Wellingtonians, etc. comes from Statistics New Zealand from the June 2013 income survey (grouped by regional council)'
-            a(href='http://www.stats.govt.nz/browse_for_stats/income-and-work/Income/nz-income-survey-info-releases.aspx'):
-                'here.'
+            'The median gross annual incomes of employed Aucklanders, Wellingtonians, etc. comes from Statistics New Zealand from'
+            a(href='http://www.stats.govt.nz/browse_for_stats/income-and-work/Income/NZIncomeSurvey_HOTPJun15qtr.aspx'):
+                'the June 2015 income survey.'
         li:
-            'Rents come from the 2013 census via a custom data request from Statistics New Zealand.  They are median rents per area unit per dwelling size.'
+            "Rents come from the Ministry of Business, Innovation and Employment (MBIE)"
+            a(href='http://www.mbie.govt.nz/info-services/housing-property/sector-information-and-statistics/rental-bond-data'):
+                'rental bond data.'
+            'The rents displayed are geometric mean rents per dwelling size and come from the last six months. MBIE says that the distribution of rents per dwelling size is approximately log-normal, so that the geometric mean rent is a good approximation to the sample median rent. The rental bond data does not include actual sample median rents.'
         li:
-            'The commute distances and times used are those of the quickest paths through the street network between area unit centroids. For walking, bicycling, and driving modes, these were calculated with ArcGIS in traffic-free conditions. For public transport, they were calculated with the Google Maps API in traffic-free conditions.  Also, distance estimates for an area unit to itself are currently zero for all travel modes. Because the data does not incorporate a traffic model, the driving mode times are probably underestimated.'
+            'Commute distances and times come from the quickest paths through the street network between rental area sample points. They were calculated with the Google Maps API for departures at 2017-06-01 07:30:00 and include estimated congestion delays.'
         li:
-            'Commute costs per kilometer come from [MaMo2014, Table 2] and are (walk, bicycle, public transport, car) = (0, 0, $0.218, $0.274). These numbers were derived for Auckland, so the public transport mode number probably does not apply to other regions of New Zealand, and maybe not even to Auckland!'
-        li:
-            'For Auckland, commute cost by public transport is calculated as' 
-            a(href="docs/auckland_monthly_pass_fare_zones.pdf"):
-                'the cost of an appropriate AT Hop monthly pass'
-            'divided by the average number of weekdays in a month. For example, a daily roundtrip commute between area units in zones A and B costs $190/(52*5/12) ~ $8.77. For ferry rides, the cost defaults back to the public transport per kilometer cost above.' 
+            'Commute costs per kilometer come from [MaMo2014, Table 2] and are (walk, bicycle, car) = (0, 0, $0.274). Public transport costs were estimated from card fares for journeys between rental area sample points using'
+            a(href='https://at.govt.nz/bus-train-ferry/journey-planner/'):
+                'the Auckland Transport journey planner,'
+            a(href='https://at.govt.nz/bus-train-ferry/journey-planner/'):
+                'the Wellington Metlink journey planner,'
+            'and' 
+            a(href='http://www.metroinfo.co.nz/SiteCollectionDocuments/Metro_Fare_Zones_Map_June2016.pdf'):
+                'the Christchurch Metro fare zones.'
         li:
             'Car ownership cost per car per year comes from [MaMo2014, Table 3] and is $2228.'     
-    h2:
-        'Todo'
-    ul:
-        li:
-            'Add Waikato'
-        li:
-            'Improve public transport cost estimates by using regional fare data where available'
-        li:
-            'Make the app mobile-friendly'
-        li:
-            'Improve driving time estimates by incorporating a traffic model'
     h2: 
         'Feedback?'
     p:  
         'This project is a work in progress and your feedback can help make it better.'
-        a(href='mailto:araichev@affordability.org.nz'):
+        a(href='mailto:araichev@mrcagney.com?subject=Affordability map feedback'):
             'Email Alex.'
         
 page('about')

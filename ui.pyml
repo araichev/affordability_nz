@@ -6,7 +6,7 @@ def ui($income_note):
             div(id='sidebar'):
                 sidebar($income_note)
     p:
-        'Hint: To ignore your partner, cast his/her map marker out to sea or zero his/her commute days.'
+        'Hint: To ignore your partner, cast their map marker out to sea or zero their commute days.'
 
     data()
     script(src='lib/jquery-1.11.0/jquery.min.js')
@@ -21,7 +21,7 @@ def ui($income_note):
 def sidebar($income_note):
     ol:
         li:
-            'What will your combined annual incomes be?'
+            'What will your combined net annual incomes be?'
             br()
             input(type='text' id='income' readonly)
             div(id='income-slider')
@@ -56,17 +56,17 @@ def sidebar($income_note):
         li:
             'How will you commute?'
             ul(id='mode-y')
-                li(class='ui-state-default icon-walk' id='walk' title='walk')
-                li(class='ui-state-default icon-bicycle' id='bicycle' title='bicycle')
+                li(class='ui-state-default icon-walk' id='walking' title='walk')
+                li(class='ui-state-default icon-bicycle' id='bicycling' title='bicycle')
                 li(class='ui-state-default icon-bus' id='transit' title='public transport')
-                li(class='ui-state-default icon-car' id='car' title='car')
+                li(class='ui-state-default icon-car' id='driving' title='car')
                 li:
                     'You' 
             ul(id='mode-p')
-                li(class='ui-state-default icon-walk' id='walk' title='walk')
-                li(class='ui-state-default icon-bicycle' id='bicycle' title='bicycle')
+                li(class='ui-state-default icon-walk' id='walking' title='walk')
+                li(class='ui-state-default icon-bicycle' id='bicycling' title='bicycle')
                 li(class='ui-state-default icon-bus' id='transit' title='public transport')
-                li(class='ui-state-default icon-car' id='car' title='car')
+                li(class='ui-state-default icon-car' id='driving' title='car')
                 li:
                     'Partner'
         li:

@@ -5,14 +5,14 @@ def main():
     p:
         'You and your partner, if you have one, just got a job in Wellington. Now where to live?' 
         br()
-        "This application color codes Wellington's area units by their affordability to you. Here affordability is based on rent, commute, parking, and car ownership cost estimates determined by your answers to the questions below."
-    ui('employed Wellingtonians ($47,900)')
+        "This application color codes Wellington's rental areas by their affordability to you. Here affordability is based on rent, commute, parking, and car ownership cost estimates determined by your answers to the questions below."
+    ui('employed Wellingtonians ($49,192)')
 
 def data():
     json:
         {
-          "AUsFile": "data/wellington/rental_areas.geojson",
-          "centroidsFile": "data/wellington/rental_points.geojson",
+          "areasFile": "data/wellington/rental_areas.geojson",
+          "pointsFile": "data/wellington/rental_points.geojson",
           "rentsFile": "data/wellington/rents.json",
           "commuteCostsFile": "data/wellington/commute_costs.json",
           "lon": 174.8,
@@ -20,7 +20,7 @@ def data():
           "maxBounds": [[-42.0 , 174.17], [-39.65, 176.97]],
           "markerLatLons": [[-41.21, 174.63], [-41.21, 174.65]],
           "zoom": 11,
-          "medianAnnualIncome": 47892
+          "medianAnnualIncome": 49192
         }
 
 page('wellington')

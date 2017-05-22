@@ -19,11 +19,6 @@ function len(obj) {
     }
     return Object.keys(obj).length;
 }
-function ՐՏ_print() {
-    if (typeof console === "object") {
-        console.log.apply(console, arguments);
-    }
-}
 function range(start, stop, step) {
     var length, idx, range;
     if (arguments.length <= 1) {
@@ -271,7 +266,7 @@ var ՐՏ_modules = {};
         __init__: {
             enumerable: true, 
             writable: true, 
-            value: function __init__(income, numBedrooms, numBedroomsRent, modes, numWorkdays, parkings, numCars, workAUNames){
+            value: function __init__(income, numBedrooms, numBedroomsRent, modes, numWorkdays, parkings, numCars, workAreaNames){
                 var self = this;
                 self.income = income;
                 self.numBedrooms = numBedrooms;
@@ -280,7 +275,7 @@ var ՐՏ_modules = {};
                 self.numWorkdays = numWorkdays;
                 self.parkings = parkings;
                 self.numCars = numCars;
-                self.workAUNames = workAUNames;
+                self.workAreaNames = workAreaNames;
             }
         },
         getWeeklyIncome: {
@@ -330,32 +325,32 @@ var ՐՏ_modules = {};
             }
         }
     }), ՐՏ_2);
-    var AreaUnitsData = (ՐՏ_3 = function AreaUnitsData() {
-        AreaUnitsData.prototype.__init__.apply(this, arguments);
+    var AreaData = (ՐՏ_3 = function AreaData() {
+        AreaData.prototype.__init__.apply(this, arguments);
     }, Object.defineProperties(ՐՏ_3.prototype, {
         __doc__: {
             enumerable: true, 
             writable: true, 
-            value: "An object that holds data about rent and commute costs for each area unit.\nOnly one instance is needed."        },
+            value: "An object that holds data about rent and commute costs for each area.\nOnly one instance is needed."        },
         __init__: {
             enumerable: true, 
             writable: true, 
-            value: function __init__(rentByNbedroomsByAU, MIndexByAU, M){
+            value: function __init__(rentByNbedroomsByArea, MIndexByArea, M){
                 var self = this;
-                self.rentByNbedroomsByAU = rentByNbedroomsByAU;
-                self.MIndexByAU = MIndexByAU;
+                self.rentByNbedroomsByArea = rentByNbedroomsByArea;
+                self.MIndexByArea = MIndexByArea;
                 self.M = M;
             }
         },
         getWeeklyRent: {
             enumerable: true, 
             writable: true, 
-            value: function getWeeklyRent(state, AUName){
+            value: function getWeeklyRent(state, areaName){
                 var self = this;
                 var numBedrooms, numBedroomsRent, rent;
                 numBedrooms = state.numBedrooms;
                 numBedroomsRent = state.numBedroomsRent;
-                rent = self.rentByNbedroomsByAU[AUName][numBedrooms];
+                rent = self.rentByNbedroomsByArea[areaName][numBedrooms];
                 if (rent !== null) {
                     rent = parseFloat(rent);
                     rent *= parseInt(numBedroomsRent) / parseInt(numBedrooms);
@@ -368,27 +363,27 @@ var ՐՏ_modules = {};
         getWeeklyCommuteCostAndTime: {
             enumerable: true, 
             writable: true, 
-            value: function getWeeklyCommuteCostAndTime(state, AUName){
+            value: function getWeeklyCommuteCostAndTime(state, areaName){
                 var ՐՏupk1, ՐՏupk2;
                 var self = this;
-                var totalCost, totalTime, i, k, numWorkdays, mode, workAUName, j, cost, time;
+                var totalCost, totalTime, i, k, numWorkdays, mode, workareaName, j, cost, time;
                 totalCost = 0;
                 totalTime = 0;
-                if (state.workAUNames === null) {
+                if (state.workAreaNames === null) {
                     return [totalCost, totalTime];
                 }
-                i = self.MIndexByAU[AUName];
+                i = self.MIndexByArea[areaName];
                 for (k = 0; k < 2; k++) {
                     numWorkdays = state.numWorkdays[k];
                     if (!numWorkdays) {
                         continue;
                     }
                     mode = state.modes[k];
-                    workAUName = state.workAUNames[k];
-                    if (workAUName === null) {
+                    workareaName = state.workAreaNames[k];
+                    if (workareaName === null) {
                         continue;
                     }
-                    j = self.MIndexByAU[workAUName];
+                    j = self.MIndexByArea[workareaName];
                     if (j > i) {
                         ՐՏupk1 = [ j, i ];
                         i = ՐՏupk1[0];
@@ -409,11 +404,11 @@ var ՐՏ_modules = {};
         getWeeklyTotalCost: {
             enumerable: true, 
             writable: true, 
-            value: function getWeeklyTotalCost(state, AUName){
+            value: function getWeeklyTotalCost(state, areaName){
                 var self = this;
                 var rent, cc, total;
-                rent = self.getWeeklyRent(state, AUName);
-                cc = self.getWeeklyCommuteCostAndTime(state, AUName)[0];
+                rent = self.getWeeklyRent(state, areaName);
+                cc = self.getWeeklyCommuteCostAndTime(state, areaName)[0];
                 if (rent !== null && cc !== null) {
                     total = rent + cc + state.getWeeklyCarOwnCost() + state.getWeeklyParkingCost();
                 } else {
@@ -422,18 +417,18 @@ var ՐՏ_modules = {};
                 return total;
             }
         },
-        getAUStats: {
+        getAreaStats: {
             enumerable: true, 
             writable: true, 
-            value: function getAUStats(state, AUName){
+            value: function getAreaStats(state, areaName){
                 var self = this;
                 var wcct, wtc;
-                wcct = self.getWeeklyCommuteCostAndTime(state, AUName);
-                wtc = self.getWeeklyTotalCost(state, AUName);
+                wcct = self.getWeeklyCommuteCostAndTime(state, areaName);
+                wtc = self.getWeeklyTotalCost(state, areaName);
                 return {
-                    "AUName": AUName,
+                    "areaName": areaName,
                     "weeklyIncome": state.getWeeklyIncome(),
-                    "weeklyRent": self.getWeeklyRent(state, AUName),
+                    "weeklyRent": self.getWeeklyRent(state, areaName),
                     "numBedrooms": state.numBedrooms,
                     "numBedroomsRent": state.numBedroomsRent,
                     "weeklyCommuteCost": wcct[0],
@@ -446,8 +441,8 @@ var ՐՏ_modules = {};
             }
         }
     }), ՐՏ_3);
-    var getState = (ՐՏ_4 = function getState(workAUNames) {
-        workAUNames = workAUNames === void 0 ? null : workAUNames;
+    var getState = (ՐՏ_4 = function getState(workAreaNames) {
+        workAreaNames = workAreaNames === void 0 ? null : workAreaNames;
         var income, numBedrooms, numBedroomsRent, modes, numWorkdays, parkings, numCars;
         income = $("#income-slider").slider("value");
         numBedrooms = parseInt($("#num-bedrooms").val());
@@ -456,7 +451,7 @@ var ՐՏ_modules = {};
         numWorkdays = [ $("#num-workdays-y-slider").slider("value"), $("#num-workdays-p-slider").slider("value") ];
         parkings = [ $("#parking-y-slider").slider("value"), $("#parking-p-slider").slider("value") ];
         numCars = parseInt($("#num-cars").val());
-        return new State(income, numBedrooms, numBedroomsRent, modes, numWorkdays, parkings, numCars, workAUNames);
+        return new State(income, numBedrooms, numBedroomsRent, modes, numWorkdays, parkings, numCars, workAreaNames);
     }, Object.defineProperty(ՐՏ_4, "__doc__", {
         value: "Return a State instance containing the current values of the UI widgets.\nAll numerical fields are stored as integers."
     }), ՐՏ_4);
@@ -478,8 +473,8 @@ var ՐՏ_modules = {};
         }
     }
     var getTable = (ՐՏ_5 = function getTable(feature) {
-        var AUName, stats, commuteTime, total, fraction, percent, table;
-        AUName = feature.properties.AU2013_NAM;
+        var areaName, stats, commuteTime, total, fraction, percent, table;
+        areaName = feature.properties.rental_area;
         stats = feature.properties.stats;
         if (stats.weeklyCommuteTime !== null) {
             commuteTime = stats.weeklyCommuteTime.toFixed(1) + "&nbsp;h";
@@ -495,10 +490,10 @@ var ՐՏ_modules = {};
             fraction = null;
             percent = "n/a";
         }
-        table = "<h4>" + stats.AUName + "</h4>" + "<table>" + "<tr><td>Income per week</td><td>" + numToDollarStr(stats.weeklyIncome) + "</td>" + "<tr><td>Rent per week (" + stats.numBedroomsRent + " of " + stats.numBedrooms + " bd)</td><td>" + numToDollarStr(stats.weeklyRent) + "</td></tr>" + "<tr><td>Commute cost per week</td><td>" + numToDollarStr(stats.weeklyCommuteCost) + "</td></tr>" + "<tr><td>Commute time per week</td><td>" + commuteTime + "</td></tr>" + "<tr><td>Parking cost per week</td><td>" + numToDollarStr(stats.weeklyParkingCost) + "</td></tr>" + "<tr><td>Car cost per week</td><td>" + numToDollarStr(stats.weeklyCarOwnCost) + "</td></tr>" + "<tr><td>Total cost per week</td><td>" + numToDollarStr(total) + "</td></tr>" + "<tr><td>% of weekly income</td><td>" + percent + "</td></tr>" + "</table>";
+        table = "<h4>" + stats.areaName + "</h4>" + "<table>" + "<tr><td>Income per week</td><td>" + numToDollarStr(stats.weeklyIncome) + "</td>" + "<tr><td>Rent per week (" + stats.numBedroomsRent + " of " + stats.numBedrooms + " bd)</td><td>" + numToDollarStr(stats.weeklyRent) + "</td></tr>" + "<tr><td>Commute cost per week</td><td>" + numToDollarStr(stats.weeklyCommuteCost) + "</td></tr>" + "<tr><td>Commute time per week</td><td>" + commuteTime + "</td></tr>" + "<tr><td>Parking cost per week</td><td>" + numToDollarStr(stats.weeklyParkingCost) + "</td></tr>" + "<tr><td>Car cost per week</td><td>" + numToDollarStr(stats.weeklyCarOwnCost) + "</td></tr>" + "<tr><td>Total cost per week</td><td>" + numToDollarStr(total) + "</td></tr>" + "<tr><td>% of weekly income</td><td>" + percent + "</td></tr>" + "</table>";
         return table;
     }, Object.defineProperty(ՐՏ_5, "__doc__", {
-        value: "Given an area unit feature with embedded stats of the form returned by\n``getAUStats()``, format the stats in an HTML table, and\nreturn the result."
+        value: "Given an area unit feature with embedded stats of the form returned by\n``getAreaStats()``, format the stats in an HTML table, and\nreturn the result."
     }), ՐՏ_5);
     function rgbaToHex(s) {
         var ՐՏupk3, ՐՏitr9, ՐՏidx9;
@@ -518,7 +513,7 @@ var ՐՏ_modules = {};
         }
         return result;
     }
-    function makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, AUs, AUsData) {
+    function makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData) {
         var ՐՏitr10, ՐՏidx10, ՐՏitr11, ՐՏidx11, ՐՏ_6, ՐՏ_7;
         var item, map, legend, info, workMarkers, k, title, symbol, url, customIcon, marker, m, state;
         $(function() {
@@ -528,15 +523,15 @@ var ՐՏ_modules = {};
                 "range": "min",
                 "min": 100,
                 "max": 2e5,
-                "value": medianAnnualIncome,
+                "value": .84 * medianAnnualIncome,
                 "step": 100,
                 "slide": function(event, ui) {
                     $("#income").val(numToDollarStr(ui.value));
                 },
                 "stop": function(event, ui) {
                     var state;
-                    state = getState(getWorkAUNames(workMarkers));
-                    updateAUs(state);
+                    state = getState(getworkAreaNames(workMarkers));
+                    updateAreas(state);
                 }
             });
             sv = $("#income-slider");
@@ -577,8 +572,8 @@ var ՐՏ_modules = {};
                     var state;
                     $("#num-bedrooms").val(ui.selected.value);
                     adjustNumBedroomsRent();
-                    state = getState(getWorkAUNames(workMarkers));
-                    updateAUs(state);
+                    state = getState(getworkAreaNames(workMarkers));
+                    updateAreas(state);
                 }
             });
         });
@@ -591,8 +586,8 @@ var ՐՏ_modules = {};
                 "selected": function(event, ui) {
                     var state;
                     $("#num-bedrooms-rent").val(ui.selected.value);
-                    state = getState(getWorkAUNames(workMarkers));
-                    updateAUs(state);
+                    state = getState(getworkAreaNames(workMarkers));
+                    updateAreas(state);
                 }
             });
         });
@@ -605,7 +600,7 @@ var ՐՏ_modules = {};
                     var mode, item, numWorkdays, state;
                     $("#mode-y").val(ui.selected.id);
                     mode = $("#mode-y").val();
-                    if (mode !== "car") {
+                    if (mode !== "driving") {
                         $("#parking-y").val("$0");
                         $("#parking-y-slider").slider("value", 0);
                     } else {
@@ -618,8 +613,8 @@ var ՐՏ_modules = {};
                     }
                     numWorkdays = parseInt($("#num-workdays-y").val());
                     if (numWorkdays) {
-                        state = getState(getWorkAUNames(workMarkers));
-                        updateAUs(state);
+                        state = getState(getworkAreaNames(workMarkers));
+                        updateAreas(state);
                     }
                 }
             });
@@ -633,7 +628,7 @@ var ՐՏ_modules = {};
                     var mode, item, numWorkdays, state;
                     $("#mode-p").val(ui.selected.id);
                     mode = $("#mode-p").val();
-                    if (mode !== "car") {
+                    if (mode !== "driving") {
                         $("#parking-p").val("$0");
                         $("#parking-p-slider").slider("value", 0);
                     } else {
@@ -646,8 +641,8 @@ var ՐՏ_modules = {};
                     }
                     numWorkdays = parseInt($("#num-workdays-p").val());
                     if (numWorkdays) {
-                        state = getState(getWorkAUNames(workMarkers));
-                        updateAUs(state);
+                        state = getState(getworkAreaNames(workMarkers));
+                        updateAreas(state);
                     }
                 }
             });
@@ -669,8 +664,8 @@ var ՐՏ_modules = {};
                 },
                 "stop": function(event, ui) {
                     var state;
-                    state = getState(getWorkAUNames(workMarkers));
-                    updateAUs(state);
+                    state = getState(getworkAreaNames(workMarkers));
+                    updateAreas(state);
                 }
             });
             s = $("#num-workdays-y-slider");
@@ -690,8 +685,8 @@ var ՐՏ_modules = {};
                 },
                 "stop": function(event, ui) {
                     var state;
-                    state = getState(getWorkAUNames(workMarkers));
-                    updateAUs(state);
+                    state = getState(getworkAreaNames(workMarkers));
+                    updateAreas(state);
                 }
             });
             s = $("#num-workdays-p-slider");
@@ -713,8 +708,8 @@ var ՐՏ_modules = {};
                     var numWorkdays, state;
                     numWorkdays = parseInt($("#num-workdays-y").val());
                     if (numWorkdays) {
-                        state = getState(getWorkAUNames(workMarkers));
-                        updateAUs(state);
+                        state = getState(getworkAreaNames(workMarkers));
+                        updateAreas(state);
                     }
                 }
             });
@@ -737,8 +732,8 @@ var ՐՏ_modules = {};
                     var numWorkdays, state;
                     numWorkdays = parseInt($("#num-workdays-p").val());
                     if (numWorkdays) {
-                        state = getState(getWorkAUNames(workMarkers));
-                        updateAUs(state);
+                        state = getState(getworkAreaNames(workMarkers));
+                        updateAreas(state);
                     }
                 }
             });
@@ -750,8 +745,8 @@ var ՐՏ_modules = {};
                 "selected": function(event, ui) {
                     var state;
                     $("#num-cars").val(ui.selected.value);
-                    state = getState(getWorkAUNames(workMarkers));
-                    updateAUs(state);
+                    state = getState(getworkAreaNames(workMarkers));
+                    updateAreas(state);
                 }
             });
         });
@@ -801,7 +796,7 @@ var ՐՏ_modules = {};
             if (feature !== null) {
                 table = getTable(feature);
             } else {
-                table = "<h4>Info box</h4>Hover over an area unit";
+                table = "<h4>Info box</h4>Hover over an area";
             }
             div = $(".info.leaflet-control").get(0);
             div.innerHTML = table;
@@ -845,28 +840,28 @@ var ՐՏ_modules = {};
             });
             marker.on("dragend", function(e) {
                 var state;
-                state = getState(getWorkAUNames(workMarkers));
-                updateAUs(state);
+                state = getState(getworkAreaNames(workMarkers));
+                updateAreas(state);
             });
         }
-        var getAUName = (ՐՏ_6 = function getAUName(marker) {
-            var latLon, layer, AUName;
+        var getareaName = (ՐՏ_6 = function getareaName(marker) {
+            var latLon, layer, areaName;
             latLon = marker.getLatLng();
             try {
-                layer = leafletPip.pointInLayer(latLon, AUs, true)[0];
+                layer = leafletPip.pointInLayer(latLon, areas, true)[0];
             } catch (ՐՏ_Exception) {
                 return null;
             }
             if (layer) {
-                AUName = layer.feature.properties.AU2013_NAM;
+                areaName = layer.feature.properties.rental_area;
             } else {
-                AUName = null;
+                areaName = null;
             }
-            return AUName;
+            return areaName;
         }, Object.defineProperty(ՐՏ_6, "__doc__", {
-            value: "Return the name of the area unit that the given\nmarker lies in."
+            value: "Return the name of the area that the given marker lies in."
         }), ՐՏ_6);
-        function getWorkAUNames(workMarkers) {
+        function getworkAreaNames(workMarkers) {
             workMarkers = workMarkers === void 0 ? null : workMarkers;
             var m, result;
             if (workMarkers !== null) {
@@ -874,7 +869,7 @@ var ՐՏ_modules = {};
                     var ՐՏidx12, ՐՏitr12 = ՐՏ_Iterable(workMarkers), ՐՏres = [], m;
                     for (ՐՏidx12 = 0; ՐՏidx12 < ՐՏitr12.length; ՐՏidx12++) {
                         m = ՐՏitr12[ՐՏidx12];
-                        ՐՏres.push(getAUName(m));
+                        ՐՏres.push(getareaName(m));
                     }
                     return ՐՏres;
                 })();
@@ -884,11 +879,11 @@ var ՐՏ_modules = {};
             return result;
         }
         var setWorkPopup = (ՐՏ_7 = function setWorkPopup(marker) {
-            var AUName, text;
-            AUName = getAUName(marker);
+            var areaName, text;
+            areaName = getareaName(marker);
             text = "<h4>" + marker.options.title + "</h4>";
-            if (AUName) {
-                text += AUName;
+            if (areaName) {
+                text += areaName;
             } else {
                 text += "Undefined";
             }
@@ -904,7 +899,7 @@ var ՐՏ_modules = {};
                 return COLOR_SCALE(x);
             }
         }
-        function AUStyle(feature) {
+        function AreaStyle(feature) {
             var c;
             c = getColor(feature.properties.stats.weeklyTotalCostFraction);
             return {
@@ -945,20 +940,20 @@ var ՐՏ_modules = {};
                 "mouseover": highlightFeature
             });
         }
-        AUs = L.geoJson(AUs, {
+        areas = L.geoJson(areas, {
             "onEachFeature": onEachFeature
         }).addTo(map);
-        function updateAUs(state) {
-            AUs.eachLayer(function(layer) {
-                var AUName, stats;
-                AUName = layer.feature.properties.AU2013_NAM;
-                stats = AUsData.getAUStats(state, AUName);
+        function updateAreas(state) {
+            areas.eachLayer(function(layer) {
+                var areaName, stats;
+                areaName = layer.feature.properties.rental_area;
+                stats = areaData.getAreaStats(state, areaName);
                 layer.feature.properties.stats = stats;
-                layer.setStyle(AUStyle(layer.feature));
+                layer.setStyle(AreaStyle(layer.feature));
             });
         }
-        state = getState(getWorkAUNames(workMarkers));
-        updateAUs(state);
+        state = getState(getworkAreaNames(workMarkers));
+        updateAreas(state);
     }
     function main() {
         var data, lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, spinner;
@@ -970,13 +965,12 @@ var ՐՏ_modules = {};
         medianAnnualIncome = data["medianAnnualIncome"];
         zoom = data["zoom"];
         spinner = new Spinner().spin($("#map").get(0));
-        $.when($.getJSON(data["AUsFile"]), $.getJSON(data["rentsFile"]), $.getJSON(data["commuteCostsFile"])).done(function(a, b, c) {
-            var AUs, AUsData;
-            AUs = a[0];
-            ՐՏ_print(b[0]);
-            AUsData = new AreaUnitsData(b[0], c[0]["index_by_name"], c[0]["matrix"]);
+        $.when($.getJSON(data["areasFile"]), $.getJSON(data["rentsFile"]), $.getJSON(data["commuteCostsFile"])).done(function(a, b, c) {
+            var areas, areaData;
+            areas = a[0];
+            areaData = new AreaData(b[0], c[0]["index_by_name"], c[0]["matrix"]);
             spinner.stop();
-            makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, AUs, AUsData);
+            makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData);
         });
     }
     main();

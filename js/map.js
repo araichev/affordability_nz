@@ -517,9 +517,10 @@ var ՐՏ_modules = {};
         }
         return result;
     }
-    function makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData) {
+    function makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData, points) {
         var ՐՏitr10, ՐՏidx10, ՐՏitr11, ՐՏidx11, ՐՏ_6, ՐՏ_7;
-        var item, map, legend, info, workMarkers, k, title, symbol, url, customIcon, marker, m, state;
+        var state, item, map, legend, info, workMarkers, k, title, symbol, url, customIcon, marker, m;
+        state = new State(.84 * medianAnnualIncome, 2, 1, [ "bicycling", "bicycling" ], [ 0, 0 ], [ 5, 0 ], [ 0, 0 ], 0, null);
         $(function() {
             var sv, min, range, el;
             $("#income-slider").slider({
@@ -527,7 +528,7 @@ var ՐՏ_modules = {};
                 "range": "min",
                 "min": 100,
                 "max": 2e5,
-                "value": .84 * medianAnnualIncome,
+                "value": state.income,
                 "step": 100,
                 "slide": function(event, ui) {
                     $("#income").val(numToDollarStr(ui.value));
@@ -581,9 +582,9 @@ var ՐՏ_modules = {};
                 }
             });
         });
-        item = $("#num-bedrooms li:eq(1)");
+        item = $("#num-bedrooms li[value=" + state.numBedrooms + "]");
         item.addClass("ui-selected");
-        $("#num-bedrooms").val(item[0].value);
+        $("#num-bedrooms").val(state.numBedrooms);
         adjustNumBedroomsRent();
         $(function() {
             $("#num-bedrooms-rent").selectable({
@@ -595,9 +596,9 @@ var ՐՏ_modules = {};
                 }
             });
         });
-        item = $("#num-bedrooms-rent li:eq(0)");
+        item = $("#num-bedrooms-rent li[value=" + state.numBedroomsRent + "]");
         item.addClass("ui-selected");
-        $("#num-bedrooms-rent").val(item[0].value);
+        $("#num-bedrooms-rent").val(state.numBedroomsRent);
         $(function() {
             $("#mode-y").selectable({
                 "selected": function(event, ui) {
@@ -623,9 +624,9 @@ var ՐՏ_modules = {};
                 }
             });
         });
-        item = $("#mode-y li:eq(1)");
+        item = $("#mode-y li[id=" + state.modes[0] + "]");
         item.addClass("ui-selected");
-        $("#mode-y").val(item[0].id);
+        $("#mode-y").val(state.modes[0]);
         $(function() {
             $("#mode-p").selectable({
                 "selected": function(event, ui) {
@@ -651,9 +652,9 @@ var ՐՏ_modules = {};
                 }
             });
         });
-        item = $("#mode-p li:eq(1)");
+        item = $("#mode-p li[id=" + state.modes[1] + "]");
         item.addClass("ui-selected");
-        $("#mode-p").val(item[0].id);
+        $("#mode-p").val(state.modes[1].id);
         $(function() {
             var s;
             $("#commute-cost-y-slider").slider({
@@ -661,7 +662,7 @@ var ՐՏ_modules = {};
                 "range": "min",
                 "min": 0,
                 "max": 100,
-                "value": 0,
+                "value": state.commuteCosts[0],
                 "step": 1,
                 "slide": function(event, ui) {
                     $("#commute-cost-y").val(numToDollarStr(ui.value));
@@ -685,7 +686,7 @@ var ՐՏ_modules = {};
                 "range": "min",
                 "min": 0,
                 "max": 100,
-                "value": 0,
+                "value": state.commuteCosts[1],
                 "step": 1,
                 "slide": function(event, ui) {
                     $("#commute-cost-p").val(numToDollarStr(ui.value));
@@ -709,7 +710,7 @@ var ՐՏ_modules = {};
                 "range": "min",
                 "min": 0,
                 "max": 7,
-                "value": 5,
+                "value": state.numWorkdays[0],
                 "step": 1,
                 "slide": function(event, ui) {
                     $("#num-workdays-y").val(ui.value);
@@ -730,7 +731,7 @@ var ՐՏ_modules = {};
                 "range": "min",
                 "min": 0,
                 "max": 7,
-                "value": 0,
+                "value": state.numWorkdays[1],
                 "step": 1,
                 "slide": function(event, ui) {
                     $("#num-workdays-p").val(ui.value);
@@ -751,7 +752,7 @@ var ՐՏ_modules = {};
                 "range": "min",
                 "min": 0,
                 "max": 30,
-                "value": 0,
+                "value": state.parkings[0],
                 "step": 1,
                 "slide": function(event, ui) {
                     $("#parking-y").val(numToDollarStr(ui.value));
@@ -775,7 +776,7 @@ var ՐՏ_modules = {};
                 "range": "min",
                 "min": 0,
                 "max": 30,
-                "value": 0,
+                "value": state.parkings[1],
                 "step": 1,
                 "slide": function(event, ui) {
                     $("#parking-p").val(numToDollarStr(ui.value));
@@ -802,9 +803,9 @@ var ՐՏ_modules = {};
                 }
             });
         });
-        item = $("#num-cars li:eq(0)");
+        item = $("#num-cars li[value=" + state.numCars + "]");
         item.addClass("ui-selected");
-        $("#num-cars").val(item[0].value);
+        $("#num-cars").val(state.numCars);
         map = L.map("map", {
             "center": [ lat, lon ],
             "zoom": zoom,
@@ -951,7 +952,7 @@ var ՐՏ_modules = {};
                 return COLOR_SCALE(x);
             }
         }
-        function AreaStyle(feature) {
+        function areaStyle(feature) {
             var c;
             c = getColor(feature.properties.stats.weeklyTotalCostFraction);
             return {
@@ -1001,10 +1002,9 @@ var ՐՏ_modules = {};
                 areaName = layer.feature.properties.rental_area;
                 stats = areaData.getAreaStats(state, areaName);
                 layer.feature.properties.stats = stats;
-                layer.setStyle(AreaStyle(layer.feature));
+                layer.setStyle(areaStyle(layer.feature));
             });
         }
-        state = getState(getWorkAreaNames(workMarkers));
         updateAreas(state);
     }
     function main() {
@@ -1017,12 +1017,13 @@ var ՐՏ_modules = {};
         medianAnnualIncome = data["medianAnnualIncome"];
         zoom = data["zoom"];
         spinner = new Spinner().spin($("#map").get(0));
-        $.when($.getJSON(data["areasFile"]), $.getJSON(data["rentsFile"]), $.getJSON(data["commuteCostsFile"])).done(function(a, b, c) {
-            var areas, areaData;
+        $.when($.getJSON(data["areasFile"]), $.getJSON(data["rentsFile"]), $.getJSON(data["commuteCostsFile"]), $.getJSON(data["pointsFile"])).done(function(a, b, c, d) {
+            var areas, areaData, points;
             areas = a[0];
             areaData = new AreaData(b[0], c[0]["index_by_name"], c[0]["matrix"]);
             spinner.stop();
-            makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData);
+            points = d[0];
+            makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData, points);
         });
     }
     main();

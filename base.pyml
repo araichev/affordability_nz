@@ -8,8 +8,8 @@ def page($page_name):
                 'Affordability in New Zealand'
             meta(charset='utf-8')
             meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
-            link(rel='stylesheet', href='lib/jquery-ui-1.10.3/jquery-ui.css')
-            link(rel='stylesheet', href='lib/leaflet-0.7.2/leaflet.css')
+            link(rel='stylesheet', href='lib/jquery-ui-1.12.1/jquery-ui.css')
+            link(rel='stylesheet', href='lib/leaflet-1.0.3/leaflet.css')
             link(rel='stylesheet', href='fonts/Open-Sans/stylesheet.css')  
             link(rel='stylesheet', href='css/commute-icons/style.css') 
             link(rel='stylesheet', href='lib/bootstrap-3.3.4/css/bootstrap.min.css')

@@ -9,11 +9,11 @@ def ui($income_note):
         'Hint: To ignore your partner, cast their map marker out to sea or zero their commute days.'
 
     data()
-    script(src='lib/jquery-1.11.0/jquery.min.js')
-    script(src='lib/jquery-ui-1.10.3/jquery-ui.min.js')
-    script(src='lib/jquery-ui-touch-punch-0.2.3/jquery.ui.touch-punch.min.js')
-    script(src='lib/mapbox-1.6.2/mapbox.min.js')   
-    script(src='lib/leaflet-pip.min.js')
+    script(src='lib/mapbox-3.1.0.min.js')   
+    script(src='lib/leaflet-pip-1.1.0.js')
+    script(src='lib/jquery-3.2.1.min.js')
+    script(src='lib/jquery-ui-1.12.1/jquery-ui.min.js')
+    script(src='lib/jquery.ui.touch-punch-0.2.3.min.js')
     script(src='lib/spinner.min.js')
     script(src='lib/d3.v3.min.js')
     script(src='js/map.js')
@@ -70,7 +70,7 @@ def sidebar($income_note):
                 li:
                     'Partner'
         li:
-            'How will you cost your commute time per hour for those modes?'
+            'How do you cost your commute time per hour for those modes?'
             br()
             input(type='text' id='commute-cost-y' readonly)
             div(id='commute-cost-y-slider')     
@@ -92,12 +92,12 @@ def sidebar($income_note):
         li:
             'How much will daily work parking cost?'
             br()
-            input(type='text' id='parking-y' readonly)
-            div(id='parking-y-slider')     
+            input(type='text' id='parking-cost-y' readonly)
+            div(id='parking-cost-y-slider')     
             'You'   
             br()
-            input(type='text' id='parking-p' readonly)
-            div(id='parking-p-slider')    
+            input(type='text' id='parking-cost-p' readonly)
+            div(id='parking-cost-p-slider')    
             'Partner'    
         li:
             'How many cars will you own?'

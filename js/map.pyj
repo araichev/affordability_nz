@@ -30,14 +30,14 @@ class State:
     An object that holds the values of the user interface widgets.
     """
     def __init__(self, income, numBedrooms, numBedroomsRent, modes, commuteCosts,
-      numWorkdays, parkings, numCars, workAreaNames):
+      numWorkdays, parkingCosts, numCars, workAreaNames):
         self.income = income
         self.numBedrooms = numBedrooms
         self.numBedroomsRent = numBedroomsRent
         self.modes = modes
         self.commuteCosts = commuteCosts
         self.numWorkdays = numWorkdays
-        self.parkings = parkings
+        self.parkingCosts = parkingCosts
         self.numCars = numCars
         self.workAreaNames = workAreaNames 
 
@@ -50,7 +50,7 @@ class State:
     def getWeeklyParkingCost(self):
         totalCost = 0
         for k in range(2):
-            parking = self.parkings[k]
+            parking = self.parkingCosts[k]
             numWorkdays = self.numWorkdays[k]
             totalCost += parking*numWorkdays 
         return totalCost
@@ -192,11 +192,11 @@ def getState(workAreaNames=None):
       $("#commute-cost-p-slider").slider("value")]
     numWorkdays = [$("#num-workdays-y-slider").slider("value"),
       $("#num-workdays-p-slider").slider("value")]
-    parkings = [$("#parking-y-slider").slider("value"),
-      $("#parking-p-slider").slider("value")]
+    parkingCosts = [$("#parking-cost-y-slider").slider("value"),
+      $("#parking-cost-p-slider").slider("value")]
     numCars = int($('#num-cars').val())
     return State(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays,
-      parkings, numCars, workAreaNames)
+      parkingCosts, numCars, workAreaNames)
 
 def numToDollarStr(x, inverse=False):
     # Given a float `x`, round it to the nearest integer,
@@ -274,18 +274,28 @@ def rgbaToHex(s):
     return result
 
 def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
-  areas, areaData):  
-    # ------------------------------------------------------------------------
-    # Make form 
+  areas, areaData, points):  
+    # Initialize state to avoid race conditions
+    state = State(
+        0.84*medianAnnualIncome,  # income; estimating net income
+        2,  # numBedrooms
+        1,  # numBedroomsRent
+        ['bicycling', 'bicycling'],  # modes
+        [0, 0],  # commuteCosts
+        [5, 0],  # numWorkdays
+        [0, 0],  # parkingCosts
+        0,  # numCars
+        None,  # workAreaNames
+        )
 
-    # Add an income slider widget
+    # Add income slider widget
     $(def():
         $( "#income-slider" ).slider({
             'orientation': 'horizontal',
             'range': 'min',
             'min': 100,
             'max': 200000,
-            'value': 0.84*medianAnnualIncome,  # estimating net income
+            'value': state.income,
             'step': 100,
             'slide': def(event, ui): 
                 # Update income display
@@ -329,7 +339,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 cancel: '.blocked'
             })
 
-    # Add a number-of-bedrooms selector widget
+    # Add number-of-bedrooms selector widget
     $(def():
         $("#num-bedrooms").selectable({
             'selected': def(event, ui):
@@ -338,17 +348,17 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 # Adjust number of bedrooms to rent accordingly
                 adjustNumBedroomsRent()
                 # Update area units
-                state = getState(getWorkAreaNames(workMarkers)) 
+                state = getState(getWorkAreaNames(workMarkers))
                 updateAreas(state)
         })
     )
     # Initialize selector
-    item = $('#num-bedrooms li:eq(1)')
+    item = $('#num-bedrooms li[value=' + state.numBedrooms + ']')
     item.addClass('ui-selected')
-    $('#num-bedrooms').val(item[0].value)
+    $('#num-bedrooms').val(state.numBedrooms)
     adjustNumBedroomsRent()
 
-    # Add a number-of-bedrooms-to-rent selector widget
+    # Add number-of-bedrooms-to-rent selector widget
     $(def():
         $("#num-bedrooms-rent").selectable({
             'selected': def(event, ui):
@@ -360,11 +370,11 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         })
     )
     # Initialize selector
-    item = $('#num-bedrooms-rent li:eq(0)')
+    item = $('#num-bedrooms-rent li[value=' + state.numBedroomsRent + ']')
     item.addClass('ui-selected')
-    $('#num-bedrooms-rent').val(item[0].value)
+    $('#num-bedrooms-rent').val(state.numBedroomsRent)
 
-    # Add a mode selector widgets
+    # Add mode selector widgets
     $(def():
         $("#mode-y").selectable({
             'selected': def(event, ui):
@@ -373,8 +383,8 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 mode = $('#mode-y').val()
                 if mode != 'driving':
                     # Zero parking cost
-                    $('#parking-y').val('$0')
-                    $('#parking-y-slider').slider('value', 0)
+                    $('#parking-cost-y').val('$0')
+                    $('#parking-cost-y-slider').slider('value', 0)
                 else:
                     # Set car ownership to 1 car if it's 0
                     item = $('#num-cars li.ui-selected')
@@ -390,9 +400,9 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         })
     )
     # Initialize selector
-    item = $('#mode-y li:eq(1)')
+    item = $('#mode-y li[id=' + state.modes[0] + ']')
     item.addClass('ui-selected')
-    $('#mode-y').val(item[0].id)
+    $('#mode-y').val(state.modes[0])
 
     $(def():
         $("#mode-p").selectable({
@@ -402,8 +412,8 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 mode = $('#mode-p').val()
                 if mode != 'driving':
                     # Zero parking cost
-                    $('#parking-p').val('$0')
-                    $('#parking-p-slider').slider('value', 0)
+                    $('#parking-cost-p').val('$0')
+                    $('#parking-cost-p-slider').slider('value', 0)
                 else:
                     # Set car ownership to 1 car if it's 0
                     item = $('#num-cars li.ui-selected')
@@ -419,9 +429,9 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         })
     )
     # Initialize selector
-    item = $('#mode-p li:eq(1)')
+    item = $('#mode-p li[id=' + state.modes[1] + ']')
     item.addClass('ui-selected')
-    $('#mode-p').val(item[0].id)
+    $('#mode-p').val(state.modes[1].id)
 
     # Add commute cost slider widgets
     $(def():
@@ -430,7 +440,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             'range': 'min',
             'min': 0,
             'max': 100,
-            'value': 0,
+            'value': state.commuteCosts[0],
             'step': 1,
             'slide': def(event, ui): 
                 # Update income display
@@ -454,7 +464,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             'range': 'min',
             'min': 0,
             'max': 100,
-            'value': 0,
+            'value': state.commuteCosts[1],
             'step': 1,
             'slide': def(event, ui): 
                 # Update income display
@@ -472,14 +482,14 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         $('#commute-cost-p').val(numToDollarStr(s.slider('value')))
     )
 
-    # Add a number-of-workdays sliders
+    # Add number-of-workdays sliders
     $(def():
         $( "#num-workdays-y-slider" ).slider({
             'orientation': 'horizontal',
             'range': 'min',
             'min': 0,
             'max': 7,
-            'value': 5,
+            'value': state.numWorkdays[0],
             'step': 1,
             'slide': def(event, ui): 
                 # Update income display
@@ -501,7 +511,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             'range': 'min',
             'min': 0,
             'max': 7,
-            'value': 0,
+            'value': state.numWorkdays[1],
             'step': 1,
             'slide': def(event, ui): 
                 # Update income display
@@ -519,16 +529,16 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
 
     # Add parking cost slider widgets
     $(def():
-        $( "#parking-y-slider" ).slider({
+        $( "#parking-cost-y-slider" ).slider({
             'orientation': 'horizontal',
             'range': 'min',
             'min': 0,
             'max': 30,
-            'value': 0,
+            'value': state.parkingCosts[0],
             'step': 1,
             'slide': def(event, ui): 
                 # Update income display
-                $('#parking-y').val(numToDollarStr(ui.value))
+                $('#parking-cost-y').val(numToDollarStr(ui.value))
             ,
             'stop': def(event, ui):
                 numWorkdays = int($('#num-workdays-y').val())
@@ -538,21 +548,21 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                     updateAreas(state)
         })
         # Initialize slider 
-        s = $('#parking-y-slider')
-        $('#parking-y').val(numToDollarStr(s.slider('value')))
+        s = $('#parking-cost-y-slider')
+        $('#parking-cost-y').val(numToDollarStr(s.slider('value')))
     )
 
     $(def():
-        $( "#parking-p-slider" ).slider({
+        $( "#parking-cost-p-slider" ).slider({
             'orientation': 'horizontal',
             'range': 'min',
             'min': 0,
             'max': 30,
-            'value': 0,
+            'value': state.parkingCosts[1],
             'step': 1,
             'slide': def(event, ui): 
                 # Update income display
-                $('#parking-p').val(numToDollarStr(ui.value))
+                $('#parking-cost-p').val(numToDollarStr(ui.value))
             ,
             'stop': def(event, ui):
                 numWorkdays = int($('#num-workdays-p').val())
@@ -562,11 +572,11 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                     updateAreas(state)
         })
         # Initialize slider 
-        s = $('#parking-p-slider')
-        $('#parking-p').val(numToDollarStr(s.slider('value')))
+        s = $('#parking-cost-p-slider')
+        $('#parking-cost-p').val(numToDollarStr(s.slider('value')))
     )
 
-    # Add a number-of-cars select widget
+    # Add number-of-cars select widget
     $(def():
         $("#num-cars").selectable({
             'selected': def(event, ui):
@@ -578,13 +588,11 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         })
     )
     # Initialize selector
-    item = $('#num-cars li:eq(0)')
+    item = $('#num-cars li[value=' + state.numCars + ']')
     item.addClass('ui-selected')
-    $('#num-cars').val(item[0].value)
+    $('#num-cars').val(state.numCars)
 
-    # ------------------------------------------------------------------------
     # Make map 
-
     map = L.map('map', {
         'center': [lat, lon],
         'zoom': zoom,
@@ -743,7 +751,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         #         return COLORS[i]
         # return COLORS[0]
     
-    def AreaStyle(feature):
+    def areaStyle(feature):
         c = getColor(feature.properties.stats.weeklyTotalCostFraction)
         return {
           'fillColor': c,
@@ -783,15 +791,17 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
       'onEachFeature': onEachFeature
     }).addTo(map)
 
+    #points = L.geoJson(points).addTo(map)
+
     def updateAreas(state):
         areas.eachLayer(def(layer):
             areaName = layer.feature.properties.rental_area
             stats = areaData.getAreaStats(state, areaName)
             layer.feature.properties.stats = stats
-            layer.setStyle(AreaStyle(layer.feature))
+            layer.setStyle(areaStyle(layer.feature))
         )
 
-    state = getState(getWorkAreaNames(workMarkers))
+    # state = getState(getWorkAreaNames(workMarkers))
     updateAreas(state)
 
 def main():
@@ -809,14 +819,16 @@ def main():
     $.when(
         $.getJSON(data['areasFile']),
         $.getJSON(data['rentsFile']),
-        $.getJSON(data['commuteCostsFile'])
-    ).done(def(a, b, c): 
+        $.getJSON(data['commuteCostsFile']),
+        $.getJSON(data['pointsFile'])
+    ).done(def(a, b, c, d): 
         # Area units geodata
         areas = a[0]  
         areaData = AreaData(b[0], c[0]['index_by_name'], c[0]['matrix'])
         spinner.stop()
+        points = d[0]
         makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
-          areas, areaData)
+          areas, areaData, points)
     )
 
 main()

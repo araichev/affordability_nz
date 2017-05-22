@@ -266,12 +266,13 @@ var ՐՏ_modules = {};
         __init__: {
             enumerable: true, 
             writable: true, 
-            value: function __init__(income, numBedrooms, numBedroomsRent, modes, numWorkdays, parkings, numCars, workAreaNames){
+            value: function __init__(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkings, numCars, workAreaNames){
                 var self = this;
                 self.income = income;
                 self.numBedrooms = numBedrooms;
                 self.numBedroomsRent = numBedroomsRent;
                 self.modes = modes;
+                self.commuteCosts = commuteCosts;
                 self.numWorkdays = numWorkdays;
                 self.parkings = parkings;
                 self.numCars = numCars;
@@ -394,6 +395,8 @@ var ՐՏ_modules = {};
                     time = ՐՏupk2[1];
                     if (cost === null) {
                         return [null, null];
+                    } else {
+                        cost += time * state.commuteCosts[k];
                     }
                     totalCost += numWorkdays * cost;
                     totalTime += numWorkdays * time;
@@ -443,15 +446,16 @@ var ՐՏ_modules = {};
     }), ՐՏ_3);
     var getState = (ՐՏ_4 = function getState(workAreaNames) {
         workAreaNames = workAreaNames === void 0 ? null : workAreaNames;
-        var income, numBedrooms, numBedroomsRent, modes, numWorkdays, parkings, numCars;
+        var income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkings, numCars;
         income = $("#income-slider").slider("value");
         numBedrooms = parseInt($("#num-bedrooms").val());
         numBedroomsRent = parseInt($("#num-bedrooms-rent").val());
         modes = [ $("#mode-y").val(), $("#mode-p").val() ];
+        commuteCosts = [ $("#commute-cost-y-slider").slider("value"), $("#commute-cost-p-slider").slider("value") ];
         numWorkdays = [ $("#num-workdays-y-slider").slider("value"), $("#num-workdays-p-slider").slider("value") ];
         parkings = [ $("#parking-y-slider").slider("value"), $("#parking-p-slider").slider("value") ];
         numCars = parseInt($("#num-cars").val());
-        return new State(income, numBedrooms, numBedroomsRent, modes, numWorkdays, parkings, numCars, workAreaNames);
+        return new State(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkings, numCars, workAreaNames);
     }, Object.defineProperty(ՐՏ_4, "__doc__", {
         value: "Return a State instance containing the current values of the UI widgets.\nAll numerical fields are stored as integers."
     }), ՐՏ_4);
@@ -459,7 +463,7 @@ var ՐՏ_modules = {};
         inverse = inverse === void 0 ? false : inverse;
         var dollars;
         if (!inverse) {
-            if (x === null) {
+            if (x === null || x === void 0) {
                 return "n/a";
             }
             dollars = x.toFixed(0);
@@ -530,7 +534,7 @@ var ՐՏ_modules = {};
                 },
                 "stop": function(event, ui) {
                     var state;
-                    state = getState(getworkAreaNames(workMarkers));
+                    state = getState(getWorkAreaNames(workMarkers));
                     updateAreas(state);
                 }
             });
@@ -572,7 +576,7 @@ var ՐՏ_modules = {};
                     var state;
                     $("#num-bedrooms").val(ui.selected.value);
                     adjustNumBedroomsRent();
-                    state = getState(getworkAreaNames(workMarkers));
+                    state = getState(getWorkAreaNames(workMarkers));
                     updateAreas(state);
                 }
             });
@@ -586,7 +590,7 @@ var ՐՏ_modules = {};
                 "selected": function(event, ui) {
                     var state;
                     $("#num-bedrooms-rent").val(ui.selected.value);
-                    state = getState(getworkAreaNames(workMarkers));
+                    state = getState(getWorkAreaNames(workMarkers));
                     updateAreas(state);
                 }
             });
@@ -613,7 +617,7 @@ var ՐՏ_modules = {};
                     }
                     numWorkdays = parseInt($("#num-workdays-y").val());
                     if (numWorkdays) {
-                        state = getState(getworkAreaNames(workMarkers));
+                        state = getState(getWorkAreaNames(workMarkers));
                         updateAreas(state);
                     }
                 }
@@ -641,7 +645,7 @@ var ՐՏ_modules = {};
                     }
                     numWorkdays = parseInt($("#num-workdays-p").val());
                     if (numWorkdays) {
-                        state = getState(getworkAreaNames(workMarkers));
+                        state = getState(getWorkAreaNames(workMarkers));
                         updateAreas(state);
                     }
                 }
@@ -650,6 +654,54 @@ var ՐՏ_modules = {};
         item = $("#mode-p li:eq(1)");
         item.addClass("ui-selected");
         $("#mode-p").val(item[0].id);
+        $(function() {
+            var s;
+            $("#commute-cost-y-slider").slider({
+                "orientation": "horizontal",
+                "range": "min",
+                "min": 0,
+                "max": 100,
+                "value": 0,
+                "step": 1,
+                "slide": function(event, ui) {
+                    $("#commute-cost-y").val(numToDollarStr(ui.value));
+                },
+                "stop": function(event, ui) {
+                    var numWorkdays, state;
+                    numWorkdays = parseInt($("#num-workdays-y").val());
+                    if (numWorkdays) {
+                        state = getState(getWorkAreaNames(workMarkers));
+                        updateAreas(state);
+                    }
+                }
+            });
+            s = $("#commute-cost-y-slider");
+            $("#commute-cost-y").val(numToDollarStr(s.slider("value")));
+        });
+        $(function() {
+            var s;
+            $("#commute-cost-p-slider").slider({
+                "orientation": "horizontal",
+                "range": "min",
+                "min": 0,
+                "max": 100,
+                "value": 0,
+                "step": 1,
+                "slide": function(event, ui) {
+                    $("#commute-cost-p").val(numToDollarStr(ui.value));
+                },
+                "stop": function(event, ui) {
+                    var numWorkdays, state;
+                    numWorkdays = parseInt($("#num-workdays-p").val());
+                    if (numWorkdays) {
+                        state = getState(getWorkAreaNames(workMarkers));
+                        updateAreas(state);
+                    }
+                }
+            });
+            s = $("#commute-cost-p-slider");
+            $("#commute-cost-p").val(numToDollarStr(s.slider("value")));
+        });
         $(function() {
             var s;
             $("#num-workdays-y-slider").slider({
@@ -664,7 +716,7 @@ var ՐՏ_modules = {};
                 },
                 "stop": function(event, ui) {
                     var state;
-                    state = getState(getworkAreaNames(workMarkers));
+                    state = getState(getWorkAreaNames(workMarkers));
                     updateAreas(state);
                 }
             });
@@ -685,7 +737,7 @@ var ՐՏ_modules = {};
                 },
                 "stop": function(event, ui) {
                     var state;
-                    state = getState(getworkAreaNames(workMarkers));
+                    state = getState(getWorkAreaNames(workMarkers));
                     updateAreas(state);
                 }
             });
@@ -708,7 +760,7 @@ var ՐՏ_modules = {};
                     var numWorkdays, state;
                     numWorkdays = parseInt($("#num-workdays-y").val());
                     if (numWorkdays) {
-                        state = getState(getworkAreaNames(workMarkers));
+                        state = getState(getWorkAreaNames(workMarkers));
                         updateAreas(state);
                     }
                 }
@@ -732,7 +784,7 @@ var ՐՏ_modules = {};
                     var numWorkdays, state;
                     numWorkdays = parseInt($("#num-workdays-p").val());
                     if (numWorkdays) {
-                        state = getState(getworkAreaNames(workMarkers));
+                        state = getState(getWorkAreaNames(workMarkers));
                         updateAreas(state);
                     }
                 }
@@ -745,7 +797,7 @@ var ՐՏ_modules = {};
                 "selected": function(event, ui) {
                     var state;
                     $("#num-cars").val(ui.selected.value);
-                    state = getState(getworkAreaNames(workMarkers));
+                    state = getState(getWorkAreaNames(workMarkers));
                     updateAreas(state);
                 }
             });
@@ -840,11 +892,11 @@ var ՐՏ_modules = {};
             });
             marker.on("dragend", function(e) {
                 var state;
-                state = getState(getworkAreaNames(workMarkers));
+                state = getState(getWorkAreaNames(workMarkers));
                 updateAreas(state);
             });
         }
-        var getareaName = (ՐՏ_6 = function getareaName(marker) {
+        var getAreaName = (ՐՏ_6 = function getAreaName(marker) {
             var latLon, layer, areaName;
             latLon = marker.getLatLng();
             try {
@@ -861,7 +913,7 @@ var ՐՏ_modules = {};
         }, Object.defineProperty(ՐՏ_6, "__doc__", {
             value: "Return the name of the area that the given marker lies in."
         }), ՐՏ_6);
-        function getworkAreaNames(workMarkers) {
+        function getWorkAreaNames(workMarkers) {
             workMarkers = workMarkers === void 0 ? null : workMarkers;
             var m, result;
             if (workMarkers !== null) {
@@ -869,7 +921,7 @@ var ՐՏ_modules = {};
                     var ՐՏidx12, ՐՏitr12 = ՐՏ_Iterable(workMarkers), ՐՏres = [], m;
                     for (ՐՏidx12 = 0; ՐՏidx12 < ՐՏitr12.length; ՐՏidx12++) {
                         m = ՐՏitr12[ՐՏidx12];
-                        ՐՏres.push(getareaName(m));
+                        ՐՏres.push(getAreaName(m));
                     }
                     return ՐՏres;
                 })();
@@ -880,7 +932,7 @@ var ՐՏ_modules = {};
         }
         var setWorkPopup = (ՐՏ_7 = function setWorkPopup(marker) {
             var areaName, text;
-            areaName = getareaName(marker);
+            areaName = getAreaName(marker);
             text = "<h4>" + marker.options.title + "</h4>";
             if (areaName) {
                 text += areaName;
@@ -952,7 +1004,7 @@ var ՐՏ_modules = {};
                 layer.setStyle(AreaStyle(layer.feature));
             });
         }
-        state = getState(getworkAreaNames(workMarkers));
+        state = getState(getWorkAreaNames(workMarkers));
         updateAreas(state);
     }
     function main() {

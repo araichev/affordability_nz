@@ -29,12 +29,13 @@ class State:
     """
     An object that holds the values of the user interface widgets.
     """
-    def __init__(self, income, numBedrooms, numBedroomsRent, modes,
+    def __init__(self, income, numBedrooms, numBedroomsRent, modes, commuteCosts,
       numWorkdays, parkings, numCars, workAreaNames):
         self.income = income
         self.numBedrooms = numBedrooms
         self.numBedroomsRent = numBedroomsRent
         self.modes = modes
+        self.commuteCosts = commuteCosts
         self.numWorkdays = numWorkdays
         self.parkings = parkings
         self.numCars = numCars
@@ -122,6 +123,9 @@ class AreaData:
             if cost is None:
                 # Can't get to work from this feature via this mode
                 return None, None
+            else:
+                # Add in value of time
+                cost += time*state.commuteCosts[k]
             totalCost += numWorkdays*cost
             totalTime += numWorkdays*time            
         return totalCost, totalTime
@@ -184,12 +188,14 @@ def getState(workAreaNames=None):
     numBedrooms = int($('#num-bedrooms').val())
     numBedroomsRent = int($('#num-bedrooms-rent').val())
     modes = [$('#mode-y').val(), $('#mode-p').val()]
+    commuteCosts = [$("#commute-cost-y-slider").slider("value"),
+      $("#commute-cost-p-slider").slider("value")]
     numWorkdays = [$("#num-workdays-y-slider").slider("value"),
       $("#num-workdays-p-slider").slider("value")]
     parkings = [$("#parking-y-slider").slider("value"),
       $("#parking-p-slider").slider("value")]
     numCars = int($('#num-cars').val())
-    return State(income, numBedrooms, numBedroomsRent, modes, numWorkdays,
+    return State(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays,
       parkings, numCars, workAreaNames)
 
 def numToDollarStr(x, inverse=False):
@@ -199,7 +205,7 @@ def numToDollarStr(x, inverse=False):
     # If `inverse` is True, then assume `x` has the output format
     # mentioned above, and convert it back to an integer.
     if not inverse:
-        if x is None:
+        if x is None or x is undefined:
             return 'n/a'
         dollars = x.toFixed(0)
         # Insert separating commas
@@ -287,7 +293,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             ,
             'stop': def(event, ui):
                 # Update area unit
-                state = getState(getworkAreaNames(workMarkers)) 
+                state = getState(getWorkAreaNames(workMarkers)) 
                 updateAreas(state)
         })
         # Initialize slider 
@@ -332,7 +338,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 # Adjust number of bedrooms to rent accordingly
                 adjustNumBedroomsRent()
                 # Update area units
-                state = getState(getworkAreaNames(workMarkers)) 
+                state = getState(getWorkAreaNames(workMarkers)) 
                 updateAreas(state)
         })
     )
@@ -349,7 +355,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 # Update nuber of bedrooms
                 $('#num-bedrooms-rent').val(ui.selected.value)
                 # Update area units
-                state = getState(getworkAreaNames(workMarkers)) 
+                state = getState(getWorkAreaNames(workMarkers)) 
                 updateAreas(state)
         })
     )
@@ -379,7 +385,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 numWorkdays = int($('#num-workdays-y').val())
                 if numWorkdays:
                     # Update area units
-                    state = getState(getworkAreaNames(workMarkers))
+                    state = getState(getWorkAreaNames(workMarkers))
                     updateAreas(state)
         })
     )
@@ -408,7 +414,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 numWorkdays = int($('#num-workdays-p').val())
                 if numWorkdays:
                     # Update area units
-                    state = getState(getworkAreaNames(workMarkers))
+                    state = getState(getWorkAreaNames(workMarkers))
                     updateAreas(state)
         })
     )
@@ -416,6 +422,55 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
     item = $('#mode-p li:eq(1)')
     item.addClass('ui-selected')
     $('#mode-p').val(item[0].id)
+
+    # Add commute cost slider widgets
+    $(def():
+        $( "#commute-cost-y-slider" ).slider({
+            'orientation': 'horizontal',
+            'range': 'min',
+            'min': 0,
+            'max': 100,
+            'value': 0,
+            'step': 1,
+            'slide': def(event, ui): 
+                # Update income display
+                $('#commute-cost-y').val(numToDollarStr(ui.value))
+            ,
+            'stop': def(event, ui):
+                numWorkdays = int($('#num-workdays-y').val())
+                if numWorkdays:
+                    # Update area units
+                    state = getState(getWorkAreaNames(workMarkers))
+                    updateAreas(state)
+        })
+        # Initialize slider 
+        s = $('#commute-cost-y-slider')
+        $('#commute-cost-y').val(numToDollarStr(s.slider('value')))
+    )
+
+    $(def():
+        $( "#commute-cost-p-slider" ).slider({
+            'orientation': 'horizontal',
+            'range': 'min',
+            'min': 0,
+            'max': 100,
+            'value': 0,
+            'step': 1,
+            'slide': def(event, ui): 
+                # Update income display
+                $('#commute-cost-p').val(numToDollarStr(ui.value))
+            ,
+            'stop': def(event, ui):
+                numWorkdays = int($('#num-workdays-p').val())
+                if numWorkdays:
+                    # Update area units
+                    state = getState(getWorkAreaNames(workMarkers))
+                    updateAreas(state)
+        })
+        # Initialize slider 
+        s = $('#commute-cost-p-slider')
+        $('#commute-cost-p').val(numToDollarStr(s.slider('value')))
+    )
 
     # Add a number-of-workdays sliders
     $(def():
@@ -432,7 +487,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             ,
             'stop': def(event, ui):
                 # Update area units
-                state = getState(getworkAreaNames(workMarkers)) 
+                state = getState(getWorkAreaNames(workMarkers)) 
                 updateAreas(state)
         })
         # Initialize slider 
@@ -454,7 +509,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             ,
             'stop': def(event, ui):
                 # Update area units
-                state = getState(getworkAreaNames(workMarkers))
+                state = getState(getWorkAreaNames(workMarkers))
                 updateAreas(state)
         })
         # Initialize slider 
@@ -479,7 +534,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 numWorkdays = int($('#num-workdays-y').val())
                 if numWorkdays:
                     # Update area units
-                    state = getState(getworkAreaNames(workMarkers))
+                    state = getState(getWorkAreaNames(workMarkers))
                     updateAreas(state)
         })
         # Initialize slider 
@@ -503,7 +558,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 numWorkdays = int($('#num-workdays-p').val())
                 if numWorkdays:
                     # Update area units
-                    state = getState(getworkAreaNames(workMarkers)) 
+                    state = getState(getWorkAreaNames(workMarkers)) 
                     updateAreas(state)
         })
         # Initialize slider 
@@ -518,7 +573,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
                 # Update nuber of bedrooms
                 $('#num-cars').val(ui.selected.value)
                 # Update area units
-                state = getState(getworkAreaNames(workMarkers)) 
+                state = getState(getWorkAreaNames(workMarkers)) 
                 updateAreas(state)
         })
     )
@@ -637,11 +692,11 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         )
         marker.on('dragend', def(e):
             # Recolor areas
-            state = getState(getworkAreaNames(workMarkers))
+            state = getState(getWorkAreaNames(workMarkers))
             updateAreas(state)
         )
 
-    def getareaName(marker):
+    def getAreaName(marker):
         """
         Return the name of the area that the given marker lies in.
         """
@@ -656,9 +711,9 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             areaName = None
         return areaName
 
-    def getworkAreaNames(workMarkers=None):
+    def getWorkAreaNames(workMarkers=None):
         if workMarkers is not None:
-            result = [getareaName(m) for m in workMarkers]
+            result = [getAreaName(m) for m in workMarkers]
         else:
             result = None
         return result
@@ -668,7 +723,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         Set the content of the given marker's popup, 
         and open the popup.
         """
-        areaName = getareaName(marker)
+        areaName = getAreaName(marker)
         text = '<h4>' + marker.options.title + '</h4>'
         if areaName:
             text += areaName
@@ -736,7 +791,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             layer.setStyle(AreaStyle(layer.feature))
         )
 
-    state = getState(getworkAreaNames(workMarkers))
+    state = getState(getWorkAreaNames(workMarkers))
     updateAreas(state)
 
 def main():

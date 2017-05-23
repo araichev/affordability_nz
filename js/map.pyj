@@ -279,7 +279,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
     # Initialize state to avoid race conditions
     state = State(
         0.84*medianAnnualIncome,  # income; estimating net income
-        2,  # numBedrooms
+        3,  # numBedrooms
         1,  # numBedroomsRent
         ['bicycling', 'bicycling'],  # modes
         [0, 0],  # commuteCosts

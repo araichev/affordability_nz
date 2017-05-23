@@ -33,7 +33,7 @@ def page($page_name):
                     a(href='wellington.html', id='nav-wellington'):
                         'Wellington'
                 li:
-                    '//'
+                    '/'
                 li: 
                     a(href='about.html', id='nav-about'):
                         'About'

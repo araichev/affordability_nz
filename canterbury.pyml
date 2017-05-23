@@ -5,7 +5,7 @@ def main():
     p:
         'You and your partner, if you have one, just got a job in Canterbury. Now where to live?' 
         br()
-        "This application color codes Canterbury's rental areas by their affordability to you. Here affordability is based on rent, commute, parking, and car ownership cost estimates determined by your answers to the questions below."
+        "This application color codes Canterbury's rental areas by their affordability to you, based on your income, median market rents from the last two quarters, your commute costs, and your answers to the questions below."
     ui('employed Canterburians ($44,876)')
 
 def data():

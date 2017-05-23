@@ -70,7 +70,7 @@ def sidebar($income_note):
                 li:
                     'Partner'
         li:
-            'How will you cost your commute time per hour?'
+            'Cost your commute time per hour, if you wish.'
             br()
             input(type='text' id='commute-cost-y' readonly)
             div(id='commute-cost-y-slider')     
@@ -90,7 +90,7 @@ def sidebar($income_note):
             div(id='num-workdays-p-slider')
             'Partner'
         li:
-            'How much will commute parking cost per day?'
+            'How much will work parking cost per day?'
             br()
             input(type='text' id='parking-cost-y' readonly)
             div(id='parking-cost-y-slider')     

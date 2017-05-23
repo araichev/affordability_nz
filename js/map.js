@@ -520,7 +520,7 @@ var ՐՏ_modules = {};
     function makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData) {
         var ՐՏitr10, ՐՏidx10, ՐՏitr11, ՐՏidx11, ՐՏ_6, ՐՏ_7;
         var state, item, map, legend, info, workMarkers, k, title, symbol, url, customIcon, marker, m;
-        state = new State(.84 * medianAnnualIncome, 3, 1, [ "bicycling", "bicycling" ], [ 0, 0 ], [ 5, 0 ], [ 0, 0 ], 0, null);
+        state = new State(.84 * medianAnnualIncome, 3, 1, [ "bicycling", "walking" ], [ 0, 0 ], [ 5, 0 ], [ 0, 0 ], 0, null);
         $(function() {
             var sv, min, range, el;
             $("#income-slider").slider({

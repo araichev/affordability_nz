@@ -261,6 +261,7 @@ def getTable(feature):
         percent +\
         '</td></tr>' +\
         '</table>'
+
     return table
 
 def rgbaToHex(s):
@@ -274,7 +275,7 @@ def rgbaToHex(s):
     return result
 
 def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
-  areas, areaData, points):  
+  areas, areaData):  
     # Initialize state to avoid race conditions
     state = State(
         0.84*medianAnnualIncome,  # income; estimating net income
@@ -285,8 +286,8 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         [5, 0],  # numWorkdays
         [0, 0],  # parkingCosts
         0,  # numCars
-        None,  # workAreaNames
-        )
+        None  # workAreaNames
+    )
 
     # Add income slider widget
     $(def():
@@ -629,7 +630,6 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
     # Add a scale display to the map
     L.control.scale({'imperial': False, 'position': 'topleft'}).addTo(map);
 
-
     # Add a info box to the map
     info = L.control({position: 'bottomright'})
     info.onAdd = def():
@@ -788,10 +788,8 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
 
     # Add area units to map
     areas = L.geoJson(areas, {
-      'onEachFeature': onEachFeature
+      'onEachFeature': onEachFeature,
     }).addTo(map)
-
-    #points = L.geoJson(points).addTo(map)
 
     def updateAreas(state):
         areas.eachLayer(def(layer):
@@ -801,7 +799,6 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             layer.setStyle(areaStyle(layer.feature))
         )
 
-    # state = getState(getWorkAreaNames(workMarkers))
     updateAreas(state)
 
 def main():
@@ -819,16 +816,14 @@ def main():
     $.when(
         $.getJSON(data['areasFile']),
         $.getJSON(data['rentsFile']),
-        $.getJSON(data['commuteCostsFile']),
-        $.getJSON(data['pointsFile'])
-    ).done(def(a, b, c, d): 
+        $.getJSON(data['commuteCostsFile'])
+    ).done(def(a, b, c): 
         # Area units geodata
         areas = a[0]  
         areaData = AreaData(b[0], c[0]['index_by_name'], c[0]['matrix'])
         spinner.stop()
-        points = d[0]
         makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
-          areas, areaData, points)
+          areas, areaData)
     )
 
 main()

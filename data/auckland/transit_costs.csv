@@ -185,7 +185,7 @@ Avondale,Torbay,16.0
 Avondale,Waiheke Island,31.0
 Avondale,Wairau Park/Glenfield North,11.0
 Avondale,Waiuku,16.0
-Avondale,Waterview/Avondale Heights,
+Avondale,Waterview/Avondale Heights,0.0
 Avondale,Wattle Downs/Conifer Grove,10.5
 Avondale,Wellsford/Warkworth/Helensville,
 Avondale,West Harbour,9.0
@@ -270,13 +270,13 @@ Balmoral,Royal Oak/One Tree Hill,3.5
 Balmoral,Rural Franklin,
 Balmoral,St Helliers/Glendowie,3.5
 Balmoral,St Johns,3.5
-Balmoral,St Lukes/Sandringham,
+Balmoral,St Lukes/Sandringham,7.0
 Balmoral,Sunnynook/Westlake,11.0
 Balmoral,Takanini/Ardmore,14.0
 Balmoral,Takapuna,11.0
 Balmoral,Te Atatu,9.0
 Balmoral,Te Atatu Peninsula,12.5
-Balmoral,Three Kings,
+Balmoral,Three Kings,0.0
 Balmoral,Titirangi,10.5
 Balmoral,Torbay,14.5
 Balmoral,Waiheke Island,34.5
@@ -783,7 +783,7 @@ Central East,Blockhouse Bay/New Windsor,5.5
 Central East,Botony Downs,7.0
 Central East,Browns Bay,10.5
 Central East,Bucklands Beach,9.0
-Central East,Central West,
+Central East,Central West,0.0
 Central East,Chatswood/Birkenhead/Northcote Point,5.5
 Central East,Dannemora,7.0
 Central East,Devonport,6.5
@@ -826,7 +826,7 @@ Central East,Mt Wellington,9.0
 Central East,Mt Wellington North,5.5
 Central East,New Lynn,9.0
 Central East,Newmarket,3.5
-Central East,Newton/Grafton,
+Central East,Newton/Grafton,3.5
 Central East,North Harbour/Pine Hill,7.0
 Central East,Onehunga/Oranga/Te Papapa,5.5
 Central East,Orewa/Whangaparaoa,
@@ -838,7 +838,7 @@ Central East,Papakura/Drury/Karaka,9.0
 Central East,Papatoetoe North,7.0
 Central East,Papatoetoe South,7.0
 Central East,Papatoetoe West,7.0
-Central East,Parnell,
+Central East,Parnell,3.5
 Central East,Penrose/Mt Wellington South,5.5
 Central East,Ponsonby/Freemans Bay,3.5
 Central East,Pt Chevalier,5.5
@@ -880,12 +880,12 @@ Central West,Blockhouse Bay/New Windsor,5.5
 Central West,Botony Downs,7.0
 Central West,Browns Bay,10.5
 Central West,Bucklands Beach,9.0
-Central West,Central East,
+Central West,Central East,0.0
 Central West,Chatswood/Birkenhead/Northcote Point,5.5
 Central West,Dannemora,7.0
 Central West,Devonport,6.5
 Central West,East Coast Bays,5.5
-Central West,Eden Terrace,
+Central West,Eden Terrace,3.5
 Central West,Ellerslie,5.5
 Central West,Epsom,5.5
 Central West,Glen Eden,7.0
@@ -923,7 +923,7 @@ Central West,Mt Wellington,5.5
 Central West,Mt Wellington North,5.5
 Central West,New Lynn,5.5
 Central West,Newmarket,5.5
-Central West,Newton/Grafton,
+Central West,Newton/Grafton,0.0
 Central West,North Harbour/Pine Hill,9.0
 Central West,Onehunga/Oranga/Te Papapa,5.5
 Central West,Orewa/Whangaparaoa,
@@ -1366,7 +1366,7 @@ Eden Terrace,Botony Downs,7.0
 Eden Terrace,Browns Bay,7.0
 Eden Terrace,Bucklands Beach,9.0
 Eden Terrace,Central East,3.5
-Eden Terrace,Central West,
+Eden Terrace,Central West,3.5
 Eden Terrace,Chatswood/Birkenhead/Northcote Point,9.0
 Eden Terrace,Dannemora,7.0
 Eden Terrace,Devonport,10.0
@@ -1378,7 +1378,7 @@ Eden Terrace,Glen Innes/Pt England/Wai O Taiki,5.5
 Eden Terrace,Glendene,7.0
 Eden Terrace,Glendhu/Glenfield,9.0
 Eden Terrace,Greenhithe/Unsworth Heights,11.0
-Eden Terrace,Grey Lynn/Arch Hill,
+Eden Terrace,Grey Lynn/Arch Hill,3.5
 Eden Terrace,Gulf Harbour,16.0
 Eden Terrace,Half Moon Bay/Farm Cove,7.0
 Eden Terrace,Henderson,7.0
@@ -1388,7 +1388,7 @@ Eden Terrace,Hillcrest/Northcote,5.5
 Eden Terrace,Hillsborough,5.5
 Eden Terrace,Howick,7.0
 Eden Terrace,Kelston,7.0
-Eden Terrace,Kingsland,
+Eden Terrace,Kingsland,3.5
 Eden Terrace,Kohimarama,9.0
 Eden Terrace,Lynfield,5.5
 Eden Terrace,Mangere,10.5
@@ -1408,7 +1408,7 @@ Eden Terrace,Mt Wellington,5.5
 Eden Terrace,Mt Wellington North,5.5
 Eden Terrace,New Lynn,5.5
 Eden Terrace,Newmarket,3.5
-Eden Terrace,Newton/Grafton,
+Eden Terrace,Newton/Grafton,0.0
 Eden Terrace,North Harbour/Pine Hill,7.0
 Eden Terrace,Onehunga/Oranga/Te Papapa,5.5
 Eden Terrace,Orewa/Whangaparaoa,
@@ -2147,7 +2147,7 @@ Grey Lynn/Arch Hill,Chatswood/Birkenhead/Northcote Point,9.0
 Grey Lynn/Arch Hill,Dannemora,12.5
 Grey Lynn/Arch Hill,Devonport,10.0
 Grey Lynn/Arch Hill,East Coast Bays,9.0
-Grey Lynn/Arch Hill,Eden Terrace,
+Grey Lynn/Arch Hill,Eden Terrace,3.5
 Grey Lynn/Arch Hill,Ellerslie,7.0
 Grey Lynn/Arch Hill,Epsom,3.5
 Grey Lynn/Arch Hill,Glen Eden,5.5
@@ -2164,7 +2164,7 @@ Grey Lynn/Arch Hill,Hillcrest/Northcote,9.0
 Grey Lynn/Arch Hill,Hillsborough,5.5
 Grey Lynn/Arch Hill,Howick,16.0
 Grey Lynn/Arch Hill,Kelston,5.5
-Grey Lynn/Arch Hill,Kingsland,
+Grey Lynn/Arch Hill,Kingsland,7.0
 Grey Lynn/Arch Hill,Kohimarama,9.0
 Grey Lynn/Arch Hill,Lynfield,5.5
 Grey Lynn/Arch Hill,Mangere,10.5
@@ -2198,7 +2198,7 @@ Grey Lynn/Arch Hill,Papatoetoe South,9.0
 Grey Lynn/Arch Hill,Papatoetoe West,9.0
 Grey Lynn/Arch Hill,Parnell,7.0
 Grey Lynn/Arch Hill,Penrose/Mt Wellington South,9.0
-Grey Lynn/Arch Hill,Ponsonby/Freemans Bay,
+Grey Lynn/Arch Hill,Ponsonby/Freemans Bay,0.0
 Grey Lynn/Arch Hill,Pt Chevalier,5.5
 Grey Lynn/Arch Hill,Pukekohe/Tuakau,16.0
 Grey Lynn/Arch Hill,Ranui,10.5
@@ -2228,7 +2228,7 @@ Grey Lynn/Arch Hill,Wellsford/Warkworth/Helensville,
 Grey Lynn/Arch Hill,West Harbour,10.5
 Grey Lynn/Arch Hill,Western Beaches/Rural,
 Grey Lynn/Arch Hill,Western Springs/Morningside,5.5
-Grey Lynn/Arch Hill,Westmere/Surrey Crescent,
+Grey Lynn/Arch Hill,Westmere/Surrey Crescent,5.5
 Grey Lynn/Arch Hill,Weymouth,14.0
 Gulf Harbour,Albany,9.0
 Gulf Harbour,Avondale,18.0
@@ -2586,7 +2586,7 @@ Herne Bay/St Marys,Papatoetoe South,10.5
 Herne Bay/St Marys,Papatoetoe West,10.5
 Herne Bay/St Marys,Parnell,3.5
 Herne Bay/St Marys,Penrose/Mt Wellington South,9.0
-Herne Bay/St Marys,Ponsonby/Freemans Bay,
+Herne Bay/St Marys,Ponsonby/Freemans Bay,0.0
 Herne Bay/St Marys,Pt Chevalier,5.5
 Herne Bay/St Marys,Pukekohe/Tuakau,16.0
 Herne Bay/St Marys,Ranui,11.0
@@ -3117,7 +3117,7 @@ Kingsland,Chatswood/Birkenhead/Northcote Point,9.0
 Kingsland,Dannemora,10.5
 Kingsland,Devonport,10.0
 Kingsland,East Coast Bays,9.0
-Kingsland,Eden Terrace,
+Kingsland,Eden Terrace,3.5
 Kingsland,Ellerslie,7.0
 Kingsland,Epsom,9.0
 Kingsland,Glen Eden,9.0
@@ -3125,7 +3125,7 @@ Kingsland,Glen Innes/Pt England/Wai O Taiki,9.0
 Kingsland,Glendene,5.5
 Kingsland,Glendhu/Glenfield,9.0
 Kingsland,Greenhithe/Unsworth Heights,14.5
-Kingsland,Grey Lynn/Arch Hill,
+Kingsland,Grey Lynn/Arch Hill,3.5
 Kingsland,Gulf Harbour,16.0
 Kingsland,Half Moon Bay/Farm Cove,10.5
 Kingsland,Henderson,5.5
@@ -3148,7 +3148,7 @@ Kingsland,Massey/Royal Heights,9.0
 Kingsland,Meadowbank,3.5
 Kingsland,Mission Bay/Orakei,9.0
 Kingsland,Mt Albert/Owairaka,3.5
-Kingsland,Mt Eden,
+Kingsland,Mt Eden,7.0
 Kingsland,Mt Roskill/Wesley,3.5
 Kingsland,Mt Wellington,9.0
 Kingsland,Mt Wellington North,9.0
@@ -3180,7 +3180,7 @@ Kingsland,Royal Oak/One Tree Hill,9.0
 Kingsland,Rural Franklin,
 Kingsland,St Helliers/Glendowie,9.0
 Kingsland,St Johns,3.5
-Kingsland,St Lukes/Sandringham,
+Kingsland,St Lukes/Sandringham,3.5
 Kingsland,Sunnynook/Westlake,9.0
 Kingsland,Takanini/Ardmore,10.5
 Kingsland,Takapuna,9.0
@@ -3197,7 +3197,7 @@ Kingsland,Wattle Downs/Conifer Grove,10.5
 Kingsland,Wellsford/Warkworth/Helensville,
 Kingsland,West Harbour,16.0
 Kingsland,Western Beaches/Rural,
-Kingsland,Western Springs/Morningside,
+Kingsland,Western Springs/Morningside,0.0
 Kingsland,Westmere/Surrey Crescent,7.0
 Kingsland,Weymouth,10.5
 Kohimarama,Albany,12.5
@@ -4493,7 +4493,7 @@ Mt Eden,Hillcrest/Northcote,11.0
 Mt Eden,Hillsborough,3.5
 Mt Eden,Howick,9.0
 Mt Eden,Kelston,5.5
-Mt Eden,Kingsland,
+Mt Eden,Kingsland,3.5
 Mt Eden,Kohimarama,11.0
 Mt Eden,Lynfield,3.5
 Mt Eden,Mangere,10.5
@@ -4641,7 +4641,7 @@ Mt Roskill/Wesley,Takanini/Ardmore,9.0
 Mt Roskill/Wesley,Takapuna,11.0
 Mt Roskill/Wesley,Te Atatu,12.5
 Mt Roskill/Wesley,Te Atatu Peninsula,9.0
-Mt Roskill/Wesley,Three Kings,
+Mt Roskill/Wesley,Three Kings,3.5
 Mt Roskill/Wesley,Titirangi,7.0
 Mt Roskill/Wesley,Torbay,32.0
 Mt Roskill/Wesley,Waiheke Island,32.0
@@ -4703,7 +4703,7 @@ Mt Wellington,Mission Bay/Orakei,11.0
 Mt Wellington,Mt Albert/Owairaka,7.0
 Mt Wellington,Mt Eden,7.0
 Mt Wellington,Mt Roskill/Wesley,11.0
-Mt Wellington,Mt Wellington North,
+Mt Wellington,Mt Wellington North,3.5
 Mt Wellington,New Lynn,7.0
 Mt Wellington,Newmarket,3.5
 Mt Wellington,Newton/Grafton,5.5
@@ -4800,7 +4800,7 @@ Mt Wellington North,Mission Bay/Orakei,3.5
 Mt Wellington North,Mt Albert/Owairaka,7.0
 Mt Wellington North,Mt Eden,7.0
 Mt Wellington North,Mt Roskill/Wesley,11.0
-Mt Wellington North,Mt Wellington,
+Mt Wellington North,Mt Wellington,3.5
 Mt Wellington North,New Lynn,7.0
 Mt Wellington North,Newmarket,3.5
 Mt Wellington North,Newton/Grafton,5.5
@@ -5051,13 +5051,13 @@ Newton/Grafton,Blockhouse Bay/New Windsor,5.5
 Newton/Grafton,Botony Downs,7.0
 Newton/Grafton,Browns Bay,7.0
 Newton/Grafton,Bucklands Beach,12.5
-Newton/Grafton,Central East,
-Newton/Grafton,Central West,
+Newton/Grafton,Central East,3.5
+Newton/Grafton,Central West,0.0
 Newton/Grafton,Chatswood/Birkenhead/Northcote Point,9.0
 Newton/Grafton,Dannemora,7.0
 Newton/Grafton,Devonport,10.0
 Newton/Grafton,East Coast Bays,5.5
-Newton/Grafton,Eden Terrace,
+Newton/Grafton,Eden Terrace,0.0
 Newton/Grafton,Ellerslie,5.5
 Newton/Grafton,Epsom,5.5
 Newton/Grafton,Glen Eden,10.5
@@ -5212,7 +5212,7 @@ North Harbour/Pine Hill,Ranui,12.5
 North Harbour/Pine Hill,Remuera,18.0
 North Harbour/Pine Hill,Remuera South/Meadowbank South,18.0
 North Harbour/Pine Hill,Rewiti/Kumeu/Riverhead,
-North Harbour/Pine Hill,Rothesay/Murrays/Mairangi Bays,
+North Harbour/Pine Hill,Rothesay/Murrays/Mairangi Bays,7.0
 North Harbour/Pine Hill,Royal Oak/One Tree Hill,14.5
 North Harbour/Pine Hill,Rural Franklin,
 North Harbour/Pine Hill,St Helliers/Glendowie,18.0
@@ -5310,7 +5310,7 @@ Onehunga/Oranga/Te Papapa,Remuera,7.0
 Onehunga/Oranga/Te Papapa,Remuera South/Meadowbank South,7.0
 Onehunga/Oranga/Te Papapa,Rewiti/Kumeu/Riverhead,
 Onehunga/Oranga/Te Papapa,Rothesay/Murrays/Mairangi Bays,11.0
-Onehunga/Oranga/Te Papapa,Royal Oak/One Tree Hill,
+Onehunga/Oranga/Te Papapa,Royal Oak/One Tree Hill,3.5
 Onehunga/Oranga/Te Papapa,Rural Franklin,
 Onehunga/Oranga/Te Papapa,St Helliers/Glendowie,12.5
 Onehunga/Oranga/Te Papapa,St Johns,7.0
@@ -5977,7 +5977,7 @@ Papatoetoe North,Otara,3.5
 Papatoetoe North,Pakuranga,9.0
 Papatoetoe North,Panmure,5.5
 Papatoetoe North,Papakura/Drury/Karaka,5.5
-Papatoetoe North,Papatoetoe South,
+Papatoetoe North,Papatoetoe South,3.5
 Papatoetoe North,Papatoetoe West,3.5
 Papatoetoe North,Parnell,7.0
 Papatoetoe North,Penrose/Mt Wellington South,5.5
@@ -6074,7 +6074,7 @@ Papatoetoe South,Otara,3.5
 Papatoetoe South,Pakuranga,7.0
 Papatoetoe South,Panmure,5.5
 Papatoetoe South,Papakura/Drury/Karaka,5.5
-Papatoetoe South,Papatoetoe North,
+Papatoetoe South,Papatoetoe North,3.5
 Papatoetoe South,Papatoetoe West,3.5
 Papatoetoe South,Parnell,7.0
 Papatoetoe South,Penrose/Mt Wellington South,5.5
@@ -6215,7 +6215,7 @@ Parnell,Blockhouse Bay/New Windsor,5.5
 Parnell,Botony Downs,9.0
 Parnell,Browns Bay,14.5
 Parnell,Bucklands Beach,7.0
-Parnell,Central East,
+Parnell,Central East,3.5
 Parnell,Central West,3.5
 Parnell,Chatswood/Birkenhead/Northcote Point,9.0
 Parnell,Dannemora,9.0
@@ -6423,11 +6423,11 @@ Ponsonby/Freemans Bay,Glen Innes/Pt England/Wai O Taiki,9.0
 Ponsonby/Freemans Bay,Glendene,14.5
 Ponsonby/Freemans Bay,Glendhu/Glenfield,5.5
 Ponsonby/Freemans Bay,Greenhithe/Unsworth Heights,9.0
-Ponsonby/Freemans Bay,Grey Lynn/Arch Hill,
+Ponsonby/Freemans Bay,Grey Lynn/Arch Hill,0.0
 Ponsonby/Freemans Bay,Gulf Harbour,12.5
 Ponsonby/Freemans Bay,Half Moon Bay/Farm Cove,9.0
 Ponsonby/Freemans Bay,Henderson,11.0
-Ponsonby/Freemans Bay,Herne Bay/St Marys,
+Ponsonby/Freemans Bay,Herne Bay/St Marys,0.0
 Ponsonby/Freemans Bay,Highland Park,9.0
 Ponsonby/Freemans Bay,Hillcrest/Northcote,5.5
 Ponsonby/Freemans Bay,Hillsborough,5.5
@@ -7133,7 +7133,7 @@ Rothesay/Murrays/Mairangi Bays,Mt Wellington North,11.0
 Rothesay/Murrays/Mairangi Bays,New Lynn,12.5
 Rothesay/Murrays/Mairangi Bays,Newmarket,11.0
 Rothesay/Murrays/Mairangi Bays,Newton/Grafton,5.5
-Rothesay/Murrays/Mairangi Bays,North Harbour/Pine Hill,
+Rothesay/Murrays/Mairangi Bays,North Harbour/Pine Hill,7.0
 Rothesay/Murrays/Mairangi Bays,Onehunga/Oranga/Te Papapa,11.0
 Rothesay/Murrays/Mairangi Bays,Orewa/Whangaparaoa,
 Rothesay/Murrays/Mairangi Bays,Otahuhu,14.5
@@ -7231,7 +7231,7 @@ Royal Oak/One Tree Hill,New Lynn,7.0
 Royal Oak/One Tree Hill,Newmarket,3.5
 Royal Oak/One Tree Hill,Newton/Grafton,5.5
 Royal Oak/One Tree Hill,North Harbour/Pine Hill,14.5
-Royal Oak/One Tree Hill,Onehunga/Oranga/Te Papapa,
+Royal Oak/One Tree Hill,Onehunga/Oranga/Te Papapa,3.5
 Royal Oak/One Tree Hill,Orewa/Whangaparaoa,
 Royal Oak/One Tree Hill,Otahuhu,3.5
 Royal Oak/One Tree Hill,Otara,7.0
@@ -7567,7 +7567,7 @@ St Johns,Westmere/Surrey Crescent,9.0
 St Johns,Weymouth,9.0
 St Lukes/Sandringham,Albany,12.5
 St Lukes/Sandringham,Avondale,3.5
-St Lukes/Sandringham,Balmoral,
+St Lukes/Sandringham,Balmoral,3.5
 St Lukes/Sandringham,Beachhaven/Birkdale,11.0
 St Lukes/Sandringham,Blockhouse Bay/New Windsor,3.5
 St Lukes/Sandringham,Botony Downs,12.5
@@ -7597,7 +7597,7 @@ St Lukes/Sandringham,Hillcrest/Northcote,11.0
 St Lukes/Sandringham,Hillsborough,3.5
 St Lukes/Sandringham,Howick,9.0
 St Lukes/Sandringham,Kelston,7.0
-St Lukes/Sandringham,Kingsland,
+St Lukes/Sandringham,Kingsland,3.5
 St Lukes/Sandringham,Kohimarama,3.5
 St Lukes/Sandringham,Lynfield,3.5
 St Lukes/Sandringham,Mangere,10.5
@@ -8149,7 +8149,7 @@ Te Atatu Peninsula,Westmere/Surrey Crescent,5.5
 Te Atatu Peninsula,Weymouth,19.5
 Three Kings,Albany,28.5
 Three Kings,Avondale,3.5
-Three Kings,Balmoral,
+Three Kings,Balmoral,0.0
 Three Kings,Beachhaven/Birkdale,27.0
 Three Kings,Blockhouse Bay/New Windsor,3.5
 Three Kings,Botony Downs,28.5
@@ -8194,7 +8194,7 @@ Three Kings,Meadowbank,7.0
 Three Kings,Mission Bay/Orakei,11.0
 Three Kings,Mt Albert/Owairaka,3.5
 Three Kings,Mt Eden,3.5
-Three Kings,Mt Roskill/Wesley,
+Three Kings,Mt Roskill/Wesley,3.5
 Three Kings,Mt Wellington,23.5
 Three Kings,Mt Wellington North,23.5
 Three Kings,New Lynn,3.5
@@ -8730,7 +8730,7 @@ Waiuku,Western Springs/Morningside,16.0
 Waiuku,Westmere/Surrey Crescent,21.5
 Waiuku,Weymouth,12.5
 Waterview/Avondale Heights,Albany,12.5
-Waterview/Avondale Heights,Avondale,
+Waterview/Avondale Heights,Avondale,0.0
 Waterview/Avondale Heights,Balmoral,7.0
 Waterview/Avondale Heights,Beachhaven/Birkdale,11.0
 Waterview/Avondale Heights,Blockhouse Bay/New Windsor,3.5
@@ -9246,7 +9246,7 @@ Western Springs/Morningside,Hillcrest/Northcote,11.0
 Western Springs/Morningside,Hillsborough,3.5
 Western Springs/Morningside,Howick,12.5
 Western Springs/Morningside,Kelston,5.5
-Western Springs/Morningside,Kingsland,
+Western Springs/Morningside,Kingsland,0.0
 Western Springs/Morningside,Kohimarama,11.0
 Western Springs/Morningside,Lynfield,7.0
 Western Springs/Morningside,Mangere,9.0
@@ -9333,7 +9333,7 @@ Westmere/Surrey Crescent,Glen Innes/Pt England/Wai O Taiki,11.0
 Westmere/Surrey Crescent,Glendene,5.5
 Westmere/Surrey Crescent,Glendhu/Glenfield,11.0
 Westmere/Surrey Crescent,Greenhithe/Unsworth Heights,16.5
-Westmere/Surrey Crescent,Grey Lynn/Arch Hill,
+Westmere/Surrey Crescent,Grey Lynn/Arch Hill,5.5
 Westmere/Surrey Crescent,Gulf Harbour,18.0
 Westmere/Surrey Crescent,Half Moon Bay/Farm Cove,12.5
 Westmere/Surrey Crescent,Henderson,9.0

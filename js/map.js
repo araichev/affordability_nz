@@ -266,7 +266,7 @@ var ՐՏ_modules = {};
         __init__: {
             enumerable: true, 
             writable: true, 
-            value: function __init__(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkings, numCars, workAreaNames){
+            value: function __init__(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkingCosts, numCars, workAreaNames){
                 var self = this;
                 self.income = income;
                 self.numBedrooms = numBedrooms;
@@ -274,7 +274,7 @@ var ՐՏ_modules = {};
                 self.modes = modes;
                 self.commuteCosts = commuteCosts;
                 self.numWorkdays = numWorkdays;
-                self.parkings = parkings;
+                self.parkingCosts = parkingCosts;
                 self.numCars = numCars;
                 self.workAreaNames = workAreaNames;
             }
@@ -303,7 +303,7 @@ var ՐՏ_modules = {};
                 var totalCost, k, parking, numWorkdays;
                 totalCost = 0;
                 for (k = 0; k < 2; k++) {
-                    parking = self.parkings[k];
+                    parking = self.parkingCosts[k];
                     numWorkdays = self.numWorkdays[k];
                     totalCost += parking * numWorkdays;
                 }
@@ -446,16 +446,16 @@ var ՐՏ_modules = {};
     }), ՐՏ_3);
     var getState = (ՐՏ_4 = function getState(workAreaNames) {
         workAreaNames = workAreaNames === void 0 ? null : workAreaNames;
-        var income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkings, numCars;
+        var income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkingCosts, numCars;
         income = $("#income-slider").slider("value");
         numBedrooms = parseInt($("#num-bedrooms").val());
         numBedroomsRent = parseInt($("#num-bedrooms-rent").val());
         modes = [ $("#mode-y").val(), $("#mode-p").val() ];
         commuteCosts = [ $("#commute-cost-y-slider").slider("value"), $("#commute-cost-p-slider").slider("value") ];
         numWorkdays = [ $("#num-workdays-y-slider").slider("value"), $("#num-workdays-p-slider").slider("value") ];
-        parkings = [ $("#parking-y-slider").slider("value"), $("#parking-p-slider").slider("value") ];
+        parkingCosts = [ $("#parking-cost-y-slider").slider("value"), $("#parking-cost-p-slider").slider("value") ];
         numCars = parseInt($("#num-cars").val());
-        return new State(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkings, numCars, workAreaNames);
+        return new State(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkingCosts, numCars, workAreaNames);
     }, Object.defineProperty(ՐՏ_4, "__doc__", {
         value: "Return a State instance containing the current values of the UI widgets.\nAll numerical fields are stored as integers."
     }), ՐՏ_4);
@@ -517,7 +517,7 @@ var ՐՏ_modules = {};
         }
         return result;
     }
-    function makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData, points) {
+    function makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData) {
         var ՐՏitr10, ՐՏidx10, ՐՏitr11, ՐՏidx11, ՐՏ_6, ՐՏ_7;
         var state, item, map, legend, info, workMarkers, k, title, symbol, url, customIcon, marker, m;
         state = new State(.84 * medianAnnualIncome, 2, 1, [ "bicycling", "bicycling" ], [ 0, 0 ], [ 5, 0 ], [ 0, 0 ], 0, null);
@@ -606,8 +606,8 @@ var ՐՏ_modules = {};
                     $("#mode-y").val(ui.selected.id);
                     mode = $("#mode-y").val();
                     if (mode !== "driving") {
-                        $("#parking-y").val("$0");
-                        $("#parking-y-slider").slider("value", 0);
+                        $("#parking-cost-y").val("$0");
+                        $("#parking-cost-y-slider").slider("value", 0);
                     } else {
                         item = $("#num-cars li.ui-selected");
                         if (item.val() === 0) {
@@ -634,8 +634,8 @@ var ՐՏ_modules = {};
                     $("#mode-p").val(ui.selected.id);
                     mode = $("#mode-p").val();
                     if (mode !== "driving") {
-                        $("#parking-p").val("$0");
-                        $("#parking-p-slider").slider("value", 0);
+                        $("#parking-cost-p").val("$0");
+                        $("#parking-cost-p-slider").slider("value", 0);
                     } else {
                         item = $("#num-cars li.ui-selected");
                         if (item.val() === 0) {
@@ -747,15 +747,15 @@ var ՐՏ_modules = {};
         });
         $(function() {
             var s;
-            $("#parking-y-slider").slider({
+            $("#parking-cost-y-slider").slider({
                 "orientation": "horizontal",
                 "range": "min",
                 "min": 0,
                 "max": 30,
-                "value": state.parkings[0],
+                "value": state.parkingCosts[0],
                 "step": 1,
                 "slide": function(event, ui) {
-                    $("#parking-y").val(numToDollarStr(ui.value));
+                    $("#parking-cost-y").val(numToDollarStr(ui.value));
                 },
                 "stop": function(event, ui) {
                     var numWorkdays, state;
@@ -766,20 +766,20 @@ var ՐՏ_modules = {};
                     }
                 }
             });
-            s = $("#parking-y-slider");
-            $("#parking-y").val(numToDollarStr(s.slider("value")));
+            s = $("#parking-cost-y-slider");
+            $("#parking-cost-y").val(numToDollarStr(s.slider("value")));
         });
         $(function() {
             var s;
-            $("#parking-p-slider").slider({
+            $("#parking-cost-p-slider").slider({
                 "orientation": "horizontal",
                 "range": "min",
                 "min": 0,
                 "max": 30,
-                "value": state.parkings[1],
+                "value": state.parkingCosts[1],
                 "step": 1,
                 "slide": function(event, ui) {
-                    $("#parking-p").val(numToDollarStr(ui.value));
+                    $("#parking-cost-p").val(numToDollarStr(ui.value));
                 },
                 "stop": function(event, ui) {
                     var numWorkdays, state;
@@ -790,8 +790,8 @@ var ՐՏ_modules = {};
                     }
                 }
             });
-            s = $("#parking-p-slider");
-            $("#parking-p").val(numToDollarStr(s.slider("value")));
+            s = $("#parking-cost-p-slider");
+            $("#parking-cost-p").val(numToDollarStr(s.slider("value")));
         });
         $(function() {
             $("#num-cars").selectable({
@@ -1017,13 +1017,12 @@ var ՐՏ_modules = {};
         medianAnnualIncome = data["medianAnnualIncome"];
         zoom = data["zoom"];
         spinner = new Spinner().spin($("#map").get(0));
-        $.when($.getJSON(data["areasFile"]), $.getJSON(data["rentsFile"]), $.getJSON(data["commuteCostsFile"]), $.getJSON(data["pointsFile"])).done(function(a, b, c, d) {
-            var areas, areaData, points;
+        $.when($.getJSON(data["areasFile"]), $.getJSON(data["rentsFile"]), $.getJSON(data["commuteCostsFile"])).done(function(a, b, c) {
+            var areas, areaData;
             areas = a[0];
             areaData = new AreaData(b[0], c[0]["index_by_name"], c[0]["matrix"]);
             spinner.stop();
-            points = d[0];
-            makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData, points);
+            makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData);
         });
     }
     main();

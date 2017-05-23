@@ -182,8 +182,8 @@ section {
   margin: 0em 0.3em 0.2em 0em;
   border-radius: 1px; }
 
-#commute-cost-y, #commute-cost-p, #num-workdays-y, #num-workdays-p, #parking-y,
-#parking-p {
+#commute-cost-y, #commute-cost-p, #num-workdays-y, #num-workdays-p,
+#parking-cost-y, #parking-cost-p {
   border: 0;
   width: 2.3em;
   color: #d53e4f;
@@ -193,7 +193,7 @@ section {
   background-color: white; }
 
   #commute-cost-y-slider, #commute-cost-p-slider, #num-workdays-y-slider,
-  #num-workdays-p-slider, #parking-y-slider, #parking-p-slider {
+  #num-workdays-p-slider, #parking-cost-y-slider, #parking-cost-p-slider {
     width: 45%;
     margin-right: 7px;
     display: inline-block; }

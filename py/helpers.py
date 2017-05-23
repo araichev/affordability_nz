@@ -22,8 +22,10 @@ TODO:
 import json
 import os
 from pathlib import Path 
+import datetime as dt 
 
 import pandas as pd 
+import geopandas as gpd
 
 
 ROOT = Path(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -125,3 +127,20 @@ def aggregate_rents(rents, date, groupby_cols=('rental_area', '#bedrooms')):
 
     g = f.groupby(groupby_cols).apply(my_agg).reset_index()
     return g
+
+def get_secret(key, secrets_path=ROOT/'secrets.json'):
+    """
+    Open the JSON file at ``secrets_path``, and return the value corresponding to the given key. 
+    """
+    secrets_path = Path(secrets_path)
+    with secrets_path.open() as src:
+        secrets = json.load(src)
+    return secrets[key]
+
+def get_latest_quarters(n):
+    """
+    Return a list of the latest ``n`` (positive integer) rental data quarters as YYYY-MM-DD datestrings sorted chronologically.
+    Each quarter will be of the form YYYY-03-01, YYYY-06-01, YYYY-09-01, or YYYY-12-01.
+    """
+    return [q.strftime('%Y-%m') + '-01' for q in pd.date_range(end=dt.datetime.now(), freq='Q', periods=n)]
+

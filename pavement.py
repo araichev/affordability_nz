@@ -67,8 +67,10 @@ def push(options):
 
     compile()
     pack()
-    sh('git add -A')
-    sh('git commit -am "Clean up"')
+    status = sh('git status', capture=True)
+    if not 'nothing to commit' in status:
+        sh('git add -A')
+        sh('git commit -am "Clean up"')
     sh('git push {!s} {!s}:{!s} --follow-tags'.format(
       server, local_branch, remote_branch))
     # unpack()

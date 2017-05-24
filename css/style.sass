@@ -5,6 +5,7 @@ $small-font-size: 9pt
 $tiny-font-size: 7pt
 $background-color: white
 $border-radius: 1px
+$link-color: darken(#0399d4, 5%)
 
 @mixin font($size, $line-height)
     font-family: "open_sansregular", Helvetica, sans-serif 
@@ -49,11 +50,11 @@ body#index a#nav-index, body#canterbury a#nav-canterbury, body#wellington a#nav-
     &:hover, &:active
         text-decoration: none
 a
-    color: royalblue
+    color: $link-color
     text-decoration: none
     &:hover, &:active
         text-decoration: underline
-        color: royalblue
+        color: $link-color
 p 
     margin: 0 0 1.2em 0
 table

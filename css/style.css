@@ -34,11 +34,11 @@ body#wellington a#nav-wellington, body#about a#nav-about {
     text-decoration: none; }
 
 a {
-  color: royalblue;
+  color: #0387bb;
   text-decoration: none; }
   a:hover, a:active {
     text-decoration: underline;
-    color: royalblue; }
+    color: #0387bb; }
 
 p {
   margin: 0 0 1.2em 0; }

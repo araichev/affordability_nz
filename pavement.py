@@ -67,7 +67,7 @@ def push_gitlab(options):
     pack()
     sh('git add -A')
     sh('git commit -am "Clean up"')
-    sh('git push github {!s}:{!s} --follow-tags'.format(local_branch, remote_branch))
+    sh('git push gitlab {!s}:{!s} --follow-tags'.format(local_branch, remote_branch))
     unpack()
     sh('git add -A')
     sh('git commit -am "Unclean up"')

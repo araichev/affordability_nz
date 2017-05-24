@@ -5,9 +5,10 @@ def main():
         "This website is produced by"
         a(href="http://www.mrcagney.co.nz"):
             "MRCagney"
-        'and updated every calendar quarter. It is inspired in part by the article "Housing and Transport Expenditure: Socio-spatial Indicators of Affordability in Auckland" by K. Mattingly and J. Morrissey' 
+        'as a public education tool illustrating the spatial nature of  affordability and how big a role transport plays. It is inspired in part by the article "Housing and Transport Expenditure: Socio-spatial Indicators of Affordability in Auckland" by K. Mattingly and J. Morrissey' 
         a(href="docs/MaMo2014.pdf"):
-            "[MaMo2014]."
+            "[MaMo2014]"
+        "and updated every calendar quarter."
         # a(href="http://www.sciencedirect.com/science/article/pii/S0264275114000134"):
         #     "[MaMo2014]"
         # "(pay-walled)."
@@ -46,31 +47,31 @@ def main():
             "Car ownership cost per car per year comes from [MaMo2014, Table 3] and is $2228."     
     h2:
         "Frequently Asked Questions"
-    ul:
-        li:
-            p:
-                "So what is affordable, that is, what fraction of my net income should I be spending on rent and commute costs?"
-            p: 
-                "That depends on your financial targets. For example, if you  want to live frugally" 
-                a(href="http://www.mrmoneymustache.com/2011/10/06/the-true-cost-of-commuting/"):
-                    "like Mr. Money Mustache,"
-                "then you probably want to save at least 65% of your net income, leaving at most 45% for expenses, roughly half of which will go to rent and commute costs, that is, at most 23%. This might require changing jobs and moving."
-        li:
-            p: 
-                "What happened to the old affordability site that used 2013 census data?"
-            p:
-                "That site has been archived at"
-                a(href="http://affordability2013.mrcagney.works"):
-                    "affordability2013.mrcagney.works."
-                "It has more complete rental data from the 2013 census and finer spatial resolution but is stuck in time in 2013. That is because such high quality data will not be available again until after the next New Zealand census, which takes place March 2018."
-        li:
-            p:
-                "Why not display the 2001 census area units found in the MBIE rental bond data instead of aggregating them into larger areas?"
-            p:
-                "Two reasons. First, the MBIE data is spotty, so you would see a lot of gray census area units with no rental data. Aggregating them improves the data coverage, albeit at the loss of spatial resolution.  Second, aggregating as we did allows you to compare the map directly with the Tenancy Services 
-                a(href="https://www.tenancy.govt.nz/rent-bond-and-bills/market-rent/"):
-                    "market rent calculator,"
-                "should you want more details on market rent, such as rent quartiles."
+    b:
+        "So what is affordable, that is, what fraction of my net income should I be spending on rent and commute costs?"
+    p: 
+        "That depends on your financial targets. For example, if you  want to live frugally" 
+        a(href="http://www.mrmoneymustache.com/2011/10/06/the-true-cost-of-commuting/"):
+            "like Mr. Money Mustache,"
+        "then you probably want to save at least 65% of your net income, leaving at most 45% for expenses, roughly half of which will go to rent and commute costs, that is, at most 23%. This could require moving or changing jobs."
+    b:
+        "Why not include other costs, such as food, power, and internet?"
+    p:
+        "We wanted to emphasize the spatial nature of affordability and balance accuracy with simplicity, informing but not overwhelming the user. So we included the dominant and most spatially variable costs and excluded the rest, such as food, power, and internet."
+    b: 
+        "What happened to the old affordability site that used 2013 census data?"
+    p:
+        "That site has been archived"
+        a(href="http://affordability-nz-2013.mrcagney.works"):
+            "here."
+        "It has more complete rental data from the 2013 census and finer spatial resolution but is stuck in time in 2013. That is because its high quality data will not be available again until after the next New Zealand census, which takes place March 2018."
+    b:
+        "Why not display the 2001 census area units found in the MBIE rental bond data instead of aggregating them into larger areas?"
+    p:
+        "Two reasons. First, the MBIE data is spotty, so you would see a lot of gray census area units with no rental data. Aggregating them improves the data coverage, albeit at the loss of spatial resolution. Second, aggregating as we did allows you to compare the map directly with the Tenancy Services 
+        a(href="https://www.tenancy.govt.nz/rent-bond-and-bills/market-rent/"):
+            "market rent calculator,"
+        "should you want more details on market rent, such as rent quartiles."
     h2: 
         "Feedback?"
     p:  

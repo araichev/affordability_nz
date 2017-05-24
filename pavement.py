@@ -76,6 +76,6 @@ def push(options):
     if server == 'webfaction':
         push_command += ' --force'
     sh(push_command)
-    # unpack()
-    # sh('git add -A')
-    # sh('git commit -am "Unclean up"')
+    unpack()
+    sh('git add -A')
+    sh('git commit -am "Unclean up"')

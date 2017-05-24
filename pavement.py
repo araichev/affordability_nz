@@ -53,7 +53,7 @@ def unpack():
 
 @task
 @cmdopts([
-    ('server=', 's', 'Server to push to')
+    ('server=', 's', 'Server to push to'),
     ('local_branch=', 'l', 'Local Git branch to push'),
     ('remote_branch=', 'r', 'Remote Git branch to push to'),
 ])

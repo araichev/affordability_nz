@@ -53,21 +53,29 @@ def unpack():
 
 @task
 @cmdopts([
+    ('server=', 's', 'Server to push to'),
     ('local_branch=', 'l', 'Local Git branch to push'),
     ('remote_branch=', 'r', 'Remote Git branch to push to'),
 ])
-def push_gitlab(options):
-    local_branch = options.push_gitlab.local_branch
+def push(options):
+    server = options.push.server
+    local_branch = options.push.local_branch
     try:
-        remote_branch = options.push_gitlab.remote_branch
+        remote_branch = options.push.remote_branch
     except AttributeError:
         remote_branch = local_branch
 
     compile()
     pack()
-    sh('git add -A')
-    sh('git commit -am "Clean up"')
-    sh('git push gitlab {!s}:{!s} --follow-tags'.format(local_branch, remote_branch))
+    status = sh('git status', capture=True)
+    if not 'nothing to commit' in status:
+        sh('git add -A')
+        sh('git commit -am "Clean up"')
+    push_command = 'git push {!s} {!s}:{!s} --follow-tags'.format(
+      server, local_branch, remote_branch)
+    if server == 'webfaction':
+        push_command += ' --force'
+    sh(push_command)
     # unpack()
     # sh('git add -A')
     # sh('git commit -am "Unclean up"')

@@ -35,6 +35,10 @@ def pack():
       cssdir.files('*.sass'):
         f.copy(rapyddir)
         f.remove()
+    for f in rapyddir.files('*.html') +\
+      rapyddir.files('*.css') +\
+      rapyddir.files('*.js'):
+        f.remove()
 
 @task
 def unpack():
@@ -43,14 +47,12 @@ def unpack():
     """
     for f in rapyddir.files('*.pyml'):
         f.copy(htmldir)
-        f.remove()
     for f in rapyddir.files('*.pyj'):
         f.copy(jsdir)
-        f.remove()
     for f in rapyddir.files('*.sass'):
         f.copy(cssdir)
+    for f in rapyddir.files():
         f.remove()
-
 @task
 @cmdopts([
     ('server=', 's', 'Server to push to'),

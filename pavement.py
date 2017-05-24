@@ -71,8 +71,11 @@ def push(options):
     if not 'nothing to commit' in status:
         sh('git add -A')
         sh('git commit -am "Clean up"')
-    sh('git push {!s} {!s}:{!s} --follow-tags'.format(
-      server, local_branch, remote_branch))
+    push_command = 'git push {!s} {!s}:{!s} --follow-tags'.format(
+      server, local_branch, remote_branch)
+    if server == 'webfaction':
+        push_command += ' --force'
+    sh(push_command)
     # unpack()
     # sh('git add -A')
     # sh('git commit -am "Unclean up"')

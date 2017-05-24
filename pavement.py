@@ -67,6 +67,7 @@ def push(options):
     except AttributeError:
         remote_branch = local_branch
 
+    unpack()
     compile()
     pack()
     status = sh('git status', capture=True)

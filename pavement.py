@@ -52,7 +52,7 @@ def unpack():
     """
     if not rapyddir.exists():
         return 
-        
+
     for f in rapyddir.iterdir():
         if f.suffix == '.pyml':
             f.rename(htmldir/f.name)
@@ -80,10 +80,9 @@ def push(options):
 
     pack()
     status = sh('git status', capture=True)
-    print('bingo', status)
     if not 'nothing to commit' in status:
         sh('git add -A')
-        sh('git commit -am "Clean up"')
+        sh('git commit -am "Packed"')
     push_command = 'git push {!s} {!s}:{!s} --follow-tags'.format(
       server, local_branch, remote_branch)
     if server == 'webfaction':
@@ -91,4 +90,4 @@ def push(options):
     sh(push_command)
     unpack()
     sh('git add -A')
-    sh('git commit -am "Unclean up"')
+    sh('git commit -am "Unpacked"')

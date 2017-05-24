@@ -1,10 +1,13 @@
+from pathlib import Path
+
 from paver.easy import task, path, cmdopts
 from paver.shell import sh 
 
-rapyddir = path('rapyd')
-htmldir = path('.')
-jsdir = path('js')
-cssdir = path('css')
+
+rapyddir = Path('rapyd')
+htmldir = Path('.')
+jsdir = Path('js')
+cssdir = Path('css')
 
 @task
 def compile():
@@ -12,17 +15,20 @@ def compile():
     Compile all Rapyd-stuff files where they lie
     """
     # Compile SASS files
-    for f in cssdir.files('*.sass'):
+    for f in cssdir.glob('*.sass'):
         sh('rapydcss {!s}'.format(f))
+
     # Compile RapydScript files
-    for f in jsdir.files('*.pyj'):
-        jsfile = f.replace('.pyj', '.js')
-        sh('rapydscript {!s} -o {!s}'.format(f, jsfile))
+    for f in jsdir.glob('*.pyj'):
+        jsfile = f.parent/(f.stem + '.js')
+        sh('rapydscript {!s} -o {!s} -p'.format(f, jsfile))
+    
     # Compile RapydML files, basics first
-    for f in htmldir.files('*.pyml'):
+    for f in htmldir.glob('*.pyml'):
         if f.name in ['base.pyml', 'ui.pyml']:
             sh('rapydml {!s}'.format(f))
-    for f in htmldir.files('*.pyml'):
+
+    for f in htmldir.glob('*.pyml'):
         sh('rapydml {!s}'.format(f))
 
 @task 
@@ -30,26 +36,33 @@ def pack():
     """
     Move Rapyd-stuff files into rapyddir
     """
-    for f in htmldir.files('*.pyml') +\
-      jsdir.files('*.pyj') +\
-      cssdir.files('*.sass'):
-        f.copy(rapyddir)
-        f.remove()
+    if not rapyddir.exists():
+        rapyddir.mkdir()
+    for f in list(htmldir.glob('*.pyml')) + list(jsdir.glob('*.pyj')) +\
+      list(cssdir.glob('*.sass')):
+        f.rename(rapyddir/f.name)
+    for f in list(rapyddir.glob('*.html')) + list(rapyddir.glob('*.css')) +\
+      list(rapyddir.glob('*.js')):
+        f.unlink()
 
 @task
 def unpack():
     """
     Move Rapyd-stuff files out of rapyddir
     """
-    for f in rapyddir.files('*.pyml'):
-        f.copy(htmldir)
-        f.remove()
-    for f in rapyddir.files('*.pyj'):
-        f.copy(jsdir)
-        f.remove()
-    for f in rapyddir.files('*.sass'):
-        f.copy(cssdir)
-        f.remove()
+    if not rapyddir.exists():
+        return 
+
+    for f in rapyddir.iterdir():
+        if f.suffix == '.pyml':
+            f.rename(htmldir/f.name)
+        elif f.suffix == '.pyj':
+            f.rename(jsdir/f.name)
+        elif f.suffix == '.sass':
+            f.rename(cssdir/f.name)
+        else:
+            f.unlink()
+    rapyddir.rmdir()
 
 @task
 @cmdopts([
@@ -65,12 +78,11 @@ def push(options):
     except AttributeError:
         remote_branch = local_branch
 
-    compile()
     pack()
     status = sh('git status', capture=True)
     if not 'nothing to commit' in status:
         sh('git add -A')
-        sh('git commit -am "Clean up"')
+        sh('git commit -am "Packed"')
     push_command = 'git push {!s} {!s}:{!s} --follow-tags'.format(
       server, local_branch, remote_branch)
     if server == 'webfaction':
@@ -78,4 +90,4 @@ def push(options):
     sh(push_command)
     unpack()
     sh('git add -A')
-    sh('git commit -am "Unclean up"')
+    sh('git commit -am "Unpacked"')

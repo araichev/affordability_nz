@@ -1,4 +1,4 @@
-from paver.easy import *
+from paver.easy import task, path, cmdopts
 from paver.shell import sh 
 
 rapyddir = path('rapyd')
@@ -52,12 +52,22 @@ def unpack():
         f.remove()
 
 @task
-def push_github():
+@cmdopts([
+    ('local_branch=', 'l', 'Local Git branch to push'),
+    ('remote_branch=', 'r', 'Remote Git branch to push to'),
+])
+def push_gitlab(options):
+    local_branch = options.push_gitlab.local_branch
+    try:
+        remote_branch = options.push_gitlab.remote_branch
+    except AttributeError:
+        remote_branch = local_branch
+
     compile()
     pack()
     sh('git add -A')
     sh('git commit -am "Clean up"')
-    sh('git push github master')
-    unpack()
-    sh('git add -A')
-    sh('git commit -am "Unclean up"')
+    sh('git push gitlab {!s}:{!s} --follow-tags'.format(local_branch, remote_branch))
+    # unpack()
+    # sh('git add -A')
+    # sh('git commit -am "Unclean up"')

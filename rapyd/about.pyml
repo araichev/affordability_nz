@@ -12,8 +12,8 @@ def main():
         #     "[MaMo2014]"
         # "(pay-walled)."
         "This website is also open source: its data and source code can be found" 
-        a(href="https://github.com/araichev/affordability_nz"):
-            "on Github,"
+        a(href="https://gitlab.com/araichev/affordability_nz"):
+            "on Gitlab,"
         "and contributors are welcome."
     h2:
         "Data and Methodology"

@@ -56,10 +56,10 @@ def unpack():
     ('local_branch=', 'l', 'Local Git branch to push'),
     ('remote_branch=', 'r', 'Remote Git branch to push to'),
 ])
-def push_github(options):
-    local_branch = options.push_github.local_branch
+def push_gitlab(options):
+    local_branch = options.push_gitlab.local_branch
     try:
-        remote_branch = options.push_github.remote_branch
+        remote_branch = options.push_gitlab.remote_branch
     except AttributeError:
         remote_branch = local_branch
 

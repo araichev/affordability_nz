@@ -70,6 +70,7 @@ def push(options):
     compile()
     pack()
     status = sh('git status', capture=True)
+    print('bingo', status)
     if not 'nothing to commit' in status:
         sh('git add -A')
         sh('git commit -am "Clean up"')

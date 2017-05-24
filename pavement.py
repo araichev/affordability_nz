@@ -17,7 +17,7 @@ def compile():
     # Compile RapydScript files
     for f in jsdir.files('*.pyj'):
         jsfile = f.replace('.pyj', '.js')
-        sh('rapydscript {!s} -o {!s}'.format(f, jsfile))
+        sh('rapydscript {!s} -o {!s} -p'.format(f, jsfile))
     # Compile RapydML files, basics first
     for f in htmldir.files('*.pyml'):
         if f.name in ['base.pyml', 'ui.pyml']:

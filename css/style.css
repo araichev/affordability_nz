@@ -73,33 +73,38 @@ label {
 
       #map {
         width: 100%;
-        min-height: 650px; }
+        min-height: 610px; }
 
         #sidebar {
           padding-top: 1em;
           border: 0px solid red; }
 
           .info {
-            font-family: "open_sansregular", Helvetica, sans-serif;
-            font-size: 9pt;
-            line-height: 1.2;
-            color: black;
-            background: white;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-            border-radius: 1px;
-            text-align: left;
-            margin: 0;
-            padding: 6px 8px;
-            font-weight: normal;
-            line-height: 1.2;
-            border-color: white;
-            width: 200px;
-            padding-bottom: 1em;
-            min-height: 155px; }
-            .info h4 {
-              margin: 0 0 0.5em 0;
-              font-size: inherit;
-              font-weight: bold; }
+            color: #b4b4b4; }
+            .info:hover {
+              color: #d53e4f; }
+
+.info-box {
+  font-family: "open_sansregular", Helvetica, sans-serif;
+  font-size: 9pt;
+  line-height: 1.2;
+  color: black;
+  background: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 1px;
+  text-align: left;
+  margin: 0;
+  padding: 6px 8px;
+  font-weight: normal;
+  line-height: 1.2;
+  border-color: white;
+  width: 200px;
+  padding-bottom: 1em;
+  min-height: 155px; }
+  .info-box h4 {
+    margin: 0 0 0.5em 0;
+    font-size: inherit;
+    font-weight: bold; }
 
 .legend {
   font-family: "open_sansregular", Helvetica, sans-serif;

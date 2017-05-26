@@ -79,11 +79,15 @@ label
     padding: 0px
 #map
     width: 100%
-    min-height: 650px
+    min-height: 610px
 #sidebar
     padding-top: 1em
     border: 0px solid red
 .info
+    color: rgb(180, 180, 180)
+    &:hover
+        color: $highlight-color    
+.info-box
     @include font($small-font-size, 1.2)
     @include box
     width: 200px

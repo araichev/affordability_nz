@@ -517,12 +517,12 @@ var ՐՏ_modules = {};
         }
         return result;
     }
-    function makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData) {
+    function makeUI(lon, lat, maxBounds, markerLatLons, medianNetIncome, zoom, areas, areaData) {
         var ՐՏitr10, ՐՏidx10, ՐՏitr11, ՐՏidx11, ՐՏ_6, ՐՏ_7;
         var state, item, map, legend, info, workMarkers, k, title, symbol, url, customIcon, marker, m;
-        state = new State(.84 * medianAnnualIncome, 3, 1, [ "bicycling", "walking" ], [ 0, 0 ], [ 5, 0 ], [ 0, 0 ], 0, null);
+        state = new State(medianNetIncome, 3, 1, [ "bicycling", "walking" ], [ 0, 0 ], [ 5, 0 ], [ 0, 0 ], 0, null);
         $(function() {
-            var sv, min, range, el;
+            var sv;
             $("#income-slider").slider({
                 "orientation": "horizontal",
                 "range": "min",
@@ -541,10 +541,6 @@ var ՐՏ_modules = {};
             });
             sv = $("#income-slider");
             $("#income").val(numToDollarStr(sv.slider("value")));
-            min = sv.slider("option", "min");
-            range = sv.slider("option", "max") - min;
-            el = $("<label>&#9650;</label><br>").css("left", medianAnnualIncome / range * 100 + "%");
-            $("#income-slider").append(el);
         });
         function adjustNumBedroomsRent() {
             var nb, group, nbr, x, item;
@@ -661,7 +657,7 @@ var ՐՏ_modules = {};
                 "orientation": "horizontal",
                 "range": "min",
                 "min": 0,
-                "max": 100,
+                "max": 60,
                 "value": state.commuteCosts[0],
                 "step": 1,
                 "slide": function(event, ui) {
@@ -685,7 +681,7 @@ var ՐՏ_modules = {};
                 "orientation": "horizontal",
                 "range": "min",
                 "min": 0,
-                "max": 100,
+                "max": 60,
                 "value": state.commuteCosts[1],
                 "step": 1,
                 "slide": function(event, ui) {
@@ -813,7 +809,6 @@ var ՐՏ_modules = {};
             "maxZoom": 13,
             "maxBounds": maxBounds
         });
-        map.scrollWheelZoom.disable();
         map.attributionControl.setPrefix("");
         legend = L.control({
             "position": "bottomleft"
@@ -839,7 +834,7 @@ var ՐՏ_modules = {};
         });
         info.onAdd = function() {
             var div;
-            div = L.DomUtil.create("div", "info");
+            div = L.DomUtil.create("div", "info-box");
             return div;
         };
         info.addTo(map);
@@ -851,7 +846,7 @@ var ՐՏ_modules = {};
             } else {
                 table = "<h4>Info box</h4>Hover over an area";
             }
-            div = $(".info.leaflet-control").get(0);
+            div = $(".info-box.leaflet-control").get(0);
             div.innerHTML = table;
         }
         updateInfo();
@@ -989,7 +984,7 @@ var ՐՏ_modules = {};
         function onEachFeature(feature, layer) {
             layer.on({
                 "mouseout": resetHighlight,
-                "click": zoomToFeature,
+                "click": highlightFeature,
                 "mouseover": highlightFeature
             });
         }
@@ -1008,13 +1003,13 @@ var ՐՏ_modules = {};
         updateAreas(state);
     }
     function main() {
-        var data, lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, spinner;
+        var data, lon, lat, maxBounds, markerLatLons, medianNetIncome, zoom, spinner;
         data = $.parseJSON($("#data").html());
         lon = data["lon"];
         lat = data["lat"];
         maxBounds = data["maxBounds"];
         markerLatLons = data["markerLatLons"];
-        medianAnnualIncome = data["medianAnnualIncome"];
+        medianNetIncome = data["medianNetIncome"];
         zoom = data["zoom"];
         spinner = new Spinner().spin($("#map").get(0));
         $.when($.getJSON(data["areasFile"]), $.getJSON(data["rentsFile"]), $.getJSON(data["commuteCostsFile"])).done(function(a, b, c) {
@@ -1022,7 +1017,7 @@ var ՐՏ_modules = {};
             areas = a[0];
             areaData = new AreaData(b[0], c[0]["index_by_name"], c[0]["matrix"]);
             spinner.stop();
-            makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom, areas, areaData);
+            makeUI(lon, lat, maxBounds, markerLatLons, medianNetIncome, zoom, areas, areaData);
         });
     }
     main();

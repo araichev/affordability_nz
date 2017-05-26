@@ -6,7 +6,7 @@ def main():
         'You and your partner, if you have one, just got a job in Auckland. Now where to live?' 
         br()
         "This application color codes Auckland's rental areas by their affordability to you, based on your income, median market rents from the last two quarters, your commute costs, and your answers to the questions below."
-    ui('employed Aucklanders ($48,204)')
+    ui('The median net annual income of employed Aucklanders is $40,053')
 
 def data():
     json:
@@ -20,7 +20,7 @@ def data():
           "maxBounds": [[-37.7, 174.0], [-36.1, 175.9]],
           "markerLatLons": [[-36.74, 175.07], [-36.74, 175.11]],
           "zoom": 10,
-          "medianAnnualIncome": 48204
+          "medianNetIncome": 40053
         }
 
 page('index')

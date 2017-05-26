@@ -1,3 +1,5 @@
+javascript = verbatim('<script type="text/javascript">','</script>')
+
 def ui($income_note): 
     div(class="row"):
         div(class="col col-md-9"):
@@ -14,21 +16,29 @@ def ui($income_note):
     script(src='lib/jquery-3.2.1.min.js')
     script(src='lib/jquery-ui-1.12.1/jquery-ui.min.js')
     script(src='lib/jquery.ui.touch-punch-0.2.3.min.js')
+    script(src='lib/bootstrap-3.3.4/js/bootstrap.min.js')
     script(src='lib/spinner.min.js')
     script(src='lib/d3.v3.min.js')
     script(src='js/map.js')
+    javascript:
+        // Enable Bootstrap popovers
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
 
 def sidebar($income_note):
     ol:
         li:
             'What will your combined net annual incomes be?'
+            a(tabindex="0", role="button", data-toggle="popover", data-trigger="focus", data-placement="top", data-content=$income_note):
+                span(class="glyphicon glyphicon-info-sign info")
             br()
-            input(type='text' id='income' readonly)
+            input(type='text' id='income' readonly)            
             div(id='income-slider')
-            div(id='income-note'):
-                'Median gross annual income of' 
-                br()br()
-                $income_note
+            # div(id='income-note'):
+            #     'Median gross annual income of' 
+            #     br()br()
+            #     $income_note
         li:
             'How many bedrooms will your dwelling have?'
             ul(id='num-bedrooms'):
@@ -71,6 +81,8 @@ def sidebar($income_note):
                     'Partner'
         li:
             'Cost your commute time per hour, if you wish.'
+            a(tabindex="0", role="button", data-toggle="popover", data-trigger="focus", data-placement="top", data-content="The New Zealand Economic Evaluation Manual values commute time at about $13 per hour"):
+                span(class="glyphicon glyphicon-info-sign info")
             br()
             input(type='text' id='commute-cost-y' readonly)
             div(id='commute-cost-y-slider')     

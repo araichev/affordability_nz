@@ -67,14 +67,12 @@
                 <ol>
                     <li>
                         What will your combined net annual incomes be?
+                        <a tabindex="0" role="button" data-toggle='popover' data-trigger='focus' data-placement='top' data-content='The median net annual income of employed Wellingtonians is $40,731'>
+                            <span class="glyphicon glyphicon-info-sign info" />
+                        </a>
                         <br />
                         <input type='text' id='income' readonly />
                         <div id='income-slider'>
-                        </div>
-                        <div id='income-note'>
-                            Median gross annual income of
-                            <br )br( />
-                            employed Wellingtonians ($49,192)
                         </div>
                     </li>
                     <li>
@@ -137,6 +135,9 @@
                     </li>
                     <li>
                         Cost your commute time per hour, if you wish.
+                        <a tabindex="0" role="button" data-toggle='popover' data-trigger='focus' data-placement='top' data-content='The New Zealand Economic Evaluation Manual values commute time at about $13 per hour'>
+                            <span class="glyphicon glyphicon-info-sign info" />
+                        </a>
                         <br />
                         <input type='text' id='commute-cost-y' readonly />
                         <div id='commute-cost-y-slider'>
@@ -209,7 +210,7 @@
         "maxBounds": [[-42.0 , 174.17], [-39.65, 176.97]],
         "markerLatLons": [[-41.21, 174.63], [-41.21, 174.65]],
         "zoom": 11,
-        "medianAnnualIncome": 49192
+        "medianNetIncome": 40731
       }
     </script>
     <script src='lib/mapbox-3.1.0.min.js'>
@@ -222,10 +223,18 @@
     </script>
     <script src='lib/jquery.ui.touch-punch-0.2.3.min.js'>
     </script>
+    <script src='lib/bootstrap-3.3.4/js/bootstrap.min.js'>
+    </script>
     <script src='lib/spinner.min.js'>
     </script>
     <script src='lib/d3.v3.min.js'>
     </script>
     <script src='js/map.js'>
+    </script>
+    <script type="text/javascript">
+      // Enable Bootstrap popovers
+      $(function () {
+          $('[data-toggle="popover"]').popover()
+      })
     </script>
 </body>

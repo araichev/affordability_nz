@@ -274,11 +274,11 @@ def rgbaToHex(s):
         result += h
     return result
 
-def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
+def makeUI(lon, lat, maxBounds, markerLatLons, medianNetIncome, zoom,
   areas, areaData):  
     # Initialize state to avoid race conditions
     state = State(
-        0.84*medianAnnualIncome,  # income; estimating net income
+        medianNetIncome,  # income
         3,  # numBedrooms
         1,  # numBedroomsRent
         ['bicycling', 'walking'],  # modes
@@ -310,12 +310,12 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         # Initialize slider 
         sv = $('#income-slider')
         $('#income').val(numToDollarStr(sv.slider('value')))
-        # Label the median annual income point on slider
-        min = sv.slider( "option", "min" )
-        range = sv.slider( "option", "max" ) - min
-        el = $('<label>&#9650;</label><br>').css('left', 
-            (medianAnnualIncome/range*100) +'%')
-        $("#income-slider").append(el)
+        # # Label the median annual income point on slider
+        # min = sv.slider( "option", "min" )
+        # range = sv.slider( "option", "max" ) - min
+        # el = $('<label>&#9650;</label><br>').css('left', 
+        #     (medianNetIncome/range*100) +'%')
+        # $("#income-slider").append(el)
     )
 
     def adjustNumBedroomsRent():
@@ -440,7 +440,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             'orientation': 'horizontal',
             'range': 'min',
             'min': 0,
-            'max': 100,
+            'max': 60,
             'value': state.commuteCosts[0],
             'step': 1,
             'slide': def(event, ui): 
@@ -464,7 +464,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
             'orientation': 'horizontal',
             'range': 'min',
             'min': 0,
-            'max': 100,
+            'max': 60,
             'value': state.commuteCosts[1],
             'step': 1,
             'slide': def(event, ui): 
@@ -606,7 +606,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
     #L.tileLayer(tiles).addTo(map)
 
     # Disable zoom-by-scroll
-    map.scrollWheelZoom.disable()
+    # map.scrollWheelZoom.disable()
     
     # Remove 'Leaflet' link from corner of map  
     map.attributionControl.setPrefix('')
@@ -633,7 +633,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
     # Add a info box to the map
     info = L.control({position: 'bottomright'})
     info.onAdd = def():
-        div = L.DomUtil.create('div', 'info')
+        div = L.DomUtil.create('div', 'info-box')
         return div
     info.addTo(map)
 
@@ -643,7 +643,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
         else:
             table = '<h4>Info box</h4>Hover over an area'
         # Update the control based on feature properties passed
-        div = $('.info.leaflet-control').get(0)
+        div = $('.info-box.leaflet-control').get(0)
         div.innerHTML = table
     
     updateInfo()
@@ -782,7 +782,7 @@ def makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
     def onEachFeature(feature, layer):
         layer.on({
             'mouseout': resetHighlight,
-            'click': zoomToFeature,
+            'click': highlightFeature, #zoomToFeature,
             'mouseover': highlightFeature,
         })
 
@@ -808,7 +808,7 @@ def main():
     lat = data['lat']
     maxBounds = data['maxBounds']
     markerLatLons = data['markerLatLons']
-    medianAnnualIncome = data['medianAnnualIncome']
+    medianNetIncome = data['medianNetIncome']
     zoom = data['zoom']
 
     # Get data from server and then make the UI
@@ -822,7 +822,7 @@ def main():
         areas = a[0]  
         areaData = AreaData(b[0], c[0]['index_by_name'], c[0]['matrix'])
         spinner.stop()
-        makeUI(lon, lat, maxBounds, markerLatLons, medianAnnualIncome, zoom,
+        makeUI(lon, lat, maxBounds, markerLatLons, medianNetIncome, zoom,
           areas, areaData)
     )
 

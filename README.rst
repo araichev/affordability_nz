@@ -1,6 +1,7 @@
 Affordability in New Zealand 
 ********************************
-Web maps of affordability for various regions of New Zealand (NZ), where the focus is on rent and commute costs relative to income.
+Web maps of affordability for various regions of New Zealand (NZ).
+The the focus is on rent and commute costs relative to income.
 
 
 Requirements
@@ -23,7 +24,9 @@ Notes
 - This project uses semantic versioning
 - More notes on data and methodology in the About page at ``about.html``
 - This project is funded in part by `MRCagney <http://mrcagney.com>`_
-- The data wrangling takes place in the IPython notebooks in ``py``
+- The data wrangling is done with Python in the IPython notebooks in ``py``
+- The user interface is done with RapydML, and RapydCSS, and RapydScript with the help of a few JavaScript libraries, such as jQuery and jQuery-UI; no JavaScript frameworks involved.
+- Works on mobile-phone-size screens, but best on laptop-size screens
 
 
 Authors

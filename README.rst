@@ -1,6 +1,6 @@
 Affordability in New Zealand
 ********************************
-Web maps of affordability for various regions of New Zealand (NZ) focused on rent and commute costs relative to income.
+Web maps of affordability for various regions of New Zealand (NZ), focusing on rent and commute costs relative to income.
 
 
 Requirements

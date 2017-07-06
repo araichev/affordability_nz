@@ -1,4 +1,6 @@
 secrets.json
+data/property_titles.geojson
+data/raw/nz-cadastral-titles-jan-10.gpkg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

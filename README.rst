@@ -31,3 +31,17 @@ Notes
 Authors
 ========
 - Alex Raichev (2013-12-16)
+
+
+History
+========
+
+0.2.0, 2017-07-13
+------------------
+- Updated Auckland transit costs to use card fares instead of cash fares
+- Tweaked style
+
+
+0.1.0, 2017-05-26
+------------------
+- First release with MBIE rental areas instead of census area units

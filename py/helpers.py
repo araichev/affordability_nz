@@ -112,6 +112,18 @@ def nan_to_none(df):
 
 def aggregate_rents(rents, date, groupby_cols=('rental_area', '#bedrooms')):
     """
+    Given a DataFrame of rents and a date (YYYY-MM-DD date string), 
+    filter the rents to quarters equal to or later than the date, and group the 
+    rents by the given groupby columns, recomputing the counts and means.
+    Return the resulting data frame, which have the following columns.
+    
+    - the columns in ``groupby_cols``
+    - ``'territory'``
+    - ``'region'``
+    - ``'rent_count'``
+    - ``'rent_mean'``
+    - ``'rent_geo_mean'``
+    
     """
     cond = rents['quarter'] >= date
     f = rents[cond].copy()

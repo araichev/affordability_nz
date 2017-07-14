@@ -36,6 +36,11 @@ Authors
 History
 ========
 
+0.2.1, 2017-07-14
+------------------
+- Updated rental bond data, and recomputed rents to use 2017 Q1 and 2017 Q2.
+
+
 0.2.0, 2017-07-13
 ------------------
 - Updated Auckland transit costs to use card fares instead of cash fares

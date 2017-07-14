@@ -1,0 +1,94 @@
+import base
+
+def main():
+    p:
+        "This website is produced by"
+        a(href="http://www.mrcagney.co.nz"):
+            "MRCagney"
+        'as a public education tool illustrating the spatial nature of  affordability and how big a role transport plays. It is inspired in part by the article "Housing and Transport Expenditure: Socio-spatial Indicators of Affordability in Auckland" by K. Mattingly and J. Morrissey'
+        a(href="docs/MaMo2014.pdf"):
+            "[MaMo2014]"
+        "and updated every calendar quarter."
+        # a(href="http://www.sciencedirect.com/science/article/pii/S0264275114000134"):
+        #     "[MaMo2014]"
+        # "(pay-walled)."
+        "This website is also open source: its data and source code can be found"
+        a(href="https://gitlab.com/araichev/affordability_nz"):
+            "on Gitlab,"
+        "and contributors are welcome."
+    h2:
+        "Data and Methodology"
+    ul:
+        li:
+            "The areas displayed in each region map are aggregates of 2001 census area units, the same aggregates used by the Tenancy Services"
+            a(href="https://www.tenancy.govt.nz/rent-bond-and-bills/market-rent/"):
+                "market rent calculator."
+        li:
+            "The median gross annual incomes of employed Aucklanders, Wellingtonians, etc. come from the Statistics New Zealand"
+            a(href="http://www.stats.govt.nz/browse_for_stats/income-and-work/Income/NZIncomeSurvey_HOTPJun15qtr.aspx"):
+                "June 2015 income survey."
+            "Taxes were then subtracted using"
+            a(href="http://www.paye.net.nz/calculator.html"):
+                "this calculator"
+            "to yield median net annual incomes."
+        li:
+            "Rents come from the Ministry of Business, Innovation and Employment (MBIE)"
+            a(href="http://www.mbie.govt.nz/info-services/housing-property/sector-information-and-statistics/rental-bond-data"):
+                "rental bond data."
+            "The map displays geometric mean rents aggregated by dwelling size and taken from the latest two fiscal quarters, namely 2017 Q1 and 2017 Q2. MBIE says that the distribution of rents per dwelling size is approximately log-normal, so that the geometric mean rent is a good approximation to the sample median rent. The rental bond data does not contain the actual sample medians."
+        li:
+            "Commute distances and times were computed as follows. For each area we approximated its population center based on its property title locations. The population centers look like this:"
+            br()
+            img(src="images/auckland_points.png", width="250", title="Auckland")
+            img(src="images/canterbury_points.png", width="250", title="Canterbury")
+            img(src="images/wellington_points.png", width="250", title="Wellington")
+            br()
+            "Then for each ordered pair of population centers and each mode of travel, we used the Google Maps matrix API with departures at 2017-06-01 07:30:00 to compute the distance and duration of the quickest path through the street network between the centers.  These durations include Google's estimated congestion delays."
+
+        li:
+            "Commute costs per kilometer come from [MaMo2014, Table 2] and are (walking, bicycling, driving) = (0, 0, $0.274). Public transport costs were estimated from card fares for journeys between rental area population centers using"
+            a(href="https://at.govt.nz/bus-train-ferry/journey-planner/"):
+                "the Auckland Transport journey planner,"
+            a(href="https://at.govt.nz/bus-train-ferry/journey-planner/"):
+                "the Wellington Metlink journey planner,"
+            "and"
+            a(href="http://www.metroinfo.co.nz/SiteCollectionDocuments/Metro_Fare_Zones_Map_June2016.pdf"):
+                "the Christchurch Metro fare zones"
+            "with a maximum walking distance of 1.6 kilometers."
+        li:
+            "Car ownership cost per car per year comes from [MaMo2014, Table 3] and is $2228."
+    h2:
+        "Frequently Asked Questions"
+    b:
+        "So what is affordable, that is, what fraction of my net income should I be spending on rent and commute costs?"
+    p:
+        "That depends on your financial targets. For example, if you  want to live frugally"
+        a(href="http://www.mrmoneymustache.com/2011/10/06/the-true-cost-of-commuting/"):
+            "like Mr. Money Mustache,"
+        "then you probably want to save at least 65% of your net income, leaving at most 45% for expenses, roughly half of which will go to rent and commute costs, that is, at most 23%. This could require moving or changing jobs."
+    b:
+        "Why not include other costs, such as food, power, and internet?"
+    p:
+        "We wanted to emphasize the spatial nature of affordability and balance accuracy with simplicity, informing but not overwhelming the user. So we included the dominant and most spatially variable costs and excluded the rest, such as food, power, and internet."
+    b:
+        "Why not display the 2001 census area units found in the MBIE rental bond data instead of aggregating them into larger areas?"
+    p:
+        "Two reasons. First, the MBIE data is spotty, so you would see a lot of gray census area units with no rental data. Aggregating them improves the data coverage, albeit at the loss of spatial resolution. Second, aggregating as we did allows you to compare the map directly with the Tenancy Services
+        a(href="https://www.tenancy.govt.nz/rent-bond-and-bills/market-rent/"):
+            "market rent calculator,"
+        "should you want more details on market rent, such as rent quartiles."
+    b:
+        "What happened to the old affordability site that used 2013 census data?"
+    p:
+        "That site has been archived"
+        a(href="http://affordability-nz-2013.mrcagney.works"):
+            "here."
+        "It has more complete rental data from the 2013 census and finer spatial resolution but is stuck in time in 2013. That is because its high quality data will not be available again until after the next New Zealand census, which takes place March 2018."
+    h2:
+        "Feedback?"
+    p:
+        "This project is a work in progress and your feedback can help make it better."
+        a(href="mailto:araichev@mrcagney.com?subject=Affordability map feedback"):
+            "Email Alex."
+
+page("about")

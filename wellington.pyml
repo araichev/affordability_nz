@@ -1,0 +1,26 @@
+import base
+import ui
+
+def main():
+    p:
+        'You and your partner, if you have one, just got a job in Wellington. Now where to live?'
+        br()
+        "This application color codes Wellington's rental areas by their affordability to you, based on your income, median market rents from the last two quarters, your commute costs, and your answers to the questions below."
+    ui('The median net annual income of employed Wellingtonians is $40,731')
+
+def data():
+    json:
+        {
+          "areasFile": "data/wellington/rental_areas.geojson",
+          "pointsFile": "data/wellington/rental_points.geojson",
+          "rentsFile": "data/wellington/rents.json",
+          "commuteCostsFile": "data/wellington/commute_costs.json",
+          "lon": 174.8,
+          "lat": -41.25,
+          "maxBounds": [[-42.0 , 174.17], [-39.65, 176.97]],
+          "markerLatLons": [[-41.21, 174.63], [-41.21, 174.65]],
+          "zoom": 11,
+          "medianNetIncome": 40731
+        }
+
+page('wellington')

@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from paver.easy import task, path, cmdopts
+from paver.easy import task
 from paver.shell import sh
 
 
@@ -63,6 +63,7 @@ def unpack():
         else:
             f.unlink()
     rapyddir.rmdir()
+    compile()
 
 # @task
 # @cmdopts([

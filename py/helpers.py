@@ -135,8 +135,10 @@ def aggregate_rents(rents, date=None, groupby_cols=('rental_area', '#bedrooms'))
         
     def my_agg(group):
         d = {}
-        d['territory'] = group['territory'].iat[0]
-        d['region'] = group['region'].iat[0]
+        if 'territory' not in groupby_cols:
+            d['territory'] = group['territory'].iat[0]
+        if 'region' not in groupby_cols:
+            d['region'] = group['region'].iat[0]
         d['rent_count'] = group['rent_count'].sum()
         d['rent_mean'] = (group['rent_mean']*group['rent_count']).sum()/d['rent_count']
         d['rent_geo_mean'] = (group['rent_geo_mean']**(group['rent_count']/d['rent_count'])).prod()

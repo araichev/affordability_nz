@@ -110,10 +110,9 @@ def nan_to_none(df):
     """
     return df.where((pd.notnull(df)), None)
 
-def aggregate_rents(rents, date, groupby_cols=('rental_area', '#bedrooms')):
+def aggregate_rents(rents, date=None, groupby_cols=('rental_area', '#bedrooms')):
     """
-    Given a DataFrame of rents and a date (YYYY-MM-DD date string), 
-    filter the rents to quarters equal to or later than the date, and group the 
+    Given a DataFrame of rents, group the 
     rents by the given groupby columns, recomputing the counts and means.
     Return the resulting data frame, which have the following columns.
     
@@ -123,15 +122,23 @@ def aggregate_rents(rents, date, groupby_cols=('rental_area', '#bedrooms')):
     - ``'rent_count'``
     - ``'rent_mean'``
     - ``'rent_geo_mean'``
-    
+
+    If a date (YYYY-MM-DD date string) is given, then first slice the rents 
+    to calendar quarters equal to or later than the date.
     """
-    cond = rents['quarter'] >= date
-    f = rents[cond].copy()
     
+    if date is not None:
+        cond = rents['quarter'] >= date
+        f = rents[cond].copy()
+    else:
+        f = rents.copy()
+        
     def my_agg(group):
         d = {}
-        d['territory'] = group['territory'].iat[0]
-        d['region'] = group['region'].iat[0]
+        if 'territory' not in groupby_cols:
+            d['territory'] = group['territory'].iat[0]
+        if 'region' not in groupby_cols:
+            d['region'] = group['region'].iat[0]
         d['rent_count'] = group['rent_count'].sum()
         d['rent_mean'] = (group['rent_mean']*group['rent_count']).sum()/d['rent_count']
         d['rent_geo_mean'] = (group['rent_geo_mean']**(group['rent_count']/d['rent_count'])).prod()

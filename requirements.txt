@@ -4,10 +4,11 @@ click==6.7
 click-plugins==1.0.3
 cligj==0.4.0
 cycler==0.10.0
-decorator==4.0.11
+decorator==4.1.1
 descartes==1.1.0
 entrypoints==0.2.3
 Fiona==1.7.6
+future==0.16.0
 geopandas==0.2.1
 html5lib==0.999999999
 ipykernel==4.6.1
@@ -35,6 +36,7 @@ pandocfilters==1.4.1
 Paver==1.2.4
 pexpect==4.2.1
 pickleshare==0.7.4
+plotly==2.0.12
 prompt-toolkit==1.0.14
 ptyprocess==0.5.2
 Pygments==2.2.0

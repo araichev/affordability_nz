@@ -4,10 +4,11 @@ click==6.7
 click-plugins==1.0.3
 cligj==0.4.0
 cycler==0.10.0
-decorator==4.0.11
+decorator==4.1.1
 descartes==1.1.0
 entrypoints==0.2.3
 Fiona==1.7.6
+future==0.16.0
 geopandas==0.2.1
 html5lib==0.999999999
 ipykernel==4.6.1
@@ -28,13 +29,14 @@ munch==2.1.1
 nbconvert==5.2.1
 nbformat==4.3.0
 notebook==5.0.0
-numpy==1.13.1
+numpy==1.13.3
 packaging==16.8
 pandas==0.20.3
 pandocfilters==1.4.1
 Paver==1.2.4
 pexpect==4.2.1
 pickleshare==0.7.4
+plotly==2.0.12
 prompt-toolkit==1.0.14
 ptyprocess==0.5.2
 Pygments==2.2.0
@@ -48,7 +50,7 @@ requests==2.14.2
 Rtree==0.8.3
 Shapely==1.5.17.post1
 simplegeneric==0.8.1
-six==1.10.0
+six==1.11.0
 terminado==0.6
 testpath==0.3.1
 tornado==4.5.1

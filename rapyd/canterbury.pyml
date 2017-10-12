@@ -11,10 +11,10 @@ def main():
 def data():
     json:
         {
-          "areasFile": "data/canterbury/rental_areas.geojson",
-          "pointsFile": "data/canterbury/rental_points.geojson",
-          "rentsFile": "data/canterbury/rents.json",
-          "commuteCostsFile": "data/canterbury/commute_costs.json",
+          "areasFile": "data/processed/canterbury/rental_areas.geojson",
+          "pointsFile": "data/processed/canterbury/rental_points.geojson",
+          "rentsFile": "data/processed/canterbury/rents.json",
+          "commuteCostsFile": "data/processed/canterbury/commute_costs.json",
           "lon": 172.5,
           "lat": -43.55,
           "maxBounds": [[-46 , 169], [-41.8, 175]],

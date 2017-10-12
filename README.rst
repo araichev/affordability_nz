@@ -36,9 +36,16 @@ Authors
 History
 ========
 
+0.3.0, 2017-10-12
+-----------------
+- Updated rent data
+- Simplified code and notebooks
+- Used Git LFS on the NZ titles geodata file
+
+
 0.2.1, 2017-07-14
 ------------------
-- Updated rental bond data, and recomputed rents to use 2017 Q1 and 2017 Q2.
+- Updated rent data
 
 
 0.2.0, 2017-07-13

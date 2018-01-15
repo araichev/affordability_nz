@@ -1,0 +1,75 @@
+[[source]]
+
+name = "pypi"
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+
+bleach = "==2.0.0"
+click = "==6.7"
+click-plugins = "==1.0.3"
+cligj = "==0.4.0"
+cycler = "==0.10.0"
+decorator = "==4.1.1"
+descartes = "==1.1.0"
+entrypoints = "==0.2.3"
+fiona = "==1.7.6"
+future = "==0.16.0"
+geopandas = "*"
+"html5lib" = "==0.999999999"
+ipykernel = "==4.6.1"
+ipython = "==6.1.0"
+ipython-genutils = "==0.2.0"
+ipywidgets = "==6.0.0"
+jedi = "==0.10.2"
+"jinja2" = "==2.9.6"
+jsonschema = "==2.6.0"
+jupyter = "*"
+jupyter-client = "==5.1.0"
+jupyter-console = "==5.1.0"
+jupyter-core = "==4.3.0"
+markupsafe = "==1.0"
+matplotlib = "==2.0.2"
+mistune = "==0.7.4"
+munch = "==2.1.1"
+nbconvert = "==5.2.1"
+nbformat = "==4.3.0"
+notebook = "==5.0.0"
+numpy = "==1.13.3"
+pandas = "*"
+pandocfilters = "==1.4.1"
+paver = "*"
+pexpect = "==4.2.1"
+pickleshare = "==0.7.4"
+plotly = "==2.0.12"
+prompt-toolkit = "==1.0.14"
+ptyprocess = "==0.5.2"
+pygments = "==2.2.0"
+pyparsing = "==2.2.0"
+pyproj = "==1.9.5.1"
+python-dateutil = "==2.6.1"
+pytz = "==2017.2"
+pyzmq = "==16.0.2"
+qtconsole = "==4.3.0"
+requests = "==2.14.2"
+rtree = "==0.8.3"
+shapely = "*"
+simplegeneric = "==0.8.1"
+terminado = "==0.6"
+testpath = "==0.3.1"
+tornado = "==4.5.1"
+traitlets = "==4.3.2"
+wcwidth = "==0.1.7"
+webencodings = "==0.5.1"
+widgetsnbextension = "==2.0.0"
+
+
+[dev-packages]
+
+
+
+[requires]
+
+python_version = "3.5"

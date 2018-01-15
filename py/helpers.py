@@ -24,6 +24,7 @@ import os
 from pathlib import Path
 import datetime as dt
 
+import numpy as np
 import pandas as pd
 import geopandas as gpd
 
@@ -187,8 +188,13 @@ def aggregate_rents(rents, date=None, groupby_cols=('rental_area',
         d['rent_count'] = group['rent_count'].sum()
         d['rent_mean'] = (group['rent_mean']*group['rent_count']).sum()/\
           d['rent_count']
-        d['rent_geo_mean'] = (group['rent_geo_mean']**(
-          group['rent_count']/d['rent_count'])).prod()
+
+        if d['rent_count']:
+            d['rent_geo_mean'] = (group['rent_geo_mean']**(
+              group['rent_count']/d['rent_count'])).prod()
+        else:
+            d['rent_geo_mean'] = np.nan
+
         return pd.Series(d)
 
     g = f.groupby(groupby_cols).apply(my_agg).reset_index()

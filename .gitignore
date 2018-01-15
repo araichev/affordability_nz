@@ -1,3 +1,4 @@
+.env
 data/collected/nz-cadastral-titles-jan-10.gpkg
 secrets.json
 

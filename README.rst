@@ -36,24 +36,30 @@ Authors
 History
 ========
 
+0.4.3, 2018-12-18
+-----------------
+- Switched from Pipenv to Poetry.
+- Fixed dead links.
+
+
 0.3.0, 2017-10-12
 -----------------
-- Updated rent data
-- Simplified code and notebooks
-- Used Git LFS on the NZ titles geodata file
+- Updated rent data.
+- Simplified code and notebooks.
+- Used Git LFS on the NZ titles geodata file.
 
 
 0.2.1, 2017-07-14
 ------------------
-- Updated rent data
+- Updated rent data.
 
 
 0.2.0, 2017-07-13
 ------------------
-- Updated Auckland transit costs to use card fares instead of cash fares
-- Tweaked style
+- Updated Auckland transit costs to use card fares instead of cash fares.
+- Tweaked style.
 
 
 0.1.0, 2017-05-26
 ------------------
-- First release with MBIE rental areas instead of census area units
+- First release with MBIE rental areas instead of census area units.

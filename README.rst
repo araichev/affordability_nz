@@ -36,7 +36,7 @@ Authors
 History
 ========
 
-0.3.1, 2018-12-18
+0.4.3, 2018-12-18
 -----------------
 - Switched from Pipenv to Poetry.
 - Fixed dead links.

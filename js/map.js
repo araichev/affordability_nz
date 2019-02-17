@@ -10,12 +10,18 @@ function ՐՏ_Iterable(iterable) {
     if (iterable.constructor === [].constructor || iterable.constructor === "".constructor || (tmp = Array.prototype.slice.call(iterable)).length) {
         return tmp || iterable;
     }
+    if (Set && iterable.constructor === Set) {
+        return Array.from(iterable);
+    }
     return Object.keys(iterable);
 }
 function len(obj) {
     var tmp;
     if (obj.constructor === [].constructor || obj.constructor === "".constructor || (tmp = Array.prototype.slice.call(obj)).length) {
         return (tmp || obj).length;
+    }
+    if (Set && obj.constructor === Set) {
+        return obj.size;
     }
     return Object.keys(obj).length;
 }
@@ -49,29 +55,45 @@ function ՐՏ_eq(a, b) {
     if (a === b) {
         return true;
     }
-    if (Array.isArray(a) && Array.isArray(b) || a instanceof Object && b instanceof Object) {
-        if (a.constructor !== b.constructor || a.length !== b.length) {
+    if (a.constructor !== b.constructor) {
+        return false;
+    }
+    if (Array.isArray(a)) {
+        if (a.length !== b.length) {
             return false;
         }
-        if (Array.isArray(a)) {
-            for (i = 0; i < a.length; i++) {
-                if (!ՐՏ_eq(a[i], b[i])) {
-                    return false;
-                }
-            }
-        } else {
-            if (Object.keys(a).length !== Object.keys(b).length) {
+        for (i = 0; i < a.length; i++) {
+            if (!ՐՏ_eq(a[i], b[i])) {
                 return false;
-            }
-            ՐՏitr13 = ՐՏ_Iterable(a);
-            for (ՐՏidx13 = 0; ՐՏidx13 < ՐՏitr13.length; ՐՏidx13++) {
-                i = ՐՏitr13[ՐՏidx13];
-                if (!ՐՏ_eq(a[i], b[i])) {
-                    return false;
-                }
             }
         }
         return true;
+    } else if (a.constructor === Object) {
+        if (Object.keys(a).length !== Object.keys(b).length) {
+            return false;
+        }
+        ՐՏitr13 = ՐՏ_Iterable(a);
+        for (ՐՏidx13 = 0; ՐՏidx13 < ՐՏitr13.length; ՐՏidx13++) {
+            i = ՐՏitr13[ՐՏidx13];
+            if (!ՐՏ_eq(a[i], b[i])) {
+                return false;
+            }
+        }
+        return true;
+    } else if (Set && a.constructor === Set || Map && a.constructor === Map) {
+        if (a.size !== b.size) {
+            return false;
+        }
+        for (i of a) {
+            if (!b.has(i)) {
+                return false;
+            }
+        }
+        return true;
+    } else if (a.constructor === Date) {
+        return a.getTime() === b.getTime();
+    } else if (typeof a.__eq__ === "function") {
+        return a.__eq__(b);
     }
     return false;
 }
@@ -86,6 +108,7 @@ var ValueError = (ՐՏ_8 = function ValueError() {
             self.name = "ValueError";
             self.message = message;
         }
+
     }
 }), ՐՏ_8);
 var ՐՏ_modules = {};
@@ -262,7 +285,8 @@ var ՐՏ_modules = {};
         __doc__: {
             enumerable: true, 
             writable: true, 
-            value: "An object that holds the values of the user interface widgets."        },
+            value: "An object that holds the values of the user interface widgets."
+        },
         __init__: {
             enumerable: true, 
             writable: true, 
@@ -278,6 +302,7 @@ var ՐՏ_modules = {};
                 self.numCars = numCars;
                 self.workAreaNames = workAreaNames;
             }
+
         },
         getWeeklyIncome: {
             enumerable: true, 
@@ -286,6 +311,7 @@ var ՐՏ_modules = {};
                 var self = this;
                 return self.income / 52;
             }
+
         },
         getWeeklyCarOwnCost: {
             enumerable: true, 
@@ -294,6 +320,7 @@ var ՐՏ_modules = {};
                 var self = this;
                 return self.numCars * WEEKLY_CAR_OWN_COST;
             }
+
         },
         getWeeklyParkingCost: {
             enumerable: true, 
@@ -309,6 +336,7 @@ var ՐՏ_modules = {};
                 }
                 return totalCost;
             }
+
         },
         getWeeklyTotalCostFraction: {
             enumerable: true, 
@@ -324,6 +352,7 @@ var ՐՏ_modules = {};
                 }
                 return fraction;
             }
+
         }
     }), ՐՏ_2);
     var AreaData = (ՐՏ_3 = function AreaData() {
@@ -332,7 +361,8 @@ var ՐՏ_modules = {};
         __doc__: {
             enumerable: true, 
             writable: true, 
-            value: "An object that holds data about rent and commute costs for each area.\nOnly one instance is needed."        },
+            value: "An object that holds data about rent and commute costs for each area.\nOnly one instance is needed."
+        },
         __init__: {
             enumerable: true, 
             writable: true, 
@@ -342,6 +372,7 @@ var ՐՏ_modules = {};
                 self.MIndexByArea = MIndexByArea;
                 self.M = M;
             }
+
         },
         getWeeklyRent: {
             enumerable: true, 
@@ -360,6 +391,7 @@ var ՐՏ_modules = {};
                 }
                 return rent;
             }
+
         },
         getWeeklyCommuteCostAndTime: {
             enumerable: true, 
@@ -403,6 +435,7 @@ var ՐՏ_modules = {};
                 }
                 return [totalCost, totalTime];
             }
+
         },
         getWeeklyTotalCost: {
             enumerable: true, 
@@ -419,6 +452,7 @@ var ՐՏ_modules = {};
                 }
                 return total;
             }
+
         },
         getAreaStats: {
             enumerable: true, 
@@ -442,6 +476,7 @@ var ՐՏ_modules = {};
                     "weeklyTotalCostFraction": state.getWeeklyTotalCostFraction(wtc)
                 };
             }
+
         }
     }), ՐՏ_3);
     var getState = (ՐՏ_4 = function getState(workAreaNames) {

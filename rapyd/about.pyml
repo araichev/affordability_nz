@@ -32,7 +32,7 @@ def main():
             "Rents come from the Ministry of Business, Innovation and Employment (MBIE)"
             a(href="https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/"):
                 "rental bond data."
-            "We use geometric mean rents aggregated by dwelling size and taken from the latest two calendar quarters for which data is available, currently 2018 Q3 and 2018 Q4. MBIE says that the distribution of rents per dwelling size is approximately log-normal, so that the geometric mean rent is a good approximation to the sample median rent. The rental bond data does not contain the actual sample medians."
+            "We use geometric mean rents aggregated by dwelling size and taken from the latest two calendar quarters for which data is available, currently 2019 Q1 and 2019 Q2. MBIE says that the distribution of rents per dwelling size is approximately log-normal, so that the geometric mean rent is a good approximation to the sample median rent. The rental bond data does not contain the actual sample medians."
         li:
             "Commute distances and times were computed as follows. For each area we approximated its population center based on its property title locations. The population centers look like this:"
             br()

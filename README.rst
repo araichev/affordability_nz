@@ -36,6 +36,11 @@ Authors
 History
 ========
 
+0.5.0, 2019-07-16
+-----------------
+- Made more robust the downloading of new rental data in the notebook ``py/prepare_rents.ipynb``.
+
+
 0.4.3, 2018-12-18
 -----------------
 - Switched from Pipenv to Poetry.

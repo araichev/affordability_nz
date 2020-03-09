@@ -21,9 +21,9 @@ def main():
             a(href="https://www.tenancy.govt.nz/rent-bond-and-bills/market-rent/"):
                 "market rent calculator."
         li:
-            "The median gross annual incomes of employed Aucklanders, Wellingtonians, etc. come from the Statistics New Zealand"
-            a(href="http://www.stats.govt.nz/browse_for_stats/income-and-work/Income/NZIncomeSurvey_HOTPJun15qtr.aspx"):
-                "June 2015 income survey."
+            "The median gross annual incomes of waged Aucklanders, Wellingtonians, etc. come from the Statistics New Zealand"
+            a(http://nzdotstat.stats.govt.nz/"):
+                "June 2019 Household Labour Force Survey."
             "Taxes were then subtracted using"
             a(href="http://www.paye.net.nz/calculator.html"):
                 "the PAYE calculator"

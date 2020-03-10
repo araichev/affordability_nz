@@ -5,8 +5,7 @@ Web maps of affordability for various regions of New Zealand (NZ), focusing on r
 
 Requirements
 ============
-- Python >= 3.4 along with the Python modules in ``requirements.txt``; for data processing
-- `RapydML <https://bitbucket.org/pyjeon/rapydml>`_ for compiling RapydML (.pyml) files to HTML
+- Python >= 3.6 along with the Python modules in ``requirements.txt``; for data processing
 - `RapydCSS <https://bitbucket.org/pyjeon/rapydcss>`_ for compiling RapydCSS (.sass) files to CSS
 - `RapydScript <https://bitbucket.org/pyjeon/rapydscript>`_ for compiling RapydScript (.pyj) files to JavaScript
 
@@ -24,7 +23,7 @@ Notes
 - More notes on data and methodology in the About page at ``about.html``
 - This project is funded in part by `MRCagney <http://mrcagney.com>`_
 - The data wrangling is done with Python in the IPython notebooks in ``py``
-- The user interface is done with RapydML, and RapydCSS, and RapydScript with the help of a few JavaScript libraries, such as jQuery and jQuery-UI; no JavaScript frameworks involved.
+- The user interface is done with RapydCSS and RapydScript with the help of a few JavaScript libraries, such as jQuery and jQuery-UI; no JavaScript frameworks involved.
 - Works on mobile-phone-size screens, but best on laptop-size screens
 
 
@@ -33,8 +32,15 @@ Authors
 - Alex Raichev (2013-12-16)
 
 
-History
+Changes
 ========
+
+1.0.0, 2020-03-10
+-----------------
+- Removed RapydML dependency. Will eventually replace it with Jinja2 templates.
+- Removed Paver dependency.
+- Updated rental bond data and median incomes.
+
 
 0.5.0, 2019-07-16
 -----------------

@@ -156,7 +156,7 @@ def get_latest_quarters(n, from_data=True):
     return(quarters)
 
 def aggregate_rents(rents, date=None, groupby_cols=('rental_area',
-  '#bedrooms')):
+  'num_bedrooms')):
     """
     Given a DataFrame of rents, group the rents by the given groupby
     columns, recomputing the counts and means.
@@ -174,8 +174,7 @@ def aggregate_rents(rents, date=None, groupby_cols=('rental_area',
     """
 
     if date is not None:
-        cond = rents['quarter'] >= date
-        f = rents[cond].copy()
+        f = rents.loc[lambda x: x.quarter >= date].copy()
     else:
         f = rents.copy()
 
@@ -197,8 +196,12 @@ def aggregate_rents(rents, date=None, groupby_cols=('rental_area',
 
         return pd.Series(d)
 
-    g = f.groupby(groupby_cols).apply(my_agg).reset_index()
-    return g
+    return (
+        f
+        .groupby(list(groupby_cols))
+        .apply(my_agg)
+        .reset_index()
+    )
 
 def nan_to_none(df):
     """
@@ -213,19 +216,19 @@ def build_json_rents(rents):
     :func:read_data('rents'), aggregate the rents by rental area
     and number of bedrooms ('1', '2', '3', or '4'), and return the
     result as a dictionary of the form
-    rental area -> #bedrooms -> rent geometric mean.
+    rental area -> num_bedrooms -> rent geometric mean.
     Some of the mean rents could be ``None``.
     """
     f = aggregate_rents(rents)
 
     # Drop 5+ bedrooms and round to nearest dollar
-    f = f[f['#bedrooms'] != '5+'].copy().round()
+    f = f[f['num_bedrooms'] != '5+'].copy().round()
 
     # Replace NaN with None to make JSON-compatible
     f = nan_to_none(f)
 
-    # Save to dictionary of form rental area -> #bedrooms -> rent geo mean
-    d = {area: dict(g[['#bedrooms', 'rent_geo_mean']].values)
+    # Save to dictionary of form rental area -> num_bedrooms -> rent geo mean
+    d = {area: dict(g[['num_bedrooms', 'rent_geo_mean']].values)
       for area, g in f.groupby('rental_area')}
 
     return d

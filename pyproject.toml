@@ -10,7 +10,6 @@ python = "^3.6|^3.7"
 
 [tool.poetry.dev-dependencies]
 geopandas = "<1"
-paver = "<2"
 jupyter = "^1.0"
 rtree = "<1.0"
 requests = "<3"

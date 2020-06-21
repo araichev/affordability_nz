@@ -35,6 +35,11 @@ Authors
 Changes
 ========
 
+1.0.1, 2020-06-22
+-----------------
+- Updated rental data to 2020 Q1--Q2.
+
+
 1.0.0, 2020-03-10
 -----------------
 - Removed RapydML dependency. Will eventually replace it with Jinja2 templates.

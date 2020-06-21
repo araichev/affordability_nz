@@ -6,7 +6,7 @@ authors = ["Alex Raichev <araichev@mrcagney.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.6|^3.7"
+python = "^3.6|^3.7|^3.8"
 
 [tool.poetry.dev-dependencies]
 geopandas = "<1"

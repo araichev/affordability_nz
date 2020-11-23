@@ -31,10 +31,10 @@ import geopandas as gpd
 
 
 ROOT = Path(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATA_DIR = ROOT/'data'
-CRS_NZGD49 = {'init': 'epsg:27200', 'no_defs': True}
-CRS_NZTM = {'init': 'epsg:2193', 'no_defs': True}
-CRS_WGS84 = {'init': 'epsg:4326'}
+DATA_DIR = ROOT/'docs'/'data'
+CRS_NZGD49 = 'epsg:27200'
+CRS_NZTM = 'epsg:2193'
+CRS_WGS84 = 'epsg:4326'
 REGIONS = [
     'auckland',
     'canterbury',
@@ -139,7 +139,7 @@ def get_data(key, region=None):
 
 def get_latest_quarters(n: int, *, from_today=False) -> List[str]:
     """
-    Return a list of the latest ``n`` rental data quarters as 
+    Return a list of the latest ``n`` rental data quarters as
     YYYY-MM-DD datestrings sorted chronologically.
     Each quarter will be of the form YYYY-03-01, YYYY-06-01,
     YYYY-09-01, or YYYY-12-01.

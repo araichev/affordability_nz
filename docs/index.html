@@ -1,0 +1,237 @@
+<!-- This page has been auto-generated using RapydML (http://www.pyjeon.com) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Affordability in New Zealand
+        </title>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <link rel='stylesheet' href='css/commute-icons/style.css' />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel='stylesheet' href='css/style.css' />
+    </head>
+</html>
+<body id='index'>
+    <h1>
+        Affordability in New Zealand
+    </h1>
+    <div id='nav'>
+        <ul>
+            <li>
+                <a href='index.html' id='nav-index'>
+                    Auckland
+                </a>
+            </li>
+            <li>
+                &middot;
+            </li>
+            <li>
+                <a href='canterbury.html' id='nav-canterbury'>
+                    Canterbury
+                </a>
+            </li>
+            <li>
+                &middot;
+            </li>
+            <li>
+                <a href='wellington.html' id='nav-wellington'>
+                    Wellington
+                </a>
+            </li>
+            <li>
+                &middot;
+            </li>
+            <li>
+                <a href='about.html' id='nav-about'>
+                    About
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>
+        You and your partner, if you have one, just got a job in Auckland. Now where to live?
+        <br />
+        This application color codes Auckland's rental areas by their affordability to you, based on your income, median market rents from the last two quarters, your commute costs, and your answers to the questions below.
+    </p>
+    <div class="row">
+        <div class="col col-md-9">
+            <div id='map'>
+            </div>
+        </div>
+        <div class="col col-md-3">
+            <div id='sidebar'>
+                <ol>
+                    <li>
+                        What will your combined net annual incomes be?
+                        <a tabindex="0" role="button" data-toggle='popover' data-trigger='focus' data-placement='top' data-content='The median net annual income of waged Aucklanders is $44,619'>
+                            <span class="glyphicon glyphicon-info-sign info" />
+                        </a>
+                        <br />
+                        <input type='text' id='income' readonly />
+                        <div id='income-slider'>
+                        </div>
+                    </li>
+                    <li>
+                        How many bedrooms will your dwelling have?
+                        <ul id='num-bedrooms'>
+                            <li class='ui-state-default' value='1'>
+                                1
+                            </li>
+                            <li class='ui-state-default' value='2'>
+                                2
+                            </li>
+                            <li class='ui-state-default' value='3'>
+                                3
+                            </li>
+                            <li class='ui-state-default' value='4'>
+                                4
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        For how many of these bedrooms will you pay rent?
+                        <ul id='num-bedrooms-rent'>
+                            <li class='ui-state-default' value='1'>
+                                1
+                            </li>
+                            <li class='ui-state-default' value='2'>
+                                2
+                            </li>
+                            <li class='ui-state-default' value='3'>
+                                3
+                            </li>
+                            <li class='ui-state-default' value='4'>
+                                4
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Where will you work? Move the map markers.
+                    </li>
+                    <li>
+                        How will you commute?
+                        <ul id='mode-y'>
+                            <li class='ui-state-default icon-walk' id='walking' title='walk' />
+                            <li class='ui-state-default icon-bicycle' id='bicycling' title='bicycle' />
+                            <li class='ui-state-default icon-bus' id='transit' title='public transport' />
+                            <li class='ui-state-default icon-car' id='driving' title='car' />
+                            <li>
+                                You
+                            </li>
+                        </ul>
+                        <ul id='mode-p'>
+                            <li class='ui-state-default icon-walk' id='walking' title='walk' />
+                            <li class='ui-state-default icon-bicycle' id='bicycling' title='bicycle' />
+                            <li class='ui-state-default icon-bus' id='transit' title='public transport' />
+                            <li class='ui-state-default icon-car' id='driving' title='car' />
+                            <li>
+                                Partner
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Cost your commute time per hour, if you wish.
+                        <a tabindex="0" role="button" data-toggle='popover' data-trigger='focus' data-placement='top' data-content='The New Zealand Economic Evaluation Manual values commute time at about $13 per hour'>
+                            <span class="glyphicon glyphicon-info-sign info" />
+                        </a>
+                        <br />
+                        <input type='text' id='commute-cost-y' readonly />
+                        <div id='commute-cost-y-slider'>
+                        </div>
+                        You
+                        <br />
+                        <input type='text' id='commute-cost-p' readonly />
+                        <div id='commute-cost-p-slider'>
+                        </div>
+                        Partner
+                    </li>
+                    <li>
+                        How many days per week will you commute?
+                        <br />
+                        <input type='text' id='num-workdays-y' readonly />
+                        <div id='num-workdays-y-slider'>
+                        </div>
+                        You
+                        <br />
+                        <input type='text' id='num-workdays-p' readonly />
+                        <div id='num-workdays-p-slider'>
+                        </div>
+                        Partner
+                    </li>
+                    <li>
+                        How much will work parking cost per day?
+                        <br />
+                        <input type='text' id='parking-cost-y' readonly />
+                        <div id='parking-cost-y-slider'>
+                        </div>
+                        You
+                        <br />
+                        <input type='text' id='parking-cost-p' readonly />
+                        <div id='parking-cost-p-slider'>
+                        </div>
+                        Partner
+                    </li>
+                    <li>
+                        How many cars will you own?
+                        <ul id='num-cars'>
+                            <li class='ui-state-default' value='0'>
+                                0
+                            </li>
+                            <li class='ui-state-default' value='1'>
+                                1
+                            </li>
+                            <li class='ui-state-default' value='2'>
+                                2
+                            </li>
+                            <li class='ui-state-default' value='3'>
+                                3
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <p>
+        Hint: To ignore your partner, cast their map marker out to sea or zero their commute days.
+    </p>
+    <script type="application/json" id="data">
+      {
+        "areasFile": "data/processed/auckland/rental_areas.geojson",
+        "pointsFile": "data/processed/auckland/rental_points.geojson",
+        "rentsFile": "data/processed/auckland/rents.json",
+        "commuteCostsFile": "data/processed/auckland/commute_costs.json",
+        "lon": 174.8,
+        "lat": -36.9,
+        "maxBounds": [[-37.7, 174.0], [-36.1, 175.9]],
+        "markerLatLons": [[-36.74, 175.07], [-36.74, 175.11]],
+        "zoom": 10,
+        "medianNetIncome": 44619
+      }
+    </script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <script src="https://unpkg.com/@mapbox/leaflet-pip@latest/leaflet-pip.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src='js/map.js'>
+    </script>
+    <script type="text/javascript">
+      // Enable Bootstrap popovers
+      $(function () {
+          $('[data-toggle="popover"]').popover()
+      })
+    </script>
+    <br />
+    <a href="http://mrcagney.com">
+        <img src="images/mrcagney_logo.jpg" alt="MRCagney logo" height="30" align="right" />
+    </a>
+</body>

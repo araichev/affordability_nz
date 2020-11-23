@@ -35,6 +35,12 @@ Authors
 Changes
 ========
 
+1.1.0, 2020-11-23
+-----------------
+- Updated rental data to 2020 Q2--Q3.
+- Eliminated ``lib`` directory in favor of CDNs.
+
+
 1.0.1, 2020-06-22
 -----------------
 - Updated rental data to 2020 Q1--Q2.

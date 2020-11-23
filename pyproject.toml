@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "affordability_nz"
-version = "0.5.0"
+version = "1.1.0"
 description = "Web maps of affordability for various regions of New Zealand (NZ), focusing on rent and commute costs relative to income."
 authors = ["Alex Raichev <araichev@mrcagney.com>"]
 license = "MIT"

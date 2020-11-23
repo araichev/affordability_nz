@@ -19,6 +19,7 @@ TODO:
 
 - Add automated tests
 """
+from typing import Optional, List
 import json
 import os
 from pathlib import Path
@@ -136,24 +137,21 @@ def get_data(key, region=None):
             result = json.load(src)
     return result
 
-def get_latest_quarters(n, from_data=True):
+def get_latest_quarters(n: int, *, from_today=False) -> List[str]:
     """
-    Return a list of the latest ``n`` (positive integer)
-    rental data quarters as YYYY-MM-DD datestrings sorted
-    chronologically.
+    Return a list of the latest ``n`` rental data quarters as 
+    YYYY-MM-DD datestrings sorted chronologically.
     Each quarter will be of the form YYYY-03-01, YYYY-06-01,
     YYYY-09-01, or YYYY-12-01.
-    If ``from_data``, then get the latest quarters from the stored
-    rental data.
-    Otherwise, get the latest quarters theoretically possible from
-    today's date.
+    If ``from_today``, get the latest quarters theoretically possible from
+    today's date; otherwise, get them from the rental data.
     """
-    if from_data:
-        quarters = get_data('rents')['quarter'].unique()[-n:].tolist()
-    else:
+    if from_today:
         quarters = [q.strftime('%Y-%m') + '-01' for q in
           pd.date_range(end=dt.datetime.now(), freq='Q', periods=n)]
-    return(quarters)
+    else:
+        quarters = get_data('rents')['quarter'].unique()[-n:].tolist()
+    return quarters
 
 def aggregate_rents(rents, date=None, groupby_cols=('rental_area',
   'num_bedrooms')):

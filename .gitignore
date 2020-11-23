@@ -1,6 +1,5 @@
 .env
 data/collected/nz-cadastral-titles-jan-10.gpkg
-secrets.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -71,7 +70,7 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-py/.ipynb_checkpoints
+notebooks/.ipynb_checkpoints
 
 # pyenv
 .python-version

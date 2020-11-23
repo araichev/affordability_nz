@@ -35,6 +35,11 @@ Authors
 Changes
 ========
 
+1.1.1, 2020-11-24
+-----------------
+- Restructured directories.
+
+
 1.1.0, 2020-11-23
 -----------------
 - Updated rental data to 2020 Q2--Q3.

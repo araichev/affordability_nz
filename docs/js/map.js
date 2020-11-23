@@ -101,8 +101,8 @@ var ValueError = (ՐՏ_8 = function ValueError() {
     ValueError.prototype.__init__.apply(this, arguments);
 }, ՐՏ_extends(ՐՏ_8, Error), Object.defineProperties(ՐՏ_8.prototype, {
     __init__: {
-        enumerable: true, 
-        writable: true, 
+        enumerable: true,
+        writable: true,
         value: function __init__(message){
             var self = this;
             self.name = "ValueError";
@@ -189,7 +189,7 @@ var ՐՏ_modules = {};
         dict.keys = function(hash) {
             var keys;
             keys = [];
-            
+
         for (var x in hash) {
             if (hash.hasOwnProperty(x)) {
                 keys.push(x);
@@ -249,7 +249,7 @@ var ՐՏ_modules = {};
     var ՐՏ_2, ՐՏ_3, ՐՏ_4, ՐՏ_5;
     var WEEKLY_CAR_OWN_COST, OPACITY, GREY, COLORS, n, i, COLOR_SCALE, BINS, b, LABELS;
     var append = ՐՏ_modules["stdlib"].append;
-    
+
     WEEKLY_CAR_OWN_COST = 2228 / 52;
     OPACITY = 1;
     GREY = "rgb(200, 200, 200)";
@@ -283,13 +283,13 @@ var ՐՏ_modules = {};
         State.prototype.__init__.apply(this, arguments);
     }, Object.defineProperties(ՐՏ_2.prototype, {
         __doc__: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: "An object that holds the values of the user interface widgets."
         },
         __init__: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function __init__(income, numBedrooms, numBedroomsRent, modes, commuteCosts, numWorkdays, parkingCosts, numCars, workAreaNames){
                 var self = this;
                 self.income = income;
@@ -305,8 +305,8 @@ var ՐՏ_modules = {};
 
         },
         getWeeklyIncome: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function getWeeklyIncome(){
                 var self = this;
                 return self.income / 52;
@@ -314,8 +314,8 @@ var ՐՏ_modules = {};
 
         },
         getWeeklyCarOwnCost: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function getWeeklyCarOwnCost(){
                 var self = this;
                 return self.numCars * WEEKLY_CAR_OWN_COST;
@@ -323,8 +323,8 @@ var ՐՏ_modules = {};
 
         },
         getWeeklyParkingCost: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function getWeeklyParkingCost(){
                 var self = this;
                 var totalCost, k, parking, numWorkdays;
@@ -339,8 +339,8 @@ var ՐՏ_modules = {};
 
         },
         getWeeklyTotalCostFraction: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function getWeeklyTotalCostFraction(weeklyTotalCost){
                 var self = this;
                 var total, fraction;
@@ -359,13 +359,13 @@ var ՐՏ_modules = {};
         AreaData.prototype.__init__.apply(this, arguments);
     }, Object.defineProperties(ՐՏ_3.prototype, {
         __doc__: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: "An object that holds data about rent and commute costs for each area.\nOnly one instance is needed."
         },
         __init__: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function __init__(rentByNbedroomsByArea, MIndexByArea, M){
                 var self = this;
                 self.rentByNbedroomsByArea = rentByNbedroomsByArea;
@@ -375,8 +375,8 @@ var ՐՏ_modules = {};
 
         },
         getWeeklyRent: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function getWeeklyRent(state, areaName){
                 var self = this;
                 var numBedrooms, numBedroomsRent, rent;
@@ -394,8 +394,8 @@ var ՐՏ_modules = {};
 
         },
         getWeeklyCommuteCostAndTime: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function getWeeklyCommuteCostAndTime(state, areaName){
                 var ՐՏupk1, ՐՏupk2;
                 var self = this;
@@ -438,8 +438,8 @@ var ՐՏ_modules = {};
 
         },
         getWeeklyTotalCost: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function getWeeklyTotalCost(state, areaName){
                 var self = this;
                 var rent, cc, total;
@@ -455,8 +455,8 @@ var ՐՏ_modules = {};
 
         },
         getAreaStats: {
-            enumerable: true, 
-            writable: true, 
+            enumerable: true,
+            writable: true,
             value: function getAreaStats(state, areaName){
                 var self = this;
                 var wcct, wtc;
@@ -890,11 +890,11 @@ var ՐՏ_modules = {};
             if (k === 0) {
                 title = "Your work";
                 symbol = "y";
-                url = "../images/work_marker_y.png";
+                url = "images/work_marker_y.png";
             } else {
                 title = "Your partner's work";
                 symbol = "p";
-                url = "../images/work_marker_p.png";
+                url = "images/work_marker_p.png";
             }
             customIcon = L.icon({
                 "iconUrl": url,

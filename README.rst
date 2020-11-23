@@ -38,6 +38,7 @@ Changes
 1.1.1, 2020-11-24
 -----------------
 - Restructured directories.
+- Updated income data.
 
 
 1.1.0, 2020-11-23
